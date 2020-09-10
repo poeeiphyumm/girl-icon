@@ -20,9 +20,7 @@
   <script type="text/javascript" src="{{asset('custom.js')}}"></script>
 
 </head>
-
-
-  <body id="page-top">
+<body id="page-top">
 
   <!-- Page Wrapper -->
   <div id="wrapper">
@@ -35,7 +33,7 @@
         <div class="sidebar-brand-icon rotate-n-15">
           <i class="fas fa-laugh-wink"></i>
         </div>
-        <div class="sidebar-brand-text mx-3">Clinic Admin <sup>2</sup></div>
+        <div class="sidebar-brand-text mx-3">Beuty Clinic Admin <sup>2</sup></div>
       </a>
 
       <!-- Divider -->
@@ -51,53 +49,113 @@
       <!-- Divider -->
       <hr class="sidebar-divider">
 
-      <!-- Heading -->
-      <div class="sidebar-heading">
-        Interface
-      </div>
+      <div id="wrapper">
 
-      <!-- Nav Item - Pages Collapse Menu -->
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" >
-          <i class="fas fa-fw fa-cog"></i>
-          <span>Appointment</span>
-        </a>
-        
-      </li><li class="nav-item">
-        <a class="nav-link collapsed" href="#">
-          <i class="fas fa-fw fa-cog"></i>
-          <span>Category</span>
-        </a>
-        
-      </li>
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#">
-          <i class="fas fa-fw fa-cog"></i>
-          <span>Service</span>
-        </a>
-        
-      </li>
+    <!-- Sidebar -->
+    <ul class="sidebar navbar-nav">
+        <li class="nav-item" id="dashboard">
+            <a class="nav-link" href="#">
+                <i class="fas fa-fw fa-tachometer-alt"></i>
+                <span>Dashboard</span>
+            </a>
+        </li>
 
-      <!-- Nav Item - Utilities Collapse Menu -->
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#">
-          <i class="fas fa-fw fa-wrench"></i>
-          <span>Employee</span>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#">
-          <i class="fas fa-fw fa-wrench"></i>
-          <span>Service</span>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#">
-          <i class="fas fa-fw fa-wrench"></i>
-          <span>Customer</span>
-        </a>
-      </li>
-      
+        {{-- <li class="nav-item" id="upcoming_appointments">
+            <a class="nav-link" href="upcoming_appointments.php">
+                <i class="fas fa-fw fa-calendar-alt"></i>
+                <span>Upcoming Appointments</span>
+            </a>
+        </li> --}}
+
+        <li class="nav-item" id="appointments_history">
+            <a class="nav-link" href="#">
+                <i class="fas fa-fw fa-history"></i>
+                <span>Appointments History</span>
+            </a>
+        </li>
+
+        <li class="nav-item dropdown" id="category">
+            <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-fw fa-clipboard"></i>
+                <span>Category</span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="pagesDropdown" id="cat_dropdown">
+                <a class="dropdown-item" href="#" id="category_list">Category List</a>
+                <a class="dropdown-item" href="#" id="cat_add_edit">Add/Edit Category</a>
+            </div>
+        </li>
+
+        <li class="nav-item dropdown" id="service">
+            <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-fw fa-clipboard-check"></i>
+                <span>Service</span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="pagesDropdown" id="service_dropdown">
+                <a class="dropdown-item" href="#" id="service_list">Service List</a>
+                <a class="dropdown-item" href="#" id="service_add_edit">Add/Edit Service</a>
+            </div>
+        </li>
+
+        <li class="nav-item dropdown" id="package">
+            <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-fw fa-clipboard-check"></i>
+                <span>Package</span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="pagesDropdown" id="package_dropdown">
+                <a class="dropdown-item" href="#" id="package_list">Package List</a>
+                <a class="dropdown-item" href="#" id="package_add_edit">Add/Edit Package</a>
+            </div>
+        </li>
+
+        <li class="nav-item dropdown" id="employee">
+            <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-fw fa-user"></i>
+                <span>Employee</span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="pagesDropdown" id="employee_dropdown">
+                <a class="dropdown-item" href="#" id="employee_list">Employee List</a>
+                <a class="dropdown-item" href="#" id="employee_add_edit">Add/Edit Employee</a>
+            </div>
+        </li>
+
+        <li class="nav-item" id="customers">
+            <a class="nav-link" href="#">
+                <i class="fas fa-fw fa-users"></i>
+                <span>Customers</span>
+            </a>
+        </li>
+
+        <li class="nav-item" id="salon_images">
+            <a class="nav-link" href="#">
+                <i class="fas fa-fw fa-plus"></i>
+                <span>Add Salon Images</span>
+            </a>
+        </li>
+
+        <li class="nav-item" id="salon_timing">
+            <a class="nav-link" href="#">
+                <i class="fas fa-fw fa-clock"></i>
+                <span>Salon Timing</span>
+            </a>
+        </li>
+
+        <li class="nav-item" id="report">
+            <a class="nav-link" href="#">
+                <i class="fas fa-fw fa-list-alt"></i>
+                <span>Report</span>
+            </a>
+        </li>
+
+        <li class="nav-item" id="settings">
+            <a class="nav-link" href="#">
+                <i class="fas fa-fw fa-cogs"></i>
+                <span>Settings</span>
+            </a>
+        </li>
+
+    </ul>
+
+
 
       <!-- Divider -->
       <hr class="sidebar-divider">
@@ -117,7 +175,7 @@
       <div id="content">
 
         <!-- Topbar -->
-        <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+    <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
 
           <!-- Sidebar Toggle (Topbar) -->
           <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
@@ -266,15 +324,12 @@
 
             <div class="topbar-divider d-none d-sm-block"></div>
 
-            
-            
-
             <!-- Nav Item - User Information -->
 
         </nav>
 
       
-@yield('content');
+          @yield('content');
 
       <!-- Footer -->
       <footer class="sticky-footer bg-white">
@@ -289,8 +344,6 @@
     </div>
     <!-- End of Content Wrapper -->
 
-  
-   
 
   <!-- Scroll to Top Button-->
   <a class="scroll-to-top rounded" href="#page-top">
