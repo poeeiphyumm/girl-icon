@@ -14,8 +14,13 @@ class CategoryController extends Controller
      */
     public function index()
     {
+<<<<<<< HEAD
         return "this is categorypage";
             }
+=======
+        //
+    }
+>>>>>>> 16bf9fb69907397c668f65f0474ccba703409ef8
 
     /**
      * Show the form for creating a new resource.

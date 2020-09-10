@@ -18,6 +18,7 @@ Route::get('/', function () {
     //return 'Hello Laravel';
 });
 
+
 Route::get('/testing',function ($value=''){
 	return 'This is a testing page';
 });
@@ -25,3 +26,7 @@ Route::get('/testing',function ($value=''){
  Route::resource('categories','CategoriesController');
 
 
+
+
+
+Route::resource('categories','CategoryController');
