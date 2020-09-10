@@ -28,6 +28,12 @@ Route::get('/testing',function ($value=''){
 
 
 
+Route::get('/main', function () {
+    //return view('welcome');
+    return 'Hello Main Laravel';
+});
+
+
 
 Route::resource('categories','CategoryController');
 Route::resource('employies','EmployeeController');

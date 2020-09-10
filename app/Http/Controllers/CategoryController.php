@@ -14,7 +14,8 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        return "this is categorypage";
+        return "this is Category";
+
             }
 
         //
