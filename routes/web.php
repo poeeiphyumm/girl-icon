@@ -19,6 +19,15 @@ Route::get('/', function () {
 });
 
 
+Route::get('/testing',function ($value=''){
+	return 'This is a testing page';
+});
+
+ Route::resource('categories','CategoriesController');
+
+
+
+
 Route::get('/main', function () {
     //return view('welcome');
     return 'Hello Main Laravel';
