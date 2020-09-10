@@ -31,3 +31,5 @@ Route::get('/testing',function ($value=''){
 
 Route::resource('categories','CategoryController');
 Route::resource('employies','EmployeeController');
+Route::resource('services','ServiceController');
+
