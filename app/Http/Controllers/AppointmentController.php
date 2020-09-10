@@ -14,7 +14,8 @@ class AppointmentController extends Controller
      */
     public function index()
     {
-        return 'Appointment';    }
+        return 'Appointment';   
+     }
 
     /**
      * Show the form for creating a new resource.

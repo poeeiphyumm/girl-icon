@@ -14,12 +14,12 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        return "this is Category";
+        return "Hello";
 
             }
 
         //
-    }
+    
 
     /**
      * Show the form for creating a new resource.
