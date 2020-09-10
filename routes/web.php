@@ -14,9 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    //return view('welcome');
-    return 'Hello Laravel';
+    return view('welcome');
+    //return 'Hello Laravel';
 });
+
 
 Route::get('/main', function () {
     //return view('welcome');
@@ -25,4 +26,7 @@ Route::get('/main', function () {
 
 
 
+Route::resource('categories','CategoryController');
+Route::resource('employies','EmployeeController');
+Route::resource('services','ServiceController');
 
