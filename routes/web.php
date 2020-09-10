@@ -24,3 +24,5 @@ Route::get('/', function () {
 
 Route::resource('categories','CategoryController');
 Route::resource('employies','EmployeeController');
+Route::resource('services','ServiceController');
+
