@@ -18,6 +18,10 @@ Route::get('/', function () {
     return 'Hello Laravel';
 });
 
+Route::get('/main', function () {
+    //return view('welcome');
+    return 'Hello Main Laravel';
+});
 
 
 
