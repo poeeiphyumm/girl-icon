@@ -18,8 +18,8 @@ Route::get('/', function () {
     //return 'Hello Laravel';
 });
 
-Route::get('/testing',function ($value=''){
-	return 'This is a testing page'
-});
+// Route::get('/testing',function ($value=''){
+// 	return 'This is a testing page'
+// });
 
-Route::resource('brands','BrandController');
+Route::resource('categories','CategoryController');
