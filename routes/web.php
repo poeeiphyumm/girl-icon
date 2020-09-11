@@ -17,11 +17,11 @@ Route::get('dashboard', 'backendController@dashboardfun') ->name('dashboardpage'
 
 
 
-<<<<<<< HEAD
+
 //backend
 
 // Route::get('create', 'BackendController@createfun')->name('createpage');
-=======
+
 Route::get('/', 'PageController@mainfun')->name('mainpage');
 
 Route::get('booking', 'PageController@bookingfun') ->name('bookingpage');
@@ -33,18 +33,17 @@ Route::get('dashboard', 'backendController@dashboardfun') ->name('dashboardpage'
 Route::resource('appointments', 'AppointmentController');
 
  Route::resource('categories','CategoriesController');
->>>>>>> adf2a71138a74024fcf35e9da2e3a218032d5c39
+
 
 // Route::get('index', 'BackendController@indexfun')->name('indexpage');
 
-<<<<<<< HEAD
-=======
+
 
 
 Route::resource('categories','CategoryController');
 Route::resource('employies','EmployeeController');
 Route::resource('services','ServiceController');
->>>>>>> adf2a71138a74024fcf35e9da2e3a218032d5c39
+
 
 
 Route::resource('categories','CategoryController');
