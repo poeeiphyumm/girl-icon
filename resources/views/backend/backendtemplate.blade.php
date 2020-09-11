@@ -53,12 +53,6 @@
 
     <!-- Sidebar -->
     <ul class="sidebar navbar-nav">
-        <li class="nav-item" id="dashboard">
-            <a class="nav-link" href="#">
-                <i class="fas fa-fw fa-tachometer-alt"></i>
-                <span>Dashboard</span>
-            </a>
-        </li>
 
         {{-- <li class="nav-item" id="upcoming_appointments">
             <a class="nav-link" href="upcoming_appointments.php">
