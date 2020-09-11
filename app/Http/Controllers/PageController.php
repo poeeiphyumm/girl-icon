@@ -12,5 +12,10 @@ class PageController extends Controller
      	return view('booking');
     }
 
-    
+   
+    public function mainfun($value='')
+    {
+    	return view('main');
+    }
+
 }
