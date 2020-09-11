@@ -78,9 +78,9 @@
                     <li><a href="#">Menu Three</a></li>
                   </ul>
                 </li>
-                <li><a href="services.html">Services</a></li>
+                <li><a href="{{asset('services')}}">Services</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="booking.html">Book Online</a></li>
+                <li><a href="{{asset('booking')}}">Book Online</a></li>
                 <li><a href="contact.html">Contact</a></li>
               </ul>
             </nav>
@@ -117,10 +117,7 @@
 @section('yield')
    
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 8a3efc37a264ac4eb70f95c9cc2b4244b529b909
     <div class="slide-one-item home-slider owl-carousel">
       
       <div class="site-blocks-cover" style="background-image: url({{asset('front/images/hero_bg_1.jpg')}});" data-aos="fade" data-stellar-background-ratio="0.5">
