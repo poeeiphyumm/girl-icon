@@ -75,9 +75,9 @@
                     <li><a href="#">Menu Three</a></li>
                   </ul>
                 </li>
-                <li><a href="services.html">Services</a></li>
+                <li><a href="{{asset('services')}}">Services</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="booking.html">Book Online</a></li>
+                <li><a href="{{asset('booking')}}">Book Online</a></li>
                 <li><a href="contact.html">Contact</a></li>
               </ul>
             </nav>
@@ -111,9 +111,49 @@
     </header>
 
   
+<<<<<<< HEAD
+@section('yield')
+   
+
+
+    <div class="slide-one-item home-slider owl-carousel">
+      
+      <div class="site-blocks-cover" style="background-image: url({{asset('front/images/hero_bg_1.jpg')}});" data-aos="fade" data-stellar-background-ratio="0.5">
+        <div class="container">
+          <div class="row align-items-center justify-content-center text-center">
+
+            <div class="col-md-8" data-aos="fade-up" data-aos-delay="400">
+              <h5 class="text-white font-weight-light text-uppercase">Welcome to Hairsal</h5>
+              <h2 class="text-white font-weight-light mb-2 display-1">Beauty Salon Expert</h2>
+
+              <p><a href="#" class="btn btn-black py-3 px-5">Book Now!</a></p>
+            </div>
+          </div>
+        </div>
+      </div>  
+
+      <div class="site-blocks-cover" style="background-image: url({{asset('front/images/hero_bg_2.jpg')}});" data-aos="fade" data-stellar-background-ratio="0.5">
+        <div class="container">
+          <div class="row align-items-center justify-content-center text-center">
+
+            <div class="col-md-8" data-aos="fade-up" data-aos-delay="400">
+              <h2 class="text-white font-weight-light mb-2 display-1">Beautifull, Healthy You!</h2>
+
+              <p><a href="#" class="btn btn-black py-3 px-5">Appointment Now!</a></p>
+            </div>
+          </div>
+        </div>
+      </div>  
+
+    </div>
+
+
+    <div class="site-section">
+=======
 @yield('content')
     
 <footer class="site-footer">
+>>>>>>> eb46e4ccbf4580e09f1243c41ce902b41da8ebb6
       <div class="container">
         <div class="row">
           <div class="col-lg-4">
