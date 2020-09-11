@@ -119,13 +119,13 @@
 
     <div class="slide-one-item home-slider owl-carousel">
       
-      <div class="site-blocks-cover" style="background-image: url({{asset('front/images/hero_bg_1.jpg)')}});" data-aos="fade" data-stellar-background-ratio="0.5">
+      <div class="site-blocks-cover" style="background-image: url({{asset('front/images/hero_bg_1.jpg')}});" data-aos="fade" data-stellar-background-ratio="0.5">
         <div class="container">
           <div class="row align-items-center justify-content-center text-center">
 
             <div class="col-md-8" data-aos="fade-up" data-aos-delay="400">
               <h5 class="text-white font-weight-light text-uppercase">Welcome to Hairsal</h5>
-              <h2 class="text-white font-weight-light mb-2 display-1">Hair Salon Expert</h2>
+              <h2 class="text-white font-weight-light mb-2 display-1">Beauty Salon Expert</h2>
 
               <p><a href="#" class="btn btn-black py-3 px-5">Book Now!</a></p>
             </div>
@@ -133,14 +133,14 @@
         </div>
       </div>  
 
-      <div class="site-blocks-cover" style="background-image: url({{asset('front/images/hero_bg_2.jpg)')}});" data-aos="fade" data-stellar-background-ratio="0.5">
+      <div class="site-blocks-cover" style="background-image: url({{asset('front/images/hero_bg_2.jpg')}});" data-aos="fade" data-stellar-background-ratio="0.5">
         <div class="container">
           <div class="row align-items-center justify-content-center text-center">
 
             <div class="col-md-8" data-aos="fade-up" data-aos-delay="400">
-              <h2 class="text-white font-weight-light mb-2 display-1">Beautiful Hair, Healthy You!</h2>
+              <h2 class="text-white font-weight-light mb-2 display-1">Beautifull, Healthy You!</h2>
 
-              <p><a href="#" class="btn btn-black py-3 px-5">Book Now!</a></p>
+              <p><a href="#" class="btn btn-black py-3 px-5">Appointment Now!</a></p>
             </div>
           </div>
         </div>
@@ -153,7 +153,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6 col-lg-4 text-center">
-            <h3 class="line-height-1 mb-3"><span class="d-block display-4 line-height-1 text-black">Welcome to</span> <span class="d-block display-4 line-height-1"><em class="text-primary font-weight-bold">Hair Salon</em></span></h3>
+            <h3 class="line-height-1 mb-3"><span class="d-block display-4 line-height-1 text-black">Welcome to</span> <span class="d-block display-4 line-height-1"><em class="text-primary font-weight-bold">Beauty Clinic</em></span></h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt architecto ab hic rem placeat eius commodi eum eligendi recusandae sed qui cumque quibusdam.</p>
             <p><a href="#"><small class="text-uppercase font-weight-bold">Read More</small></a></p>
           </div>
@@ -229,7 +229,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6 mb-5">
-            <img src="{{asset('images/person_1.jpg')}}" alt="Image" class="img-md-fluid">
+            <img src="{{asset('front/images/person_1.jpg')}}" alt="Image" class="img-md-fluid">
           </div>
           <div class="col-lg-6 bg-white p-md-5 align-self-center">
             <h2 class="display-1 text-black line-height-1 site-section-heading mb-4 pb-3">New hairstyle!</h2>
@@ -241,7 +241,7 @@
     </div>
 
 
-    <div class="site-blocks-cover overlay inner-page-cover" style="background-image: url(images/hero_bg_2.jpg); background-attachment: fixed;">
+    <div class="site-blocks-cover overlay inner-page-cover" style="background-image: url({{asset('front/images/hero_bg_2.jpg')}}); background-attachment: fixed;">
       <div class="container">
         <div class="row align-items-center justify-content-center text-center">
 
