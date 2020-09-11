@@ -18,7 +18,7 @@
 
     <link rel="stylesheet" href="{{asset('front/fonts/flaticon/font/flaticon.css')}}">
 
-    <link rel="stylesheet" href="{{asset('https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/mediaelementplayer.min.css')}}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/mediaelementplayer.min.css">
 
 
     <link rel="stylesheet" href="{{asset('front/css/aos.css')}}">
@@ -111,58 +111,15 @@
     </header>
 
   
-<<<<<<< HEAD
 @yield('content')
     
 <footer class="site-footer">
-=======
-@section('yield')
-   
-
-<<<<<<< HEAD
-
-=======
->>>>>>> 8a3efc37a264ac4eb70f95c9cc2b4244b529b909
-    <div class="slide-one-item home-slider owl-carousel">
-      
-      <div class="site-blocks-cover" style="background-image: url({{asset('front/images/hero_bg_1.jpg')}});" data-aos="fade" data-stellar-background-ratio="0.5">
-        <div class="container">
-          <div class="row align-items-center justify-content-center text-center">
-
-            <div class="col-md-8" data-aos="fade-up" data-aos-delay="400">
-              <h5 class="text-white font-weight-light text-uppercase">Welcome to Hairsal</h5>
-              <h2 class="text-white font-weight-light mb-2 display-1">Beauty Salon Expert</h2>
-
-              <p><a href="#" class="btn btn-black py-3 px-5">Book Now!</a></p>
-            </div>
-          </div>
-        </div>
-      </div>  
-
-      <div class="site-blocks-cover" style="background-image: url({{asset('front/images/hero_bg_2.jpg')}});" data-aos="fade" data-stellar-background-ratio="0.5">
-        <div class="container">
-          <div class="row align-items-center justify-content-center text-center">
-
-            <div class="col-md-8" data-aos="fade-up" data-aos-delay="400">
-              <h2 class="text-white font-weight-light mb-2 display-1">Beautifull, Healthy You!</h2>
-
-              <p><a href="#" class="btn btn-black py-3 px-5">Appointment Now!</a></p>
-            </div>
-          </div>
-        </div>
-      </div>  
-
-    </div>
-
-
-    <div class="site-section">
->>>>>>> 6f2a83d56e8a1312d4d270861e1fcd71242e4938
       <div class="container">
         <div class="row">
           <div class="col-lg-4">
             <div>
               <h3 class="footer-heading mb-4">About Hairsal</h3>
-              <p>Lorem ipsum dolor sit amet,</p>
+              <p>Lorem ipsum dolor sit amet, </p>
             </div> 
           </div>
           <div class="col-lg-4 mb-lg-0">
