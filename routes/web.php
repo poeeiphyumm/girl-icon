@@ -13,28 +13,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    //return view('welcome');
-    return 'Hello Laravel';
-});
-
-
-Route::get('/testing',function ($value=''){
-	return 'This is a testing page';
-});
-
 Route::get('dashboard', 'backendController@dashboardfun') ->name('dashboardpage');
 
- Route::resource('categories','CategoriesController');
 
 
-Route::get('/main', function () {
-    //return view('welcome');
-    return 'Hello Main Laravel';
-});
+//backend
+
+// Route::get('create', 'BackendController@createfun')->name('createpage');
+
+// Route::get('index', 'BackendController@indexfun')->name('indexpage');
+
+
 
 Route::resource('categories','CategoryController');
-Route::resource('employies','EmployeeController');
-Route::resource('services','ServiceController');
-
-
