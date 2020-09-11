@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('dashboard', 'backendController@dashboardfun') ->name('dashboardpage');
+Route::get('/', 'PageController@mainfun')->name('mainpage');
 
 
 
@@ -22,17 +23,14 @@ Route::get('dashboard', 'backendController@dashboardfun') ->name('dashboardpage'
 
 // Route::get('create', 'BackendController@createfun')->name('createpage');
 
-Route::get('/', 'PageController@mainfun')->name('mainpage');
 
-Route::get('booking', 'PageController@bookingfun') ->name('bookingpage');
+//Route::get('booking', 'PageController@bookingfun') ->name('bookingpage');
 
 
 
 Route::get('dashboard', 'backendController@dashboardfun') ->name('dashboardpage');
 
 Route::resource('appointments', 'AppointmentController');
-
- Route::resource('categories','CategoriesController');
 
 
 // Route::get('index', 'BackendController@indexfun')->name('indexpage');
