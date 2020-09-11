@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -116,6 +117,10 @@
   
 
    
+=======
+   @extends('master')
+   @section('content')
+>>>>>>> fd947dc7b40f6c0307700dbcf77898c27b71593e
 
     <div class="slide-one-item home-slider owl-carousel">
    
@@ -204,7 +209,9 @@
         </div>
       </div>
     </div>
+@endsection
 
+<<<<<<< HEAD
 
     <footer class="site-footer">
       <div class="container">
@@ -303,3 +310,6 @@
     
   </body>
 </html>
+=======
+  
+>>>>>>> fd947dc7b40f6c0307700dbcf77898c27b71593e
