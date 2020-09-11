@@ -14,8 +14,9 @@ class CategoryController extends Controller
      */
     public function index()
     {
-
-        
+        $categories=Category::all();
+        return view('backend.categories.index',compact('categories'));
+       
 
     }
         
@@ -26,7 +27,9 @@ class CategoryController extends Controller
      */
     public function create()
     {
-        //
+        // $categories=Category::all();
+        return view("backend.categories.create");
+ 
     }
 
     /**
@@ -37,8 +40,33 @@ class CategoryController extends Controller
      */
     public function store(Request $request)
     {
+        //dd($request);
+         $request->validate([
+            "category_name" => 'required',
+            "photo" => 'required',
+        ]);
+
         //
-    }
+
+        //If include file,upload file
+        $imageName = time().'-'.$request->photo->extension();
+        $request->photo->move(public_path('backend/categoryimg'),$imageName);
+        // ပုံပတ်လမ်းကြောင်းသိမ်း
+        $path = 'backend/categoryimg/'.$imageName;
+        //
+        //Data insert
+        $category = new Category;
+        $category->name = $request->category_name;
+        $category->photo = $path;
+
+        $category->save();
+
+        //redirect
+        return redirect()->route('categories.index');
+
+
+        }
+    
 
     /**
      * Display the specified resource.
