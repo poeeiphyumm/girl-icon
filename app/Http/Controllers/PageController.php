@@ -27,6 +27,11 @@ class PageController extends Controller
      	return view('contact');
     }
 
+    public function aboutfun($value='')
+     {
+        
+        return view('about');
+    }
 
    
     public function mainfun($value='')

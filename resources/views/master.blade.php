@@ -68,17 +68,22 @@
                   </ul>
                 </li>
                 <li class="has-children">
-                  <a href="haircut.html">Haircut</a>
+                  <a href="haircut.html">Category</a>
                   <ul class="dropdown">
-                    <li><a href="#">Menu One</a></li>
-                    <li><a href="#">Menu Two</a></li>
-                    <li><a href="#">Menu Three</a></li>
+                    <li><a href="#">Body Care</a></li>
+                    <li><a href="#">Skin Care</a></li>
+                    <li><a href="#">Nail Care</a></li>
+                    <li><a href="#">Face Care</a></li>
+                    <li><a href="#">Hand Care</a></li>
+                    <li><a href="#">Foot Care</a></li>
+                    <li><a href="#">Skin Therapy</a></li>
+                    <li><a href="#">Spa Rest</a></li>
                   </ul>
                 </li>
                 <li><a href="{{asset('services')}}">Services</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="{{asset('about')}}">About</a></li>
                 <li><a href="{{asset('booking')}}">Book Online</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="{{asset('contact')}}">Contact</a></li>
               </ul>
             </nav>
           </div>
@@ -111,7 +116,7 @@
     </header>
 
   
-<<<<<<< HEAD
+
 @section('yield')
    
 
@@ -149,11 +154,11 @@
 
 
     <div class="site-section">
-=======
+
 @yield('content')
     
 <footer class="site-footer">
->>>>>>> eb46e4ccbf4580e09f1243c41ce902b41da8ebb6
+
       <div class="container">
         <div class="row">
           <div class="col-lg-4">

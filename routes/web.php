@@ -27,6 +27,7 @@ Route::get('/', 'PageController@mainfun')->name('mainpage');
 Route::get('booking', 'PageController@bookingfun') ->name('bookingpage');
 Route::get('services', 'PageController@servicefun')->name('servicepage');
 Route::get('contact', 'PageController@contactfun')->name('contactpage');
+Route::get('about', 'PageController@aboutfun')->name('aboutpage');
 
 
 Route::get('dashboard', 'backendController@dashboardfun') ->name('dashboardpage');

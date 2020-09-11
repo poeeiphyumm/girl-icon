@@ -13,7 +13,7 @@ class CreateAppointmentsTable extends Migration
      */
     public function up()
     {
-<<<<<<< HEAD
+
         Schema::create('appointments', function (Blueprint $table) {
             $table->id();
             $table->string('appointment_name');
@@ -29,7 +29,6 @@ class CreateAppointmentsTable extends Migration
                     ->on('customers')
                     ->onDelete('cascade');
 
-=======
         // Schema::create('appointments', function (Blueprint $table) {
         //     $table->id();
         //     $table->string('customer_name');
@@ -49,7 +48,7 @@ class CreateAppointmentsTable extends Migration
         //             ->on('employees')
         //             ->onDelete('cascade');
         //     $table->timestamps();
->>>>>>> adf2a71138a74024fcf35e9da2e3a218032d5c39
+
         });
     }
 
