@@ -33,8 +33,6 @@ Route::get('/main', function () {
     return 'Hello Main Laravel';
 });
 
-
-
 Route::resource('categories','CategoryController');
 Route::resource('employies','EmployeeController');
 Route::resource('services','ServiceController');
