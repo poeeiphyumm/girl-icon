@@ -148,8 +148,9 @@
 
 
     <div class="site-section">
+
 @yield('content')
-    
+     
 <footer class="site-footer">
 
       <div class="container">
