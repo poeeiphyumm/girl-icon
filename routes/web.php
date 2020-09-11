@@ -22,7 +22,7 @@ Route::get('/', function () {
 Route::get('/testing',function ($value=''){
 	return 'This is a testing page';
 });
-Route::get('/', 'PageController@mainfun') ->name('mainpage');
+Route::get('/', 'PageController@mainfun')->name('mainpage');
 
 
 Route::get('dashboard', 'backendController@dashboardfun') ->name('dashboardpage');
