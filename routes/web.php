@@ -25,13 +25,12 @@ Route::get('/testing',function ($value=''){
 
 Route::get('dashboard', 'backendController@dashboardfun') ->name('dashboardpage');
 
+Route::resource('appointments', 'AppointmentController');
+
  Route::resource('categories','CategoriesController');
 
 
-Route::get('/main', function () {
-    //return view('welcome');
-    return 'Hello Main Laravel';
-});
+
 
 
 

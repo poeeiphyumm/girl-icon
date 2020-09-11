@@ -323,7 +323,7 @@
         </nav>
 
       
-          @yield('content');
+          @yield('content')
 
       <!-- Footer -->
       <footer class="sticky-footer bg-white">
