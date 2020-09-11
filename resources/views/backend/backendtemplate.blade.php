@@ -26,7 +26,7 @@
   <div id="wrapper">
 
     <!-- Sidebar -->
-    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+    <ul class="navbar-nav  sidebar sidebar-dark bg-dark accordion" id="accordionSidebar">
 
       <!-- Sidebar - Brand -->
       <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
@@ -52,7 +52,7 @@
       <div id="wrapper">
 
     <!-- Sidebar -->
-    <ul class="sidebar navbar-nav">
+    <ul class="sidebar navbar-nav" >
 
         {{-- <li class="nav-item" id="upcoming_appointments">
             <a class="nav-link" href="upcoming_appointments.php">
@@ -284,7 +284,7 @@
         </nav>
 
       
-          @yield('content');
+          @yield('content')
 
       <!-- Footer -->
       <footer class="sticky-footer bg-white">

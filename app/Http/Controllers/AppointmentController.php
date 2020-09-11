@@ -14,7 +14,12 @@ class AppointmentController extends Controller
      */
     public function index()
     {
-        
+
+        //$appoints=Appointment::all();
+        return view('backend.appointments.index');
+
+        //return 'Appointment' ;  
+
      }
 
     /**
@@ -24,7 +29,9 @@ class AppointmentController extends Controller
      */
     public function create()
     {
-        //
+        //  $brands=Brand::all();
+        // $subcategories=Subcategory::all();
+        // return view('backend.items.create',compact('brands','subcategories'));
     }
 
     /**
@@ -35,7 +42,7 @@ class AppointmentController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        
     }
 
     /**
