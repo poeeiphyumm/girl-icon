@@ -26,7 +26,7 @@
   <div id="wrapper">
 
     <!-- Sidebar -->
-    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+    <ul class="navbar-nav  sidebar sidebar-dark bg-dark accordion" id="accordionSidebar">
 
       <!-- Sidebar - Brand -->
       <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
@@ -52,7 +52,7 @@
       <div id="wrapper">
 
     <!-- Sidebar -->
-    <ul class="sidebar navbar-nav">
+    <ul class="sidebar navbar-nav" >
 
         {{-- <li class="nav-item" id="upcoming_appointments">
             <a class="nav-link" href="upcoming_appointments.php">
@@ -90,17 +90,6 @@
             </div>
         </li>
 
-        <li class="nav-item dropdown" id="package">
-            <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i class="fas fa-fw fa-clipboard-check"></i>
-                <span>Package</span>
-            </a>
-            <div class="dropdown-menu" aria-labelledby="pagesDropdown" id="package_dropdown">
-                <a class="dropdown-item" href="#" id="package_list">Package List</a>
-                <a class="dropdown-item" href="#" id="package_add_edit">Add/Edit Package</a>
-            </div>
-        </li>
-
         <li class="nav-item dropdown" id="employee">
             <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <i class="fas fa-fw fa-user"></i>
@@ -116,34 +105,6 @@
             <a class="nav-link" href="#">
                 <i class="fas fa-fw fa-users"></i>
                 <span>Customers</span>
-            </a>
-        </li>
-
-        <li class="nav-item" id="salon_images">
-            <a class="nav-link" href="#">
-                <i class="fas fa-fw fa-plus"></i>
-                <span>Add Salon Images</span>
-            </a>
-        </li>
-
-        <li class="nav-item" id="salon_timing">
-            <a class="nav-link" href="#">
-                <i class="fas fa-fw fa-clock"></i>
-                <span>Salon Timing</span>
-            </a>
-        </li>
-
-        <li class="nav-item" id="report">
-            <a class="nav-link" href="#">
-                <i class="fas fa-fw fa-list-alt"></i>
-                <span>Report</span>
-            </a>
-        </li>
-
-        <li class="nav-item" id="settings">
-            <a class="nav-link" href="#">
-                <i class="fas fa-fw fa-cogs"></i>
-                <span>Settings</span>
             </a>
         </li>
 

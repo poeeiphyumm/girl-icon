@@ -32,8 +32,6 @@ Route::resource('appointments', 'AppointmentController');
 
 
 
-
-
 Route::resource('categories','CategoryController');
 Route::resource('employies','EmployeeController');
 Route::resource('services','ServiceController');

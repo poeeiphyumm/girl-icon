@@ -14,10 +14,14 @@ class AppointmentController extends Controller
      */
     public function index()
     {
+<<<<<<< HEAD
         //$appoints=Appointment::all();
         return view('backend.appointments.index');
 
         //return 'Appointment' ;  
+=======
+        
+>>>>>>> be4e9099c6c9437eb553b68cc8f6c72abd2a4c96
      }
 
     /**
