@@ -48,7 +48,7 @@
         <div class="row align-items-center">
           
           <div class="col-6 col-xl-2" data-aos="fade-down">
-            <h1 class="mb-0"><a href="index.html" class="text-black h2 mb-0">Hairsal</a></h1>
+            <h1 class="mb-0"><a href="index.html" class="text-black h2 mb-0">Beauty Clinic</a></h1>
           </div>
           <div class="col-10 col-md-8 d-none d-xl-block" data-aos="fade-down">
             <nav class="site-navigation position-relative text-right text-lg-center" role="navigation">
@@ -117,7 +117,6 @@
 @section('yield')
    
 
-<<<<<<< HEAD
     <div class="slide-one-item home-slider owl-carousel">
       
       <div class="site-blocks-cover" style="background-image: url({{asset('front/images/hero_bg_1.jpg)')}});" data-aos="fade" data-stellar-background-ratio="0.5">
@@ -254,8 +253,6 @@
       </div>
     </div>  
 
-=======
->>>>>>> fd947dc7b40f6c0307700dbcf77898c27b71593e
     
         <div class="row pt-5 mt-5 text-center">
           <div class="col-md-12">
