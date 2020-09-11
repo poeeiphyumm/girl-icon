@@ -116,7 +116,10 @@
     </header>
 
   
+<<<<<<< HEAD
 
+=======
+>>>>>>> c5cc876b2f99bf14e61612310435ffbbd7784e2c
 @section('yield')
    
 
@@ -156,7 +159,7 @@
     <div class="site-section">
 
 @yield('content')
-    
+     
 <footer class="site-footer">
 
       <div class="container">
