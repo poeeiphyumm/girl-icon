@@ -5,25 +5,25 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="{{asset('https://fonts.googleapis.com/css?family=Poppins:200,300,400,700,900|Display+Playfair:200,300,400,700')}}"> 
-    <link rel="stylesheet" href="{{asset('fonts/icomoon/style.css')}}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,700,900|Display+Playfair:200,300,400,700"> 
+    <link rel="stylesheet" href="{{asset('front/fonts/icomoon/style.css')}}">
 
-    <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
-    <link rel="stylesheet" href="{{asset('css/magnific-popup.css')}}">
-    <link rel="stylesheet" href="{{asset('css/jquery-ui.css')}}">
-    <link rel="stylesheet" href="{{asset('css/owl.carousel.min.css')}}">
-    <link rel="stylesheet" href="{{asset('css/owl.theme.default.min.css')}}">
+    <link rel="stylesheet" href="{{asset('front/css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{asset('front/css/magnific-popup.css')}}">
+    <link rel="stylesheet" href="{{asset('front/css/jquery-ui.css')}}">
+    <link rel="stylesheet" href="{{asset('front/css/owl.carousel.min.css')}}">
+    <link rel="stylesheet" href="{{asset('front/css/owl.theme.default.min.css')}}">
 
-    <link rel="stylesheet" href="{{asset('css/bootstrap-datepicker.css')}}">
+    <link rel="stylesheet" href="{{asset('front/css/bootstrap-datepicker.css')}}">
 
-    <link rel="stylesheet" href="{{asset('fonts/flaticon/font/flaticon.css')}}">
+    <link rel="stylesheet" href="{{asset('front/fonts/flaticon/font/flaticon.css')}}">
 
-    <link rel="stylesheet" href="{{asset('https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/mediaelementplayer.min.css')}}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/mediaelementplayer.min.css">
 
 
-    <link rel="stylesheet" href="{{asset('css/aos.css')}}">
+    <link rel="stylesheet" href="{{asset('front/css/aos.css')}}">
 
-    <link rel="stylesheet" href="{{asset('css/style.css')}}">
+    <link rel="stylesheet" href="{{asset('front/css/style.css')}}">
     
   </head>
   <body>
@@ -120,7 +120,7 @@
 <<<<<<< HEAD
     <div class="slide-one-item home-slider owl-carousel">
       
-      <div class="site-blocks-cover" style="background-image: url(images/hero_bg_1.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
+      <div class="site-blocks-cover" style="background-image: url({{asset('front/images/hero_bg_1.jpg)')}});" data-aos="fade" data-stellar-background-ratio="0.5">
         <div class="container">
           <div class="row align-items-center justify-content-center text-center">
 
@@ -134,7 +134,7 @@
         </div>
       </div>  
 
-      <div class="site-blocks-cover" style="background-image: url(images/hero_bg_2.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
+      <div class="site-blocks-cover" style="background-image: url({{asset('front/images/hero_bg_2.jpg)')}});" data-aos="fade" data-stellar-background-ratio="0.5">
         <div class="container">
           <div class="row align-items-center justify-content-center text-center">
 
@@ -160,7 +160,7 @@
           </div>
           <div class="col-md-6 col-lg-4">
             <figure class="h-100 hover-bg-enlarge">
-              <div class="bg-image h-100 bg-image-md-height" style="background-image: url('images/img_2.jpg');"></div>
+              <div class="bg-image h-100 bg-image-md-height" style="background-image: url({{asset('front/images/img_2.jpg')}});"></div>
             </figure>
           </div>
           <div class="col-md-6 col-lg-4">
@@ -278,19 +278,19 @@
     </footer>
   </div>
 
-  <script src="{{asset('js/jquery-3.3.1.min.js')}}"></script>
-  <script src="{{asset('js/jquery-migrate-3.0.1.min.js')}}"></script>
-  <script src="{{asset('js/jquery-ui.js')}}"></script>
-  <script src="{{asset('js/popper.min.js')}}"></script>
-  <script src="{{asset('js/bootstrap.min.js')}}"></script>
-  <script src="{{asset('js/owl.carousel.min.js')}}"></script>
-  <script src="{{asset('js/jquery.stellar.min.js')}}"></script>
-  <script src="{{asset('js/jquery.countdown.min.js')}}"></script>
-  <script src="{{asset('js/jquery.magnific-popup.min.js')}}"></script>
-  <script src="{{asset('js/bootstrap-datepicker.min.js')}}"></script>
-  <script src="{{asset('js/aos.js')}}"></script>
+  <script src="{{asset('front/js/jquery-3.3.1.min.js')}}"></script>
+  <script src="{{asset('front/js/jquery-migrate-3.0.1.min.js')}}"></script>
+  <script src="{{asset('front/js/jquery-ui.js')}}"></script>
+  <script src="{{asset('front/js/popper.min.js')}}"></script>
+  <script src="{{asset('front/js/bootstrap.min.js')}}"></script>
+  <script src="{{asset('front/js/owl.carousel.min.js')}}"></script>
+  <script src="{{asset('front/js/jquery.stellar.min.js')}}"></script>
+  <script src="{{asset('front/js/jquery.countdown.min.js')}}"></script>
+  <script src="{{asset('front/js/jquery.magnific-popup.min.js')}}"></script>
+  <script src="{{asset('front/js/bootstrap-datepicker.min.js')}}"></script>
+  <script src="{{asset('front/js/aos.js')}}"></script>
 
-  <script src="{{asset('js/main.js')}}"></script>
+  <script src="{{asset('front/js/main.js')}}"></script>
     
   </body>
 </html>
