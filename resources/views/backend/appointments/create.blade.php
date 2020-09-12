@@ -10,7 +10,7 @@
 						@csrf
 					<div class="form-group row">
 						<label>Name</label>
-						<input class="form-control" type="text" name="name">
+						<input class="form-control" type="text" name="appointment_name">
 				    </div>
 				    <div class="form-group row">
 						<label>Email</label>
@@ -23,7 +23,7 @@
 					</div>
 					<div class="form-group row">
 					<label>Phone Number</label>
-					<input class="form-control" type="text" name="phone">
+					<input class="form-control" type="text" name="ph_no">
 					</div>
 					<div class="form-group row">
 					<label>Date</label>
@@ -33,12 +33,22 @@
 					<label>Time</label>
 					<input class="form-control" type="time" name="time">
 					</div>
+
+					<div class="form-group row">
+					<label>Customer No</label>
+					<input class="form-control" type="text" name="customer_id">
+					</div>
 					
 					<div class="form-group">
 						<label>Appointment Status</label><br>
+<<<<<<< HEAD
 						<input type="radio" name="pending" value="pending">Pending<br>
 						<input type="radio" name="cancel" value="cancel">Cancel<br>
 						<input type="radio" name="cancel" value="cancel">Accept
+=======
+						<input type="radio" name="appointment_status" value="pending">Pending<br>
+						<input type="radio" name="appointment_status" value="cancel">Cancel
+>>>>>>> 2d68589587752cb5055fb7a9e967ccd2b09084ff
 					 
 					</div>
 				

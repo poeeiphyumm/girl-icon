@@ -17,8 +17,13 @@ class AppointmentController extends Controller
     {
 
 
+<<<<<<< HEAD
          $appointments=Appointment::all();
          return view('backend.appointments.index',compact('appointments')); 
+=======
+        $appointments=Appointment::all();
+        return view('backend.appointments.index',compact('appointments')); 
+>>>>>>> 2d68589587752cb5055fb7a9e967ccd2b09084ff
 
      }
 
@@ -47,12 +52,12 @@ class AppointmentController extends Controller
        //dd($request);
 
         //validation
-        $request->validate([
-            "date"=>'required',
-            "time"=>'required',
-            "appointment_status"=>'required',
-            "customer_id"=>'required'
-            ]);
+        // $request->validate([
+        //     "date"=>'required',
+        //     "time"=>'required',
+        //     "appointment_status"=>'required',
+        //     "customer_id"=>'required'
+        //     ]);
 
         //Data insert
         $appointment=new Appointment;
