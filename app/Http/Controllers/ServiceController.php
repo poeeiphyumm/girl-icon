@@ -58,7 +58,7 @@ class ServiceController extends Controller
         $service->service_name = $request->service_name;
         $service->duration = $request->duration;
         $service->price = $request->price;
-        $service->category_id=$request->category_id;
+        $service->category_id=$request->category;
         $service->photo=$request->photo;
         $service->save();
 
