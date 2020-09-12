@@ -11,6 +11,10 @@ class CategorySeeder extends Seeder
      */
     public function run()
     {
-        //
+        //Create 2 records of categories
+        factory(App\Category::class, 2)->create()->each(function($category){
+        //Seed the relation with 3 subcategories
+        	$category->subcategories()->saveMany($subcategories);
+        });
     }
 }

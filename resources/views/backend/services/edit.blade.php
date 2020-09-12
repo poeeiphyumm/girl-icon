@@ -41,20 +41,16 @@
 	</div>
 	
 	<div class="form-group row">
-		{{-- <select class="form-control form-control-md" id="inputCategory" name="category" value="{{ $service->category}}"> --}}
-			{{-- <optgroup label="Choose Category">
-				@foreach($categories as $category)
-				<option value="{{ $category->id }}">{{ $category->name }}</option>
-				@endforeach
-
-			</optgroup> --}}
 			<label class="col-sm-2 col-form-label">Category</label>
 				<div class="col-sm-6">
 					<input type="text" name="category_id" class="form-control" id="inputcategory" value="{{ $service->category_id}}" >
 				</div>
-
-		{{-- </select> --}}
-		
+	</div>
+	<div class="form-group row">
+		<label class="col-sm-2 col-form-label">Service Image</label>
+			<div class="col-sm-6">
+				<input type="text" name="photo" class="form-control" id="inputcategory" value="{{ $service->photo}}" >
+			</div>
 	</div>
 	
 

@@ -29,7 +29,7 @@ class ServiceController extends Controller
     {
         $services=Service::all();
         $categories=Category::all();
-        return view("backend.services.create",compact('categories'));
+        return view("backend.services.create",compact('categories','services'));
     }
 
     /**
@@ -40,20 +40,28 @@ class ServiceController extends Controller
      */
     public function store(Request $request)
     {
-       // dd($request);
-        //  $request->validate([
-        //     "service_name" => 'required',
-        //     "duration" => 'required',
-        //     "price" => 'required',
-        //     "category_id" => 'required'
+       //dd($request);
+         $request->validate([
+            "service_name" => 'required',
+            "duration" => 'required',
+            "price" => 'required',
+            "category_id" => 'required',
+            "photo"=>'required',
             
-        // ]);
+        ]);
+
+         //If include file,upload file
+        $imageName = time().'-'.$request->photo->extension();
+        $request->photo->move(public_path('backend/serviceimg'),$imageName);
+        // ပုံပတ်လမ်းကြောင်းသိမ်း
+        $path = 'backend/serviceimg/'.$imageName;
          //Data insert
         $service = new Service;
         $service->service_name = $request->service_name;
         $service->duration = $request->duration;
         $service->price = $request->price;
         $service->category_id=$request->category;
+        $service->photo=$path;
         $service->save();
 
         //redirect

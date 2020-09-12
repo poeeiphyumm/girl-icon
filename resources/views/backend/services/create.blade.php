@@ -42,6 +42,12 @@
 			<input type="text" name="category" class="form-control" id="inputprice">
 		</div>
 	</div>
+	<div class="form-group row">
+		<label class="col-sm-2 col-form-label">Servie Image</label>
+		<div class="col-sm-6">
+			<input type="file" name="photo" class="form-control" id="inputprice">
+		</div>
+	</div>
 	
 	<input type="submit" value="Create" class="btn btn-danger" >
 </form>

@@ -27,6 +27,10 @@ Route::get('/', 'PageController@mainfun')->name('mainpage');
 	Route::resource('employees','EmployeeController');
 
 	Route::resource('appointments','AppointmentController');
+
+	Route::resource('employees','EmployeeController');
+
+	Route::resource('customers','CustomerController');
 //backend
 
 // Route::get('create', 'BackendController@createfun')->name('createpage');
@@ -39,6 +43,8 @@ Route::get('/', 'PageController@mainfun')->name('mainpage');
 Route::get('booking', 'PageController@bookingfun') ->name('bookingpage');
 Route::get('contact', 'PageController@contactfun')->name('contactpage');
 Route::get('about', 'PageController@aboutfun')->name('aboutpage');
+Route::get('ourservice', 'PageController@ourservicefun')->name('ourservicepage');
+Route::get('bodycare', 'PageController@bodycarefun')->name('bodycarepage');
 
 
 
@@ -48,12 +54,6 @@ Route::get('dashboard', 'backendController@dashboardfun') ->name('dashboardpage'
 // Route::resource('customers', 'AppointmentController');
 
 // Route::get('index', 'BackendController@indexfun')->name('indexpage');
-
-
-Route::resource('categories','CategoryController');
-Route::resource('employees','EmployeeController');
-Route::resource('services','ServiceController');
-Route::resource('customers','CustomerController');
 
 
 

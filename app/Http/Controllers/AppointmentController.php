@@ -51,7 +51,8 @@ class AppointmentController extends Controller
             "date"=>'required',
             "time"=>'required',
             "appointment_status"=>'required',
-            "customer_id"=>'required'
+            "customer_id"=>'required',
+            "photo"=>'required',
             ]);
 
         //Data insert
