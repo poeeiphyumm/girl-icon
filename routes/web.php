@@ -32,14 +32,10 @@ Route::resource('employees','EmployeeController');
 
 // Route::get('create', 'BackendController@createfun')->name('createpage');
 
-<<<<<<< HEAD
-=======
 Route::get('/', 'PageController@mainfun')->name('mainpage');
 
 
  // end backend
-
->>>>>>> 8c2fb1f8bd2854a469663b0d51fcc3827a39c48e
 
 Route::get('booking', 'PageController@bookingfun') ->name('bookingpage');
 Route::get('contact', 'PageController@contactfun')->name('contactpage');
