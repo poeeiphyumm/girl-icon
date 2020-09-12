@@ -39,6 +39,24 @@
 			<input type="text" name="price" class="form-control" id="inputname" value="{{ $service->price}}" >
 		</div>
 	</div>
+
+	<div class="form-group row">
+		<label class="col-sm-2 col-form-label">Category</label>
+				<div class="col-sm-6">
+					<input type="text" name="category_id" class="form-control" id="inputcategory" value="{{ $service->category_id}}" >
+				</div>
+	</div>
+
+	<div class="form-group row">
+		<label class="col-sm-2 col-form-label">Photo</label>
+		<div class="col-sm-6">
+			<input type="file" name="photo" class="form-control" id="inputphoto" >
+			<img src="{{ asset($service->photo) }}" class="img-fluid w-25">
+
+			<input type="hidden" name="oldphoto" value="{{ $service->photo }}">
+			{{-- // --}}
+		</div>
+	</div>
 	
 	<div class="form-group row">
 		{{-- <select class="form-control form-control-md" id="inputCategory" name="category" value="{{ $service->category}}"> --}}
@@ -48,10 +66,7 @@
 				@endforeach
 
 			</optgroup> --}}
-			<label class="col-sm-2 col-form-label">Category</label>
-				<div class="col-sm-6">
-					<input type="text" name="category_id" class="form-control" id="inputcategory" value="{{ $service->category_id}}" >
-				</div>
+			
 
 		{{-- </select> --}}
 		

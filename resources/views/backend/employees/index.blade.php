@@ -19,7 +19,7 @@
 		    		<tr>
 			    		<td>No</td>
 			    		<td>Name</td>
-			    		<td>Availiability Status</td>
+			    		<td>Availability Status</td>
 			    		<td>Actions</td>
 		    		</tr>
 		    	</thead>
