@@ -37,7 +37,8 @@
 					<div class="form-group">
 						<label>Appointment Status</label><br>
 						<input type="radio" name="pending" value="pending">Pending<br>
-						<input type="radio" name="cancel" value="cancel">Cancel
+						<input type="radio" name="cancel" value="cancel">Cancel<br>
+						<input type="radio" name="cancel" value="cancel">Accept
 					 
 					</div>
 				
