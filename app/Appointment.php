@@ -6,17 +6,25 @@ use Illuminate\Database\Eloquent\Model;
 
 class Appointment extends Model
 {
-<<<<<<< HEAD
     protected $fillable=[
-    	'appointment_name','customer_name','date','time','appointment_status'
+<<<<<<< HEAD
+    	'appointment_name','customer_id','date','time','appointment_status'
     ];  
+=======
+    	'appointment_name','customer_name','date','time','appointment_status'
+    ];
+      
+>>>>>>> c5cc876b2f99bf14e61612310435ffbbd7784e2c
     public function customer($value='')
     {
     	return $this->belongsTo('App\Customer');
     }
-=======
+
      // protected $fillable =[
     	// 'customer_name','employee_name,date,time,status'];
->>>>>>> adf2a71138a74024fcf35e9da2e3a218032d5c39
+<<<<<<< HEAD
+
+=======
+>>>>>>> c5cc876b2f99bf14e61612310435ffbbd7784e2c
 }
 

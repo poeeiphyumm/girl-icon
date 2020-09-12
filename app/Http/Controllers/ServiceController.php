@@ -14,8 +14,10 @@ class ServiceController extends Controller
      */
     public function index()
     {
-        return 'Hello Service page';
+        // return 'Hello Service page';
+        return view('services');
     }
+    
 
     /**
      * Show the form for creating a new resource.

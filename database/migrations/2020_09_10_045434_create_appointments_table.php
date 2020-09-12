@@ -29,7 +29,11 @@ class CreateAppointmentsTable extends Migration
                     ->on('customers')
                     ->onDelete('cascade');
 
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+>>>>>>> 9b4f80806c8fe5c85b50ba3be7c9844036ee361e
         // Schema::create('appointments', function (Blueprint $table) {
         //     $table->id();
         //     $table->string('customer_name');
@@ -49,8 +53,17 @@ class CreateAppointmentsTable extends Migration
         //             ->on('employees')
         //             ->onDelete('cascade');
         //     $table->timestamps();
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9b4f80806c8fe5c85b50ba3be7c9844036ee361e
         });
+=======
+            });
+>>>>>>> c5cc876b2f99bf14e61612310435ffbbd7784e2c
     }
+        
+       
 
     /**
      * Reverse the migrations.

@@ -11,10 +11,15 @@ class backendController extends Controller
     	
     	return view('backend.dashboard');
     }
-
-    public function appointmentfun($value='')
-    {
+    // public function createfun($value='')
+    // {
     	
-    	return view('backend.appointments');
-    }
+    // 	return view('backend.categories.create');
+    // }
+    // public function indexfun($value='')
+    // {
+    	
+    // 	return view('backend.categories.index');
+    // }
+   
 }
