@@ -8,7 +8,7 @@ class Appointment extends Model
 {
 
     protected $fillable=[
-    	'appointment_name','customer_id','date','time','appointment_status'
+    	'appointment_name','customer_id','date','time','status'
     ];  
     	
     public function customer($value='')

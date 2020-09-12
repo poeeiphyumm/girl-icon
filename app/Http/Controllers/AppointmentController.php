@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Appointment;
 use App\Customer;
+use App\Carbon\Carbon;
 use Illuminate\Http\Request;
 
 class AppointmentController extends Controller
@@ -13,17 +14,22 @@ class AppointmentController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
+        $date1=$request->start_date;
+        $date1=$request->end_date;
+        if ($request->start_date && $request->end_date){
+            $appointments=Appointment::whereBetween('date',[new Carbon($date1), new Carbon($date2)])->where('status',0)->get();
+        }
+        else{
+            $appointments=Appointment::all();
+        }
 
-
-<<<<<<< HEAD
-         $appointments=Appointment::all();
+         //$appointments=Appointment::all();
          return view('backend.appointments.index',compact('appointments')); 
-=======
-        $appointments=Appointment::all();
-        return view('backend.appointments.index',compact('appointments')); 
->>>>>>> 2d68589587752cb5055fb7a9e967ccd2b09084ff
+
+       
+
 
      }
 
@@ -52,12 +58,12 @@ class AppointmentController extends Controller
        //dd($request);
 
         //validation
-        // $request->validate([
-        //     "date"=>'required',
-        //     "time"=>'required',
-        //     "appointment_status"=>'required',
-        //     "customer_id"=>'required'
-        //     ]);
+        $request->validate([
+            "date"=>'required',
+            "time"=>'required',
+            "status"=>'required',
+            "customer_id"=>'required'
+            ]);
 
         //Data insert
         $appointment=new Appointment;
@@ -65,7 +71,7 @@ class AppointmentController extends Controller
         //$appointment->email=$request->email;
         $appointment->date=$request->date;
         $appointment->time=$request->time;
-        $appointment->appointment_status=$request->appointment_status;
+        $appointment->status=$request->status;
         $appointment->customer_id=$request->customer_id;
         $appointment->save();
 

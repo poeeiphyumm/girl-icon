@@ -47,6 +47,7 @@ Route::get('/', 'PageController@mainfun')->name('mainpage');
 Route::get('booking', 'PageController@bookingfun') ->name('bookingpage');
 Route::get('contact', 'PageController@contactfun')->name('contactpage');
 Route::get('about', 'PageController@aboutfun')->name('aboutpage');
+Route::get('bodycare','PageController@bodycarefun')->name('bodycarepage');
 
 
 

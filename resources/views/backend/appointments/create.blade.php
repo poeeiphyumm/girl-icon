@@ -41,14 +41,12 @@
 					
 					<div class="form-group">
 						<label>Appointment Status</label><br>
-<<<<<<< HEAD
-						<input type="radio" name="pending" value="pending">Pending<br>
-						<input type="radio" name="cancel" value="cancel">Cancel<br>
-						<input type="radio" name="cancel" value="cancel">Accept
-=======
-						<input type="radio" name="appointment_status" value="pending">Pending<br>
-						<input type="radio" name="appointment_status" value="cancel">Cancel
->>>>>>> 2d68589587752cb5055fb7a9e967ccd2b09084ff
+
+						<input type="radio" name="status" value="pending">Pending<br>
+						<input type="radio" name="status" value="cancel">Cancel<br>
+						<input type="radio" name="status" value="cancel">Accept
+
+
 					 
 					</div>
 				

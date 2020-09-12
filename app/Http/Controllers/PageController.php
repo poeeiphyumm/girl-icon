@@ -27,6 +27,12 @@ class PageController extends Controller
         return view('about');
     }
 
+    public function bodycarefun($value='')
+     {
+        
+        return view('bodycare');
+    }
+
    
     public function mainfun($value='')
     {

@@ -19,6 +19,7 @@
 			    		<td>Name</td>
 			    		<td>Duration</td>
 			    		<td>Price</td>
+			    		<td>Photo</td>
 			    		<td>Category_id</td>
 
 		    		</tr>
