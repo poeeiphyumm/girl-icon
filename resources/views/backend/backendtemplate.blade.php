@@ -62,7 +62,7 @@
         </li> --}}
 
         <li class="nav-item" id="appointments_history">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="{{'appointments'}}">
                 <i class="fas fa-fw fa-history"></i>
                 <span>Appointments History</span>
             </a>
@@ -74,8 +74,8 @@
                 <span>Category</span>
             </a>
             <div class="dropdown-menu" aria-labelledby="pagesDropdown" id="cat_dropdown">
-                <a class="dropdown-item" href="#" id="category_list">Category List</a>
-                <a class="dropdown-item" href="#" id="cat_add_edit">Add/Edit Category</a>
+                <a class="dropdown-item" href="{{'categories' }}" id="category_list">Category List</a>
+                <a class="dropdown-item" href="{{ 'categories/create' }}" id="cat_add_edit">Add/Edit Category</a>
             </div>
         </li>
 
@@ -85,8 +85,8 @@
                 <span>Service</span>
             </a>
             <div class="dropdown-menu" aria-labelledby="pagesDropdown" id="service_dropdown">
-                <a class="dropdown-item" href="#" id="service_list">Service List</a>
-                <a class="dropdown-item" href="#" id="service_add_edit">Add/Edit Service</a>
+                <a class="dropdown-item" href="{{ 'services' }}" id="service_list">Service List</a>
+                <a class="dropdown-item" href="{{ 'services/create' }}" id="service_add_edit">Add/Edit Service</a>
             </div>
         </li>
 
