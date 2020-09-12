@@ -98,7 +98,7 @@ class EmployeeController extends Controller
 
         
 
-        $employee = new Employee;
+        //$employee = new Employee;
         $employee->employee_name = $request->employee_name;
         $employee->availability_status=$request->availability_status;
         $employee->save();
