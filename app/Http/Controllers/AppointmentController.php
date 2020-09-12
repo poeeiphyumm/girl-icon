@@ -15,18 +15,10 @@ class AppointmentController extends Controller
      */
     public function index()
     {
-<<<<<<< HEAD
 
-        $appointments=Appointment::all();
-        return view('backend.appointments.index',compact('appointments'));
 
-        //return 'Appointment' ;  
-=======
-        
-        $appointments=Appointment::all();
-        return view('backend.appointments.index',compact('appointments'));
- 
->>>>>>> edd0b2dbd861d4cee331cd83a71599744c976585
+        // $appointments=Appointment::all();
+        // return view('backend.appointments.index',compact('appointments')); 
 
      }
 
@@ -37,8 +29,10 @@ class AppointmentController extends Controller
      */
     public function create()
     {
+        $appointments=Appointment::all();
         $customers=Customer::all();
-        return view('backend.appointments.create',compact('customers'));
+
+        return view('backend.appointments.create',compact('customers','appointments'));
 
     }
 
@@ -54,14 +48,10 @@ class AppointmentController extends Controller
 
         //validation
         $request->validate([
-            "customer_id"=>'required',
-            "name"=>'required',
-            "email"=>'required',
-            "password"=>'required',
-            "phone"=>'required',    
             "date"=>'required',
             "time"=>'required',
-            "status"=>'required',
+            "appointment_status"=>'required',
+            "customer_id"=>'required'
             ]);
 
         //Data insert
@@ -70,8 +60,8 @@ class AppointmentController extends Controller
         //$appointment->email=$request->email;
         $appointment->date=$request->date;
         $appointment->time=$request->time;
-        $appointment->status=$request->status;
-        $appointment->customer_id=$request->customer;
+        $appointment->appointment_status=$request->appointment_status;
+        $appointment->customer_id=$request->customer_id;
         $appointment->save();
 
         //redirect

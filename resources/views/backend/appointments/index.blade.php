@@ -16,21 +16,15 @@
 				<thead>
 					<tr>
 						<th>No</th>
-<<<<<<< HEAD
-						<th>Name</th>
-=======
-						<th>Customer Name</th>
->>>>>>> edd0b2dbd861d4cee331cd83a71599744c976585
+						<th>Customer_id</th>
 						<th>Date</th>
 						<th>Time</th>
-						<th>Customer_id</th>
-
 						<th>Appointment Status</th>
 						<th>Action</th>
 					</tr>
 				</thead>
 				<tbody>
-<<<<<<< HEAD
+
 					
 		    		@php $i=1; @endphp
 		    		@foreach ($appointments as $appointment)
@@ -46,26 +40,8 @@
 			    	</tr>
 			    	@endforeach
 				</tbody>
-=======
-					@php $i=1; @endphp
-					@foreach($appointments as $appointment)
-					<tr>
-					<td>{{$i}}</td>
-					<td>{{$appointment->customer->name}}</td>
-					<td>{{$appointment->email}}</td>
-					<td>{{$appointment->password}}</td>
-					<td>{{$appointment->phone}}</td>
-					<td>{{$appointment->date}}</td>
-					<td>{{$appointment->time}}</td> 
-					<td>{{$appointment->status}}</td>
-					<td><a href="#" class="btn btn-info">Detail</a>
-						<a href="#" class="btn btn-danger">Edit</a></td>
-					@php $i++; @endphp
-				</tr>
-				@endforeach
-				</tbody>
+					
 				
->>>>>>> edd0b2dbd861d4cee331cd83a71599744c976585
 			</table>
 			
 		</div>

@@ -34,14 +34,11 @@
 					<input class="form-control" type="time" name="time">
 					</div>
 					
-					<div class="form-group row">
-					<label>Appointment Status</label>
-					<input type="text" name="status">
-					 {{-- <select>
-						<option>None</option>
-					 	<option>Cancel</option>
-					 	<option>Accept</option>
-					 </select> --}}
+					<div class="form-group">
+						<label>Appointment Status</label><br>
+						<input type="radio" name="pending" value="pending">Pending<br>
+						<input type="radio" name="cancel" value="cancel">Cancel
+					 
 					</div>
 				
 					<div class="form-control-lg">
