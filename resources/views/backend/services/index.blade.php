@@ -20,6 +20,8 @@
 			    		<td>Duration</td>
 			    		<td>Price</td>
 			    		<td>Category_id</td>
+			    		<td>Photo</td>
+			    		<td>Action</td>
 
 		    		</tr>
 		    	</thead>
@@ -32,6 +34,8 @@
 			    		<td>{{ $service->service_name }}</td>
 			    		<td>{{ $service->duration }}</td>
 			    		<td>{{ $service->price }}</td>
+			    		<td>{{ $service->category_id }}</td>
+			    		<td>{{ $service->photo }}</td>
 			    		<td>
 			    			<a href="#" class="btn btn-primary">Detail</a>
 			    			<a href="{{ route('services.edit',$service->id) }}" class="btn btn-secondary">Edit</a>

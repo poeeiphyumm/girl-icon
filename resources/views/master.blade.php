@@ -80,9 +80,9 @@
                     <li><a href="#">Spa Rest</a></li>
                   </ul>
                 </li>
-                <li><a href="{{asset('services')}}">Services</a></li>
-                <li><a href="{{asset('about')}}">About</a></li>
-                <li><a href="{{asset('booking')}}">Book Online</a></li>
+{{--                 <li><a href="">Services</a></li>
+ --}}                <li><a href="{{asset('about')}}">About</a></li>
+                <li><a href="{{asset('booking')}}">Appointment</a></li>
                 <li><a href="{{asset('contact')}}">Contact</a></li>
               </ul>
             </nav>

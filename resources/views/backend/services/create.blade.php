@@ -36,10 +36,18 @@
 			<input type="text" name="price" class="form-control" id="inputprice">
 		</div>
 	</div>
+
 	<div class="form-group row">
 		<label class="col-sm-2 col-form-label">Category</label>
 		<div class="col-sm-6">
 			<input type="text" name="category" class="form-control" id="inputprice">
+		</div>
+	</div>
+
+	<div class="form-group row">
+		<label class="col-sm-2 col-form-label">Photo</label>
+		<div class="col-sm-6">
+			<input type="file" name="photo" class="form-control" id="inputphoto">
 		</div>
 	</div>
 	
