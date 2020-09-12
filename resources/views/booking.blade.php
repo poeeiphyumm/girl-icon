@@ -56,10 +56,14 @@
                 <div class="col-md-12">
                   <label class="text-black" for="treatment">Service You Want</label> 
                   <select name="treatment" id="treatment" class="form-control">
-                    <option value="">Hair Cut</option>
-                    <option value="">Hair Coloring</option>
-                    <option value="">Shave</option>
-                    <option value="">Hair Conditioning</option>
+                    <option value="">Hair Care</option>
+                    <option value="">Body Care</option>
+                    <option value="">Skin Care</option>
+                    <option value="">Nail Care</option>
+                    <option value="">Face Care</option>
+                    <option value="">Hand Care</option>
+                    <option value="">Foot Care</option>
+                    <option value="">Spa Rest</option>
                   </select>
                 </div>
               </div>

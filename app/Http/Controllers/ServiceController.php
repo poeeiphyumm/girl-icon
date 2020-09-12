@@ -40,6 +40,7 @@ class ServiceController extends Controller
      */
     public function store(Request $request)
     {
+<<<<<<< HEAD
        //dd($request);
          $request->validate([
             "service_name" => 'required',
@@ -51,6 +52,17 @@ class ServiceController extends Controller
         ]);
 
          //If include file,upload file
+=======
+       // dd($request);
+        //  $request->validate([
+        //     "service_name" => 'required',
+        //     "duration" => 'required',
+        //     "price" => 'required',
+        //     "category_id" => 'required',
+        //     "photo"=>'required'
+            
+        // ]);
+>>>>>>> 8ccc60cea1da0c66ca4721ad2c5720cffe431549
         $imageName = time().'-'.$request->photo->extension();
         $request->photo->move(public_path('backend/serviceimg'),$imageName);
         // ပုံပတ်လမ်းကြောင်းသိမ်း
@@ -61,7 +73,11 @@ class ServiceController extends Controller
         $service->duration = $request->duration;
         $service->price = $request->price;
         $service->category_id=$request->category;
+<<<<<<< HEAD
         $service->photo=$path;
+=======
+        $service->photo=$request->photo;
+>>>>>>> 8ccc60cea1da0c66ca4721ad2c5720cffe431549
         $service->save();
 
         //redirect
@@ -105,8 +121,21 @@ class ServiceController extends Controller
             "service_name" => 'required',
             "duration" => 'required',
             "price" => 'required',
-            "category_id"=>'required'
+            "category_id"=>'required',
+            "photo"=>'sometimes',
+            "oldphoto" => 'required'
         ]);
+
+         if($request->hasFile('photo')){
+            $imageName = time().'-'.$request->photo->extension();
+
+                    $request->photo->move(public_path('backend/serviceimg'),$imageName);
+
+                            $path = 'backend/serviceimg/'.$imageName;
+
+        }else{
+            $path=$request->oldphoto;
+        }
 
         
 
@@ -115,6 +144,7 @@ class ServiceController extends Controller
         $service->duration = $request->duration;
         $service->price = $request->price;
         $service->category_id=$request->category_id;
+        $service->photo=$request->photo;
         $service->save();
 
         //redirect

@@ -70,6 +70,10 @@
                 <li class="has-children">
                   <a href="haircut.html">Category</a>
                   <ul class="dropdown">
+<<<<<<< HEAD
+=======
+                    <li><a href="">Hair Care</a></li>
+>>>>>>> 8ccc60cea1da0c66ca4721ad2c5720cffe431549
                     <li><a href="{{asset('bodycare')}}">Body Care</a></li>
                     <li><a href="#">Skin Care</a></li>
                     <li><a href="#">Nail Care</a></li>
@@ -80,6 +84,7 @@
                     <li><a href="#">Spa Rest</a></li>
                   </ul>
                 </li>
+<<<<<<< HEAD
                 <li class="has-children">
                   <a href="">Services</a>
                     <ul class="dropdown">
@@ -95,6 +100,11 @@
                 </li>
                 <li><a href="{{asset('about')}}">About</a></li>
                 <li><a href="{{asset('booking')}}">Book Online</a></li>
+=======
+{{--                 <li><a href="">Services</a></li>
+ --}}                <li><a href="{{asset('about')}}">About</a></li>
+                <li><a href="{{asset('booking')}}">Appointment</a></li>
+>>>>>>> 8ccc60cea1da0c66ca4721ad2c5720cffe431549
                 <li><a href="{{asset('contact')}}">Contact</a></li>
               </ul>
             </nav>
@@ -127,6 +137,8 @@
       
     </header>
 
+<<<<<<< HEAD
+=======
   
 
 
@@ -136,70 +148,64 @@
 
     <div class="site-section">
 
+>>>>>>> 754a2997ec6786fc53d5111bad88909e0e710e06
 @yield('content')
      
 <footer class="site-footer">
 
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4">
-            <div>
-              <h3 class="footer-heading mb-4">About Hairsal</h3>
-              <p>Lorem ipsum dolor sit amet, </p>
-            </div> 
-          </div>
-          <div class="col-lg-4 mb-lg-0">
-            <div class="row mb-5">
-              <div class="col-md-12">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div>
+          <h3 class="footer-heading mb-4">About Beauty Clinic</h3>
+          <p>Lorem ipsum dolor sit amet, </p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div>
+          <div class="col-md-12">
                 <h3 class="footer-heading mb-4">Quick Menu</h3>
-              </div>
-              <div class="col-md-6 col-lg-6">
-                <ul class="list-unstyled">
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">Barbers</a></li>
-                  <li><a href="#">News</a></li>
-                  <li><a href="#">Team</a></li>
-                </ul>
-              </div>
-              <div class="col-md-6 col-lg-6">
-                <ul class="list-unstyled">
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">Privacy Policy</a></li>
-                  <li><a href="#">Contact Us</a></li>
-                  <li><a href="#">Membership</a></li>
-                </ul>
+          </div>
+          <div class="row">
+              <div class="col-md-6 col-lg-6 list-unstyled">
+                  <a href="#">Home</a>|
+                  <a href="#">Barbers</a>|
+                  <a href="#">News</a>|
+                  <a href="#">Team</a>
               </div>
             </div>
-          </div>
-
-          <div class="col-lg-4 mb-1 mb-lg-0">
-           
-
-            <div class="mb-2">
-              <h3 class="footer-heading mb-2">Subscribe Newsletter</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit minima minus odio.</p>
-
-              <form action="#" method="post">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div>
+          
+          <form action="#" method="post">
                 <div class="input-group mb-3">
+                  <h3 class="footer-heading mb-2">Subscribe Newsletter</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit minima minus odio.</p><br>
                   <input type="text" class="form-control border-secondary text-white bg-transparent" placeholder="Enter Email" aria-label="Enter Email" aria-describedby="button-addon2">
                   <div class="input-group-append">
                     <button class="btn btn-primary text-white" type="button" id="button-addon2">Send</button>
                   </div>
                 </div>
               </form>
-
-            </div>
-          </div>
-          </div>
-    
-        <div class="row pt-2 mt-2 text-center">
-          <div class="col-md-12">
-            <div class="mb-2">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 justify-content-center">
+        
+              <div class="mb-2">
               <a href="#" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
               <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
               <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
               <a href="#" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
             </div>
+      </div>
+    </div>
+    <div class="row pt-2 mt-2 text-center">
+          <div class="col-md-12">
+            
 
             <p>
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
@@ -209,6 +215,10 @@
           </div>
         </div>
       </div>
+
+  </div>
+    
+        
 </footer>
 
   <script src="{{asset('front/js/jquery-3.3.1.min.js')}}"></script>

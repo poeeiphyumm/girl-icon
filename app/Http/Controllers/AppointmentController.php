@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Appointment;
 use App\Customer;
+use App\Carbon\Carbon;
 use Illuminate\Http\Request;
 
 class AppointmentController extends Controller
@@ -13,12 +14,22 @@ class AppointmentController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
+        $date1=$request->start_date;
+        $date1=$request->end_date;
+        if ($request->start_date && $request->end_date){
+            $appointments=Appointment::whereBetween('date',[new Carbon($date1), new Carbon($date2)])->where('status',0)->get();
+        }
+        else{
+            $appointments=Appointment::all();
+        }
 
+         //$appointments=Appointment::all();
+         return view('backend.appointments.index',compact('appointments')); 
 
-        $appointments=Appointment::all();
-        return view('backend.appointments.index',compact('appointments')); 
+       
+
 
      }
 
@@ -50,9 +61,17 @@ class AppointmentController extends Controller
         $request->validate([
             "date"=>'required',
             "time"=>'required',
+<<<<<<< HEAD
+            "status"=>'required',
+=======
             "appointment_status"=>'required',
+<<<<<<< HEAD
             "customer_id"=>'required',
             "photo"=>'required',
+=======
+>>>>>>> 779ba2dccfb78cee22a13760d11d4b739f603b06
+            "customer_id"=>'required'
+>>>>>>> 8ccc60cea1da0c66ca4721ad2c5720cffe431549
             ]);
 
         //Data insert
@@ -61,7 +80,7 @@ class AppointmentController extends Controller
         //$appointment->email=$request->email;
         $appointment->date=$request->date;
         $appointment->time=$request->time;
-        $appointment->appointment_status=$request->appointment_status;
+        $appointment->status=$request->status;
         $appointment->customer_id=$request->customer_id;
         $appointment->save();
 

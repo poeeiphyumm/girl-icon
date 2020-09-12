@@ -26,8 +26,9 @@ class CreateAppointmentsTable extends Migration
                     ->references('id')
                     ->on('customers')
                     ->onDelete('cascade');
-
+        
         });
+
     }
 
     /**

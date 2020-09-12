@@ -9,7 +9,8 @@
 				<label >Start Date</label>
 				<input type="date" name="start_date" value="mm/dd/yyyy">
 				<label >End Date</label>
-				<input type="date" name="End_date" value="mm/dd/yyyy">
+				<input type="date" name="end_date" value="mm/dd/yyyy">
+				<input class="btn btn-success" type="submit" value="Search">
 
 			</form><br>
 			<table class="table table-bordered">
@@ -32,10 +33,10 @@
 		    			<td>{{ $i++ }}</td>
 		    			<td>{{ $appointment->date }}</td>
 		    			<td>{{ $appointment->time }}</td>
-			    		<td>{{ $appointment->appointment_status }}</td>
+			    		<td>{{ $appointment->status }}</td>
 			    		<td>{{ $appointment->customer_id }}</td>
 			    		<td>
-			    			<a href="#" class="btn btn-primary">Detail</a>
+			    			{{-- <a href="#" class="btn btn-primary">Detail</a> --}}
 			    			<a href="{{ route('appointments.edit',$appointment->id) }}" class="btn btn-secondary">Edit</a>
 			    		</td>
 			    	</tr>

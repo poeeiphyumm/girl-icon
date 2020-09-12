@@ -16,8 +16,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('dashboard', 'backendController@dashboardfun') ->name('dashboardpage');
 Route::get('/', 'PageController@mainfun')->name('mainpage');
 
+Route::get('registerform', 'PageController@registerfun') ->name('registerpage');
+Route::get('loginform', 'PageController@loginfun')->name('loginpage');
 
 //backend by poeei
+
+
 
 
  	Route::resource('categories','CategoryController');
@@ -35,16 +39,34 @@ Route::get('/', 'PageController@mainfun')->name('mainpage');
 
 // Route::get('create', 'BackendController@createfun')->name('createpage');
 
+
+ Route::resource('categories','CategoryController');
+
 Route::get('/', 'PageController@mainfun')->name('mainpage');
 
 // end backend
 
 
 Route::get('booking', 'PageController@bookingfun') ->name('bookingpage');
+Route::get('services', 'PageController@servicefun')->name('servicepage');
+
+Route::get('about', 'PageController@aboutfun')->name('aboutpage');
+
+
+// Route::get('index', 'BackendController@indexfun')->name('indexpage');
+
+
+
+
+
 Route::get('contact', 'PageController@contactfun')->name('contactpage');
 Route::get('about', 'PageController@aboutfun')->name('aboutpage');
+<<<<<<< HEAD
 Route::get('ourservice', 'PageController@ourservicefun')->name('ourservicepage');
 Route::get('bodycare', 'PageController@bodycarefun')->name('bodycarepage');
+=======
+Route::get('bodycare','PageController@bodycarefun')->name('bodycarepage');
+>>>>>>> 8ccc60cea1da0c66ca4721ad2c5720cffe431549
 
 
 
@@ -56,4 +78,12 @@ Route::get('dashboard', 'backendController@dashboardfun') ->name('dashboardpage'
 // Route::get('index', 'BackendController@indexfun')->name('indexpage');
 
 
+<<<<<<< HEAD
 
+=======
+Route::resource('employees','EmployeeController');
+Route::resource('services','ServiceController');
+Route::resource('customers','CustomerController');
+
+Route::resource('customers','CustomerController');
+>>>>>>> 8ccc60cea1da0c66ca4721ad2c5720cffe431549
