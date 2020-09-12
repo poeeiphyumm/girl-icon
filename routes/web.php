@@ -22,12 +22,13 @@ Route::get('/', 'PageController@mainfun')->name('mainpage');
 Route::get('/', 'PageController@mainfun')->name('mainpage');
 
 
- Route::resource('categories','CategoryController');
+ 	Route::resource('categories','CategoryController');
 
-  Route::resource('services','ServiceController');
+  	Route::resource('services','ServiceController');
 
-Route::resource('employees','EmployeeController');
+	Route::resource('employees','EmployeeController');
 
+	Route::resource('appointments','AppointmentController');
 //backend
 
 // Route::get('create', 'BackendController@createfun')->name('createpage');
