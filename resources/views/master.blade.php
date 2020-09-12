@@ -70,7 +70,8 @@
                 <li class="has-children">
                   <a href="haircut.html">Category</a>
                   <ul class="dropdown">
-                    <li><a href="#">Body Care</a></li>
+                    <li><a href="">Hair Care</a></li>
+                    <li><a href="{{asset('bodycare')}}">Body Care</a></li>
                     <li><a href="#">Skin Care</a></li>
                     <li><a href="#">Nail Care</a></li>
                     <li><a href="#">Face Care</a></li>

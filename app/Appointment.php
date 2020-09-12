@@ -10,8 +10,8 @@ class Appointment extends Model
     protected $fillable=[
 
     	'appointment_name','customer_id','date','time','appointment_status'
-    ];   
-    	
+    ];    
+
     public function customer($value='')
     {
         return $this->belongsTo('App\Customer');

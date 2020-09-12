@@ -57,6 +57,7 @@ Route::get('about', 'PageController@aboutfun')->name('aboutpage');
 
 Route::get('contact', 'PageController@contactfun')->name('contactpage');
 Route::get('about', 'PageController@aboutfun')->name('aboutpage');
+Route::get('bodycare','PageController@bodycarefun')->name('bodycarepage');
 
 
 
@@ -68,8 +69,8 @@ Route::get('dashboard', 'backendController@dashboardfun') ->name('dashboardpage'
 // Route::get('index', 'BackendController@indexfun')->name('indexpage');
 
 
-Route::resource('categories','CategoryController');
 Route::resource('employees','EmployeeController');
 Route::resource('services','ServiceController');
+Route::resource('customers','CustomerController');
 
 Route::resource('customers','CustomerController');
