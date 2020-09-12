@@ -17,7 +17,6 @@ class PageController extends Controller
      	return view('booking');
     }
 
-<<<<<<< HEAD
      public function servicefun($value='')
      {
         
@@ -25,9 +24,6 @@ class PageController extends Controller
     }
 
     public function loginfun($value='')
-=======
-    public function contactfun($value='')
->>>>>>> 754a2997ec6786fc53d5111bad88909e0e710e06
      {
         
      	return view('login');
@@ -38,7 +34,19 @@ class PageController extends Controller
         
         return view('about');
     }
+<<<<<<< HEAD
+
+    public function bodycarefun($value='')
+     {
+        
+        return view('bodycare');
+    }
+
+   
+    public function mainfun($value='')
+=======
     public function registerfun($value='')
+>>>>>>> 779ba2dccfb78cee22a13760d11d4b739f603b06
     {
         
         return view('register');
