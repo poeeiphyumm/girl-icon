@@ -62,7 +62,7 @@
         </li> --}}
 
         <li class="nav-item" id="appointments_history">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="{{'appointments'}}">
                 <i class="fas fa-fw fa-history"></i>
                 <span>Appointments History</span>
             </a>

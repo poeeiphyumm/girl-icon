@@ -19,23 +19,22 @@ Route::get('/', 'PageController@mainfun')->name('mainpage');
 
 //backend by poeei
 
-Route::get('/', 'PageController@mainfun')->name('mainpage');
 
+ 	Route::resource('categories','CategoryController');
 
- Route::resource('categories','CategoryController');
+  	Route::resource('services','ServiceController');
 
-  Route::resource('services','ServiceController');
+	Route::resource('employees','EmployeeController');
 
-Route::resource('employees','EmployeeController');
-
+	Route::resource('appointments','AppointmentController');
 //backend
 
 // Route::get('create', 'BackendController@createfun')->name('createpage');
 
 Route::get('/', 'PageController@mainfun')->name('mainpage');
 
+// end backend
 
- // end backend
 
 Route::get('booking', 'PageController@bookingfun') ->name('bookingpage');
 Route::get('contact', 'PageController@contactfun')->name('contactpage');
@@ -43,6 +42,10 @@ Route::get('about', 'PageController@aboutfun')->name('aboutpage');
 
 
 
+Route::get('dashboard', 'backendController@dashboardfun') ->name('dashboardpage');
+
+// Route::resource('appointments', 'AppointmentController');
+// Route::resource('customers', 'AppointmentController');
 
 // Route::get('index', 'BackendController@indexfun')->name('indexpage');
 
@@ -51,5 +54,6 @@ Route::resource('categories','CategoryController');
 Route::resource('employees','EmployeeController');
 Route::resource('services','ServiceController');
 Route::resource('customers','CustomerController');
+
 
 

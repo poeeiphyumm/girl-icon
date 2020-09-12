@@ -6,15 +6,15 @@ use Illuminate\Database\Eloquent\Model;
 
 class Customer extends Model
 {
-	protected $fillable=[
-    	'customer_name','email','address','phone_no','gender'
-    ]; 
-    public function appointment($value='')
+    protected $fillable=[
+    	'customer_name','email','address','phonr_no','gender'
+    ];
+    public function appointments($value='')
     {
     	return $this->hasMany('App\Appointment');
     }
-    public function category($value='')
+    public function categories($value='')
     {
     	return $this->hasMany('App\Category');
     }
- }
+}
