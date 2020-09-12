@@ -3,12 +3,14 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Booking;
-use App\Service;
 
 
 class PageController extends Controller
 {
+    public function mainfun($value='')
+    {
+        return view('main');
+    }
      public function bookingfun($value='')
      {
         
@@ -21,10 +23,10 @@ class PageController extends Controller
      	return view('services');
     }
 
-    public function contactfun($value='')
+    public function loginfun($value='')
      {
         
-     	return view('contact');
+     	return view('login');
     }
 
     public function aboutfun($value='')
@@ -32,11 +34,10 @@ class PageController extends Controller
         
         return view('about');
     }
-
-   
-    public function mainfun($value='')
+    public function registerfun($value='')
     {
-    	return view('main');
+        
+        return view('register');
     }
 
 }
