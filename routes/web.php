@@ -22,9 +22,8 @@ Route::get('loginform', 'PageController@loginfun')->name('loginpage');
 //backend by poeei
 
 
-<<<<<<< HEAD
 
-=======
+
  	Route::resource('categories','CategoryController');
 
   	Route::resource('services','ServiceController');
@@ -32,23 +31,19 @@ Route::get('loginform', 'PageController@loginfun')->name('loginpage');
 	Route::resource('employees','EmployeeController');
 
 	Route::resource('appointments','AppointmentController');
->>>>>>> 754a2997ec6786fc53d5111bad88909e0e710e06
 //backend
 
 // Route::get('create', 'BackendController@createfun')->name('createpage');
 
-<<<<<<< HEAD
 
  Route::resource('categories','CategoryController');
-=======
+
 Route::get('/', 'PageController@mainfun')->name('mainpage');
->>>>>>> 754a2997ec6786fc53d5111bad88909e0e710e06
 
 // end backend
 
 
 Route::get('booking', 'PageController@bookingfun') ->name('bookingpage');
-<<<<<<< HEAD
 Route::get('services', 'PageController@servicefun')->name('servicepage');
 
 Route::get('about', 'PageController@aboutfun')->name('aboutpage');
@@ -59,7 +54,7 @@ Route::get('about', 'PageController@aboutfun')->name('aboutpage');
 
 
 
-=======
+
 Route::get('contact', 'PageController@contactfun')->name('contactpage');
 Route::get('about', 'PageController@aboutfun')->name('aboutpage');
 
@@ -69,7 +64,6 @@ Route::get('dashboard', 'backendController@dashboardfun') ->name('dashboardpage'
 
 // Route::resource('appointments', 'AppointmentController');
 // Route::resource('customers', 'AppointmentController');
->>>>>>> 754a2997ec6786fc53d5111bad88909e0e710e06
 
 // Route::get('index', 'BackendController@indexfun')->name('indexpage');
 
@@ -77,10 +71,5 @@ Route::get('dashboard', 'backendController@dashboardfun') ->name('dashboardpage'
 Route::resource('categories','CategoryController');
 Route::resource('employees','EmployeeController');
 Route::resource('services','ServiceController');
-<<<<<<< HEAD
-=======
+
 Route::resource('customers','CustomerController');
-
-
-
->>>>>>> 754a2997ec6786fc53d5111bad88909e0e710e06
