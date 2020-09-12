@@ -14,7 +14,8 @@ class EmployeeController extends Controller
      */
     public function index()
     {
-        
+        $employees=Employee::all();
+        return view('backend.employees.index',compact('employees'));
     }
 
     /**
@@ -24,7 +25,9 @@ class EmployeeController extends Controller
      */
     public function create()
     {
-        //
+        $employee=Employee::all();
+        return view("backend.employees.create",compact('employee'));
+
     }
 
     /**
@@ -35,7 +38,23 @@ class EmployeeController extends Controller
      */
     public function store(Request $request)
     {
+       // dd($request);
+         $request->validate([
+            "employee_name" => 'required',
+            "availability_status" => 'required',
+        ]);
+
         //
+        //Data insert
+        $employee = new Employee;
+        
+        $employee->employee_name = $request->employee_name;
+        $employee->availability_status = $request->availability_status;
+
+        $employee->save();
+
+        //redirect
+        return redirect()->route('employees.index');
     }
 
     /**
@@ -57,7 +76,7 @@ class EmployeeController extends Controller
      */
     public function edit(Employee $employee)
     {
-        //
+        return view('backend.employees.edit',compact('employee'));
     }
 
     /**
@@ -69,7 +88,23 @@ class EmployeeController extends Controller
      */
     public function update(Request $request, Employee $employee)
     {
-        //
+         //$request က edit form  ထဲက data ပါလာ
+       //dd($request);
+         $request->validate([
+            "employee_name" => 'required',
+            "availability_status" => 'required',
+            
+             ]);
+
+        
+
+        $employee = new Employee;
+        $employee->employee_name = $request->employee_name;
+        $employee->availability_status=$request->availability_status;
+        $employee->save();
+
+        //redirect
+        return redirect()->route('employees.index');
     }
 
     /**
@@ -78,8 +113,11 @@ class EmployeeController extends Controller
      * @param  \App\Employee  $employee
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Employee $employee)
+    public function destroy($id)
     {
-        //
+        $post=Employee::find($id);
+        $post->delete();
+        return redirect()->back();      
     }
+    
 }
