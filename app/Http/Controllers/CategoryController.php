@@ -27,7 +27,7 @@ class CategoryController extends Controller
      */
     public function create()
     {
-        // $categories=Category::all();
+         $categories=Category::all();
         return view("backend.categories.create");
  
     }
@@ -40,7 +40,7 @@ class CategoryController extends Controller
      */
     public function store(Request $request)
     {
-        //dd($request);
+      //dd($request);
          $request->validate([
             "category_name" => 'required',
             "photo" => 'required',
@@ -56,7 +56,8 @@ class CategoryController extends Controller
         //
         //Data insert
         $category = new Category;
-        $category->name = $request->category_name;
+        
+        $category->category_name = $request->category_name;
         $category->photo = $path;
 
         $category->save();
@@ -87,7 +88,7 @@ class CategoryController extends Controller
      */
     public function edit(Category $category)
     {
-        //
+        return view('backend.categories.edit',compact('category'));
     }
 
     /**
@@ -99,8 +100,33 @@ class CategoryController extends Controller
      */
     public function update(Request $request, Category $category)
     {
-        //
-    }
+         //$request က edit form  ထဲက data ပါလာ
+         $request->validate([
+            "category_name" => 'required',
+            "photo" => 'sometimes',
+            "oldphoto" => 'required',
+        ]);
+
+        //file upload, if data
+        if($request->hasFile('photo')){
+            $imageName = time().'-'.$request->photo->extension();
+
+                    $request->photo->move(public_path('backend/categoryimg'),$imageName);
+
+                            $path = 'backend/categoryimg/'.$imageName;
+
+        }else{
+            $path=$request->oldphoto;
+        }
+
+        //data update
+        $category->category_name = $request->category_name;
+        $category->photo = $path;
+        $category->save();
+
+        //redirect
+        return redirect()->route('categories.index'); 
+        }
 
     /**
      * Remove the specified resource from storage.
@@ -108,8 +134,10 @@ class CategoryController extends Controller
      * @param  \App\Category  $category
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Category $category)
+    public function destroy($id)
     {
-        //
+        $post=Category::find($id);
+        $post->delete();
+        return redirect()->back();    
     }
 }

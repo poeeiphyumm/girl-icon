@@ -15,7 +15,7 @@ class AppointmentController extends Controller
      */
     public function index()
     {
-
+        
         $appointments=Appointment::all();
         return view('backend.appointments.index',compact('appointments'));
  
@@ -29,8 +29,8 @@ class AppointmentController extends Controller
      */
     public function create()
     {
-        
-        return view('backend.appointments.create');
+        $customers=Customer::all();
+        return view('backend.appointments.create',compact('customers'));
 
     }
 
@@ -42,7 +42,7 @@ class AppointmentController extends Controller
      */
     public function store(Request $request)
     {
-       // dd($request);
+       //dd($request);
 
         //validation
         $request->validate([
@@ -63,7 +63,7 @@ class AppointmentController extends Controller
         $appointment->date=$request->date;
         $appointment->time=$request->time;
         $appointment->status=$request->status;
-        //$appointment->customer->customer_id=$request->id;
+        $appointment->customer_id=$request->customer;
         $appointment->save();
 
         //redirect

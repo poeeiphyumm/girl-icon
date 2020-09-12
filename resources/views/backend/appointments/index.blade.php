@@ -20,7 +20,10 @@
 					@foreach($appointments as $appointment)
 					<tr>
 					<td>{{$i}}</td>
-					{{-- <td>{{$appointment->customer->id}}</td> --}}
+					<td>{{$appointment->customer->name}}</td>
+					<td>{{$appointment->email}}</td>
+					<td>{{$appointment->password}}</td>
+					<td>{{$appointment->phone}}</td>
 					<td>{{$appointment->date}}</td>
 					<td>{{$appointment->time}}</td> 
 					<td>{{$appointment->status}}</td>
