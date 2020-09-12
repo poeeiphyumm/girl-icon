@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Appointment;
+use App\Customer;
 use Illuminate\Http\Request;
 
 class AppointmentController extends Controller
@@ -15,10 +16,9 @@ class AppointmentController extends Controller
     public function index()
     {
 
-        //$appoints=Appointment::all();
-        return view('backend.appointments.index');
-
-        //return 'Appointment' ;  
+        $appointments=Appointment::all();
+        return view('backend.appointments.index',compact('appointments'));
+ 
 
      }
 
@@ -29,9 +29,9 @@ class AppointmentController extends Controller
      */
     public function create()
     {
-        //  $brands=Brand::all();
-        // $subcategories=Subcategory::all();
-        // return view('backend.items.create',compact('brands','subcategories'));
+        
+        return view('backend.appointments.create');
+
     }
 
     /**
@@ -42,7 +42,32 @@ class AppointmentController extends Controller
      */
     public function store(Request $request)
     {
+       // dd($request);
+
+        //validation
+        $request->validate([
+            "customer_id"=>'required',
+            "name"=>'required',
+            "email"=>'required',
+            "password"=>'required',
+            "phone"=>'required',    
+            "date"=>'required',
+            "time"=>'required',
+            "status"=>'required',
+            ]);
+
+        //Data insert
+        $appointment=new Appointment;
         
+        //$appointment->email=$request->email;
+        $appointment->date=$request->date;
+        $appointment->time=$request->time;
+        $appointment->status=$request->status;
+        //$appointment->customer->customer_id=$request->id;
+        $appointment->save();
+
+        //redirect
+        return redirect()->route('appointments.index');
     }
 
     /**

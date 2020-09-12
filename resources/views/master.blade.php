@@ -116,10 +116,7 @@
     </header>
 
   
-<<<<<<< HEAD
 
-=======
->>>>>>> c5cc876b2f99bf14e61612310435ffbbd7784e2c
 @section('yield')
    
 

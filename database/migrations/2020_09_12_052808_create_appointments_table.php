@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateServicesTable extends Migration
+class CreateAppointmentsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,19 +13,20 @@ class CreateServicesTable extends Migration
      */
     public function up()
     {
-        Schema::create('services', function (Blueprint $table) {
+        Schema::create('appointments', function (Blueprint $table) {
             $table->id();
-            $table->string('service_name');
-            $table->string('duration');
-            $table->int('price');
+            $table->date('date');
+            $table->time('time');
+            $table->string('status');
 
-            $table->unsignedBigInteger('category_id');
+            $table->unsignedBigInteger('customer_id');
             $table->timestamps();
 
-            $table->foreign('category_id')
+            $table->foreign('customer_id')
                     ->references('id')
-                    ->on('categories')
+                    ->on('customers')
                     ->onDelete('cascade');
+
         });
     }
 
@@ -36,6 +37,6 @@ class CreateServicesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('services');
+        Schema::dropIfExists('appointments');
     }
 }

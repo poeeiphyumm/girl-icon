@@ -37,7 +37,7 @@ Route::get('about', 'PageController@aboutfun')->name('aboutpage');
 Route::get('dashboard', 'backendController@dashboardfun') ->name('dashboardpage');
 
 Route::resource('appointments', 'AppointmentController');
-
+Route::resource('customers', 'AppointmentController');
 
 // Route::get('index', 'BackendController@indexfun')->name('indexpage');
 
