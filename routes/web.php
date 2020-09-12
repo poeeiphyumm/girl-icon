@@ -20,11 +20,6 @@ Route::get('/', 'PageController@mainfun')->name('mainpage');
 
 // Route::get('create', 'BackendController@createfun')->name('createpage');
 
-Route::get('/', 'PageController@mainfun')->name('mainpage');
-
-
-//Route::get('booking', 'PageController@bookingfun') ->name('bookingpage');
-
 
 Route::get('booking', 'PageController@bookingfun') ->name('bookingpage');
 Route::get('services', 'PageController@servicefun')->name('servicepage');
