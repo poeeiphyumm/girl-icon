@@ -45,15 +45,21 @@ class ServiceController extends Controller
         //     "service_name" => 'required',
         //     "duration" => 'required',
         //     "price" => 'required',
-        //     "category_id" => 'required'
+        //     "category_id" => 'required',
+        //     "photo"=>'required'
             
         // ]);
+        $imageName = time().'-'.$request->photo->extension();
+        $request->photo->move(public_path('backend/serviceimg'),$imageName);
+        // ပုံပတ်လမ်းကြောင်းသိမ်း
+        $path = 'backend/serviceimg/'.$imageName;
          //Data insert
         $service = new Service;
         $service->service_name = $request->service_name;
         $service->duration = $request->duration;
         $service->price = $request->price;
-        $service->category_id=$request->category;
+        $service->category_id=$request->category_id;
+        $service->photo=$request->photo;
         $service->save();
 
         //redirect
@@ -97,8 +103,21 @@ class ServiceController extends Controller
             "service_name" => 'required',
             "duration" => 'required',
             "price" => 'required',
-            "category_id"=>'required'
+            "category_id"=>'required',
+            "photo"=>'sometimes',
+            "oldphoto" => 'required'
         ]);
+
+         if($request->hasFile('photo')){
+            $imageName = time().'-'.$request->photo->extension();
+
+                    $request->photo->move(public_path('backend/serviceimg'),$imageName);
+
+                            $path = 'backend/serviceimg/'.$imageName;
+
+        }else{
+            $path=$request->oldphoto;
+        }
 
         
 
@@ -107,6 +126,7 @@ class ServiceController extends Controller
         $service->duration = $request->duration;
         $service->price = $request->price;
         $service->category_id=$request->category_id;
+        $service->photo=$request->photo;
         $service->save();
 
         //redirect
