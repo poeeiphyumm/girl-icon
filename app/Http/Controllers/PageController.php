@@ -15,12 +15,6 @@ class PageController extends Controller
      	return view('booking');
     }
 
-     public function servicefun($value='')
-     {
-        
-     	return view('services');
-    }
-
     public function contactfun($value='')
      {
         
