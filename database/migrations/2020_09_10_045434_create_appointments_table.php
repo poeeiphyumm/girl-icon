@@ -30,6 +30,10 @@ class CreateAppointmentsTable extends Migration
                     ->onDelete('cascade');
 
 
+<<<<<<< HEAD
+
+        });
+=======
 
 
         // Schema::create('appointments', function (Blueprint $table) {
@@ -55,6 +59,7 @@ class CreateAppointmentsTable extends Migration
         });
 
         
+>>>>>>> 754a2997ec6786fc53d5111bad88909e0e710e06
     }
         
        

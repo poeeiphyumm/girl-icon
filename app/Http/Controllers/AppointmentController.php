@@ -47,12 +47,12 @@ class AppointmentController extends Controller
        //dd($request);
 
         //validation
-        // $request->validate([
-        //     "date"=>'required',
-        //     "time"=>'required',
-        //     "appointment_status"=>'required',
-        //     "customer_id"=>'required'
-        //     ]);
+        $request->validate([
+            "date"=>'required',
+            "time"=>'required',
+            "appointment_status"=>'required',
+            "customer_id"=>'required'
+            ]);
 
         //Data insert
         $appointment=new Appointment;
