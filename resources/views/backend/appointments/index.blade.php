@@ -16,10 +16,10 @@
 				<thead>
 					<tr>
 						<th>No</th>
-						<th>Customer_id</th>
 						<th>Date</th>
 						<th>Time</th>
 						<th>Appointment Status</th>
+						<th>Customer_id</th>
 						<th>Action</th>
 					</tr>
 				</thead>
@@ -30,9 +30,12 @@
 		    		@foreach ($appointments as $appointment)
 		    		<tr>
 		    			<td>{{ $i++ }}</td>
-			    		<td>{{ $appointment->appointment_name }}</td>
-			    		<td>{{ $appointment->date }}</td>
-			    		<td>{{ $appointment->time }}</td>
+		    			<td>{{ $appointment->date }}</td>
+		    			<td>{{ $appointment->time }}</td>
+			    		<td>{{ $appointment->appointment_status }}</td>
+			    		<td>{{ $appointment->customer_id }}</td>
+			    		
+			    		
 			    		<td>
 			    			<a href="#" class="btn btn-primary">Detail</a>
 			    			<a href="{{ route('appointments.edit',$appointment->id) }}" class="btn btn-secondary">Edit</a>
