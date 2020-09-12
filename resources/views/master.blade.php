@@ -117,11 +117,9 @@
 
   
 
-{{-- @section('yield') --}}
-   
 
+@section('yield')
 
-   {{--  --}}
 
 
     <div class="site-section">
