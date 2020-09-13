@@ -3,14 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
 use App\Service;
 class PageController extends Controller
 {
     public function mainfun($value='')
     {
-        $services=Service::all();
-        return view('main',compact('services'));
+        // $services=Service::all();
+        return view('main');
     }
      public function bookingfun($value='')
      {
@@ -42,26 +41,6 @@ class PageController extends Controller
         return view('about');
     }
 
-    public function bodycarefun($value='')
-     {
-
-        $services=Service::all();
-        return view('services',compact('services'));
-    }
-
-<<<<<<< HEAD
-     public function haircarefun($value='')
-     {
-        
-        return view('haircare');
-    }
-
-     public function nailcarefun($value='')
-     {
-        
-        return view('nailcare');
-    }
-
      public function footcarefun($value='')
      {
         
@@ -72,12 +51,6 @@ class PageController extends Controller
      {
         
         return view('handcare');
-    }
-
-     public function skincarefun($value='')
-     {
-        
-        return view('skincare');
     }
 
     public function spafun($value='')
@@ -91,20 +64,14 @@ class PageController extends Controller
         
         return view('face');
     }
-
-
    
     // public function mainfun($value='')
     // {
     //     return view('main');
     // }
 
-    public function registerfun($value='')
-
-=======
 
     public function registerfun($value='')
->>>>>>> d056c456610e9c9c51a748b7a0444981262a4ded
     {
         
         return view('register');
@@ -113,9 +80,25 @@ class PageController extends Controller
     {
         return view('ourservice');
     }
-     public function bodycarefun($value='')
+    public function bodycarefun($value='')
     {
-        return view('bodycare');
+        $services = Service::all();
+        return view('bodycare',compact('services'));
+    }
+     public function skincarefun($value='')
+    {
+        $services = Service::all();
+        return view('skincare',compact('services'));
+    }
+     public function haircarefun($value='')
+    {
+        $services = Service::all();
+        return view('haircare',compact('services'));
+    }
+     public function nailcarefun($value='')
+    {
+        $services = Service::all();
+        return view('nailcare',compact('services'));
     }
 
 }

@@ -77,13 +77,23 @@
 
               <div class="row form-group">
                 <div class="col-md-12">
-                  <input type="submit" value="Send" class="btn btn-primary py-2 px-4 text-white">
+                  @if(Session::has('success'))
+                    <div class="alert alert-success">
+                      <button type="button" class="btn btn-primary py-2 px-4 text-white" data-dismiss="alert">Send</button>
+                      <strong>Make Appointment Success!{{Session::get('message','')}}</strong>
+                    </div>
+                    @endif
+                {{-- 
+                  <input type="submit" value="Send" Cclass="btn btn-primary py-2 px-4 text-white"> --}}
                   {{-- <button type="submit" class="btn btn-info">{{route('customers')}}</button> --}}
                 </div>
               </div>
 
   
             </form>
+
+          
+
           </div>
           <div class="col-md-5">
             
