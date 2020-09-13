@@ -116,18 +116,6 @@
       
     </header>
 
-<<<<<<< HEAD
-=======
-  
-
-
-@section('yield')
-
-
-
-    <div class="site-section">
-
->>>>>>> 754a2997ec6786fc53d5111bad88909e0e710e06
 @yield('content')
      
 <footer class="site-footer">

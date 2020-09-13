@@ -60,17 +60,17 @@ Route::get('about', 'PageController@aboutfun')->name('aboutpage');
 Route::get('bodycare','PageController@bodycarefun')->name('bodycarepage');
 
 
-
-Route::get('dashboard', 'backendController@dashboardfun') ->name('dashboardpage');
-
-// Route::resource('appointments', 'AppointmentController');
-// Route::resource('customers', 'AppointmentController');
-
-// Route::get('index', 'BackendController@indexfun')->name('indexpage');
-
-
 Route::resource('employees','EmployeeController');
 Route::resource('services','ServiceController');
 Route::resource('customers','CustomerController');
 
 Route::resource('customers','CustomerController');
+
+
+Route::middleware('role:Admin')->group(function(){
+Route::get('dashboard', 'backendController@dashboardfun') ->name('dashboardpage');
+});
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
