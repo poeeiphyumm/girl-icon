@@ -1,6 +1,5 @@
 @extends('master')
 @section('content')
-<<<<<<< HEAD
 
 
   <div class="jumbotron jumbotron-fluid subtitle">
@@ -22,7 +21,7 @@
           </div>
 
         @endforeach
-=======
+
     <h1><center>Skin Care Services</center></h1><br><br>
     <div class="container-fluid">
       <div class="row">
@@ -41,7 +40,6 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
         </div>
->>>>>>> aea75e1bfcf7d807b73aef5326ec19c706c69c9a
       </div>
     </div> 
 @endsection

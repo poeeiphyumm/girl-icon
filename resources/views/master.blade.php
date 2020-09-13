@@ -59,11 +59,7 @@
                 <li class="has-children">
                   <a href="#">Category</a>
                   <ul class="dropdown">
-<<<<<<< HEAD
-=======
 
-
->>>>>>> ea9b5a970646e6c62eda2b850f3a2ed083e270f9
                     <li><a href="">Hair Care</a></li>
                     <li><a href="{{asset('bodycare')}}">Body Care</a></li>
                     <li><a href="">Skin Care</a></li>
@@ -111,19 +107,19 @@
                     <li><a href="#">Spa Rest</a></li>
                   </ul>
                 </li>
-<<<<<<< HEAD
+
                 {{-- <li><a href="{{asset('booking')}}">Book Online</a></li> --}}
 {{--                 <li><a href="">Services</a></li>
  --}}                <li><a href="{{asset('about')}}">About</a></li>
                 <li><a href="{{asset('booking')}}">Appointment</a></li>
                 <li><a href="{{asset('contact')}}">Contact</a></li>
-=======
+
                 <li><a href="{{route('aboutpage')}}">About</a></li>
                 <li><a href="{{route('bookingpage')}}">Appointment</a></li>
                 <li><a href="{{route('contactpage')}}">Contact</a></li>
                
                 <li><a href="{{asset('about')}}">About</a></li>
->>>>>>> ea9b5a970646e6c62eda2b850f3a2ed083e270f9
+
               </ul>
             </nav>
           </div>
@@ -165,13 +161,12 @@
       </div>
       
     </header>
-<<<<<<< HEAD
+
   
 @section('yield')
 
     <div class="site-section">
-=======
->>>>>>> ea9b5a970646e6c62eda2b850f3a2ed083e270f9
+
 
 @yield('content')
      
