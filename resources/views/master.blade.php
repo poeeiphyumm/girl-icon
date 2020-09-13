@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <title>Online Appointment for Beauty Clinic</title>
     <meta charset="utf-8">
@@ -115,9 +116,6 @@
       </div>
       
     </header>
-
-<<<<<<< HEAD
-=======
   
 
 
@@ -127,7 +125,6 @@
 
     <div class="site-section">
 
->>>>>>> 754a2997ec6786fc53d5111bad88909e0e710e06
 @yield('content')
      
 <footer class="site-footer">

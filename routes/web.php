@@ -33,13 +33,6 @@ Route::get('loginform', 'PageController@loginfun')->name('loginpage');
 	Route::resource('appointments','AppointmentController');
 //backend
 
-// Route::get('create', 'BackendController@createfun')->name('createpage');
-
-
-<<<<<<< HEAD
-=======
- Route::resource('categories','CategoryController');
->>>>>>> 3ceaabc6b7079a2664321113b38556dceae1e77a
 
 Route::get('/', 'PageController@mainfun')->name('mainpage');
 
@@ -57,32 +50,19 @@ Route::get('about', 'PageController@aboutfun')->name('aboutpage');
 
 
 
-<<<<<<< HEAD
-=======
 
->>>>>>> 3ceaabc6b7079a2664321113b38556dceae1e77a
 Route::get('contact', 'PageController@contactfun')->name('contactpage');
 Route::get('about', 'PageController@aboutfun')->name('aboutpage');
-Route::get('bodycare','PageController@bodycarefun')->name('bodycarepage');
 
 
 
 Route::get('dashboard', 'backendController@dashboardfun') ->name('dashboardpage');
 
-// Route::resource('appointments', 'AppointmentController');
-// Route::resource('customers', 'AppointmentController');
-
-// Route::get('index', 'BackendController@indexfun')->name('indexpage');
-
-
 Route::resource('employees','EmployeeController');
-Route::resource('services','ServiceController');
-<<<<<<< HEAD
 Route::resource('customers','CustomerController');
 
+Route::get('services','PageController@bodycarefun')->name('bodycarepage');
 
 
-=======
 
-Route::resource('customers','CustomerController');
->>>>>>> 3ceaabc6b7079a2664321113b38556dceae1e77a
+

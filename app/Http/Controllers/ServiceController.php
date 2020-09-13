@@ -49,7 +49,7 @@ class ServiceController extends Controller
         //     "photo"=>'required'
             
         // ]);
-        $imageName = time().'-'.$request->photo->extension();
+        $imageName = time().'.'.$request->photo->extension();
         $request->photo->move(public_path('backend/serviceimg'),$imageName);
         // ပုံပတ်လမ်းကြောင်းသိမ်း
         $path = 'backend/serviceimg/'.$imageName;
@@ -59,7 +59,7 @@ class ServiceController extends Controller
         $service->duration = $request->duration;
         $service->price = $request->price;
         $service->category_id=$request->category;
-        $service->photo=$request->photo;
+        $service->photo=$path;
         $service->save();
 
         //redirect
@@ -109,7 +109,7 @@ class ServiceController extends Controller
         ]);
 
          if($request->hasFile('photo')){
-            $imageName = time().'-'.$request->photo->extension();
+            $imageName = time().'.'.$request->photo->extension();
 
                     $request->photo->move(public_path('backend/serviceimg'),$imageName);
 
@@ -126,7 +126,7 @@ class ServiceController extends Controller
         $service->duration = $request->duration;
         $service->price = $request->price;
         $service->category_id=$request->category_id;
-        $service->photo=$request->photo;
+        $service->photo=$path;
         $service->save();
 
         //redirect
