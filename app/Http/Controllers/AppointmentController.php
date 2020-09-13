@@ -64,6 +64,8 @@ class AppointmentController extends Controller
 
             "status"=>'required',
             "appointment_status"=>'required',
+            "customer_id"=>'required',
+            "photo"=>'required',
             "customer_id"=>'required'
             ]);
 
