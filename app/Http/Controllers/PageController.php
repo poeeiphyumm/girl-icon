@@ -17,6 +17,12 @@ class PageController extends Controller
      	return view('booking');
     }
 
+    public function contactfun($value='')
+     {
+        
+        return view('contact');
+    }
+
      public function servicefun($value='')
      {
         
@@ -34,7 +40,6 @@ class PageController extends Controller
         
         return view('about');
     }
-<<<<<<< HEAD
 
     public function bodycarefun($value='')
      {
@@ -42,11 +47,57 @@ class PageController extends Controller
         return view('bodycare');
     }
 
+     public function haircarefun($value='')
+     {
+        
+        return view('haircare');
+    }
+
+     public function nailcarefun($value='')
+     {
+        
+        return view('nailcare');
+    }
+
+     public function footcarefun($value='')
+     {
+        
+        return view('footcare');
+    }
+
+     public function handcarefun($value='')
+     {
+        
+        return view('handcare');
+    }
+
+     public function skincarefun($value='')
+     {
+        
+        return view('skincare');
+    }
+
+    public function spafun($value='')
+     {
+        
+        return view('spa');
+    }
+
+    public function facecarefun($value='')
+     {
+        
+        return view('face');
+    }
+
+
    
-    public function mainfun($value='')
-=======
+    // public function mainfun($value='')
+    // {
+    //     return view('main');
+    // }
+
     public function registerfun($value='')
->>>>>>> 779ba2dccfb78cee22a13760d11d4b739f603b06
+
     {
         
         return view('register');

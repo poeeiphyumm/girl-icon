@@ -70,15 +70,15 @@
                 <li class="has-children">
                   <a href="haircut.html">Category</a>
                   <ul class="dropdown">
-                    <li><a href="">Hair Care</a></li>
+                    <li><a href="{{asset('haircare')}}">Hair Care</a></li>
                     <li><a href="{{asset('bodycare')}}">Body Care</a></li>
-                    <li><a href="#">Skin Care</a></li>
-                    <li><a href="#">Nail Care</a></li>
-                    <li><a href="#">Face Care</a></li>
-                    <li><a href="#">Hand Care</a></li>
-                    <li><a href="#">Foot Care</a></li>
-                    <li><a href="#">Skin Therapy</a></li>
-                    <li><a href="#">Spa Rest</a></li>
+                    <li><a href="{{asset('skincare')}}">Skin Care</a></li>
+                    <li><a href="{{asset('nailcare')}}">Nail Care</a></li>
+                    <li><a href="{{asset('face')}}">Face Care</a></li>
+                    <li><a href="{{asset('handcare')}}">Hand Care</a></li>
+                    <li><a href="{{asset('footcare')}}">Foot Care</a></li>
+                    {{-- <li><a href="#">Skin Therapy</a></li> --}}
+                    <li><a href="{{asset('spa')}}">Spa Rest</a></li>
                   </ul>
                 </li>
 {{--                 <li><a href="">Services</a></li>
@@ -116,8 +116,7 @@
       
     </header>
 
-<<<<<<< HEAD
-=======
+
   
 
 
@@ -127,7 +126,6 @@
 
     <div class="site-section">
 
->>>>>>> 754a2997ec6786fc53d5111bad88909e0e710e06
 @yield('content')
      
 <footer class="site-footer">

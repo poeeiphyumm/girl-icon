@@ -58,7 +58,13 @@ Route::get('about', 'PageController@aboutfun')->name('aboutpage');
 Route::get('contact', 'PageController@contactfun')->name('contactpage');
 Route::get('about', 'PageController@aboutfun')->name('aboutpage');
 Route::get('bodycare','PageController@bodycarefun')->name('bodycarepage');
-
+Route::get('face','PageController@facecarefun')->name('facecarepage');
+Route::get('haircare','PageController@haircarefun')->name('haircarepage');
+Route::get('nailcare','PageController@nailcarefun')->name('nailcarepage');
+Route::get('footcare','PageController@footcarefun')->name('footcarepage');
+Route::get('handcare','PageController@handcarefun')->name('handcarepage');
+Route::get('skincare','PageController@skincarefun')->name('skincarepage');
+Route::get('spa','PageController@spafun')->name('spapage');
 
 
 Route::get('dashboard', 'backendController@dashboardfun') ->name('dashboardpage');
