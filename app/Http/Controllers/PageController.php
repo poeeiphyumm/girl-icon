@@ -49,5 +49,13 @@ class PageController extends Controller
         
         return view('register');
     }
+    public function ourservicefun($value='')
+    {
+        return view('ourservice');
+    }
+     public function bodycarefun($value='')
+    {
+        return view('bodycare');
+    }
 
 }

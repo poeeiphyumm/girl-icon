@@ -53,7 +53,7 @@
 
               <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
                 <li class="has-children active">
-                  <a href="index.html">Home</a>
+                  <a href="">Home</a>
                   <ul class="dropdown">
                     <li><a href="#">Menu One</a></li>
                     <li><a href="#">Menu Two</a></li>
@@ -71,7 +71,10 @@
                 <li class="has-children">
                   <a href="haircut.html">Category</a>
                   <ul class="dropdown">
+<<<<<<< HEAD
+=======
                     <li><a href="">Hair Care</a></li>
+>>>>>>> 8ccc60cea1da0c66ca4721ad2c5720cffe431549
                     <li><a href="{{asset('bodycare')}}">Body Care</a></li>
                     <li><a href="#">Skin Care</a></li>
                     <li><a href="#">Nail Care</a></li>
@@ -82,9 +85,27 @@
                     <li><a href="#">Spa Rest</a></li>
                   </ul>
                 </li>
+<<<<<<< HEAD
+                <li class="has-children">
+                  <a href="">Services</a>
+                    <ul class="dropdown">
+                    <li><a href="{{asset('ourservice')}}">Our Service</a></li>
+                    <li><a href="#">Service One</a></li>
+                    <li><a href="#">Service Two</a></li>
+                    <li><a href="#">Face Care</a></li>
+                    <li><a href="#">Hand Care</a></li>
+                    <li><a href="#">Foot Care</a></li>
+                    <li><a href="#">Skin Therapy</a></li>
+                    <li><a href="#">Spa Rest</a></li>
+                  </ul>
+                </li>
+                <li><a href="{{asset('about')}}">About</a></li>
+                <li><a href="{{asset('booking')}}">Book Online</a></li>
+=======
 {{--                 <li><a href="">Services</a></li>
  --}}                <li><a href="{{asset('about')}}">About</a></li>
                 <li><a href="{{asset('booking')}}">Appointment</a></li>
+>>>>>>> 8ccc60cea1da0c66ca4721ad2c5720cffe431549
                 <li><a href="{{asset('contact')}}">Contact</a></li>
               </ul>
             </nav>
