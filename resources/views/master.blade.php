@@ -59,13 +59,7 @@
                 <li class="has-children">
                   <a href="#">Category</a>
                   <ul class="dropdown">
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
 
-
->>>>>>> ea9b5a970646e6c62eda2b850f3a2ed083e270f9
                     <li><a href="">Hair Care</a></li>
                     <li><a href="{{asset('bodycare')}}">Body Care</a></li>
                     <li><a href="">Skin Care</a></li>
@@ -76,7 +70,6 @@
                     <li><a href="#">Skin Therapy</a></li>
                     <li><a href="#">Spa Rest</a></li>
  
->>>>>>> 0014ba7e10f9f64c2e841d7072dfe0e2fc39d878
                     <li><a href="{{ asset('haircare') }}">Hair Care</a></li>
                     <li><a href="{{asset('bodycare')}}">Body Care</a></li>
                     <li><a href="{{ asset('skincare') }}">Skin Care</a></li>
@@ -87,7 +80,6 @@
                     <li><a href="{{ asset('skintherapy') }}">Skin Therapy</a></li>
                     <li><a href="{{ asset('sparest') }}">Spa Rest</a></li>
 
-<<<<<<< HEAD
                     
                   </ul>
                 </li>
@@ -95,7 +87,6 @@
                
                 <li><a href="{{asset('about')}}">About</a></li>
                                
-=======
                     <li><a href="{{asset('haircare')}}">Hair Care</a></li>
 
                     <li><a href="">Hair Care</a></li>
@@ -123,24 +114,17 @@
                     <li><a href="#">Spa Rest</a></li>
                   </ul>
                 </li>
-<<<<<<< HEAD
                 
-=======
-<<<<<<< HEAD
                 {{-- <li><a href="{{asset('booking')}}">Book Online</a></li> --}}
 {{--                 <li><a href="">Services</a></li>
  --}}                <li><a href="{{asset('about')}}">About</a></li>
->>>>>>> 0014ba7e10f9f64c2e841d7072dfe0e2fc39d878
                 <li><a href="{{asset('booking')}}">Appointment</a></li>
                 <li><a href="{{asset('contact')}}">Contact</a></li>
-=======
                 <li><a href="{{route('aboutpage')}}">About</a></li>
->>>>>>> 1d7e834c799b6d31b23adaf7ccf6ba0c755295df
                 <li><a href="{{route('bookingpage')}}">Appointment</a></li>
                 <li><a href="{{route('contactpage')}}">Contact</a></li>
                
                 <li><a href="{{asset('about')}}">About</a></li>
->>>>>>> ea9b5a970646e6c62eda2b850f3a2ed083e270f9
               </ul>
             </nav>
           </div>
@@ -182,22 +166,7 @@
       </div>
       
     </header>
-<<<<<<< HEAD
 
-
-
-=======
-<<<<<<< HEAD
-  
->>>>>>> 0014ba7e10f9f64c2e841d7072dfe0e2fc39d878
-@section('yield')
-
-    <div class="site-section">
-<<<<<<< HEAD
-=======
-=======
->>>>>>> ea9b5a970646e6c62eda2b850f3a2ed083e270f9
->>>>>>> 0014ba7e10f9f64c2e841d7072dfe0e2fc39d878
 
 @yield('content')
      
