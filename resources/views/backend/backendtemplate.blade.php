@@ -93,16 +93,16 @@
         <li class="nav-item dropdown" id="employee">
             <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <i class="fas fa-fw fa-user"></i>
-                <span>Employee</span>
+                <span>Employees</span>
             </a>
             <div class="dropdown-menu" aria-labelledby="pagesDropdown" id="employee_dropdown">
-                <a class="dropdown-item" href="#" id="employee_list">Employee List</a>
-                <a class="dropdown-item" href="#" id="employee_add_edit">Add/Edit Employee</a>
+                <a class="dropdown-item" href="{{ 'employees' }}" id="employee_list">Employee List</a>
+                <a class="dropdown-item" href="{{ 'employees/create' }}" id="employee_add_edit">Add/Edit Employee</a>
             </div>
         </li>
 
         <li class="nav-item" id="customers">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="{{ 'customers' }}">
                 <i class="fas fa-fw fa-users"></i>
                 <span>Customers</span>
             </a>
