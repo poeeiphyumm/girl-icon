@@ -17,15 +17,22 @@
     		<h1 class="text-center">Our Center</h1>
   	</div>
   	<div class="container">
-  		<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
-				<img src="" class="img-fluid">
+      <div class="row mt-5">
+            <div class="col-xl-6 col-lg-6 col-md-4 col-sm-12 col-12">
+            <img src="{{asset('front/images/skin.jpg')}}" class="img-fluid">
+          </div> 
+           
+  		<div class="col-xl-6 col-lg-6 col-md-4 col-sm-12 col-12">
+          <h3>Duration: 1-2hr<br>$180<br></h3>
+    Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.</p>
+    <h3>Effects</h3>
+    <li>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the.</li>
+    <li>Scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</li>
+    <li>Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley.</li>
+    <li>It has survived not only five centuries, but also the leap into electronic typesetting.</li>
 			</div>	
-  		<h3>Duration: 1-2hr<br>$180<br></h3>
-		Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.</p>
-		<h3>Effects</h3>
-		<li>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the.</li>
-		<li>Scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</li>
-		<li>Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley.</li>
-		<li>It has survived not only five centuries, but also the leap into electronic typesetting.</li>
+  		</div>
   	</div>
+
+   
 @endsection

@@ -1,6 +1,14 @@
 @extends('master')
 @section('content')
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> c888ff0e086650effb47c6e0801e612c87db4cd4
     <h1><center>Body Care Services</center></h1><br><br>
 
 
@@ -18,7 +26,13 @@
 
 
          {{--  <div class="col-lg-4 col-md-4 col-sm-12">
+<<<<<<< HEAD
 
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> ea9b5a970646e6c62eda2b850f3a2ed083e270f9
+>>>>>>> c888ff0e086650effb47c6e0801e612c87db4cd4
 <div class="container">
   	<div class="row mt-5">
       <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
@@ -26,7 +40,6 @@
       </div>
     </div>
   </div>
-=======
     <h1><center>Body Care Services</center></h1>
 >>>>>>> d056c456610e9c9c51a748b7a0444981262a4ded
     <div class="container-fluid">
@@ -47,4 +60,8 @@
         @endforeach
       </div>
     </div> 
+<<<<<<< HEAD
+
+=======
+>>>>>>> ea9b5a970646e6c62eda2b850f3a2ed083e270f9
 @endsection
