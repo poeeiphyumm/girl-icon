@@ -29,7 +29,7 @@ class ServiceController extends Controller
     {
         $services=Service::all();
         $categories=Category::all();
-        return view("backend.services.create",compact('categories','services'));
+        return view("backend.services.create",compact('services'));
     }
 
     /**
@@ -42,6 +42,7 @@ class ServiceController extends Controller
     {
        
 
+       //dd($request);
          //If include file,upload file
        //dd($request);
          $request->validate([
@@ -64,6 +65,8 @@ class ServiceController extends Controller
         //     "photo"=>'required'
             
         // ]);
+
+        $imageName = time().'.'.$request->photo->extension();
         $imageName = time().'.'.$request->photo->extension();
 
         $imageName = time().'.'.$request->photo->extension();
@@ -77,7 +80,7 @@ class ServiceController extends Controller
         $service->duration = $request->duration;
         $service->price = $request->price;
         $service->photo=$path;
-        $service->category_id=$request->category;
+        $service->category_id=$request->category_id;
         
         $service->category_id=$request->category;
         $service->photo=$path;

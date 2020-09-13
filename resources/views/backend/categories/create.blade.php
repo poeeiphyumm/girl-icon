@@ -22,12 +22,7 @@
 			<input type="name" name="category_name" class="form-control" id="inputname" >
 		</div>
 	</div>
-	<div class="form-group row">
-		<label class="col-sm-2 col-form-label">Photo</label>
-		<div class="col-sm-6">
-			<input type="file" name="photo" class="form-control" id="inputphoto">
-		</div>
-	</div>
+	
 	
 	<input type="submit" value="Create" class="btn btn-danger" >
 </form>

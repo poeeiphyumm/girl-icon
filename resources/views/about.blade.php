@@ -7,13 +7,14 @@
 
     <div class="slide-one-item home-slider owl-carousel">
    
-      <div class="site-blocks-cover inner-page-cover" style="background-image: url({{asset('images/hero_bg_2.jpg')}};" data-aos="fade" data-stellar-background-ratio="0.5">
+      <div class="site-blocks-cover inner-page-cover" style="background-image:
+       url({{asset('frontend/images/about1.jpeg')}});" data-aos="fade" data-stellar-background-ratio="0.5">
         <div class="container">
           <div class="row align-items-center justify-content-center text-center">
 
             <div class="col-md-8" data-aos="fade-up" data-aos-delay="400">
               <h2 class="text-white font-weight-light mb-2 display-1">About Us</h2>
-
+              <p class="text-black">We are ICON a Beauty Clinic</p>
               
             </div>
           </div>
@@ -28,10 +29,15 @@
       <div class="container">
         <div class="row justify-content-center mb-5">
           <div class="col-md-7">
-            <h2 class="site-section-heading font-weight-light text-black text-center">Our Barbers</h2>
+            <h2 class="site-section-heading font-weight-light text-black text-center"></h2>
           </div>
         </div>
         <div class="row">
+          <div class="col-md-6 col-lg-4 text-center mb-5" data-aos="fade-up">
+            <img src="{{asset('frontend/images/face1.jpg')}}" alt="Image" class="img-fluid w-50 rounded-circle mb-4">
+            <h2 class="text-black font-weight-light mb-4">Face Care</h2>
+            
+            
           <div class="col-md-6 col-lg-4 text-center mb-5" data-aos="fade-up">span
             <img src="{{asset('front/images/person_1.jpg')}}" alt="Image" class="img-fluid w-50 rounded-circle mb-4">
             <h2 class="text-black font-weight-light mb-4">Jean Smith</h2>
@@ -43,25 +49,24 @@
             </p>
           </div>
           <div class="col-md-6 col-lg-4 text-center mb-5" data-aos="fade-up">
-            <img src="{{asset('front/images/person_2.jpg')}}" alt="Image" class="img-fluid w-50 rounded-circle mb-4">
-            <h2 class="text-black font-weight-light mb-4">Claire Smith</h2>
-            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur ab quas facilis obcaecati non ea, est odit repellat distinctio incidunt, quia aliquam eveniet quod deleniti impedit sapiente atque tenetur porro?</p>
-            <p>
-              <a href="#" class="pl-0 pr-3"><span class="icon-twitter"></span></a>
-              <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
-              <a href="#" class="pl-3 pr-3"><span class="icon-facebook"></span></a>
-            </p>
+            <img src="{{asset('frontend/images/face2.jpeg')}}" alt="Image" class="img-fluid w-50 rounded-circle mb-4">
+            <h2 class="text-black font-weight-light mb-4">Laser skin Care</h2>
+            
+            
           </div>
           <div class="col-md-6 col-lg-4 text-center mb-5" data-aos="fade-up">
-            <img src="{{asset('front/images/person_4.jpg')}}" alt="Image" class="img-fluid w-50 rounded-circle mb-4">
-            <h2 class="text-black font-weight-light mb-4">John Smith</h2>
-            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur ab quas facilis obcaecati non ea, est odit repellat distinctio incidunt, quia aliquam eveniet quod deleniti impedit sapiente atque tenetur porro?</p>
-            <p>
-              <a href="#" class="pl-0 pr-3"><span class="icon-twitter"></span></a>
-              <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
-              <a href="#" class="pl-3 pr-3"><span class="icon-facebook"></span></a>
-            </p>
+            <img src="{{asset('frontend/images/face3.jpeg')}}" alt="Image" class="img-fluid w-50 rounded-circle mb-4">
+            <h2 class="text-black font-weight-light mb-4">Treatment</h2>
+            
           </div>
+          <h2>About</h2>
+          <p><i>&ldquo;
+            Beauty Clinic &ldquo;is conveniently located at No.216,First floor,Excel Taresure Hotel,<br>Yango Myanmar Yangon and another branch is located No.542, Strand Road, Corner of 11st, Lanmadaw Township.
+            The shop is spacious and beautifully decorated with a modern stylish. &ldquo;Beauty Clinic&ldquo; is located on a perfect spot where the surrounding neighborhood is extremely peaceful and near the Inya Lake.
+            Service is superb. All servers greeted us with a simile, ready to serve and answer the entire questions whenever the customers have questions regarding the service.
+            &ldquo;Beauty Clinc&ldquo; is a beauty clinic which provides facial treatment, cosmetic dermatology, general dermatology and minor surgery. UK trained experienced Dermatologist are offering the best treatment provided with the latest machines, tools and high quality machines so that customers can be reliable.
+            &ldquo;Beauty Clinic&ldquo; is a place where beauty and health related problems can be assessed and be treated by professional doctors using apparatuses of late technology.&ldquo;
+          </i></p>
         </div>
       </div>
     </div>
@@ -86,8 +91,8 @@
       <div class="container">
         <div class="row text-center">
           <div class="col-md-12">
-            <h2 class="mb-4 text-black">We want your hair to look fabulous</h2>
-            <p class="mb-0"><a href="#" class="btn btn-primary py-3 px-5 text-white">Visit Our Salon Now</a></p>
+            <h2 class="mb-4 text-black">We want your skin to look </h2>
+            <p class="mb-0"><a href="#" class="btn btn-primary py-3 px-5 text-white">Visit Our clinic Now</a></p>
           </div>
         </div>
       </div>

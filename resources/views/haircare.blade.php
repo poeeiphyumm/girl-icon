@@ -9,18 +9,23 @@
     </div>
 
         <div class="container-fluid">
-      <div class="row">
+          <div class="row">
 
-        @foreach($services as $service)
-
+             @foreach($services as $service)
+          <a href="{{ route('haircaredetail',$service->id) }}">
           <div class="col-lg-4 col-md-4 col-sm-12">
-           <img src="{{asset($service->photo)}}">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-              <p>{{$service->name}}</p>
+            
+              <img src="{{asset($service->photo)}}" width="400px" height="300px">
+            
+
+
+            <a href="" class="appointment text-decoration-none" value="Appointment">Appointment</a>
+            
           </div>
+          </a>
 
         @endforeach
+<<<<<<< HEAD
     <h1><center>Hair Care Services</center></h1><br><br>
     <div class="container-fluid">
       <div class="row">
@@ -42,4 +47,9 @@
 
       </div>
     </div> 
+=======
+
+          </div>
+       </div> 
+>>>>>>> 145807f5feac1a66dc1eae8a8bc512ebfed15550
 @endsection

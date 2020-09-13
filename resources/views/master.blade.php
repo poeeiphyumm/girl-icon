@@ -80,6 +80,13 @@
                     <li><a href="{{ asset('skintherapy') }}">Skin Therapy</a></li>
                     <li><a href="{{ asset('sparest') }}">Spa Rest</a></li>
 
+                    
+                  </ul>
+                </li>
+                
+               
+                <li><a href="{{asset('about')}}">About</a></li>
+                               
                     <li><a href="{{asset('haircare')}}">Hair Care</a></li>
 
                     <li><a href="">Hair Care</a></li>
@@ -107,19 +114,29 @@
                     <li><a href="#">Spa Rest</a></li>
                   </ul>
                 </li>
+<<<<<<< HEAD
 
+=======
+                
+>>>>>>> 145807f5feac1a66dc1eae8a8bc512ebfed15550
                 {{-- <li><a href="{{asset('booking')}}">Book Online</a></li> --}}
 {{--                 <li><a href="">Services</a></li>
  --}}                <li><a href="{{asset('about')}}">About</a></li>
                 <li><a href="{{asset('booking')}}">Appointment</a></li>
                 <li><a href="{{asset('contact')}}">Contact</a></li>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 145807f5feac1a66dc1eae8a8bc512ebfed15550
                 <li><a href="{{route('aboutpage')}}">About</a></li>
                 <li><a href="{{route('bookingpage')}}">Appointment</a></li>
                 <li><a href="{{route('contactpage')}}">Contact</a></li>
                
                 <li><a href="{{asset('about')}}">About</a></li>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 145807f5feac1a66dc1eae8a8bc512ebfed15550
               </ul>
             </nav>
           </div>
@@ -161,12 +178,16 @@
       </div>
       
     </header>
+<<<<<<< HEAD
 
   
 @section('yield')
 
     <div class="site-section">
 
+=======
+
+>>>>>>> 145807f5feac1a66dc1eae8a8bc512ebfed15550
 
 @yield('content')
      

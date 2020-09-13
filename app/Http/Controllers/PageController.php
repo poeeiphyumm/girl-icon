@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Service;
+use DB;
 class PageController extends Controller
 {
     public function mainfun($value='')
@@ -11,10 +12,10 @@ class PageController extends Controller
         // $services=Service::all();
         return view('main');
     }
-     public function bookingfun($value='')
+     public function appointmentfun($value='')
      {
         
-     	return view('booking');
+     	return view('appointment');
     }
 
     public function contactfun($value='')
@@ -47,8 +48,6 @@ class PageController extends Controller
         return view('footcare');
     }
 
-<<<<<<< HEAD
-=======
      public function handcarefun($value='')
      {
         
@@ -73,7 +72,6 @@ class PageController extends Controller
     // }
 
 
->>>>>>> ea9b5a970646e6c62eda2b850f3a2ed083e270f9
     public function registerfun($value='')
     {
         
@@ -83,29 +81,84 @@ class PageController extends Controller
     {
         return view('ourservice');
     }
-<<<<<<< HEAD
     
-=======
     public function bodycarefun($value='')
     {
-        $services = Service::all();
+        // $services = Service::all();
+        $services =DB::table('services')->where('service_name','bodycare')->get();
         return view('bodycare',compact('services'));
     }
      public function skincarefun($value='')
     {
-        $services = Service::all();
+        $services =DB::table('services')->where('service_name','skincare')->get();
         return view('skincare',compact('services'));
     }
      public function haircarefun($value='')
     {
-        $services = Service::all();
+        $services =DB::table('services')->where('service_name','haircare')->get();
         return view('haircare',compact('services'));
     }
      public function nailcarefun($value='')
     {
-        $services = Service::all();
+        $services =DB::table('services')->where('service_name','nailcare')->get();
         return view('nailcare',compact('services'));
     }
+    public function facecarefun($value='')
+    {
+        $services =DB::table('services')->where('service_name','facecare')->get();
+        return view('facecare',compact('services'));
+    }
+    public function handcarefun($value='')
+    {
+        $services =DB::table('services')->where('service_name','handcare')->get();
+        return view('handcare',compact('services'));
+    }
+    public function footcarefun($value='')
+    {
+        // $services = Service::all();
+        $services =DB::table('services')->where('service_name','footcare')->get();
+        return view('footcare',compact('services'));
+    }
+    public function sparestfun($value='')
+    {
+        $services =DB::table('services')->where('service_name','sparestcare')->get();
+        return view('sparest',compact('services'));
+    }
 
->>>>>>> ea9b5a970646e6c62eda2b850f3a2ed083e270f9
+    public function bodycaredetailfun($id)
+    {
+        $services = Service::find($id);
+        return view('bodycaredetail',compact('services'));
+    }
+     public function haircaredetailfun($id)
+    {
+        $services = Service::find($id);
+        return view('haircaredetail',compact('services'));
+    }
+    public function skincaredetailfun($id)
+    {
+        $services = Service::find($id);
+        return view('skincaredetail',compact('services'));
+    }
+    public function nailcaredetailfun($id)
+    {
+        $services = Service::find($id);
+        return view('nailcaredetail',compact('services'));
+    }
+    public function handcaredetailfun($id)
+    {
+        $services = Service::find($id);
+        return view('handcaredetail',compact('services'));
+    }
+    public function facecaredetailfun($id)
+    {
+        $services = Service::find($id);
+        return view('facecaredetail',compact('services'));
+    }
+    public function footcaredetailfun($id)
+    {
+        $services = Service::find($id);
+        return view('footcaredetail',compact('services'));
+    }
+
 }

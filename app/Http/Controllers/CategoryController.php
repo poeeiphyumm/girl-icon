@@ -43,22 +43,16 @@ class CategoryController extends Controller
       //dd($request);
          $request->validate([
             "category_name" => 'required',
-            "photo" => 'required',
         ]);
 
         //
 
-        //If include file,upload file
-        $imageName = time().'-'.$request->photo->extension();
-        $request->photo->move(public_path('backend/categoryimg'),$imageName);
-        // ပုံပတ်လမ်းကြောင်းသိမ်း
-        $path = 'backend/categoryimg/'.$imageName;
+        
         //
         //Data insert
         $category = new Category;
         
         $category->category_name = $request->category_name;
-        $category->photo = $path;
 
         $category->save();
 
@@ -103,25 +97,11 @@ class CategoryController extends Controller
          //$request က edit form  ထဲက data ပါလာ
          $request->validate([
             "category_name" => 'required',
-            "photo" => 'sometimes',
-            "oldphoto" => 'required',
-        ]);
+           ]);
 
-        //file upload, if data
-        if($request->hasFile('photo')){
-            $imageName = time().'-'.$request->photo->extension();
-
-                    $request->photo->move(public_path('backend/categoryimg'),$imageName);
-
-                            $path = 'backend/categoryimg/'.$imageName;
-
-        }else{
-            $path=$request->oldphoto;
-        }
-
+        
         //data update
         $category->category_name = $request->category_name;
-        $category->photo = $path;
         $category->save();
 
         //redirect
