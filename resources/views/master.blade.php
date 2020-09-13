@@ -70,10 +70,7 @@
                 <li class="has-children">
                   <a href="haircut.html">Category</a>
                   <ul class="dropdown">
-<<<<<<< HEAD
-=======
                     <li><a href="">Hair Care</a></li>
->>>>>>> 8ccc60cea1da0c66ca4721ad2c5720cffe431549
                     <li><a href="{{asset('bodycare')}}">Body Care</a></li>
                     <li><a href="#">Skin Care</a></li>
                     <li><a href="#">Nail Care</a></li>
@@ -84,7 +81,6 @@
                     <li><a href="#">Spa Rest</a></li>
                   </ul>
                 </li>
-<<<<<<< HEAD
                 <li class="has-children">
                   <a href="">Services</a>
                     <ul class="dropdown">
@@ -98,13 +94,10 @@
                     <li><a href="#">Spa Rest</a></li>
                   </ul>
                 </li>
-                <li><a href="{{asset('about')}}">About</a></li>
-                <li><a href="{{asset('booking')}}">Book Online</a></li>
-=======
+                {{-- <li><a href="{{asset('booking')}}">Book Online</a></li> --}}
 {{--                 <li><a href="">Services</a></li>
  --}}                <li><a href="{{asset('about')}}">About</a></li>
                 <li><a href="{{asset('booking')}}">Appointment</a></li>
->>>>>>> 8ccc60cea1da0c66ca4721ad2c5720cffe431549
                 <li><a href="{{asset('contact')}}">Contact</a></li>
               </ul>
             </nav>
@@ -136,19 +129,11 @@
       </div>
       
     </header>
-
-<<<<<<< HEAD
-=======
   
-
-
 @section('yield')
-
-
 
     <div class="site-section">
 
->>>>>>> 754a2997ec6786fc53d5111bad88909e0e710e06
 @yield('content')
      
 <footer class="site-footer">

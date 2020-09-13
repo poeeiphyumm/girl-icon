@@ -61,14 +61,8 @@ Route::get('about', 'PageController@aboutfun')->name('aboutpage');
 
 Route::get('contact', 'PageController@contactfun')->name('contactpage');
 Route::get('about', 'PageController@aboutfun')->name('aboutpage');
-<<<<<<< HEAD
 Route::get('ourservice', 'PageController@ourservicefun')->name('ourservicepage');
 Route::get('bodycare', 'PageController@bodycarefun')->name('bodycarepage');
-=======
-Route::get('bodycare','PageController@bodycarefun')->name('bodycarepage');
->>>>>>> 8ccc60cea1da0c66ca4721ad2c5720cffe431549
-
-
 
 Route::get('dashboard', 'backendController@dashboardfun') ->name('dashboardpage');
 
@@ -77,13 +71,9 @@ Route::get('dashboard', 'backendController@dashboardfun') ->name('dashboardpage'
 
 // Route::get('index', 'BackendController@indexfun')->name('indexpage');
 
-
-<<<<<<< HEAD
-
-=======
 Route::resource('employees','EmployeeController');
 Route::resource('services','ServiceController');
 Route::resource('customers','CustomerController');
 
 Route::resource('customers','CustomerController');
->>>>>>> 8ccc60cea1da0c66ca4721ad2c5720cffe431549
+
