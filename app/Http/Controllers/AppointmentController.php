@@ -61,6 +61,10 @@ class AppointmentController extends Controller
         $request->validate([
             "date"=>'required',
             "time"=>'required',
+<<<<<<< HEAD
+=======
+
+>>>>>>> aea75e1bfcf7d807b73aef5326ec19c706c69c9a
             "status"=>'required',
             "appointment_status"=>'required',
             "customer_id"=>'required',

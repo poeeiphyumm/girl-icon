@@ -6,7 +6,7 @@
 
     <div class="row justify-content-center">
       <div class="col-5 mt-5">
-        <form  method="POST" action="#">
+        <form  method="POST" action="{{route('login')}}">
           @csrf
             <div>
               <div class="row">
@@ -46,7 +46,7 @@
           </form>
 
           <div class=" mt-3 text-center ">
-            <a href="#" class="loginLink text-decoration-none" style="color:violet;">Need an account? Sign Up!</a>
+            <a href="{{route('register')}}" class="loginLink text-decoration-none" style="color:violet;">Need an account? Sign Up!</a>
           </div>
       </div>
     </div>

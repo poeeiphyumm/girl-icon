@@ -15,20 +15,20 @@ class CreateAppointmentsTable extends Migration
     {
         Schema::create('appointments', function (Blueprint $table) {
             $table->id();
+            $table->string('appointment_name');
             $table->date('date');
             $table->time('time');
-            $table->string('status');
+            $table->string('appointment_status');
 
             $table->unsignedBigInteger('customer_id');
-            $table->timestamps();
+            
 
             $table->foreign('customer_id')
                     ->references('id')
                     ->on('customers')
                     ->onDelete('cascade');
-        
+            $table->timestamps();
         });
-
     }
 
     /**

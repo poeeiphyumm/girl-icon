@@ -21,6 +21,17 @@
 			    		<td>Price</td>
 			    		<td>Photo</td>
 			    		<td>Category_id</td>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+			    		<td>Service_Image</td>
+=======
+			    		<td>Photo</td>
+>>>>>>> 8ccc60cea1da0c66ca4721ad2c5720cffe431549
+>>>>>>> d056c456610e9c9c51a748b7a0444981262a4ded
+>>>>>>> aea75e1bfcf7d807b73aef5326ec19c706c69c9a
 			    		<td>Action</td>
 
 		    		</tr>
@@ -34,9 +45,28 @@
 			    		<td>{{ $service->service_name }}</td>
 			    		<td>{{ $service->duration }}</td>
 			    		<td>{{ $service->price }}</td>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+
+			    		<td>{{ $service->category_id }}</td>
+			    		<td>{{ $service->photo }}</td>
+
+			    		<td>{{$service->category_id}}</td>
+
+=======
+<<<<<<< HEAD
+			    		<td>{{ $service->category_id}}</td>
+>>>>>>> aea75e1bfcf7d807b73aef5326ec19c706c69c9a
 			    		<td>{{ $service->photo}}</td>
 			    		<td>{{ $service->category_id }}</td>
+<<<<<<< HEAD
 			    		
+=======
+			    		<td>{{ $service->photo }}</td>
+>>>>>>> 8ccc60cea1da0c66ca4721ad2c5720cffe431549
+>>>>>>> d056c456610e9c9c51a748b7a0444981262a4ded
+>>>>>>> aea75e1bfcf7d807b73aef5326ec19c706c69c9a
 			    		<td>
 			    			<a href="#" class="btn btn-primary">Detail</a>
 			    			<a href="{{ route('services.edit',$service->id) }}" class="btn btn-secondary">Edit</a>

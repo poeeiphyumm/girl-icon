@@ -171,6 +171,39 @@
                 </form>
               </div>
             </li>
+            <li>
+              <div class="col-lg-4 col-10">
+                        <!-- Authentication Links -->
+                        @guest
+                            {{-- <li class="nav-item"> --}}
+                                <a class="d-xl-block d-lg-block d-md-block d-none  text-decoration-none loginLink float-right" href="{{ route('loginpage') }}">{{ __('Login') }}</a>
+                            {{-- </li> --}}
+                            @if (Route::has('register'))
+                                {{-- <li class="nav-item"> --}}
+                                    <a class="d-xl-block d-lg-block d-md-block d-none  text-decoration-none loginLink float-right" href="{{ route('registerpage') }}">{{ __('Register') }}|</a>
+                                {{-- </li> --}}
+                            @endif
+                        @else
+                            {{-- <li class="nav-item dropdown"> --}}
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    {{ Auth::user()->name }}
+                                </a>
+
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                        {{ __('Logout') }}
+                                    </a>
+
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                        @csrf
+                                    </form>
+                                </div>
+                            
+                        @endguest
+                        </div>
+            </li>
 
             <!-- Nav Item - Alerts -->
             <li class="nav-item dropdown no-arrow mx-1">

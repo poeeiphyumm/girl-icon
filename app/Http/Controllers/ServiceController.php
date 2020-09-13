@@ -40,9 +40,24 @@ class ServiceController extends Controller
      */
     public function store(Request $request)
     {
+<<<<<<< HEAD
        
 
          //If include file,upload file
+=======
+       //dd($request);
+         $request->validate([
+            "service_name" => 'required',
+            "duration" => 'required',
+            "price" => 'required',
+            "category_id" => 'required',
+            "photo"=>'required',
+            
+        ]);
+
+         //If include file,upload file
+
+>>>>>>> aea75e1bfcf7d807b73aef5326ec19c706c69c9a
        // dd($request);
         //  $request->validate([
         //     "service_name" => 'required',
@@ -52,7 +67,13 @@ class ServiceController extends Controller
         //     "photo"=>'required'
             
         // ]);
+<<<<<<< HEAD
         $imageName = time().'.'.$request->photo->extension();
+=======
+
+        $imageName = time().'.'.$request->photo->extension();
+        $imageName = time().'-'.$request->photo->extension();
+>>>>>>> aea75e1bfcf7d807b73aef5326ec19c706c69c9a
         $request->photo->move(public_path('backend/serviceimg'),$imageName);
         // ပုံပတ်လမ်းကြောင်းသိမ်း
         $path = 'backend/serviceimg/'.$imageName;
@@ -61,9 +82,16 @@ class ServiceController extends Controller
         $service->service_name = $request->service_name;
         $service->duration = $request->duration;
         $service->price = $request->price;
+<<<<<<< HEAD
         $service->photo=$path;
         $service->category_id=$request->category;
         
+=======
+        $service->category_id=$request->category;
+        $service->photo=$path;
+
+        $service->photo=$path;
+>>>>>>> aea75e1bfcf7d807b73aef5326ec19c706c69c9a
         $service->save();
 
         //redirect

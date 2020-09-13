@@ -59,6 +59,7 @@
                 <li class="has-children">
                   <a href="haircut.html">Category</a>
                   <ul class="dropdown">
+<<<<<<< HEAD
                     <li><a href="{{ asset('haircare') }}">Hair Care</a></li>
                     <li><a href="{{asset('bodycare')}}">Body Care</a></li>
                     <li><a href="{{ asset('skincare') }}">Skin Care</a></li>
@@ -68,6 +69,38 @@
                     <li><a href="{{ asset('footcare') }}">Foot Care</a></li>
                     <li><a href="{{ asset('skintherapy') }}">Skin Therapy</a></li>
                     <li><a href="{{ asset('sparest') }}">Spa Rest</a></li>
+=======
+<<<<<<< HEAD
+                    <li><a href="{{asset('haircare')}}">Hair Care</a></li>
+=======
+<<<<<<< HEAD
+=======
+                    <li><a href="">Hair Care</a></li>
+>>>>>>> 8ccc60cea1da0c66ca4721ad2c5720cffe431549
+>>>>>>> d056c456610e9c9c51a748b7a0444981262a4ded
+                    <li><a href="{{asset('bodycare')}}">Body Care</a></li>
+                    <li><a href="{{asset('skincare')}}">Skin Care</a></li>
+                    <li><a href="{{asset('nailcare')}}">Nail Care</a></li>
+                    <li><a href="{{asset('face')}}">Face Care</a></li>
+                    <li><a href="{{asset('handcare')}}">Hand Care</a></li>
+                    <li><a href="{{asset('footcare')}}">Foot Care</a></li>
+                    {{-- <li><a href="#">Skin Therapy</a></li> --}}
+                    <li><a href="{{asset('spa')}}">Spa Rest</a></li>
+                  </ul>
+                </li>
+<<<<<<< HEAD
+                <li class="has-children">
+                  <a href="">Services</a>
+                    <ul class="dropdown">
+                    <li><a href="{{asset('ourservice')}}">Our Service</a></li>
+                    <li><a href="#">Service One</a></li>
+                    <li><a href="#">Service Two</a></li>
+                    <li><a href="#">Face Care</a></li>
+                    <li><a href="#">Hand Care</a></li>
+                    <li><a href="#">Foot Care</a></li>
+                    <li><a href="#">Skin Therapy</a></li>
+                    <li><a href="#">Spa Rest</a></li>
+>>>>>>> aea75e1bfcf7d807b73aef5326ec19c706c69c9a
                   </ul>
                 </li>
                
@@ -105,6 +138,13 @@
       </div>
       
     </header>
+<<<<<<< HEAD
+
+
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> d056c456610e9c9c51a748b7a0444981262a4ded
   
 
 
@@ -113,6 +153,7 @@
 
 
     <div class="site-section">
+>>>>>>> b90a352339d5236d91dfaf18a03cef4542bbc10b
 
 @yield('content')
      
