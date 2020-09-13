@@ -35,8 +35,6 @@
 		    			<td>{{ $appointment->time }}</td>
 			    		<td>{{ $appointment->status }}</td>
 			    		<td>{{ $appointment->customer_id }}</td>
-			    		
-			    		
 			    		<td>
 			    			{{-- <a href="#" class="btn btn-primary">Detail</a> --}}
 			    			<a href="{{ route('appointments.edit',$appointment->id) }}" class="btn btn-secondary">Edit</a>

@@ -10,7 +10,7 @@
           <div class="container my-5">
             <div class="row justify-content-center">
               <div class="col-8">
-                <form method="POST" action="#">
+                <form method="POST" action="{{route('register')}}">
                   @csrf
                   <div class="row">
                     <div class="col-md-6">
@@ -90,7 +90,7 @@
                 </form>
 
                 <div class=" mt-3 text-center ">
-                  <a href="#" class="loginLink text-decoration-none">Have an account? Go to login</a>
+                  <a href="{{route('login')}}" class="loginLink text-decoration-none">Have an account? Go to login</a>
                 </div>
               </div>
             </div>

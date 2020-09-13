@@ -4,12 +4,13 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-
+use App\Service;
 class PageController extends Controller
 {
     public function mainfun($value='')
     {
-        return view('main');
+        $services=Service::all();
+        return view('main',compact('services'));
     }
      public function bookingfun($value='')
      {
@@ -25,7 +26,7 @@ class PageController extends Controller
 
      public function servicefun($value='')
      {
-        
+        // $services =Service::all();
      	return view('services');
     }
 
@@ -43,10 +44,12 @@ class PageController extends Controller
 
     public function bodycarefun($value='')
      {
-        
-        return view('bodycare');
+
+        $services=Service::all();
+        return view('services',compact('services'));
     }
 
+<<<<<<< HEAD
      public function haircarefun($value='')
      {
         
@@ -98,9 +101,21 @@ class PageController extends Controller
 
     public function registerfun($value='')
 
+=======
+
+    public function registerfun($value='')
+>>>>>>> d056c456610e9c9c51a748b7a0444981262a4ded
     {
         
         return view('register');
+    }
+    public function ourservicefun($value='')
+    {
+        return view('ourservice');
+    }
+     public function bodycarefun($value='')
+    {
+        return view('bodycare');
     }
 
 }

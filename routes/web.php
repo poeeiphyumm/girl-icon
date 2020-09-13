@@ -31,6 +31,10 @@ Route::get('loginform', 'PageController@loginfun')->name('loginpage');
 	Route::resource('employees','EmployeeController');
 
 	Route::resource('appointments','AppointmentController');
+
+	Route::resource('employees','EmployeeController');
+
+	Route::resource('customers','CustomerController');
 //backend
 
 // Route::get('create', 'BackendController@createfun')->name('createpage');
@@ -57,6 +61,7 @@ Route::get('about', 'PageController@aboutfun')->name('aboutpage');
 
 Route::get('contact', 'PageController@contactfun')->name('contactpage');
 Route::get('about', 'PageController@aboutfun')->name('aboutpage');
+<<<<<<< HEAD
 Route::get('bodycare','PageController@bodycarefun')->name('bodycarepage');
 Route::get('face','PageController@facecarefun')->name('facecarepage');
 Route::get('haircare','PageController@haircarefun')->name('haircarepage');
@@ -65,9 +70,25 @@ Route::get('footcare','PageController@footcarefun')->name('footcarepage');
 Route::get('handcare','PageController@handcarefun')->name('handcarepage');
 Route::get('skincare','PageController@skincarefun')->name('skincarepage');
 Route::get('spa','PageController@spafun')->name('spapage');
+=======
+
+Route::get('ourservice', 'PageController@ourservicefun')->name('ourservicepage');
+Route::get('bodycare', 'PageController@bodycarefun')->name('bodycarepage');
+Route::get('bodycare','PageController@bodycarefun')->name('bodycarepage');
+>>>>>>> d056c456610e9c9c51a748b7a0444981262a4ded
 
 
 Route::get('dashboard', 'backendController@dashboardfun') ->name('dashboardpage');
+
+
+Route::resource('employees','EmployeeController');
+Route::resource('customers','CustomerController');
+
+Route::get('services','PageController@bodycarefun')->name('bodycarepage');
+
+
+
+
 
 // Route::resource('appointments', 'AppointmentController');
 // Route::resource('customers', 'AppointmentController');
@@ -75,8 +96,20 @@ Route::get('dashboard', 'backendController@dashboardfun') ->name('dashboardpage'
 // Route::get('index', 'BackendController@indexfun')->name('indexpage');
 
 
-Route::resource('categories','CategoryController');
+
 Route::resource('employees','EmployeeController');
 Route::resource('services','ServiceController');
+Route::resource('customers','CustomerController');
 
 Route::resource('customers','CustomerController');
+ 
+
+
+Route::middleware('role:Admin')->group(function(){
+Route::get('dashboard', 'backendController@dashboardfun') ->name('dashboardpage');
+});
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+ 
