@@ -108,7 +108,7 @@
                     <li><a href="#">Spa Rest</a></li>
                   </ul>
                 </li>
-                <li><a href="{{route('aboutpage')}}">About</a></li>
+                
                 <li><a href="{{route('bookingpage')}}">Appointment</a></li>
                 <li><a href="{{route('contactpage')}}">Contact</a></li>
                

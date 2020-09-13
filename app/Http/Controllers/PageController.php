@@ -11,10 +11,10 @@ class PageController extends Controller
         // $services=Service::all();
         return view('main');
     }
-     public function bookingfun($value='')
+     public function appointmentfun($value='')
      {
         
-     	return view('booking');
+     	return view('appointment');
     }
 
     public function contactfun($value='')

@@ -1,12 +1,6 @@
 @extends('master')
 @section('content')
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
     <h1><center>Body Care Services</center></h1><br><br>
-=======
-<<<<<<< HEAD
->>>>>>> aea75e1bfcf7d807b73aef5326ec19c706c69c9a
 
 
   <div class="jumbotron jumbotron-fluid subtitle">
@@ -20,11 +14,9 @@
 
         @foreach($services as $service)
 
-<<<<<<< HEAD
-=======
+
          {{--  <div class="col-lg-4 col-md-4 col-sm-12">
-=======
-<<<<<<< HEAD
+
 <div class="container">
   	<div class="row mt-5">
       <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
@@ -32,9 +24,7 @@
       </div>
     </div>
   </div>
-=======
     <h1><center>Body Care Services</center></h1>
->>>>>>> d056c456610e9c9c51a748b7a0444981262a4ded
     <div class="container-fluid">
       <div class="row">
         <div class="col-lg-4 col-md-4 col-sm-12" >
@@ -42,7 +32,6 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
         </div>
->>>>>>> aea75e1bfcf7d807b73aef5326ec19c706c69c9a
           <div class="col-lg-4 col-md-4 col-sm-12">
            <img src="{{asset($service->photo)}}">
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -52,5 +41,5 @@
 
         @endforeach
       </div>
-    </div> 
+    </div> --}}
 @endsection

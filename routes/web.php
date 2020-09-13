@@ -107,11 +107,12 @@ Route::resource('customers','CustomerController');
 Route::get('services','PageController@bodycarefun')->name('bodycarepage');
 Route::resource('services','ServiceController');
 
-Route::resource('customers','CustomerController');
+//Route::resource('customers','CustomerController');
  
 
 
 Route::middleware('role:Admin')->group(function(){
+
 Route::get('dashboard', 'backendController@dashboardfun') ->name('dashboardpage');
 });
 
