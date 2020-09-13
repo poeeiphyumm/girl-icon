@@ -61,17 +61,11 @@ class AppointmentController extends Controller
         $request->validate([
             "date"=>'required',
             "time"=>'required',
-<<<<<<< HEAD
             "status"=>'required',
-=======
             "appointment_status"=>'required',
-<<<<<<< HEAD
             "customer_id"=>'required',
             "photo"=>'required',
-=======
->>>>>>> 779ba2dccfb78cee22a13760d11d4b739f603b06
             "customer_id"=>'required'
->>>>>>> 8ccc60cea1da0c66ca4721ad2c5720cffe431549
             ]);
 
         //Data insert

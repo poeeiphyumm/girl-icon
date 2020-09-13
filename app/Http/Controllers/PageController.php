@@ -9,8 +9,8 @@ class PageController extends Controller
 {
     public function mainfun($value='')
     {
-        $services=Service::all();
-        return view('main',compact('services'));
+        // $services=Service::all();
+        return view('main');
     }
      public function bookingfun($value='')
      {
@@ -35,14 +35,6 @@ class PageController extends Controller
         
         return view('about');
     }
-
-    public function bodycarefun($value='')
-     {
-
-        $services=Service::all();
-        return view('services',compact('services'));
-    }
-
    
     public function registerfun($value='')
     {
@@ -53,9 +45,25 @@ class PageController extends Controller
     {
         return view('ourservice');
     }
-     public function bodycarefun($value='')
+    public function bodycarefun($value='')
     {
-        return view('bodycare');
+        $services = Service::all();
+        return view('bodycare',compact('services'));
+    }
+     public function skincarefun($value='')
+    {
+        $services = Service::all();
+        return view('skincare',compact('services'));
+    }
+     public function haircarefun($value='')
+    {
+        $services = Service::all();
+        return view('haircare',compact('services'));
+    }
+     public function nailcarefun($value='')
+    {
+        $services = Service::all();
+        return view('nailcare',compact('services'));
     }
 
 }

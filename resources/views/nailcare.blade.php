@@ -4,7 +4,7 @@
 
   <div class="jumbotron jumbotron-fluid subtitle">
       <div class="container">
-        <h1><center>Body Care Services</center></h1>
+        <h1><center>Nail Care Services</center></h1>
       </div>
     </div>
 

@@ -40,19 +40,9 @@ class ServiceController extends Controller
      */
     public function store(Request $request)
     {
-<<<<<<< HEAD
-       //dd($request);
-         $request->validate([
-            "service_name" => 'required',
-            "duration" => 'required',
-            "price" => 'required',
-            "category_id" => 'required',
-            "photo"=>'required',
-            
-        ]);
+       
 
          //If include file,upload file
-=======
        // dd($request);
         //  $request->validate([
         //     "service_name" => 'required',
@@ -62,12 +52,7 @@ class ServiceController extends Controller
         //     "photo"=>'required'
             
         // ]);
-<<<<<<< HEAD
         $imageName = time().'.'.$request->photo->extension();
-=======
->>>>>>> 8ccc60cea1da0c66ca4721ad2c5720cffe431549
-        $imageName = time().'-'.$request->photo->extension();
->>>>>>> 0a0420093c6558844862c8bd631e8fa40aa9bfcc
         $request->photo->move(public_path('backend/serviceimg'),$imageName);
         // ပုံပတ်လမ်းကြောင်းသိမ်း
         $path = 'backend/serviceimg/'.$imageName;
@@ -76,16 +61,9 @@ class ServiceController extends Controller
         $service->service_name = $request->service_name;
         $service->duration = $request->duration;
         $service->price = $request->price;
+        $service->photo=$path;
         $service->category_id=$request->category;
-<<<<<<< HEAD
-        $service->photo=$path;
-=======
-<<<<<<< HEAD
-        $service->photo=$path;
-=======
-        $service->photo=$request->photo;
->>>>>>> 8ccc60cea1da0c66ca4721ad2c5720cffe431549
->>>>>>> 0a0420093c6558844862c8bd631e8fa40aa9bfcc
+        
         $service->save();
 
         //redirect
@@ -129,8 +107,8 @@ class ServiceController extends Controller
             "service_name" => 'required',
             "duration" => 'required',
             "price" => 'required',
-            "category_id"=>'required',
             "photo"=>'sometimes',
+            "category_id"=>'required',
             "oldphoto" => 'required'
         ]);
 
