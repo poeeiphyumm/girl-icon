@@ -52,8 +52,45 @@ Route::get('services', 'PageController@servicefun')->name('servicepage');
 
 Route::get('about', 'PageController@aboutfun')->name('aboutpage');
 
+//by poeei frontend
 
+Route::get('haircare', 'PageController@haircarefun')->name('haircarepage');
+
+Route::get('bodycare', 'PageController@bodycarefun')->name('bodycarepage');
+
+Route::get('skincare', 'PageController@skincarefun')->name('skincarepage');
+
+Route::get('nailcare', 'PageController@nailcarefun')->name('nailcarepage');
+
+
+
+Route::get('contact', 'PageController@contactfun')->name('contactpage');
+Route::get('about', 'PageController@aboutfun')->name('aboutpage');
+<<<<<<< HEAD
+Route::get('ourservice', 'PageController@ourservicefun')->name('ourservicepage');
+Route::get('bodycare', 'PageController@bodycarefun')->name('bodycarepage');
+=======
+Route::get('bodycare','PageController@bodycarefun')->name('bodycarepage');
+Route::get('face','PageController@facecarefun')->name('facecarepage');
+Route::get('haircare','PageController@haircarefun')->name('haircarepage');
+Route::get('nailcare','PageController@nailcarefun')->name('nailcarepage');
+Route::get('footcare','PageController@footcarefun')->name('footcarepage');
+Route::get('handcare','PageController@handcarefun')->name('handcarepage');
+Route::get('skincare','PageController@skincarefun')->name('skincarepage');
+Route::get('spa','PageController@spafun')->name('spapage');
+
+Route::get('ourservice', 'PageController@ourservicefun')->name('ourservicepage');
+Route::get('bodycare', 'PageController@bodycarefun')->name('bodycarepage');
+Route::get('bodycare','PageController@bodycarefun')->name('bodycarepage');
+
+
+>>>>>>> ea9b5a970646e6c62eda2b850f3a2ed083e270f9
+
+//end frontend by poeei
 // Route::get('index', 'BackendController@indexfun')->name('indexpage');
+
+Route::resource('employees','EmployeeController');
+Route::resource('customers','CustomerController');
 
 
 
@@ -62,18 +99,35 @@ Route::get('about', 'PageController@aboutfun')->name('aboutpage');
 Route::get('contact', 'PageController@contactfun')->name('contactpage');
 Route::get('about', 'PageController@aboutfun')->name('aboutpage');
 Route::get('ourservice', 'PageController@ourservicefun')->name('ourservicepage');
-Route::get('bodycare', 'PageController@bodycarefun')->name('bodycarepage');
-
-Route::get('dashboard', 'backendController@dashboardfun') ->name('dashboardpage');
 
 // Route::resource('appointments', 'AppointmentController');
 // Route::resource('customers', 'AppointmentController');
 
-// Route::get('index', 'BackendController@indexfun')->name('indexpage');
 
+<<<<<<< HEAD
+=======
+
+Route::get('dashboard', 'backendController@dashboardfun') ->name('dashboardpage');
+>>>>>>> ea9b5a970646e6c62eda2b850f3a2ed083e270f9
 Route::resource('employees','EmployeeController');
+Route::resource('customers','CustomerController');
+
+Route::get('services','PageController@bodycarefun')->name('bodycarepage');
 Route::resource('services','ServiceController');
-Route::resource('customers','CustomerController');
 
 Route::resource('customers','CustomerController');
+<<<<<<< HEAD
 
+=======
+ 
+
+
+Route::middleware('role:Admin')->group(function(){
+Route::get('dashboard', 'backendController@dashboardfun') ->name('dashboardpage');
+});
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+ 
+>>>>>>> ea9b5a970646e6c62eda2b850f3a2ed083e270f9
