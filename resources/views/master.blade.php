@@ -59,24 +59,8 @@
                 <li class="has-children">
                   <a href="#">Category</a>
                   <ul class="dropdown">
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-
-
->>>>>>> ea9b5a970646e6c62eda2b850f3a2ed083e270f9
                     <li><a href="">Hair Care</a></li>
                     <li><a href="{{asset('bodycare')}}">Body Care</a></li>
-                    <li><a href="">Skin Care</a></li>
-                    <li><a href="#">Nail Care</a></li>
-                    <li><a href="#">Face Care</a></li>
-                    <li><a href="#">Hand Care</a></li>
-                    <li><a href="#">Foot Care</a></li>
-                    <li><a href="#">Skin Therapy</a></li>
-                    <li><a href="#">Spa Rest</a></li>
- 
->>>>>>> 0014ba7e10f9f64c2e841d7072dfe0e2fc39d878
                     <li><a href="{{ asset('haircare') }}">Hair Care</a></li>
                     <li><a href="{{asset('bodycare')}}">Body Care</a></li>
                     <li><a href="{{ asset('skincare') }}">Skin Care</a></li>
@@ -86,57 +70,19 @@
                     <li><a href="{{ asset('footcare') }}">Foot Care</a></li>
                     <li><a href="{{ asset('skintherapy') }}">Skin Therapy</a></li>
                     <li><a href="{{ asset('sparest') }}">Spa Rest</a></li>
-
-<<<<<<< HEAD
                     
                   </ul>
                 </li>
                 
                
-                <li><a href="{{asset('about')}}">About</a></li>
-                               
-=======
-                    <li><a href="{{asset('haircare')}}">Hair Care</a></li>
-
-                    <li><a href="">Hair Care</a></li>
-
-                    <li><a href="{{asset('bodycare')}}">Body Care</a></li>
-                    <li><a href="{{asset('skincare')}}">Skin Care</a></li>
-                    <li><a href="{{asset('nailcare')}}">Nail Care</a></li>
-                    <li><a href="{{asset('face')}}">Face Care</a></li>
-                    <li><a href="{{asset('handcare')}}">Hand Care</a></li>
-                    <li><a href="{{asset('footcare')}}">Foot Care</a></li>
-                    {{-- <li><a href="#">Skin Therapy</a></li> --}}
-                    <li><a href="{{asset('spa')}}">Spa Rest</a></li>
-                  </ul>
-                </li>
-                <li class="has-children">
-                  <a href="">Services</a>
-                    <ul class="dropdown">
-                    <li><a href="{{route('ourservicepage')}}">Our Service</a></li>
-                    <li><a href="#">Service One</a></li>
-                    <li><a href="#">Service Two</a></li>
-                    <li><a href="#">Face Care</a></li>
-                    <li><a href="#">Hand Care</a></li>
-                    <li><a href="#">Foot Care</a></li>
-                    <li><a href="#">Skin Therapy</a></li>
-                    <li><a href="#">Spa Rest</a></li>
-                  </ul>
-                </li>
-<<<<<<< HEAD
-                {{-- <li><a href="{{asset('booking')}}">Book Online</a></li> --}}
-{{--                 <li><a href="">Services</a></li>
- --}}                <li><a href="{{asset('about')}}">About</a></li>
->>>>>>> 0014ba7e10f9f64c2e841d7072dfe0e2fc39d878
+                    
+                 
+                
+                
+                 <li><a href="{{asset('about')}}">About</a></li>
                 <li><a href="{{asset('booking')}}">Appointment</a></li>
                 <li><a href="{{asset('contact')}}">Contact</a></li>
-=======
-                <li><a href="{{route('aboutpage')}}">About</a></li>
-                <li><a href="{{route('bookingpage')}}">Appointment</a></li>
-                <li><a href="{{route('contactpage')}}">Contact</a></li>
-               
-                <li><a href="{{asset('about')}}">About</a></li>
->>>>>>> ea9b5a970646e6c62eda2b850f3a2ed083e270f9
+                
               </ul>
             </nav>
           </div>
@@ -178,22 +124,10 @@
       </div>
       
     </header>
-<<<<<<< HEAD
 
-
-
-=======
-<<<<<<< HEAD
-  
->>>>>>> 0014ba7e10f9f64c2e841d7072dfe0e2fc39d878
 @section('yield')
 
     <div class="site-section">
-<<<<<<< HEAD
-=======
-=======
->>>>>>> ea9b5a970646e6c62eda2b850f3a2ed083e270f9
->>>>>>> 0014ba7e10f9f64c2e841d7072dfe0e2fc39d878
 
 @yield('content')
      

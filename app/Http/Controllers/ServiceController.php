@@ -1,7 +1,6 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use App\Service;
 use App\Category;
 use Illuminate\Http\Request;
@@ -29,7 +28,7 @@ class ServiceController extends Controller
     {
         $services=Service::all();
         $categories=Category::all();
-        return view("backend.services.create",compact('services'));
+        return view('backend.services.create',compact('services','categories'));
     }
 
     /**
@@ -40,11 +39,7 @@ class ServiceController extends Controller
      */
     public function store(Request $request)
     {
-       
-
-<<<<<<< HEAD
        //dd($request);
-=======
          //If include file,upload file
        //dd($request);
          $request->validate([
@@ -56,27 +51,7 @@ class ServiceController extends Controller
             
         ]);
 
-         //If include file,upload file
-
-       // dd($request);
->>>>>>> 0014ba7e10f9f64c2e841d7072dfe0e2fc39d878
-        //  $request->validate([
-        //     "service_name" => 'required',
-        //     "duration" => 'required',
-        //     "price" => 'required',
-        //     "category_id" => 'required',
-        //     "photo"=>'required'
-            
-        // ]);
-<<<<<<< HEAD
-
         $imageName = time().'.'.$request->photo->extension();
-=======
-        $imageName = time().'.'.$request->photo->extension();
-
-        $imageName = time().'.'.$request->photo->extension();
-        $imageName = time().'-'.$request->photo->extension();
->>>>>>> 0014ba7e10f9f64c2e841d7072dfe0e2fc39d878
         $request->photo->move(public_path('backend/serviceimg'),$imageName);
         // ပုံပတ်လမ်းကြောင်းသိမ်း
         $path = 'backend/serviceimg/'.$imageName;
@@ -87,14 +62,6 @@ class ServiceController extends Controller
         $service->price = $request->price;
         $service->photo=$path;
         $service->category_id=$request->category_id;
-        
-<<<<<<< HEAD
-=======
-        $service->category_id=$request->category;
-        $service->photo=$path;
-
-        $service->photo=$path;
->>>>>>> 0014ba7e10f9f64c2e841d7072dfe0e2fc39d878
         $service->save();
 
         //redirect
