@@ -71,12 +71,10 @@
                 <li class="has-children">
                   <a href="haircut.html">Category</a>
                   <ul class="dropdown">
-<<<<<<< HEAD
-=======
+
                     <li><a href="">Hair Care</a></li>
->>>>>>> 8ccc60cea1da0c66ca4721ad2c5720cffe431549
-                    <li><a href="{{asset('bodycare')}}">Body Care</a></li>
-                    <li><a href="#">Skin Care</a></li>
+                    <li><a href="{{route('bodycarepage')}}">Body Care</a></li>
+                    <li><a href="">Skin Care</a></li>
                     <li><a href="#">Nail Care</a></li>
                     <li><a href="#">Face Care</a></li>
                     <li><a href="#">Hand Care</a></li>
@@ -85,11 +83,10 @@
                     <li><a href="#">Spa Rest</a></li>
                   </ul>
                 </li>
-<<<<<<< HEAD
                 <li class="has-children">
                   <a href="">Services</a>
                     <ul class="dropdown">
-                    <li><a href="{{asset('ourservice')}}">Our Service</a></li>
+                    <li><a href="{{route('ourservicepage')}}">Our Service</a></li>
                     <li><a href="#">Service One</a></li>
                     <li><a href="#">Service Two</a></li>
                     <li><a href="#">Face Care</a></li>
@@ -99,55 +96,50 @@
                     <li><a href="#">Spa Rest</a></li>
                   </ul>
                 </li>
-                <li><a href="{{asset('about')}}">About</a></li>
-                <li><a href="{{asset('booking')}}">Book Online</a></li>
-=======
-{{--                 <li><a href="">Services</a></li>
- --}}                <li><a href="{{asset('about')}}">About</a></li>
-                <li><a href="{{asset('booking')}}">Appointment</a></li>
->>>>>>> 8ccc60cea1da0c66ca4721ad2c5720cffe431549
-                <li><a href="{{asset('contact')}}">Contact</a></li>
+                <li><a href="{{route('aboutpage')}}">About</a></li>
+                <li><a href="{{route('bookingpage')}}">Appointment</a></li>
+                <li><a href="{{route('contactpage')}}">Contact</a></li>
               </ul>
             </nav>
           </div>
 
-          <div class="col-6 col-xl-2 text-right" data-aos="fade-down">
-            <div class="d-none d-xl-inline-block">
-              <ul class="site-menu js-clone-nav ml-auto list-unstyled d-flex text-right mb-0" data-class="social">
-                <li>
-                  <a href="#" class="pl-0 pr-3 text-black"><span class="icon-facebook"></span></a>
-                </li>
-                <li>
-                  <a href="#" class="pl-3 pr-3 text-black"><span class="icon-twitter"></span></a>
-                </li>
-                <li>
-                  <a href="#" class="pl-3 pr-3 text-black"><span class="icon-instagram"></span></a>
-                </li>
-                <li>
-                  <a href="#" class="pl-3 pr-3 text-black"><span class="icon-youtube-play"></span></a>
-                </li>
-              </ul>
-            </div>
+          <ul>
+              <li>
+                @guest
+                            {{-- <li class="nav-item"> --}}
+                                <a class="d-xl-block d-lg-block d-md-block d-none  text-decoration-none loginLink float-right text-uppercase" href="{{ route('loginpage') }}">{{ __('Login') }}</a>
+                            {{-- </li> --}}
+                            @if (Route::has('register'))
+                                {{-- <li class="nav-item"> --}}
+                                    <a class="d-xl-block d-lg-block d-md-block d-none  text-decoration-none loginLink float-right text-uppercase" href="{{ route('registerpage') }}">{{ __('Register') }}|</a>
+                                {{-- </li> --}}
+                            @endif
+                        @else
+                            {{-- <li class="nav-item dropdown"> --}}
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    {{ Auth::user()->name }}
+                                </a>
 
-            <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                        {{ __('Logout') }}
+                                    </a>
 
-          </div>
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                        @csrf
+                                    </form>
+                                </div>
+                            
+                        @endguest
+              </li>
+            </ul>
 
         </div>
       </div>
       
     </header>
-<<<<<<< HEAD
-=======
-  
-
-
-@section('yield')
-
-
-
-    <div class="site-section">
->>>>>>> b90a352339d5236d91dfaf18a03cef4542bbc10b
 
 @yield('content')
      

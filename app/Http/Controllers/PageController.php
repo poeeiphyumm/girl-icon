@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
 use App\Service;
 class PageController extends Controller
 {
@@ -35,14 +34,6 @@ class PageController extends Controller
         
         return view('about');
     }
-
-    public function bodycarefun($value='')
-     {
-
-        $services=Service::all();
-        return view('services',compact('services'));
-    }
-
 
     public function registerfun($value='')
     {

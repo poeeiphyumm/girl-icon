@@ -64,8 +64,6 @@ Route::get('about', 'PageController@aboutfun')->name('aboutpage');
 
 Route::get('ourservice', 'PageController@ourservicefun')->name('ourservicepage');
 Route::get('bodycare', 'PageController@bodycarefun')->name('bodycarepage');
-Route::get('bodycare','PageController@bodycarefun')->name('bodycarepage');
-
 
 Route::get('dashboard', 'backendController@dashboardfun') ->name('dashboardpage');
 

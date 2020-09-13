@@ -59,7 +59,7 @@
 	</div>
 	
 	<div class="form-group row">
-<<<<<<< HEAD
+
 			<label class="col-sm-2 col-form-label">Category</label>
 				<div class="col-sm-6">
 					<input type="text" name="category_id" class="form-control" id="inputcategory" value="{{ $service->category_id}}" >
@@ -70,7 +70,7 @@
 			<div class="col-sm-6">
 				<input type="text" name="photo" class="form-control" id="inputcategory" value="{{ $service->photo}}" >
 			</div>
-=======
+
 		{{-- <select class="form-control form-control-md" id="inputCategory" name="category" value="{{ $service->category}}"> --}}
 			{{-- <optgroup label="Choose Category">
 				@foreach($categories as $category)
@@ -82,7 +82,6 @@
 
 		{{-- </select> --}}
 		
->>>>>>> 8ccc60cea1da0c66ca4721ad2c5720cffe431549
 	</div>
 	
 
