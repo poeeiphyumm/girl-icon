@@ -21,6 +21,7 @@
 			    		<td>Price</td>
 			    		<td>Photo</td>
 			    		<td>Category_id</td>
+
 			    		<td>Service_Image</td>
 
 			    		<td>Photo</td>
@@ -39,10 +40,18 @@
 			    		<td>{{ $service->duration }}</td>
 			    		<td>{{ $service->price }}</td>
 
+
+			    		<td>{{ $service->category_id }}</td>
+			    		<td>{{ $service->photo }}</td>
+
+			    		<td>{{$service->category_id}}</td>
+
+
 			    		<td>{{ $service->category_id}}</td>
 			    		<td>{{ $service->photo}}</td>
 
 			    		<td>{{ $service->category_id }}</td>
+			    		
 			    		<td>{{ $service->photo }}</td>
 			    		<td>
 			    			<a href="#" class="btn btn-primary">Detail</a>

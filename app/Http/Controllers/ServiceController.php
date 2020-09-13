@@ -40,6 +40,9 @@ class ServiceController extends Controller
      */
     public function store(Request $request)
     {
+       
+
+         //If include file,upload file
        //dd($request);
          $request->validate([
             "service_name" => 'required',
@@ -61,6 +64,7 @@ class ServiceController extends Controller
         //     "photo"=>'required'
             
         // ]);
+        $imageName = time().'.'.$request->photo->extension();
 
         $imageName = time().'.'.$request->photo->extension();
         $imageName = time().'-'.$request->photo->extension();
@@ -72,6 +76,9 @@ class ServiceController extends Controller
         $service->service_name = $request->service_name;
         $service->duration = $request->duration;
         $service->price = $request->price;
+        $service->photo=$path;
+        $service->category_id=$request->category;
+        
         $service->category_id=$request->category;
         $service->photo=$path;
 
@@ -119,8 +126,8 @@ class ServiceController extends Controller
             "service_name" => 'required',
             "duration" => 'required',
             "price" => 'required',
-            "category_id"=>'required',
             "photo"=>'sometimes',
+            "category_id"=>'required',
             "oldphoto" => 'required'
         ]);
 

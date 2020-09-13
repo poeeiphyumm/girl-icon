@@ -62,6 +62,7 @@ class AppointmentController extends Controller
             "date"=>'required',
             "time"=>'required',
 
+
             "status"=>'required',
             "appointment_status"=>'required',
             "customer_id"=>'required',

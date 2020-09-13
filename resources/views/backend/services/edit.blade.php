@@ -54,7 +54,6 @@
 			<img src="{{ asset($service->photo) }}" class="img-fluid w-25">
 
 			<input type="hidden" name="oldphoto" value="{{ $service->photo }}">
-			{{-- // --}}
 		</div>
 	</div>
 	
@@ -71,6 +70,8 @@
 				<input type="text" name="photo" class="form-control" id="inputcategory" value="{{ $service->photo}}" >
 			</div>
 
+	
+	
 		{{-- <select class="form-control form-control-md" id="inputCategory" name="category" value="{{ $service->category}}"> --}}
 			{{-- <optgroup label="Choose Category">
 				@foreach($categories as $category)
@@ -84,6 +85,7 @@
 		
 	</div>
 	
+		
 
 	<input type="submit" value="Update" class="btn btn-danger">
 </form>

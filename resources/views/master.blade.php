@@ -53,27 +53,16 @@
 
               <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
                 <li class="has-children active">
-                  <a href="">Home</a>
-                  <ul class="dropdown">
-                    <li><a href="#">Menu One</a></li>
-                    <li><a href="#">Menu Two</a></li>
-                    <li><a href="#">Menu Three</a></li>
-                    <li class="has-children">
-                      <a href="#">Sub Menu</a>
-                      <ul class="dropdown">
-                        <li><a href="#">Menu One</a></li>
-                        <li><a href="#">Menu Two</a></li>
-                        <li><a href="#">Menu Three</a></li>
-                      </ul>
-                    </li>
-                  </ul>
+                  <a href="#">Home</a>
+                  
                 </li>
                 <li class="has-children">
-                  <a href="haircut.html">Category</a>
+                  <a href="#">Category</a>
                   <ul class="dropdown">
 
+
                     <li><a href="">Hair Care</a></li>
-                    <li><a href="{{route('bodycarepage')}}">Body Care</a></li>
+                    <li><a href="{{asset('bodycare')}}">Body Care</a></li>
                     <li><a href="">Skin Care</a></li>
                     <li><a href="#">Nail Care</a></li>
                     <li><a href="#">Face Care</a></li>
@@ -81,6 +70,29 @@
                     <li><a href="#">Foot Care</a></li>
                     <li><a href="#">Skin Therapy</a></li>
                     <li><a href="#">Spa Rest</a></li>
+ 
+                    <li><a href="{{ asset('haircare') }}">Hair Care</a></li>
+                    <li><a href="{{asset('bodycare')}}">Body Care</a></li>
+                    <li><a href="{{ asset('skincare') }}">Skin Care</a></li>
+                    <li><a href="{{ asset('nailcare') }}">Nail Care</a></li>
+                    <li><a href="{{ asset('facecare') }}">Face Care</a></li>
+                    <li><a href="{{ asset('handcare') }}">Hand Care</a></li>
+                    <li><a href="{{ asset('footcare') }}">Foot Care</a></li>
+                    <li><a href="{{ asset('skintherapy') }}">Skin Therapy</a></li>
+                    <li><a href="{{ asset('sparest') }}">Spa Rest</a></li>
+
+                    <li><a href="{{asset('haircare')}}">Hair Care</a></li>
+
+                    <li><a href="">Hair Care</a></li>
+
+                    <li><a href="{{asset('bodycare')}}">Body Care</a></li>
+                    <li><a href="{{asset('skincare')}}">Skin Care</a></li>
+                    <li><a href="{{asset('nailcare')}}">Nail Care</a></li>
+                    <li><a href="{{asset('face')}}">Face Care</a></li>
+                    <li><a href="{{asset('handcare')}}">Hand Care</a></li>
+                    <li><a href="{{asset('footcare')}}">Foot Care</a></li>
+                    {{-- <li><a href="#">Skin Therapy</a></li> --}}
+                    <li><a href="{{asset('spa')}}">Spa Rest</a></li>
                   </ul>
                 </li>
                 <li class="has-children">
@@ -99,6 +111,8 @@
                 <li><a href="{{route('aboutpage')}}">About</a></li>
                 <li><a href="{{route('bookingpage')}}">Appointment</a></li>
                 <li><a href="{{route('contactpage')}}">Contact</a></li>
+               
+                <li><a href="{{asset('about')}}">About</a></li>
               </ul>
             </nav>
           </div>
