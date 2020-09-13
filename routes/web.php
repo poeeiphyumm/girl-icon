@@ -35,9 +35,8 @@ Route::get('loginform', 'PageController@loginfun')->name('loginpage');
 	Route::resource('employees','EmployeeController');
 
 	Route::resource('customers','CustomerController');
-//backend
 
-// Route::get('create', 'BackendController@createfun')->name('createpage');
+
 
 
  Route::resource('categories','CategoryController');
@@ -48,7 +47,7 @@ Route::get('/', 'PageController@mainfun')->name('mainpage');
 
 
 Route::get('booking', 'PageController@bookingfun') ->name('bookingpage');
-Route::get('services', 'PageController@servicefun')->name('servicepage');
+Route::get('servicepage', 'PageController@servicefun')->name('servicepage');
 
 Route::get('about', 'PageController@aboutfun')->name('aboutpage');
 
@@ -62,10 +61,16 @@ Route::get('skincare', 'PageController@skincarefun')->name('skincarepage');
 
 Route::get('nailcare', 'PageController@nailcarefun')->name('nailcarepage');
 
+Route::get('facecare', 'PageController@facecarefun')->name('facecarepage');
 
+Route::get('handcare', 'PageController@handcarefun')->name('handcarepage');
+
+Route::get('footcare', 'PageController@footcarefun')->name('footcarepage');
 
 Route::get('contact', 'PageController@contactfun')->name('contactpage');
 Route::get('about', 'PageController@aboutfun')->name('aboutpage');
+Route::get('ourservice', 'PageController@ourservicefun')->name('ourservicepage');
+Route::get('bodycare', 'PageController@bodycarefun')->name('bodycarepage');
 Route::get('bodycare','PageController@bodycarefun')->name('bodycarepage');
 Route::get('face','PageController@facecarefun')->name('facecarepage');
 Route::get('haircare','PageController@haircarefun')->name('haircarepage');
@@ -79,6 +84,11 @@ Route::get('ourservice', 'PageController@ourservicefun')->name('ourservicepage')
 Route::get('bodycare', 'PageController@bodycarefun')->name('bodycarepage');
 Route::get('bodycare','PageController@bodycarefun')->name('bodycarepage');
 
+Route::get('sparest', 'PageController@sparestfun')->name('sparestpage');
+
+Route::get('bodycaredetail/{id}', 'PageController@bodycaredetailfun')->name('bodycaredetail');
+
+Route::get('haircaredetail/{id}', 'PageController@haircaredetailfun')->name('haircaredetail');
 
 
 //end frontend by poeei
@@ -87,9 +97,15 @@ Route::get('bodycare','PageController@bodycarefun')->name('bodycarepage');
 Route::resource('employees','EmployeeController');
 Route::resource('customers','CustomerController');
 
+Route::get('skincaredetail/{id}', 'PageController@skincaredetailfun')->name('skincaredetail');
 
 
+Route::get('nailcaredetail/{id}', 'PageController@nailcaredetailfun')->name('nailcaredetail');
 
+
+Route::get('footcaredetail/{id}', 'PageController@footcaredetailfun')->name('footcaredetail');
+
+Route::get('facecaredetail/{id}', 'PageController@facecaredetailfun')->name('facecaredetail');
 
 Route::get('contact', 'PageController@contactfun')->name('contactpage');
 Route::get('about', 'PageController@aboutfun')->name('aboutpage');
@@ -98,17 +114,29 @@ Route::get('ourservice', 'PageController@ourservicefun')->name('ourservicepage')
 // Route::resource('appointments', 'AppointmentController');
 // Route::resource('customers', 'AppointmentController');
 
+//end frontend by poeei
+
+Route::get('contact', 'PageController@contactfun')->name('contactpage');
+Route::get('about', 'PageController@aboutfun')->name('aboutpage');
+
+
 
 
 Route::get('dashboard', 'backendController@dashboardfun') ->name('dashboardpage');
 Route::resource('employees','EmployeeController');
 Route::resource('customers','CustomerController');
 
+
+
+
+
+Route::get('ourservice', 'PageController@ourservicefun')->name('ourservicepage'); 
 Route::get('services','PageController@bodycarefun')->name('bodycarepage');
 Route::resource('services','ServiceController');
 
 //Route::resource('customers','CustomerController');
- 
+Route::resource('customers','CustomerController');
+
 
 
 Route::middleware('role:Admin')->group(function(){
@@ -120,3 +148,9 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
  
+
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+

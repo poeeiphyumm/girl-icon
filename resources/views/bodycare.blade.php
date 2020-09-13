@@ -17,6 +17,12 @@
 
          {{--  <div class="col-lg-4 col-md-4 col-sm-12">
 
+        <a href="{{ route('bodycaredetail',$service->id) }}">
+
+
+         {{--  <div class="col-lg-4 col-md-4 col-sm-12">
+
+
 <div class="container">
   	<div class="row mt-5">
       <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
@@ -32,14 +38,23 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
         </div>
+
           <div class="col-lg-4 col-md-4 col-sm-12">
-           <img src="{{asset($service->photo)}}">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-              <p>{{$service->name}}</p>
+            
+              <img src="{{asset($service->photo)}}" width="400px" height="300px">
+            
+
+
+            <a href="" class="appointment text-decoration-none" value="Appointment">Appointment</a>
+            
           </div>
+          </a>
 
         @endforeach
-      </div>
+
     </div> --}}
+
+    
+    </div> 
+
 @endsection

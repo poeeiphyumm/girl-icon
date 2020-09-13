@@ -61,8 +61,10 @@ class AppointmentController extends Controller
         $request->validate([
             "date"=>'required',
             "time"=>'required',
+<<<<<<< HEAD
 
-
+=======
+>>>>>>> 0014ba7e10f9f64c2e841d7072dfe0e2fc39d878
             "status"=>'required',
             "appointment_status"=>'required',
             "customer_id"=>'required',
@@ -103,7 +105,10 @@ class AppointmentController extends Controller
      */
     public function edit(Appointment $appointment)
     {
-        //
+         $appointments=Appointment::all();
+        $customers=Customer::all();
+
+        return view('backend.appointments.edit',compact('customers','appointments'));
     }
 
     /**
@@ -115,8 +120,33 @@ class AppointmentController extends Controller
      */
     public function update(Request $request, Appointment $appointment)
     {
-        //
+       //dd($request);
+
+        //validation
+        $request->validate([
+            "date"=>'required',
+            "time"=>'required',
+            "status"=>'required',
+            "appointment_status"=>'required',
+            "customer_id"=>'required',
+            "photo"=>'required',
+            "customer_id"=>'required'
+            ]);
+
+        //Data update
+        $appointment=new Appointment;
+        
+        //$appointment->email=$request->email;
+        $appointment->date=$request->date;
+        $appointment->time=$request->time;
+        $appointment->status=$request->status;
+        $appointment->customer_id=$request->customer_id;
+        $appointment->save();
+
+        //redirect
+        return redirect()->route('appointments.index'); 
     }
+    
 
     /**
      * Remove the specified resource from storage.

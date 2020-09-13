@@ -17,7 +17,7 @@
 		    		<tr>
 			    		<td>No</td>
 			    		<td>Name</td>
-			    		<td>Photo</td>
+			    		
 			    		<td>Actions</td>
 		    		</tr>
 		    	</thead>
@@ -28,7 +28,6 @@
 		    		<tr>
 		    			<td>{{ $i++ }}</td>
 			    		<td>{{ $category->category_name }}</td>
-			    		<td>{{ $category->photo }}</td>
 			    		<td>
 			    			<a href="#" class="btn btn-primary">Detail</a>
 			    			<a href="{{ route('categories.edit',$category->id) }}" class="btn btn-secondary">Edit</a>

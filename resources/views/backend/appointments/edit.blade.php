@@ -21,8 +21,7 @@
 					<input calss="form-control" type="password" name="password">
 					
 					</div>
-					{{-- <img src="{{asset($item->photo)}}" width="120" height="100">
-					<input type="hidden" name="oldphoto" value="{{$item->photo}}"> --}}
+					
 					<div class="form-group row">
 					<label>Phone Number</label>
 					<input class="form-control" type="text" name="ph_no" value="{{$appointment->ph_no}}">
