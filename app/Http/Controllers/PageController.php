@@ -41,13 +41,45 @@ class PageController extends Controller
         
         return view('about');
     }
+<<<<<<< HEAD
    
    public function bookingfun($value='')
+=======
+
+     public function footcarefun($value='')
+     {
+        
+        return view('footcare');
+    }
+
+     public function handcarefun($value='')
+     {
+        
+        return view('handcare');
+    }
+
+    public function spafun($value='')
+     {
+        
+        return view('spa');
+    }
+
+    public function facecarefun($value='')
+>>>>>>> c370591f260ffafd17d5466cec5e4d0d2d0ca533
      {
         
         return view('booking');
     }
    
+<<<<<<< HEAD
+=======
+    // public function mainfun($value='')
+    // {
+    //     return view('main');
+    // }
+
+
+>>>>>>> c370591f260ffafd17d5466cec5e4d0d2d0ca533
     public function registerfun($value='')
     {
         
@@ -57,7 +89,11 @@ class PageController extends Controller
     {
         return view('ourservice');
     }
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> c370591f260ffafd17d5466cec5e4d0d2d0ca533
     public function bodycarefun($value='')
     {
         // $services = Service::all();
@@ -136,4 +172,8 @@ class PageController extends Controller
         $services = Service::find($id);
         return view('footcaredetail',compact('services'));
     }
+<<<<<<< HEAD
+=======
+
+>>>>>>> c370591f260ffafd17d5466cec5e4d0d2d0ca533
 }

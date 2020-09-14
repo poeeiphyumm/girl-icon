@@ -17,7 +17,7 @@ class CreateServiceDetailsTable extends Migration
             $table->id();
             $table->unsignedBigInteger('service_id');
             $table->unsignedBigInteger('employee_id');
-            
+            $table->string('service_name')
 
             $table->foreign('service_id')
                     ->references('id')

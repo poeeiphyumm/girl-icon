@@ -65,7 +65,10 @@ Route::get('bodycaredetail/{id}', 'PageController@bodycaredetailfun')->name('bod
 
 Route::get('haircaredetail/{id}', 'PageController@haircaredetailfun')->name('haircaredetail');
 
+<<<<<<< HEAD
+=======
 
+>>>>>>> 145807f5feac1a66dc1eae8a8bc512ebfed15550
 //end frontend by poeei
 // Route::get('index', 'BackendController@indexfun')->name('indexpage');
 
@@ -85,7 +88,29 @@ Route::get('ourservice', 'PageController@ourservicefun')->name('ourservicepage')
 
 //end frontend by poeei
 
+<<<<<<< HEAD
 Route::get('dashboard', 'backendController@dashboardfun') ->name('dashboardpage');
+=======
+Route::get('contact', 'PageController@contactfun')->name('contactpage');
+Route::get('about', 'PageController@aboutfun')->name('aboutpage');
+
+
+
+<<<<<<< HEAD
+
+
+Route::get('dashboard', 'backendController@dashboardfun') ->name('dashboardpage');
+
+=======
+
+Route::get('dashboard', 'backendController@dashboardfun') ->name('dashboardpage');
+>>>>>>> 145807f5feac1a66dc1eae8a8bc512ebfed15550
+Route::resource('employees','EmployeeController');
+Route::resource('customers','CustomerController');
+
+
+
+>>>>>>> c370591f260ffafd17d5466cec5e4d0d2d0ca533
 
 Route::resource('customers','CustomerController');
 
@@ -95,7 +120,14 @@ Route::resource('services','ServiceController');
 
 Route::resource('categories','CategoryController');
 
+<<<<<<< HEAD
 Route::resource('appointments','AppointmentController');
+=======
+<<<<<<< HEAD
+ 
+=======
+>>>>>>> 145807f5feac1a66dc1eae8a8bc512ebfed15550
+>>>>>>> c370591f260ffafd17d5466cec5e4d0d2d0ca533
 
 Route::resource('employees','EmployeeController');
 

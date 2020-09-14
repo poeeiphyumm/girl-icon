@@ -19,9 +19,16 @@ class DatabaseSeeder extends Seeder
          //$this->call(UserTableSeeder::class);
 
          //$this->call(CustomerTableSeeder::class);   
+<<<<<<< HEAD
+=======
+          
+>>>>>>> c370591f260ffafd17d5466cec5e4d0d2d0ca533
 
          //$this->call(UserTableSeeder::class);
 
          //$this->call(CustomerTableSeeder::class);   
+<<<<<<< HEAD
 
+=======
+>>>>>>> c370591f260ffafd17d5466cec5e4d0d2d0ca533
 }
