@@ -105,7 +105,7 @@
         <div class="row text-center">
           <div class="col-md-12">
             <h2 class="mb-4 text-black">We want your skin to look </h2>
-            <p class="mb-0"><a href="#" class="btn btn-primary py-3 px-5 text-white">Visit Our clinic Now</a></p>
+            <p class="mb-0"><a href="{{route('mainpage')}}" class="btn btn-primary py-3 px-5 text-white">Visit Our clinic Now</a></p>
           </div>
         </div>
       </div>
