@@ -30,13 +30,10 @@
 			    		<td>{{ $category->category_name }}</td>
 			    		<td>
 			    			<a href="#" class="btn btn-primary">Detail</a>
-			    			<a href="{{ route('categories.edit',$category->id) }}" class="btn btn-secondary">Edit</a>
-
-			    			
+			    			<a href="{{ route('categories.edit',$category->id) }}" class="btn btn-secondary">Edit</a>	
 			    			<form method="post" action="{{ route('categories.destroy',$category->id) }}">
 			    				@csrf
 			    				@method('DELETE')
-			    			
 			    			 	<input type="submit" class="btn btn-danger" value="Delete">
 			    			</form>
 			    			

@@ -21,6 +21,16 @@
 			    		<td>Price</td>
 			    		<td>Photo</td>
 			    		<td>Category_id</td>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+			    		<td>Service_Image</td>
+
+			    		<td>Photo</td>
+
+>>>>>>> 32b55295049e428919f0aaad170aa6c87f7c330e
+>>>>>>> ff5dd49a8f07707e2aa043c7dc9411b741c96114
 			    		<td>Action</td>
 
 		    		</tr>
@@ -34,9 +44,30 @@
 			    		<td>{{ $service->service_name }}</td>
 			    		<td>{{ $service->duration }}</td>
 			    		<td>{{ $service->price }}</td>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+			    		<td>{{ $service->photo }}</td>
+			    		<td>{{ $service->category_id }}</td>
+=======
+			    		<td>{{ $service->photo }}</td>
 			    		<td>{{ $service->photo }}</td>
 			    		<td>{{ $service->category_id }}</td>
 			    		
+
+			    		
+
+
+			    		<td>{{ $service->category_id }}</td>
+>>>>>>> ff5dd49a8f07707e2aa043c7dc9411b741c96114
+			    		<td>{{ $service->photo }}</td>
+			    		<td>{{ $service->category_id }}</td>
+			    		
+<<<<<<< HEAD
+=======
+			    		<td>{{ $service->photo }}</td>
+>>>>>>> 32b55295049e428919f0aaad170aa6c87f7c330e
+>>>>>>> ff5dd49a8f07707e2aa043c7dc9411b741c96114
 			    		<td>
 			    			<a href="{{ route('services.show',$service->id) }}" class="btn btn-primary">Detail</a>
 

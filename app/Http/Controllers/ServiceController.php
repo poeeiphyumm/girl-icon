@@ -30,8 +30,12 @@ class ServiceController extends Controller
     {
         $services=Service::all();
         $categories=Category::all();
+<<<<<<< HEAD
         return view("backend.services.create",compact('services'));
 
+=======
+        return view('backend.services.create',compact('services','categories'));
+>>>>>>> ff5dd49a8f07707e2aa043c7dc9411b741c96114
     }
 
     /**
@@ -42,6 +46,7 @@ class ServiceController extends Controller
      */
     public function store(Request $request)
     {
+<<<<<<< HEAD
 
     
         //If include file,upload file
@@ -59,6 +64,21 @@ class ServiceController extends Controller
         
         $imageName = time().'.'.$request->photo->extension();
 
+=======
+       //dd($request);
+         //If include file,upload file
+       //dd($request);
+         $request->validate([
+            "service_name" => 'required',
+            "duration" => 'required',
+            "price" => 'required',
+            "category_id" => 'required',
+            "photo"=>'required',
+            
+        ]);
+
+        $imageName = time().'-'.$request->photo->extension();
+>>>>>>> ff5dd49a8f07707e2aa043c7dc9411b741c96114
         $request->photo->move(public_path('backend/serviceimg'),$imageName);
         // ပုံပတ်လမ်းကြောင်းသိမ်း
         $path = 'backend/serviceimg/'.$imageName;
@@ -69,6 +89,12 @@ class ServiceController extends Controller
         $service->price = $request->price;
         $service->photo=$path;
         $service->category_id=$request->category_id;
+<<<<<<< HEAD
+=======
+
+        $service->photo=$path;
+
+>>>>>>> ff5dd49a8f07707e2aa043c7dc9411b741c96114
         $service->save();
 
         //redirect

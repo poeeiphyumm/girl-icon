@@ -12,10 +12,10 @@ class PageController extends Controller
         // $services=Service::all();
         return view('main');
     }
-     public function appointmentfun($value='')
+     public function bookingfun($value='')
      {
         
-     	return view('appointment');
+     	return view('booking');
     }
 
     public function contactfun($value='')
@@ -34,6 +34,7 @@ class PageController extends Controller
      {
         
      	return view('login');
+<<<<<<< HEAD
     }
 
     public function aboutfun($value='')
@@ -44,11 +45,45 @@ class PageController extends Controller
 
     public function bookingfun($value='')
      {
+<<<<<<< HEAD
         
         return view('booking');
     }
     
    
+=======
+        
+        return view('booking');
+    }
+=======
+    }      
+    //  public function footcarefun($value='')
+    //  {
+        
+    //     return view('footcare');
+    // }
+
+    //  public function handcarefun($value='')
+    //  {
+        
+    //     return view('handcare');
+    // }
+
+    // public function spafun($value='')
+    //  {
+        
+    //     return view('spa');
+    // }
+
+    // public function mainfun($value='')
+    // {
+    //     return view('main');
+    // }
+
+
+
+>>>>>>> 32b55295049e428919f0aaad170aa6c87f7c330e
+>>>>>>> ff5dd49a8f07707e2aa043c7dc9411b741c96114
     public function registerfun($value='')
     {
         
@@ -58,7 +93,10 @@ class PageController extends Controller
     {
         return view('ourservice');
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> ff5dd49a8f07707e2aa043c7dc9411b741c96114
     public function bodycarefun($value='')
     {
         // $services = Service::all();
@@ -162,7 +200,14 @@ class PageController extends Controller
         $services = Service::find($id);
         return view('skintherapydetail',compact('services'));
     }
+<<<<<<< HEAD
 
 
 
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> 32b55295049e428919f0aaad170aa6c87f7c330e
+>>>>>>> ff5dd49a8f07707e2aa043c7dc9411b741c96114
 }
