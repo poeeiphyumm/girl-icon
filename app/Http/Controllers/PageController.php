@@ -12,10 +12,10 @@ class PageController extends Controller
         // $services=Service::all();
         return view('main');
     }
-     public function appointmentfun($value='')
+     public function bookingfun($value='')
      {
         
-     	return view('appointment');
+     	return view('booking');
     }
 
     public function contactfun($value='')
@@ -40,19 +40,7 @@ class PageController extends Controller
      {
         
         return view('about');
-    }
-
-     public function footcarefun($value='')
-     {
-        
-        return view('footcare');
-    }
-
-     public function handcarefun($value='')
-     {
-        
-        return view('handcare');
-    }
+    }     
 
     public function spafun($value='')
      {
@@ -60,11 +48,6 @@ class PageController extends Controller
         return view('spa');
     }
 
-    public function facecarefun($value='')
-     {
-        
-        return view('face');
-    }
    
     // public function mainfun($value='')
     // {

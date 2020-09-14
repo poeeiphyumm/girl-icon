@@ -90,7 +90,7 @@
                 </form>
 
                 <div class=" mt-3 text-center ">
-                  <a href="{{route('login')}}" class="loginLink text-decoration-none">Have an account? Go to login</a>
+                  <a href="{{route('loginpage')}}" class="loginLink text-decoration-none" style="color:violet;">Have an account? Go to login</a>
                 </div>
               </div>
             </div>
@@ -101,7 +101,8 @@
 
           <div class="p-4 mb-3 bg-white">
             <p class="mb-0 font-weight-bold">Address</p>
-            <p class="mb-4">203 Fake St. Mountain View, San Francisco, California, USA</p>
+            <p class="mb-4">No.216,First floor,Excel Taresure Hotel,,
+              <br>Yango Myanmar</p>
 
             <p class="mb-0 font-weight-bold">Phone</p>
             <p class="mb-4"><a href="#">+1 232 3235 324</a></p>
