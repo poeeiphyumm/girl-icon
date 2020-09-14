@@ -30,22 +30,16 @@
     				<li>It has survived not only five centuries, but also the leap into electronic typesetting.</li>
 				</p>
 
-<<<<<<< HEAD
 				<p> Price:	{{$services->price}}</p>
 				<p>Duration:{{ $services->duration }}</p>
-=======
-				<h3> 
 				
-				Price:	{{$services->price}}
-				</h3>
->>>>>>> 54b5126ee6bd48455d97390fb11888da844304eb
 
 				<a href="#" class="btn btn-info">Appointment</a>
 				
 			</div>
 		</div>
 	</div>
+	
 
 		
-		</div>
 @endsection

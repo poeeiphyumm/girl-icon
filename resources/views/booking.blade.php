@@ -79,7 +79,7 @@
                 <div class="col-md-12">
                   @if(Session::has('success'))
                     <div class="alert alert-success">
-                      <button type="button" class="btn btn-primary py-2 px-4 text-white" data-dismiss="alert">Send</button>
+                      <button type="button" class="btn btn-danger py-2 px-4 text-white" data-dismiss="alert">Send</button>
                       <strong>Make Appointment Success!{{Session::get('message','')}}</strong>
                     </div>
                     @endif

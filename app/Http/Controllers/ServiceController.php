@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use App\Service;
 use App\Category;
+use DB;
 use Illuminate\Http\Request;
 
 class ServiceController extends Controller
@@ -29,11 +30,8 @@ class ServiceController extends Controller
     {
         $services=Service::all();
         $categories=Category::all();
-<<<<<<< HEAD
-        return view("backend.services.create",compact('services','categories'));
-=======
-        return view('backend.services.create',compact('services','categories'));
->>>>>>> 54b5126ee6bd48455d97390fb11888da844304eb
+        return view("backend.services.create",compact('services'));
+
     }
 
     /**
@@ -44,31 +42,9 @@ class ServiceController extends Controller
      */
     public function store(Request $request)
     {
-<<<<<<< HEAD
-=======
-       
 
-<<<<<<< HEAD
-       
-=======
->>>>>>> c370591f260ffafd17d5466cec5e4d0d2d0ca533
-       //dd($request);
-         //If include file,upload file
-       //dd($request);
-         $request->validate([
-            "service_name" => 'required',
-            "duration" => 'required',
-            "price" => 'required',
-            "category_id" => 'required',
-            "photo"=>'required',
-            
-        ]);
->>>>>>> 54b5126ee6bd48455d97390fb11888da844304eb
-
-<<<<<<< HEAD
-        $imageName = time().'.'.$request->photo->extension();
-=======
-         //If include file,upload file
+    
+        //If include file,upload file
 
        // dd($request);
         //  $request->validate([
@@ -80,16 +56,9 @@ class ServiceController extends Controller
             
         // ]);
 
-        $imageName = time().'.'.$request->photo->extension();
-<<<<<<< HEAD
         
-=======
         $imageName = time().'.'.$request->photo->extension();
 
-        $imageName = time().'.'.$request->photo->extension();
-        $imageName = time().'-'.$request->photo->extension();
->>>>>>> c370591f260ffafd17d5466cec5e4d0d2d0ca533
->>>>>>> 54b5126ee6bd48455d97390fb11888da844304eb
         $request->photo->move(public_path('backend/serviceimg'),$imageName);
         // ပုံပတ်လမ်းကြောင်းသိမ်း
         $path = 'backend/serviceimg/'.$imageName;
@@ -99,20 +68,7 @@ class ServiceController extends Controller
         $service->duration = $request->duration;
         $service->price = $request->price;
         $service->photo=$path;
-<<<<<<< HEAD
-=======
         $service->category_id=$request->category_id;
-<<<<<<< HEAD
-=======
->>>>>>> 54b5126ee6bd48455d97390fb11888da844304eb
-        
-        $service->category_id=$request->category;
-
-<<<<<<< HEAD
-=======
-        $service->photo=$path;
->>>>>>> c370591f260ffafd17d5466cec5e4d0d2d0ca533
->>>>>>> 54b5126ee6bd48455d97390fb11888da844304eb
         $service->save();
 
         //redirect
@@ -125,9 +81,16 @@ class ServiceController extends Controller
      * @param  \App\Service  $service
      * @return \Illuminate\Http\Response
      */
-    public function show(Service $service)
+    public function show($id)
     {
-        return view('backend.services.show',compact('service'));
+
+        
+        $services = DB::table('employees')->join('service_details','service_details.employee_id','=','employees.id')->where('service_details.service_id',$id)->get();
+                
+       // dd($servicedetail);
+        $services = Service::where('services.id',$id)->first();
+        dd($services);
+        return view('backend.services.show',compact('services'));
     }
 
     /**

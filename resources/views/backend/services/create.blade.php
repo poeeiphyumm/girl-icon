@@ -38,7 +38,6 @@
 		</div>
 	</div>
 
-<<<<<<< HEAD
 			<div class="form-group row">
 				<label class="col-sm-2 col-form-label">Category</label>
 				<select class="form-control form-control-md" id="inputBrand" name="category">
@@ -51,28 +50,8 @@
 				</select>
 		
 			</div>
-=======
-	<div class="form-group row">
-		<label class="col-sm-2 col-form-label">Category</label>
-		<div class="col-sm-6">
-			<input type="text" name="category_id" class="form-control" id="inputprice">
-		</div>
-	</div>
-<<<<<<< HEAD
-=======
 
-	<div class="form-group row">
-		<label class="col-sm-2 col-form-label">Servie Image</label>
-		<div class="col-sm-6">
-			<input type="file" name="photo" class="form-control" id="inputprice">
-
-	{{-- <div class="form-group row">
-		<label class="col-sm-2 col-form-label">Servie Image</label>
-		<div class="col-sm-6">
-			<input type="file" name="photo" class="form-control" id="inputprice"> --}}
->>>>>>> c370591f260ffafd17d5466cec5e4d0d2d0ca533
->>>>>>> 54b5126ee6bd48455d97390fb11888da844304eb
-
+	
 	<div class="form-group row">
 		<label class="col-sm-2 col-form-label">Photo</label>
 		<div class="col-sm-6">
