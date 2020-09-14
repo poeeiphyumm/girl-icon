@@ -32,16 +32,14 @@
 					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 				</p>
 
-				<p> 
-				
-				Price:	{{$services->price}}
-				</p>
+				<p> Price:	{{$services->price}}</p>
+				<p>Duration:{{ $services->duration }}</p>
 
-				<a href="#" class="btn btn-primary">Appointment</a>
+				<a href="#" class="btn btn-info">Appointment</a>
 				
 			</div>
 		</div>
 
 		
-		
+		</div>
 @endsection

@@ -30,6 +30,19 @@
 			<input type="radio" name="availability_status" class="" id="inputname" value="disable">Disable
 		</div>
 	</div>
+
+	{{-- <div class="form-group row">
+				<label class="col-sm-2 col-form-label">Service</label>
+				<select class="form-control form-control-md" id="inputBrand" name="service">
+					<optgroup label="Choose Service ">
+						@foreach($services as $service)
+							<option value="{{ $service->id }}">{{ $service->service_name }}</option>
+						@endforeach
+
+					</optgroup>
+				</select>
+		
+	</div> --}}
 	
 	
 	<input type="submit" value="Create" class="btn btn-danger" >

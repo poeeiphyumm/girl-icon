@@ -19,6 +19,7 @@
 		    		<tr>
 			    		<td>No</td>
 			    		<td>Name</td>
+			    		{{-- <td>Service Name</td> --}}
 			    		<td>Availability Status</td>
 			    		<td>Actions</td>
 		    		</tr>
@@ -30,6 +31,7 @@
 		    		<tr>
 		    			<td>{{ $i++ }}</td>
 			    		<td>{{ $employee->employee_name }}</td>
+			    		{{-- <td>{{ $employee->service_name }}</td> --}}
 			    		<td>{{ $employee->availability_status }}</td>
 			    		<td>
 			    			

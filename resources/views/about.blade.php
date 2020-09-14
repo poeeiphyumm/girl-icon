@@ -1,9 +1,6 @@
 
-<<<<<<< HEAD
-=======
 
   
->>>>>>> 0014ba7e10f9f64c2e841d7072dfe0e2fc39d878
    @extends('master')
    @section('content')
 
