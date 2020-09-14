@@ -20,15 +20,13 @@
 
 
 
-    <div class="site-section bg-light">
+    <div class="bg-light">
       <div class="container">
         <div class="row">
           <div class="col-md-7 mb-5">
 
-            
-
             <form action="#" class="p-5 bg-white">
-              <h2 class="mb-4 site-section-heading">Book Now</h2>
+              <h5 class="mb-4">Book Now</h5>
 
               <div class="row form-group">
                 <div class="col-md-6 mb-3 mb-md-0">
@@ -75,14 +73,15 @@
                 </div>
               </div>
 
+
               <div class="row form-group">
                 <div class="col-md-12">
-                  @if(Session::has('success'))
+                 {{--  @if(Session::has('success')) --}}
                     <div class="alert alert-success">
                       <button type="button" class="btn btn-primary py-2 px-4 text-white" data-dismiss="alert">Send</button>
                       <strong>Make Appointment Success!{{Session::get('message','')}}</strong>
                     </div>
-                    @endif
+                  {{--   @endif --}}
                 
                 </div>
               </div>

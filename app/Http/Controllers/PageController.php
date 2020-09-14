@@ -41,57 +41,12 @@ class PageController extends Controller
         
         return view('about');
     }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-
-    
-
-    
-
-=======
-<<<<<<< HEAD
-   
-   public function bookingfun($value='')
-=======
->>>>>>> 947f78f7a7398707fbe0b39c6de7e951e078d3bb
-
-    //  public function footcarefun($value='')
-    //  {
-        
-    //     return view('footcare');
-    // }
-
-    //  public function handcarefun($value='')
-    //  {
-        
-    //     return view('handcare');
-    // }
-
-    // public function spafun($value='')
-    //  {
-        
-    //     return view('spa');
-    // }
 
     public function bookingfun($value='')
      {
         
         return view('booking');
     }
-   
-
-    // public function mainfun($value='')
-    // {
-    //     return view('main');
-    // }
-
-
-<<<<<<< HEAD
-=======
->>>>>>> c370591f260ffafd17d5466cec5e4d0d2d0ca533
->>>>>>> 54b5126ee6bd48455d97390fb11888da844304eb
->>>>>>> 947f78f7a7398707fbe0b39c6de7e951e078d3bb
     public function registerfun($value='')
     {
         
@@ -101,19 +56,6 @@ class PageController extends Controller
     {
         return view('ourservice');
     }
-<<<<<<< HEAD
-    
-=======
-<<<<<<< HEAD
-    
-=======
-<<<<<<< HEAD
-
-=======
-    
->>>>>>> c370591f260ffafd17d5466cec5e4d0d2d0ca533
->>>>>>> 54b5126ee6bd48455d97390fb11888da844304eb
->>>>>>> 947f78f7a7398707fbe0b39c6de7e951e078d3bb
     public function bodycarefun($value='')
     {
         // $services = Service::all();
@@ -197,20 +139,10 @@ class PageController extends Controller
         $services = Service::find($id);
         return view('footcaredetail',compact('services'));
     }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
+
      public function skintherapydetailfun($id)
     {
         $services = Service::find($id);
         return view('skintherapydetail',compact('services'));
     }
-
-=======
-<<<<<<< HEAD
-=======
-
->>>>>>> c370591f260ffafd17d5466cec5e4d0d2d0ca533
->>>>>>> 54b5126ee6bd48455d97390fb11888da844304eb
->>>>>>> 947f78f7a7398707fbe0b39c6de7e951e078d3bb
 }
