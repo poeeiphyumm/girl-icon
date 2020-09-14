@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Employee;
+use App\Service;
 use Illuminate\Http\Request;
 
 class EmployeeController extends Controller
@@ -26,6 +27,7 @@ class EmployeeController extends Controller
     public function create()
     {
         $employee=Employee::all();
+        // $services=Service::all();
         return view("backend.employees.create",compact('employee'));
 
     }
@@ -41,7 +43,8 @@ class EmployeeController extends Controller
        // dd($request);
          $request->validate([
             "employee_name" => 'required',
-            "availability_status" => 'required',
+            // "service_name" => 'required',
+            "availability_status" => 'required'
         ]);
 
         //
@@ -49,6 +52,7 @@ class EmployeeController extends Controller
         $employee = new Employee;
         
         $employee->employee_name = $request->employee_name;
+        // $employee->service_name = $request->service_name;
         $employee->availability_status = $request->availability_status;
 
         $employee->save();
@@ -76,6 +80,7 @@ class EmployeeController extends Controller
      */
     public function edit(Employee $employee)
     {
+        // $services=Service::all();
         return view('backend.employees.edit',compact('employee'));
     }
 
@@ -92,7 +97,8 @@ class EmployeeController extends Controller
        //dd($request);
          $request->validate([
             "employee_name" => 'required',
-            "availability_status" => 'required',
+            // "service_name" => 'required',
+            "availability_status" => 'required'
             
              ]);
 
@@ -100,6 +106,7 @@ class EmployeeController extends Controller
 
         //$employee = new Employee;
         $employee->employee_name = $request->employee_name;
+        // $employee->service_name = $request->service_name;
         $employee->availability_status=$request->availability_status;
         $employee->save();
 

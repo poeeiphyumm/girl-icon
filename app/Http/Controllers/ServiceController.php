@@ -1,7 +1,6 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use App\Service;
 use App\Category;
 use Illuminate\Http\Request;
@@ -16,6 +15,7 @@ class ServiceController extends Controller
     public function index()
     {
         $services=Service::all();
+        
         return view('backend.services.index',compact('services'));
     }
     
@@ -29,7 +29,11 @@ class ServiceController extends Controller
     {
         $services=Service::all();
         $categories=Category::all();
-        return view("backend.services.create",compact('services'));
+<<<<<<< HEAD
+        return view("backend.services.create",compact('services','categories'));
+=======
+        return view('backend.services.create',compact('services','categories'));
+>>>>>>> 54b5126ee6bd48455d97390fb11888da844304eb
     }
 
     /**
@@ -40,8 +44,14 @@ class ServiceController extends Controller
      */
     public function store(Request $request)
     {
+<<<<<<< HEAD
+=======
        
 
+<<<<<<< HEAD
+       
+=======
+>>>>>>> c370591f260ffafd17d5466cec5e4d0d2d0ca533
        //dd($request);
          //If include file,upload file
        //dd($request);
@@ -53,7 +63,11 @@ class ServiceController extends Controller
             "photo"=>'required',
             
         ]);
+>>>>>>> 54b5126ee6bd48455d97390fb11888da844304eb
 
+<<<<<<< HEAD
+        $imageName = time().'.'.$request->photo->extension();
+=======
          //If include file,upload file
 
        // dd($request);
@@ -67,10 +81,15 @@ class ServiceController extends Controller
         // ]);
 
         $imageName = time().'.'.$request->photo->extension();
+<<<<<<< HEAD
+        
+=======
         $imageName = time().'.'.$request->photo->extension();
 
         $imageName = time().'.'.$request->photo->extension();
         $imageName = time().'-'.$request->photo->extension();
+>>>>>>> c370591f260ffafd17d5466cec5e4d0d2d0ca533
+>>>>>>> 54b5126ee6bd48455d97390fb11888da844304eb
         $request->photo->move(public_path('backend/serviceimg'),$imageName);
         // ပုံပတ်လမ်းကြောင်းသိမ်း
         $path = 'backend/serviceimg/'.$imageName;
@@ -80,12 +99,20 @@ class ServiceController extends Controller
         $service->duration = $request->duration;
         $service->price = $request->price;
         $service->photo=$path;
+<<<<<<< HEAD
+=======
         $service->category_id=$request->category_id;
+<<<<<<< HEAD
+=======
+>>>>>>> 54b5126ee6bd48455d97390fb11888da844304eb
         
         $service->category_id=$request->category;
-        $service->photo=$path;
 
+<<<<<<< HEAD
+=======
         $service->photo=$path;
+>>>>>>> c370591f260ffafd17d5466cec5e4d0d2d0ca533
+>>>>>>> 54b5126ee6bd48455d97390fb11888da844304eb
         $service->save();
 
         //redirect
@@ -100,7 +127,7 @@ class ServiceController extends Controller
      */
     public function show(Service $service)
     {
-        //
+        return view('backend.services.show',compact('service'));
     }
 
     /**
@@ -111,7 +138,8 @@ class ServiceController extends Controller
      */
     public function edit(Service $service)
     {
-        return view('backend.services.edit',compact('service'));
+        $categories=Category::all();
+        return view('backend.services.edit',compact('service','categories'));
     }
 
     /**
@@ -130,7 +158,7 @@ class ServiceController extends Controller
             "duration" => 'required',
             "price" => 'required',
             "photo"=>'sometimes',
-            "category_id"=>'required',
+            // "category_id"=>'required',
             "oldphoto" => 'required'
         ]);
 
@@ -151,7 +179,7 @@ class ServiceController extends Controller
         $service->service_name = $request->service_name;
         $service->duration = $request->duration;
         $service->price = $request->price;
-        $service->category_id=$request->category_id;
+        $service->category_id=$request->category;
         $service->photo=$path;
         $service->save();
 

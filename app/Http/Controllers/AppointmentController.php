@@ -75,7 +75,6 @@ class AppointmentController extends Controller
             "appointment_status"=>'required',
             "customer_id"=>'required',
             "photo"=>'required',
-            "customer_id"=>'required'
             ]);
 
         //Data insert
@@ -136,7 +135,6 @@ class AppointmentController extends Controller
             "appointment_status"=>'required',
             "customer_id"=>'required',
             "photo"=>'required',
-            "customer_id"=>'required'
             ]);
 
         //Data update

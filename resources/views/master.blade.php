@@ -53,15 +53,15 @@
 
               <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
                 <li class="has-children active">
-                  <a href="#">Home</a>
+                  <a href="{{route('mainpage')}}">Home</a>
                   
                 </li>
                 <li class="has-children">
                   <a href="#">Category</a>
                   <ul class="dropdown">
 
-                    <li><a href="{{ asset('haircare') }}">Hair Care</a></li>
                     <li><a href="{{asset('bodycare')}}">Body Care</a></li>
+                    <li><a href="{{ asset('haircare') }}">Hair Care</a></li>
                     <li><a href="{{ asset('skincare') }}">Skin Care</a></li>
                     <li><a href="{{ asset('nailcare') }}">Nail Care</a></li>
                     <li><a href="{{ asset('facecare') }}">Face Care</a></li>
@@ -84,14 +84,17 @@
                   <li><a href="#">Spa Rest</a></li>
                 </ul>
               </li>
-
-              <li><a href="{{asset('about')}}">About</a></li>
-              <li><a href="{{asset('booking')}}">Appointment</a></li>
-              <li><a href="{{asset('contact')}}">Contact</a></li>
-            </ul> 
-          </nav>
-        </div>
-
+                       
+                     
+                <li><a href="{{asset('booking')}}">Appointment</a></li>
+                <li><a href="{{asset('contact')}}">Contact</a></li>
+       
+                <li><a href="{{asset('about')}}">About</a></li>
+                               
+                
+              </ul>
+            </nav>
+          </div>
         <ul>
           <li>
             @guest
@@ -127,13 +130,10 @@
       </div>
     </div>
   </div>
-</div>
-</div>
 
 
 </header>
-
-
+  
 @yield('content')
 
 <footer class="site-footer">

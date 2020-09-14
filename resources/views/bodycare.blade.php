@@ -19,7 +19,7 @@
             
 
 
-            <a href="" class="appointment text-decoration-none" value="Appointment">Appointment</a>
+            <a href="#" class="btn btn-info">Appointment</a>
             
           </div>
           </a>
@@ -27,5 +27,4 @@
         @endforeach
           </div>
        </div> 
-
 @endsection

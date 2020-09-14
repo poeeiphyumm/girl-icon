@@ -24,35 +24,40 @@ class PageController extends Controller
         return view('contact');
     }
 
-     public function servicefun($value='')
-     {
-        // $services =Service::all();
-     	return view('services');
-    }
+    //  public function servicefun($value='')
+    //  {
+    //     // $services =Service::all();
+    //  	return view('services');
+    // }
 
     public function loginfun($value='')
      {
         
      	return view('login');
-    }
-
-    public function aboutfun($value='')
-     {
+    }      
+    //  public function footcarefun($value='')
+    //  {
         
-        return view('about');
-    }     
+    //     return view('footcare');
+    // }
 
-    public function spafun($value='')
-     {
+    //  public function handcarefun($value='')
+    //  {
         
-        return view('spa');
-    }
+    //     return view('handcare');
+    // }
 
-   
+    // public function spafun($value='')
+    //  {
+        
+    //     return view('spa');
+    // }
+
     // public function mainfun($value='')
     // {
     //     return view('main');
     // }
+
 
 
     public function registerfun($value='')
@@ -64,7 +69,6 @@ class PageController extends Controller
     {
         return view('ourservice');
     }
-    
     public function bodycarefun($value='')
     {
         // $services = Service::all();
@@ -107,6 +111,11 @@ class PageController extends Controller
         $services =DB::table('services')->where('service_name','sparestcare')->get();
         return view('sparest',compact('services'));
     }
+    public function skintherapyfun($value='')
+    {
+        $services =DB::table('services')->where('service_name','skintherapy')->get();
+        return view('skintherapy',compact('services'));
+    }
 
     public function bodycaredetailfun($id)
     {
@@ -142,6 +151,12 @@ class PageController extends Controller
     {
         $services = Service::find($id);
         return view('footcaredetail',compact('services'));
+    }
+
+     public function skintherapydetailfun($id)
+    {
+        $services = Service::find($id);
+        return view('skintherapydetail',compact('services'));
     }
 
 }

@@ -39,6 +39,7 @@
 			    		<td>{{ $service->duration }}</td>
 			    		<td>{{ $service->price }}</td>
 			    		<td>{{ $service->photo }}</td>
+			    		<td>{{ $service->photo }}</td>
 			    		<td>{{ $service->category_id }}</td>
 			    		
 

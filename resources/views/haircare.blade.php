@@ -19,12 +19,33 @@
             
 
 
-            <a href="" class="appointment text-decoration-none" value="Appointment">Appointment</a>
+            <a href="#" class="btn btn-info">Appointment</a>
             
           </div>
           </a>
 
         @endforeach
+    <h1><center>Hair Care Services</center></h1><br><br>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-12" >
+          <img src="{{asset('frontend/images/h2.jpeg')}}">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+        </div>
+          <div class="col-lg-4 col-md-4 col-sm-12">
+           <img src="{{asset('frontend/images/h5.jpeg')}}">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+        </div>
+         <div class="col-lg-4 col-md-4 col-sm-12">
+           <img src="{{asset('frontend/images/h3.jpeg')}}">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et </p>
+        </div>
+
+      </div>
+    </div> 
 
           </div>
        </div> 
