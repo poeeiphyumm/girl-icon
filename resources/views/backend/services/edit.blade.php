@@ -10,9 +10,6 @@
             	</div>
             </div>
     </div>
-
-
-
 <form action="{{ route('services.update',$service->id) }}" method="post" enctype="multipart/form-data">
 	@csrf
 	{{-- //methos put က  update  လုပ်တာ --}}
