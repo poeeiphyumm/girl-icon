@@ -19,4 +19,15 @@ class DatabaseSeeder extends Seeder
     }
          
 
+<<<<<<< HEAD
+=======
+        // $this->call(CustomerTableSeeder::class);   
+          
+         //$this->call(CustomerTableSeeder::class);   
+          
+
+         //$this->call(UserTableSeeder::class);
+
+         //$this->call(CustomerTableSeeder::class);   
+>>>>>>> 32b55295049e428919f0aaad170aa6c87f7c330e
 }

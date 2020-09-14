@@ -26,7 +26,6 @@
 
         @endforeach
 
-<<<<<<< HEAD
     <h1><center>Skin Care Services</center></h1><br><br>
     <div class="container-fluid">
       <div class="row">
@@ -46,8 +45,6 @@
           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
         </div>
       </div>
-=======
     
->>>>>>> 145807f5feac1a66dc1eae8a8bc512ebfed15550
     </div> 
 @endsection

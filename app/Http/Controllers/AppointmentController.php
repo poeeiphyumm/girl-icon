@@ -4,11 +4,17 @@ namespace App\Http\Controllers;
 
 use App\Appointment;
 use App\Customer;
-use App\Carbon\Carbon;
+//use App\Carbon\Carbon;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 
 class AppointmentController extends Controller
 {
+    public function __construct($value='')
+    {
+        $this->middleware('role:Admin')->only('index','show',);
+        $this->middleware('role:Customer')->only('store');
+    }
     /**
      * Display a listing of the resource.
      *
@@ -17,9 +23,13 @@ class AppointmentController extends Controller
     public function index(Request $request)
     {
         $date1=$request->start_date;
-        $date1=$request->end_date;
+        $date2=$request->end_date;
         if ($request->start_date && $request->end_date){
-            $appointments=Appointment::whereBetween('date',[new Carbon($date1), new Carbon($date2)])->where('status',0)->get();
+            $appointments=Appointment::whereBetween('date',
+                [   
+                    new Carbon($date1), 
+                    new Carbon($date2)
+                ])->where('status',0)->get();
         }
         else{
             $appointments=Appointment::all();
@@ -61,10 +71,6 @@ class AppointmentController extends Controller
         $request->validate([
             "date"=>'required',
             "time"=>'required',
-<<<<<<< HEAD
-
-=======
->>>>>>> 54b5126ee6bd48455d97390fb11888da844304eb
             "status"=>'required',
             "appointment_status"=>'required',
             "customer_id"=>'required',

@@ -10,9 +10,6 @@
             	</div>
             </div>
     </div>
-
-
-
 <form action="{{ route('services.update',$service->id) }}" method="post" enctype="multipart/form-data">
 	@csrf
 	{{-- //methos put က  update  လုပ်တာ --}}
@@ -61,20 +58,11 @@
 
 			<input type="hidden" name="oldphoto" value="{{ $service->photo }}">
 		</div>
+	</div>			
 	</div>
-<<<<<<< HEAD
-	
-	
 
-	
-	
 		
 	</div>
-	
-		
-
-=======
->>>>>>> 54b5126ee6bd48455d97390fb11888da844304eb
 	<input type="submit" value="Update" class="btn btn-danger">
 </form>
 @endsection

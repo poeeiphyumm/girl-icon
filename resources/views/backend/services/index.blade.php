@@ -21,6 +21,13 @@
 			    		<td>Price</td>
 			    		<td>Photo</td>
 			    		<td>Category_id</td>
+<<<<<<< HEAD
+=======
+			    		<td>Service_Image</td>
+
+			    		<td>Photo</td>
+
+>>>>>>> 32b55295049e428919f0aaad170aa6c87f7c330e
 			    		<td>Action</td>
 
 		    		</tr>
@@ -34,8 +41,31 @@
 			    		<td>{{ $service->service_name }}</td>
 			    		<td>{{ $service->duration }}</td>
 			    		<td>{{ $service->price }}</td>
+<<<<<<< HEAD
 			    		<td>{{ $service->photo }}</td>
 			    		<td>{{ $service->category_id }}</td>
+=======
+			    		<td>{{ $service->photo }}</td>
+			    		<td>{{ $service->photo }}</td>
+			    		<td>{{ $service->category_id }}</td>
+			    		
+
+			    		
+
+
+			    		<td>{{ $service->category_id }}</td>
+			    		<td>{{ $service->photo }}</td>
+
+			    		<td>{{$service->category_id}}</td>
+
+
+			    		<td>{{ $service->category_id}}</td>
+			    		<td>{{ $service->photo}}</td>
+
+			    		<td>{{ $service->category_id }}</td>
+			    		
+			    		<td>{{ $service->photo }}</td>
+>>>>>>> 32b55295049e428919f0aaad170aa6c87f7c330e
 			    		<td>
 			    			<a href="#" class="btn btn-primary">Detail</a>
 			    			<a href="{{ route('services.edit',$service->id) }}" class="btn btn-secondary">Edit</a>
