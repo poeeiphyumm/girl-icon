@@ -59,10 +59,8 @@
                 <li class="has-children">
                   <a href="#">Category</a>
                   <ul class="dropdown">
-                    <li><a href="">Hair Care</a></li>
                     <li><a href="{{asset('bodycare')}}">Body Care</a></li>
                     <li><a href="{{ asset('haircare') }}">Hair Care</a></li>
-                    <li><a href="{{asset('bodycare')}}">Body Care</a></li>
                     <li><a href="{{ asset('skincare') }}">Skin Care</a></li>
                     <li><a href="{{ asset('nailcare') }}">Nail Care</a></li>
                     <li><a href="{{ asset('facecare') }}">Face Care</a></li>
@@ -72,16 +70,26 @@
                     <li><a href="{{ asset('sparest') }}">Spa Rest</a></li>
                     
                   </ul>
-                </li>
-                
-               
-                    
+                </li>      
                  
                 
                 
                  <li><a href="{{asset('about')}}">About</a></li>
                 <li><a href="{{asset('booking')}}">Appointment</a></li>
                 <li><a href="{{asset('contact')}}">Contact</a></li>
+                <li class="has-children">
+                  {{-- s --}}
+                    {{-- <ul class="dropdown">
+                    <li><a href="{{route('ourservicepage')}}">Our Service</a></li>
+                    <li><a href="#">Service One</a></li>
+                    <li><a href="#">Service Two</a></li>
+                    <li><a href="#">Face Care</a></li>
+                    <li><a href="#">Hand Care</a></li>
+                    <li><a href="#">Foot Care</a></li>
+                    <li><a href="#">Skin Therapy</a></li>
+                    <li><a href="#">Spa Rest</a></li>
+                  </ul> --}}
+                </li>
                 
               </ul>
             </nav>

@@ -9,9 +9,9 @@
     </div>
 
         <div class="container-fluid">
-          <div class="row">
+      <div class="row">
 
-            @foreach($services as $service)
+         @foreach($services as $service)
         <a href="{{ route('bodycaredetail',$service->id) }}">
           <div class="col-lg-4 col-md-4 col-sm-12">
             
@@ -25,6 +25,7 @@
           </a>
 
         @endforeach
-          </div>
-       </div> 
+
+    
+    </div> 
 @endsection

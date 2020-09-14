@@ -12,10 +12,10 @@ class PageController extends Controller
         // $services=Service::all();
         return view('main');
     }
-     public function bookingfun($value='')
+     public function appointmentfun($value='')
      {
         
-     	return view('booking');
+     	return view('appointment');
     }
 
     public function contactfun($value='')
@@ -24,11 +24,11 @@ class PageController extends Controller
         return view('contact');
     }
 
-     public function servicefun($value='')
-     {
-        // $services =Service::all();
-     	return view('services');
-    }
+    //  public function servicefun($value='')
+    //  {
+    //     // $services =Service::all();
+    //  	return view('services');
+    // }
 
     public function loginfun($value='')
      {
@@ -40,6 +40,12 @@ class PageController extends Controller
      {
         
         return view('about');
+    }
+   
+   public function bookingfun($value='')
+     {
+        
+        return view('booking');
     }
    
     public function registerfun($value='')
