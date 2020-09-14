@@ -62,6 +62,7 @@
 			<input type="hidden" name="oldphoto" value="{{ $service->photo }}">
 		</div>
 	</div>
+<<<<<<< HEAD
 	
 	
 
@@ -72,6 +73,8 @@
 	
 		
 
+=======
+>>>>>>> 54b5126ee6bd48455d97390fb11888da844304eb
 	<input type="submit" value="Update" class="btn btn-danger">
 </form>
 @endsection

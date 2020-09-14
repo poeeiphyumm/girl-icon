@@ -44,7 +44,7 @@
               <div class="row form-group">
                 <div class="col-md-6 mb-3 mb-md-0">
                   <label class="text-black" for="date">Date</label> 
-                  <input type="text" id="date" class="form-control datepicker px-2" placeholder="Date of visit">
+                  <input type="date" id="date" class="form-control datepicker px-2" placeholder="Date of visit">
                 </div>
                 <div class="col-md-6">
                   <label class="text-black" for="email">Email</label> 
@@ -83,9 +83,7 @@
                       <strong>Make Appointment Success!{{Session::get('message','')}}</strong>
                     </div>
                     @endif
-                {{-- 
-                  <input type="submit" value="Send" Cclass="btn btn-primary py-2 px-4 text-white"> --}}
-                  {{-- <button type="submit" class="btn btn-info">{{route('customers')}}</button> --}}
+                
                 </div>
               </div>
 

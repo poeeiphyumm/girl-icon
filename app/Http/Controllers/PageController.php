@@ -12,10 +12,10 @@ class PageController extends Controller
         // $services=Service::all();
         return view('main');
     }
-     public function bookingfun($value='')
+     public function appointmentfun($value='')
      {
         
-     	return view('booking');
+     	return view('appointment');
     }
 
     public function contactfun($value='')
@@ -24,11 +24,11 @@ class PageController extends Controller
         return view('contact');
     }
 
-     public function servicefun($value='')
-     {
-        // $services =Service::all();
-     	return view('services');
-    }
+    //  public function servicefun($value='')
+    //  {
+    //     // $services =Service::all();
+    //  	return view('services');
+    // }
 
     public function loginfun($value='')
      {
@@ -41,11 +41,53 @@ class PageController extends Controller
         
         return view('about');
     }
+<<<<<<< HEAD
 
     
 
     
 
+=======
+<<<<<<< HEAD
+   
+   public function bookingfun($value='')
+=======
+
+     public function footcarefun($value='')
+     {
+        
+        return view('footcare');
+    }
+
+     public function handcarefun($value='')
+     {
+        
+        return view('handcare');
+    }
+
+    public function spafun($value='')
+     {
+        
+        return view('spa');
+    }
+
+    public function facecarefun($value='')
+>>>>>>> c370591f260ffafd17d5466cec5e4d0d2d0ca533
+     {
+        
+        return view('booking');
+    }
+   
+<<<<<<< HEAD
+=======
+    // public function mainfun($value='')
+    // {
+    //     return view('main');
+    // }
+
+
+>>>>>>> c370591f260ffafd17d5466cec5e4d0d2d0ca533
+>>>>>>> 54b5126ee6bd48455d97390fb11888da844304eb
     public function registerfun($value='')
     {
         
@@ -55,7 +97,15 @@ class PageController extends Controller
     {
         return view('ourservice');
     }
+<<<<<<< HEAD
     
+=======
+<<<<<<< HEAD
+
+=======
+    
+>>>>>>> c370591f260ffafd17d5466cec5e4d0d2d0ca533
+>>>>>>> 54b5126ee6bd48455d97390fb11888da844304eb
     public function bodycarefun($value='')
     {
         // $services = Service::all();
@@ -139,10 +189,17 @@ class PageController extends Controller
         $services = Service::find($id);
         return view('footcaredetail',compact('services'));
     }
+<<<<<<< HEAD
      public function skintherapydetailfun($id)
     {
         $services = Service::find($id);
         return view('skintherapydetail',compact('services'));
     }
 
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> c370591f260ffafd17d5466cec5e4d0d2d0ca533
+>>>>>>> 54b5126ee6bd48455d97390fb11888da844304eb
 }
