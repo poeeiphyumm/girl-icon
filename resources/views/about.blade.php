@@ -1,5 +1,13 @@
+<<<<<<< HEAD
+
+
+  
+   @extends('master')
+   @section('content')
+=======
 @extends('master')
 @section('content')
+>>>>>>> 54b5126ee6bd48455d97390fb11888da844304eb
 
 
     <div class="slide-one-item home-slider owl-carousel">

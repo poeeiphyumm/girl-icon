@@ -38,6 +38,20 @@
 		</div>
 	</div>
 
+<<<<<<< HEAD
+			<div class="form-group row">
+				<label class="col-sm-2 col-form-label">Category</label>
+				<select class="form-control form-control-md" id="inputBrand" name="category">
+					<optgroup label="Choose Category">
+						@foreach($categories as $category)
+							<option value="{{ $category->id }}">{{ $category->category_name }}</option>
+						@endforeach
+
+					</optgroup>
+				</select>
+		
+			</div>
+=======
 	<div class="form-group row">
 		<label class="col-sm-2 col-form-label">Category</label>
 		<div class="col-sm-6">
@@ -57,6 +71,7 @@
 		<div class="col-sm-6">
 			<input type="file" name="photo" class="form-control" id="inputprice"> --}}
 >>>>>>> c370591f260ffafd17d5466cec5e4d0d2d0ca533
+>>>>>>> 54b5126ee6bd48455d97390fb11888da844304eb
 
 	<div class="form-group row">
 		<label class="col-sm-2 col-form-label">Photo</label>
