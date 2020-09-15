@@ -5,6 +5,8 @@
 	<div class="d-sm-flex align-items-center justify-content-between mb-4">
         <h1 class="h3 mb-0 text-gray-800 d-inline-block"> Customer List</h1>
         <a href="{{ route('customers.create') }}" class="btn btn-info mr-3">Add new</a>
+
+
   	
     </div>
 

@@ -30,8 +30,8 @@ Route::get('loginform', 'PageController@loginfun')->name('loginpage');
 
 	Route::resource('employees','EmployeeController');
 
+	//Route::resource('appointments/{id}','AppointmentController');
 	Route::resource('appointments','AppointmentController');
-
 	Route::resource('employees','EmployeeController');
 
 	Route::resource('customers','CustomerController');

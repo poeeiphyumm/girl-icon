@@ -5,8 +5,8 @@
           <div class="row align-items-center justify-content-center text-center">
 
             <div class="col-md-8" data-aos="fade-up" data-aos-delay="300">
-              <h1 class="display-1">Our Service</h1>
-              <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back.</p>
+              <h1 class="display-1 text-black">Our Service</h1>
+              <p class="text-black">One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back.</p>
             </div>
           </div>
         </div>

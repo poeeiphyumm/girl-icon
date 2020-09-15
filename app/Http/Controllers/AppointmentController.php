@@ -61,11 +61,11 @@ class AppointmentController extends Controller
         $request->validate([
             "date"=>'required',
             "time"=>'required',
-            //"status"=>'required',
-            "appointment_status"=>'required',
+            "status"=>'required',
+            //"appointment_status"=>'required',
             "customer_id"=>'required',
-            "photo"=>'required',
-            "customer_id"=>'required'
+            // "photo"=>'required',
+            // "customer_id"=>'required'
             ]);
 
         //Data insert
@@ -91,7 +91,9 @@ class AppointmentController extends Controller
      */
     public function show(Appointment $appointment)
     {
-        //
+        
+        // $appointments=Appointment::all();
+        // return view('backend.appointments.show',compact('appointments'));
     }
 
     /**

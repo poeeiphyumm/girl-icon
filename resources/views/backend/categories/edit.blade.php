@@ -25,17 +25,7 @@
 			<input type="name" name="category_name" class="form-control" id="inputname" value="{{ $category->category_name}}" >
 		</div>
 	</div>
-	{{-- <div class="form-group row">
-		<label class="col-sm-2 col-form-label">Photo</label>
-		<div class="col-sm-6">
-			<input type="file" name="photo" class="form-control" id="inputphoto" >
-			 //oldphoto ပေါ်ဖို့
-			<img src="{{ asset($category->photo) }}" class="img-fluid w-25">
-
-			<input type="hidden" name="oldphoto" value="{{ $category->photo }}">
-			{{ // --}}
-		{{-- </div> --}}
-	{{-- </div> --}} 
+	
 	
 
 	<input type="submit" value="Update" class="btn btn-danger">

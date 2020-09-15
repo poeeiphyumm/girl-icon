@@ -29,8 +29,28 @@
 	<div class="form-group row">
 		<label class="col-sm-2 col-form-label">Availiability Status</label>
 		<div class="col-sm-6">
-			<input type="radio" name="availability_status" class="" id="inputname" value=" {{ $employee->availability_status}}">Enable<br>
-			<input type="radio" name="availability_status" class="" id="inputname" value=" {{ $employee->availability_status}}">Disable
+			<input type="radio" name="availability_status" class="" id="inputname" value=" enable">Enable<br>
+			<input type="radio" name="availability_status" class="" id="inputname" value=" disable">Disable
+		</div>
+	</div>
+
+	<div class="form-group row">
+				<label class="col-sm-2 col-form-label">Service</label>
+				<select class="form-control form-control-md" id="inputBrand" name="service_id">
+					<optgroup label="Choose Service ">
+						@foreach($services as $service)
+							<option value="{{ $service->id }}">{{ $service->service_name }}</option>
+						@endforeach
+
+					</optgroup>
+				</select>
+		
+	</div>
+
+	<div class="form-group row">
+		<label class="col-sm-2 col-form-label">Email</label>
+		<div class="col-sm-6">
+			<input type="email" name="email" class="form-control" id="inputemail" >
 		</div>
 	</div>
 	

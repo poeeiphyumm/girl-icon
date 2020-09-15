@@ -11,7 +11,7 @@
               <h5 class="text-white font-weight-light text-uppercase">Welcome to Hairsal</h5>
               <h2 class="text-white font-weight-light mb-2 display-1">Beauty Salon Expert</h2>
 
-              <p><a href="#" class="btn btn-black py-3 px-5">Book Now!</a></p>
+              <p><a href="{{asset('booking')}}" class="btn btn-black py-3 px-5">Book Now!</a></p>
             </div>
           </div>
         </div>
@@ -24,7 +24,7 @@
             <div class="col-md-8" data-aos="fade-up" data-aos-delay="400">
               <h2 class="text-white font-weight-light mb-2 display-1">Beautifull, Healthy You!</h2>
 
-              <p><a href="#" class="btn btn-black py-3 px-5">Appointment Now!</a></p>
+              <p><a href="{{asset('booking')}}" class="btn btn-black py-3 px-5">Appointment Now!</a></p>
             </div>
           </div>
         </div>
@@ -107,6 +107,12 @@
 
         </div>
       </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-x"></div>
+  </div>
 </div>
 
 <div class="site-section bg-light">

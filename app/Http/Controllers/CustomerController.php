@@ -20,7 +20,8 @@ class CustomerController extends Controller
     {
 
         $customers=Customer::all();
-        return view('backend.customers.index',compact('customers'));
+        $categories=Category::all();
+        return view('backend.customers.index',compact('customers','categories'));
 
     }
 
@@ -32,8 +33,8 @@ class CustomerController extends Controller
     public function create()
     {
         $customers=Customer::all();
-        // $categories=Category::all();
-        // $appointments=Appointment::all();
+         $categories=Category::all();
+         $appointments=Appointment::all();
         return view("backend.customers.create",compact('customers'));
     }
 
@@ -52,6 +53,8 @@ class CustomerController extends Controller
             "address" => 'required',
             "phone_no" => 'required',
             "gender" => 'required',
+            "date"=>'required',
+           // "category"=>'required';
 
         ]);
 
@@ -71,7 +74,8 @@ class CustomerController extends Controller
         $customer->address = $request->address;
         $customer->phone_no = $request->phone_no;
         $customer->gender = $request->gender;
-
+        $customer->date = $request->date;
+        //$customer->categories->category_id = $request->category_id;
         $customer->save();
 
         //redirect

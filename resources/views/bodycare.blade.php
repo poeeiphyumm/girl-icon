@@ -1,10 +1,5 @@
 @extends('master')
 @section('content')
-<<<<<<< HEAD
-
-=======
->>>>>>> 145807f5feac1a66dc1eae8a8bc512ebfed15550
-    <h1><center>Body Care Services</center></h1><br><br>
 
 
   <div class="jumbotron jumbotron-fluid subtitle">
@@ -13,61 +8,54 @@
       </div>
     </div>
 
+<<<<<<< HEAD
+     <div class="container-fluid">
+      <div class="row">
+
+         @foreach($services as $service)
+=======
         <div class="container-fluid">
+<<<<<<< HEAD
       <div class="row">
 
-        @foreach($services as $service)
-
-
-         {{--  <div class="col-lg-4 col-md-4 col-sm-12">
-
-<<<<<<< HEAD
+         @foreach($services as $service)
 =======
+          <div class="row">
+
+            @foreach($services as $service)
+>>>>>>> 32b55295049e428919f0aaad170aa6c87f7c330e
+>>>>>>> ff5dd49a8f07707e2aa043c7dc9411b741c96114
         <a href="{{ route('bodycaredetail',$service->id) }}">
-
-
-         {{--  <div class="col-lg-4 col-md-4 col-sm-12">
-
-
->>>>>>> 145807f5feac1a66dc1eae8a8bc512ebfed15550
-<div class="container">
-  	<div class="row mt-5">
-      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
-        <img src="" class="img-fluid">
-      </div>
-    </div>
-  </div>
-    <h1><center>Body Care Services</center></h1>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-4 col-md-4 col-sm-12" >
-          <img src="{{asset('frontend/images/b1.jpeg')}}">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-        </div>
-<<<<<<< HEAD
-=======
-
->>>>>>> 145807f5feac1a66dc1eae8a8bc512ebfed15550
           <div class="col-lg-4 col-md-4 col-sm-12">
             
               <img src="{{asset($service->photo)}}" width="400px" height="300px">
             
 
 
-            <a href="" class="appointment text-decoration-none" value="Appointment">Appointment</a>
+<<<<<<< HEAD
+              <a href="#" class="btn btn-info">Appointment</a>
+=======
+<<<<<<< HEAD
+              <a href="#" class="btn btn-info">Appointment</a>
+=======
+            <a href="#" class="btn btn-info">Appointment</a>
+>>>>>>> 32b55295049e428919f0aaad170aa6c87f7c330e
+>>>>>>> ff5dd49a8f07707e2aa043c7dc9411b741c96114
             
           </div>
           </a>
 
         @endforeach
-
-    </div> --}}
+<<<<<<< HEAD
 
     
     </div> 
 <<<<<<< HEAD
+  </div>
 =======
-
->>>>>>> 145807f5feac1a66dc1eae8a8bc512ebfed15550
+=======
+          </div>
+       </div> 
+>>>>>>> 32b55295049e428919f0aaad170aa6c87f7c330e
+>>>>>>> ff5dd49a8f07707e2aa043c7dc9411b741c96114
 @endsection
