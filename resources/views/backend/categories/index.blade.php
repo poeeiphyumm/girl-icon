@@ -18,7 +18,7 @@
 			    		<td>No</td>
 			    		<td>Name</td>
 			    		
-			    		<td>Actions</td>
+			    		<td colspan="3">Actions</td>
 		    		</tr>
 		    	</thead>
 		    	

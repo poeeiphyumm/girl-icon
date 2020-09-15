@@ -19,7 +19,13 @@
 	<div class="form-group row">
 		<label class="col-sm-2 col-form-label">Name</label>
 		<div class="col-sm-6">
-			<input type="name" name="employee_name" class="form-control" id="inputname" >
+			<input type="text" name="employee_name" class="form-control" id="inputname" >
+		</div>
+	</div>
+	<div class="form-group row">
+		<label class="col-sm-2 col-form-label">E-mail</label>
+		<div class="col-sm-6">
+			<input type="text" name="email" class="form-control" id="inputemail" >
 		</div>
 	</div>
 

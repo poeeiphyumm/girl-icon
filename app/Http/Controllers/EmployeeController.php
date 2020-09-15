@@ -43,7 +43,7 @@ class EmployeeController extends Controller
        // dd($request);
          $request->validate([
             "employee_name" => 'required',
-            // "service_name" => 'required',
+            "email" => 'required',
             "availability_status" => 'required'
         ]);
 
@@ -52,7 +52,7 @@ class EmployeeController extends Controller
         $employee = new Employee;
         
         $employee->employee_name = $request->employee_name;
-        // $employee->service_name = $request->service_name;
+        $employee->email = $request->email;
         $employee->availability_status = $request->availability_status;
 
         $employee->save();
@@ -97,7 +97,7 @@ class EmployeeController extends Controller
        //dd($request);
          $request->validate([
             "employee_name" => 'required',
-            // "service_name" => 'required',
+            "email" => 'required',
             "availability_status" => 'required'
             
              ]);
@@ -106,7 +106,7 @@ class EmployeeController extends Controller
 
         //$employee = new Employee;
         $employee->employee_name = $request->employee_name;
-        // $employee->service_name = $request->service_name;
+        $employee->email = $request->email;
         $employee->availability_status=$request->availability_status;
         $employee->save();
 

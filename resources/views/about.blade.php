@@ -51,33 +51,16 @@
 
    {{--  <div class="site-section bg-light"> --}}
       <div class="container">
-        <div class="row">
+        <div class="row mt-5">
           <div class="col-xl-4 col-md-3 col-lg-4 col-sm-12 col-12 text-center mb-5" data-aos="fade-up">
             <img src="{{asset('frontend/images/face1.jpg')}}" alt="Image" class="img-fluid w-50 rounded-circle mb-4">
             <h2 class="text-black font-weight-light mb-4">Face Care</h2>
           </div>
-          <div class="col-md-6 col-lg-4 text-center mb-5" data-aos="fade-up">
+          <div class="col-xl-4 col-md-3 col-lg-4 col-sm-12 col-12 text-center mb-5" data-aos="fade-up">
             <img src="{{asset('frontend/images/face2.jpeg')}}" alt="Image" class="img-fluid w-50 rounded-circle mb-4">
             <h2 class="text-black font-weight-light mb-4">Laser skin Care</h2>
           </div>
-          <div class="col-md-6 col-lg-4 text-center mb-5" data-aos="fade-up">
-            </div>
-            
-          {{-- <div class="col-xl-3 col-md-3 col-lg-4 col-12 text-center mb-5" data-aos="fade-up">span
-            <img src="{{asset('front/images/person_1.jpg')}}" alt="Image" class="img-fluid w-50 rounded-circle mb-4">
-            <h2 class="text-black font-weight-light mb-4">Jean Smith</h2>
-            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur ab quas facilis obcaecati non ea, est odit repellat distinctio incidunt, quia aliquam eveniet quod deleniti impedit sapiente atque tenetur porro?</p>
-            <p>
-              <a href="#" class="pl-0 pr-3"><span class="icon-twitter"></span></a>
-              <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
-              <a href="#" class="pl-3 pr-3"><span class="icon-facebook"></></a>
-            </p>
-          </div> --}}
-          <div class="col-xl-4 col-md-6 col-lg-4 col-12 text-center mb-5" data-aos="fade-up">
-            <img src="{{asset('frontend/images/face2.jpeg')}}" alt="Image" class="img-fluid w-50 rounded-circle mb-4">
-            <h2 class="text-black font-weight-light mb-4">Laser skin Care</h2>
-            </div>
-          <div class="col-xl-4 col-md-6 col-lg-4 col-12 text-center mb-5" data-aos="fade-up">
+          <div class="col-xl-4 col-md-3 col-lg-4 col-sm-12 col-12 text-center mb-5" data-aos="fade-up">
             <img src="{{asset('frontend/images/face3.jpeg')}}" alt="Image" class="img-fluid w-50 rounded-circle mb-4">
             <h2 class="text-black font-weight-light mb-4">Treatment</h2>
           </div>
@@ -91,6 +74,7 @@
             &ldquo;Beauty Clinic&ldquo; is a place where beauty and health related problems can be assessed and be treated by professional doctors using apparatuses of late technology.&ldquo;
           </i></p>
         </div>
+
       </div>
     </div>
 

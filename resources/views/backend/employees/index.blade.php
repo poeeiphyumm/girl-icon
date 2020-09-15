@@ -19,7 +19,9 @@
 		    		<tr>
 			    		<td>No</td>
 			    		<td>Name</td>
-			    		{{-- <td>Service Name</td> --}}
+			    		<td>E-mail</td>
+			    		
+			    		<td>Service </td>
 			    		<td>Availability Status</td>
 			    		<td>Actions</td>
 		    		</tr>
@@ -30,8 +32,9 @@
 		    		@foreach ($employees as $employee)
 		    		<tr>
 		    			<td>{{ $i++ }}</td>
-			    		<td>{{ $employee->employee_name }}</td>
-			    		{{-- <td>{{ $employee->service_name }}</td> --}}
+			    		<td>{{ $employee->employee_name}}</td>
+			    		<td>{{ $employee->email }}</td>
+			    		<td>{{ $employee->service }}</td>
 			    		<td>{{ $employee->availability_status }}</td>
 			    		<td>
 			    			

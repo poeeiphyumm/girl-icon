@@ -16,6 +16,7 @@ class PageController extends Controller
      {
         
      	return view('booking');
+        return redirect()->back()->with('message','Make Appointment Successfully!');
     }
 
     public function contactfun($value='')
@@ -53,10 +54,10 @@ class PageController extends Controller
     //     return view('spa');
     // }
 
-    // public function mainfun($value='')
-    // {
-    //     return view('main');
-    // }
+     public function aboutfun($value='')
+     {
+         return view('about');
+     }
 
 
 

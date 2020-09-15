@@ -17,6 +17,7 @@ class CreateEmployeesTable extends Migration
             $table->id();
             $table->string('employee_name');
             $table->string('email');
+            $table->strigg('availability_status');
             $table->timestamps();
         });
     }
