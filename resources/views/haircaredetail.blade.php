@@ -21,7 +21,6 @@
 				<h4> Service Name:{{$services->service_name }}</h4>
 
 				<p>
-					<h3>Duration: 1-2hr<br>$180<br></h3>
     				Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.</p>
     				<h3>Effects</h3>
     				<li>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the.</li>
@@ -29,41 +28,14 @@
     				<li>Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley.</li>
     				<li>It has survived not only five centuries, but also the leap into electronic typesetting.</li>
 				</p>
-<<<<<<< HEAD
 
 				<p> Price:	{{$services->price}}</p>
 				<p>Duration:{{ $services->duration }}</p>
-=======
-<<<<<<< HEAD
-				<p> Price:	{{$services->price}}</p>
-				<p>Duration:{{ $services->duration }}</p>
-=======
 
-				<p> Price:	{{$services->price}}</p>
-				<p>Duration:{{ $services->duration }}</p>
-				<h3> 
-				
-				Price:	{{$services->price}}
-				</h3>
->>>>>>> 32b55295049e428919f0aaad170aa6c87f7c330e
->>>>>>> ff5dd49a8f07707e2aa043c7dc9411b741c96114
-
-				<a href="#" class="btn btn-info">Appointment</a>
+				<a href="{{ asset('booking') }}" class="btn btn-info">Appointment</a>
 				
 			</div>
 		</div>
-<<<<<<< HEAD
-
-	</div>
-=======
-<<<<<<< HEAD
-	</div>
-</div>
->>>>>>> ff5dd49a8f07707e2aa043c7dc9411b741c96114
-		
-=======
-</div>
 	</div>		
->>>>>>> 32b55295049e428919f0aaad170aa6c87f7c330e
 		
 @endsection

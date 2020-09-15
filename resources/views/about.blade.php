@@ -1,10 +1,4 @@
 
-<<<<<<< HEAD
-=======
-  
-   @extends('master')
-   @section('content')
->>>>>>> ff5dd49a8f07707e2aa043c7dc9411b741c96114
 @extends('master')
 @section('content')
 

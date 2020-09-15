@@ -16,19 +16,15 @@
             
               <img src="{{asset($service->photo)}}" width="400px" height="300px">
             
+              <p class=" text-info">{{ $service->service_name }}</p>
 
-
-            <a href="#" class="btn btn-info">Appointment</a>
+           <a href="{{ asset('booking') }}" class="btn btn-info">Appointment</a>
             
           </div>
           </a>
 
         @endforeach
+</div>
+</div>
 
-<<<<<<< HEAD
-=======
-    
->>>>>>> ff5dd49a8f07707e2aa043c7dc9411b741c96114
-    </div> 
-  </div>
 @endsection

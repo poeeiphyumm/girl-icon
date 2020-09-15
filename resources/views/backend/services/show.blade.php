@@ -21,7 +21,7 @@
           <tbody>
             @php $i=1; @endphp
 
-            @foreach($service->employees as $employee)
+            @foreach($services->employees as $employee)
             {{-- @php 
               $subtotal = $item->price * $item->pivot->qty;
               $total += $subtotal;

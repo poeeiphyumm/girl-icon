@@ -59,7 +59,6 @@
                 <li class="has-children">
                   <a href="#">Category</a>
                   <ul class="dropdown">
-<<<<<<< HEAD
  
                         <li><a href="{{asset('bodycare')}}">Body Care</a></li>
      
@@ -67,10 +66,9 @@
                         <li><a href="{{ asset('skincare') }}">Skin Care</a></li>
                         <li><a href="{{ asset('nailcare') }}">Nail Care</a></li>
                         <li><a href="{{ asset('facecare') }}">Face Care</a></li>
-                        <li><a href="{{ asset('handcare') }}">Hand Care</a></li>
                         <li><a href="{{ asset('footcare') }}">Foot Care</a></li>
                         <li><a href="{{ asset('skintherapy') }}">Skin Therapy</a></li>
-                        <li><a href="{{ asset('sparest') }}">Spa Rest</a></li>
+                        
 
                   </ul>
                 </li>
@@ -79,58 +77,6 @@
                 <li><a href="{{asset('booking')}}">Appointment</a></li>
                 <li><a href="{{asset('contact')}}">Contact</a></li>
 
-=======
-<<<<<<< HEAD
-                    <li><a href="{{ asset('bodycare') }}">Body Care</a></li>
-=======
-
-                    <li><a href="{{asset('bodycare')}}">Body Care</a></li>
->>>>>>> 32b55295049e428919f0aaad170aa6c87f7c330e
-                    <li><a href="{{ asset('haircare') }}">Hair Care</a></li>
-                    <li><a href="{{ asset('skincare') }}">Skin Care</a></li>
-                    <li><a href="{{ asset('nailcare') }}">Nail Care</a></li>
-                    <li><a href="{{ asset('facecare') }}">Face Care</a></li>
-                    <li><a href="{{ asset('handcare') }}">Hand Care</a></li>
-                    <li><a href="{{ asset('footcare') }}">Foot Care</a></li>
-                    <li><a href="{{ asset('skintherapy') }}">Skin Therapy</a></li>
-<<<<<<< HEAD
-                    <li><a href="{{ asset('sparest') }}">Spa Rest</a></li>
-                    </ul>
-                </li>
-                       
-               <li><a href="{{asset('about')}}">About</a></li>
-                <li><a href="{{asset('booking')}}">Appointment</a></li>
-                <li><a href="{{asset('contact')}}">Contact</a></li>
-                    
-                  </ul>
-                </li>      
-=======
-                    <li><a href="{{ asset('sparest') }}">Spa Rest</a></li>  
-                  </ul>
-                </li>
-
-              <li class="has-children"><a href="">Services</a>
-                <ul class="dropdown">
-                  <li><a href="{{route('ourservicepage')}}">Our Service</a></li>
-                  <li><a href="#">Service One</a></li>
-                  <li><a href="#">Service Two</a></li>
-                  <li><a href="#">Face Care</a></li>
-                  <li><a href="#">Hand Care</a></li>
-                  <li><a href="#">Foot Care</a></li>
-                  <li><a href="#">Skin Therapy</a></li>
-                  <li><a href="#">Spa Rest</a></li>
-                </ul>
-              </li>
-                       
-                     
-                <li><a href="{{asset('booking')}}">Appointment</a></li>
-                <li><a href="{{asset('contact')}}">Contact</a></li>
-       
-                <li><a href="{{asset('about')}}">About</a></li>
-                               
-                
->>>>>>> 32b55295049e428919f0aaad170aa6c87f7c330e
->>>>>>> ff5dd49a8f07707e2aa043c7dc9411b741c96114
               </ul>
             </nav>
           </div>
@@ -163,70 +109,21 @@
               </form>
             </div>
 
-<<<<<<< HEAD
-          <ul>
-              <li>
-                @guest
-                    <a class="d-xl-block d-lg-block d-md-block d-none  text-decoration-none loginLink float-right text-uppercase" href="{{ route('loginpage') }}">{{ __('Login') }}</a>
-                            {{-- </li> --}}
-                            @if (Route::has('register'))
-                                {{-- <li class="nav-item"> --}}
-                                    <a class="d-xl-block d-lg-block d-md-block d-none  text-decoration-none loginLink float-right text-uppercase" href="{{ route('registerpage') }}">{{ __('Register') }}|</a>
-                                {{-- </li> --}}
-                            @endif
-                        @else
-                            {{-- <li class="nav-item dropdown"> --}}
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }}
-                                </a>
-
-                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
-                                    </a>
-
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                        @csrf
-                                    </form>
-                                </div>
-                            
-                        @endguest
+            @endguest
+         
               </li>
             </ul>
 
         </div>
-=======
-            @endguest
-          </li>
-        </ul>
->>>>>>> ff5dd49a8f07707e2aa043c7dc9411b741c96114
       </div>
-<<<<<<< HEAD
+
+           
       
     </header>
-<<<<<<< HEAD
-  
-@section('yield')
 
-    <div class="site-section">
-
-      
-=======
-@section('yield')
-    <div class="site-section">  
-
-=======
     </div>
-  </div>
 
->>>>>>> ff5dd49a8f07707e2aa043c7dc9411b741c96114
-
-</header>
-  
->>>>>>> 32b55295049e428919f0aaad170aa6c87f7c330e
-@yield('content')
+  @yield('content')
 
 <footer class="site-footer">
 
@@ -245,9 +142,9 @@
           </div>
           <div class="row">
             <div class="col-md-6 col-lg-6 list-unstyled">
-              <a href="#">Home</a>|
-              <a href="#">Barbers</a>|
-              <a href="#">News</a>|
+              <a href="#">Home</a>
+              <a href="#">Barbers</a>
+              <a href="#">News</a>
               <a href="#">Team</a>
             </div>
           </div>
@@ -260,6 +157,7 @@
             <div class="input-group mb-3">
               <h3 class="footer-heading mb-2">Subscribe Newsletter</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit minima minus odio.</p><br>
+              
               <input type="text" class="form-control border-secondary text-white bg-transparent" placeholder="Enter Email" aria-label="Enter Email" aria-describedby="button-addon2">
               <div class="input-group-append">
                 <button class="btn btn-primary text-white" type="button" id="button-addon2">Send</button>
@@ -293,7 +191,7 @@
     </div>
   </div>
 
-</div>
+
 
 
 </footer>

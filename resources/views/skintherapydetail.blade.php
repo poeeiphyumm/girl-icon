@@ -35,9 +35,7 @@
 				<p> Price:	{{$services->price}}</p>
 				<p>Duration:{{ $services->duration }}</p>
 				
-				
-
-				<a href="#" class="btn btn-info">Appointment</a>
+				<a href="{{ asset('booking') }}" class="btn btn-info">Appointment</a>
 				
 			</div>
 		</div>

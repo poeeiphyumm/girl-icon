@@ -17,9 +17,9 @@
             
               <img src="{{asset($service->photo)}}" width="400px" height="300px">
             
+              <p class=" text-info">{{ $service->service_name }}</p>
 
-
-            <a href="#" class="btn btn-info">Appointment</a>
+            <a href="{{ asset('booking') }}" class="btn btn-info">Appointment</a>
             
           </div>
           </a>

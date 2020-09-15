@@ -24,17 +24,10 @@ class PageController extends Controller
         return view('contact');
     }
 
-    //  public function servicefun($value='')
-    //  {
-    //     // $services =Service::all();
-    //  	return view('services');
-    // }
-
     public function loginfun($value='')
      {
         
      	return view('login');
-<<<<<<< HEAD
     }
 
     public function aboutfun($value='')
@@ -43,47 +36,6 @@ class PageController extends Controller
         return view('about');
     }
 
-    public function bookingfun($value='')
-     {
-<<<<<<< HEAD
-        
-        return view('booking');
-    }
-    
-   
-=======
-        
-        return view('booking');
-    }
-=======
-    }      
-    //  public function footcarefun($value='')
-    //  {
-        
-    //     return view('footcare');
-    // }
-
-    //  public function handcarefun($value='')
-    //  {
-        
-    //     return view('handcare');
-    // }
-
-    // public function spafun($value='')
-    //  {
-        
-    //     return view('spa');
-    // }
-
-    // public function mainfun($value='')
-    // {
-    //     return view('main');
-    // }
-
-
-
->>>>>>> 32b55295049e428919f0aaad170aa6c87f7c330e
->>>>>>> ff5dd49a8f07707e2aa043c7dc9411b741c96114
     public function registerfun($value='')
     {
         
@@ -93,63 +45,48 @@ class PageController extends Controller
     {
         return view('ourservice');
     }
-<<<<<<< HEAD
 
-=======
->>>>>>> ff5dd49a8f07707e2aa043c7dc9411b741c96114
     public function bodycarefun($value='')
     {
         // $services = Service::all();
-        $services =DB::table('services')->where('service_name','bodycare')->get();
+        $services =DB::table('services')->where('category_id',2)->get();
         return view('bodycare',compact('services'));
     }
 
      public function skincarefun($value='')
     {
-        $services =DB::table('services')->where('service_name','skincare')->get();
+        $services =DB::table('services')->where('category_id',7)->get();
         return view('skincare',compact('services'));
     }
 
      public function haircarefun($value='')
     {
-        $services =DB::table('services')->where('service_name','haircare')->get();
+        $services =DB::table('services')->where('category_id',1)->get();
         return view('haircare',compact('services'));
     }
 
      public function nailcarefun($value='')
     {
-        $services =DB::table('services')->where('service_name','nailcare')->get();
+        $services =DB::table('services')->where('category_id',3)->get();
         return view('nailcare',compact('services'));
     }
 
     public function facecarefun($value='')
     {
-        $services =DB::table('services')->where('service_name','facecare')->get();
+        $services =DB::table('services')->where('category_id',4)->get();
         return view('facecare',compact('services'));
     }
-
-    public function handcarefun($value='')
-    {
-        $services =DB::table('services')->where('service_name','handcare')->get();
-        return view('handcare',compact('services'));
-    }
-
+   
     public function footcarefun($value='')
     {
         // $services = Service::all();
-        $services =DB::table('services')->where('service_name','footcare')->get();
+        $services =DB::table('services')->where('category_id',6)->get();
         return view('footcare',compact('services'));
-    }
-
-    public function sparestfun($value='')
-    {
-        $services =DB::table('services')->where('service_name','sparestcare')->get();
-        return view('sparest',compact('services'));
     }
 
     public function skintherapyfun($value='')
     {
-        $services =DB::table('services')->where('service_name','skintherapy')->get();
+        $services =DB::table('services')->where('category_id',8)->get();
         return view('skintherapy',compact('services'));
     }
 
@@ -177,12 +114,6 @@ class PageController extends Controller
         return view('nailcaredetail',compact('services'));
     }
 
-    public function handcaredetailfun($id)
-    {
-        $services = Service::find($id);
-        return view('handcaredetail',compact('services'));
-    }
-
     public function facecaredetailfun($id)
     {
         $services = Service::find($id);
@@ -200,14 +131,5 @@ class PageController extends Controller
         $services = Service::find($id);
         return view('skintherapydetail',compact('services'));
     }
-<<<<<<< HEAD
 
-
-
-=======
-<<<<<<< HEAD
-=======
-
->>>>>>> 32b55295049e428919f0aaad170aa6c87f7c330e
->>>>>>> ff5dd49a8f07707e2aa043c7dc9411b741c96114
 }

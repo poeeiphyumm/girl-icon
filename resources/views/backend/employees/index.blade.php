@@ -19,7 +19,7 @@
 		    		<tr>
 			    		<td>No</td>
 			    		<td>Name</td>
-			    		<td>Service Id</td>
+			    		<td>Service ID</td>
 			    		<td>Availability Status</td>
 			    		<td>Email</td>
 			    		<td>Actions</td>
