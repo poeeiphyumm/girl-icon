@@ -106,11 +106,11 @@ class ServiceController extends Controller
         $service->category_id=$request->category;
 
 
-        $service->photo=$path;
-        $service->category_id=$request->category_id;
+        // $service->photo=$path;
+        // $service->category_id=$request->category_id;
 
 
-        $service->photo=$path;
+        //$service->photo=$path;
 
         $service->save();
 

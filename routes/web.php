@@ -91,9 +91,6 @@ Route::get('contact', 'PageController@contactfun')->name('contactpage');
 
 //end frontend by poeei
 Route::resource('employees','EmployeeController');
-
-Route::resource('services','ServiceController');
-
 Route::resource('customers','CustomerController');
 
 Route::resource('categories','CategoryController');
@@ -103,7 +100,7 @@ Route::resource('appointments','AppointmentController');
 
 
 //end frontend by poeei
-Route::get('services','PageController@bodycarefun')->name('bodycarepage');
+// Route::get('bodycare','PageController@bodycarefun')->name('bodycarepage');
 //role
 
 

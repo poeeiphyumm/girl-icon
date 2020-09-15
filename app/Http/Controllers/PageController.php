@@ -4,18 +4,19 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Service;
+use App\Category;
 use DB;
 class PageController extends Controller
 {
     public function mainfun($value='')
     {
-        // $services=Service::all();
-        return view('main');
+        $categories=Category::all();
+        return view('main',compact('categories'));
     }
      public function bookingfun($value='')
      {
-        
-     	return view('booking');
+        $categories=Category::all();
+     	return view('booking',compact('categories'));
         
     }
 

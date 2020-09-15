@@ -51,7 +51,7 @@ class LoginController extends Controller
                 break;
 
             case 'Customer':
-                  return redirect('/');
+                  return redirect('booking');
                 break;
             
             default: return redirect('/');

@@ -51,7 +51,7 @@ class CustomerController extends Controller
             "date" => 'required',        
             "phone_no" => 'required',
             "gender" => 'required',
-            "category_id" => 'required',
+            "category_name" => 'required',
             "address" => 'required',
 
         ]);
@@ -72,7 +72,7 @@ class CustomerController extends Controller
         $customer->date= $request->date;
         $customer->phone_no = $request->phone_no;
         $customer->gender = $request->gender;
-        $customer->category_id=$request->category_id;
+        $customer->category_name=$request->category_name;
         //customer->category_id=$request->category;
         $customer->address = $request->address;
         $customer->save();

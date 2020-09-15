@@ -69,7 +69,7 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        return User::create([
+        $user= User::create([
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
@@ -90,7 +90,7 @@ class RegisterController extends Controller
                     return 'dashboard';
                 break;
             case 'Customer':
-                    return '/';
+                    return 'booking';
                 break; 
             default:
                     return '/';  

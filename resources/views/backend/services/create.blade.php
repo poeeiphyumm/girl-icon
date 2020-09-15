@@ -51,14 +51,6 @@
 		
 			</div>
 	{{-- <div class="form-group row">
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 3d37bb97577b4f0d768a41d52016ff82e6d0a886
 	<div class="form-group row">
 		<label class="col-sm-2 col-form-label">Category</label>
 		<div class="col-sm-6">

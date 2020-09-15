@@ -61,7 +61,6 @@
                   <ul class="dropdown">
  
                         <li><a href="{{asset('bodycare')}}">Body Care</a></li>
-     
                         <li><a href="{{ asset('haircare') }}">Hair Care</a></li>
                         <li><a href="{{ asset('skincare') }}">Skin Care</a></li>
                         <li><a href="{{ asset('nailcare') }}">Nail Care</a></li>
@@ -73,21 +72,7 @@
 
                   </ul>
                 </li>
-                                     
-
-              <li class="has-children"><a href="">Services</a>
-                <ul class="dropdown">
-                  <li><a href="{{route('ourservicepage')}}">Our Service</a></li>
-                  <li><a href="#">Service One</a></li>
-                  <li><a href="#">Service Two</a></li>
-                  <li><a href="#">Face Care</a></li>
-                  <li><a href="#">Hand Care</a></li>
-                  <li><a href="#">Foot Care</a></li>
-                  <li><a href="#">Skin Therapy</a></li>
-                  <li><a href="#">Spa Rest</a></li>
-                </ul>
-              </li>
-                       
+                                         
                      
                 <li><a href="{{asset('booking')}}">Appointment</a></li>
                 <li><a href="{{asset('contact')}}">Contact</a></li>
