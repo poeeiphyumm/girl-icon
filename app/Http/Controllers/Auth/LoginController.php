@@ -55,11 +55,6 @@ class LoginController extends Controller
             
             default: return redirect('/');
                 break;
-<<<<<<< HEAD
             }
         }
-=======
-        }
     }
->>>>>>> 32b55295049e428919f0aaad170aa6c87f7c330e
-}

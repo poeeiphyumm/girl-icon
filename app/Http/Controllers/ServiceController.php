@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use App\Service;
 use App\Category;
+use App\Employee;
 use Illuminate\Http\Request;
 
 class ServiceController extends Controller
@@ -80,7 +81,12 @@ class ServiceController extends Controller
      */
     public function show(Service $service)
     {
-        return view('backend.services.show',compact('service'));
+        $service=Service::all();
+        // $service=Service::where('services.id',$id)->first();
+        $employees=Employee::all();
+        //dd($service);
+        return view('backend.services.show',compact('service','employees'));
+
     }
 
     /**

@@ -1,7 +1,3 @@
-
-  
-   @extends('master')
-   @section('content')
 @extends('master')
 @section('content')
 
@@ -35,20 +31,6 @@
         </div> 
     </div>
 
-    {{-- <div class="container">
-      <div class="row">
-        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-            <img src="{{asset('front/images/feature.jpg')}}" class="img-fluid">
-            </div>
-        
-        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12"><br><br><br>
-          <h1>Our Vision</h1>
-            <P>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly.</P>
-            </div>
-        </div> 
-    </div>
- --}}
-
    {{--  <div class="site-section bg-light"> --}}
       <div class="container">
         <div class="row">
@@ -60,28 +42,18 @@
             <img src="{{asset('frontend/images/face2.jpeg')}}" alt="Image" class="img-fluid w-50 rounded-circle mb-4">
             <h2 class="text-black font-weight-light mb-4">Laser skin Care</h2>
           </div>
-          <div class="col-md-6 col-lg-4 text-center mb-5" data-aos="fade-up">
-            </div>
+          {{-- <div class="col-md-6 col-lg-4 text-center mb-5" data-aos="fade-up">
+            </div> --}}
             
-          {{-- <div class="col-xl-3 col-md-3 col-lg-4 col-12 text-center mb-5" data-aos="fade-up">span
-            <img src="{{asset('front/images/person_1.jpg')}}" alt="Image" class="img-fluid w-50 rounded-circle mb-4">
-            <h2 class="text-black font-weight-light mb-4">Jean Smith</h2>
-            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur ab quas facilis obcaecati non ea, est odit repellat distinctio incidunt, quia aliquam eveniet quod deleniti impedit sapiente atque tenetur porro?</p>
-            <p>
-              <a href="#" class="pl-0 pr-3"><span class="icon-twitter"></span></a>
-              <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
-              <a href="#" class="pl-3 pr-3"><span class="icon-facebook"></></a>
-            </p>
-          </div> --}}
-          <div class="col-xl-4 col-md-6 col-lg-4 col-12 text-center mb-5" data-aos="fade-up">
-            <img src="{{asset('frontend/images/face2.jpeg')}}" alt="Image" class="img-fluid w-50 rounded-circle mb-4">
-            <h2 class="text-black font-weight-light mb-4">Laser skin Care</h2>
-            </div>
           <div class="col-xl-4 col-md-6 col-lg-4 col-12 text-center mb-5" data-aos="fade-up">
             <img src="{{asset('frontend/images/face3.jpeg')}}" alt="Image" class="img-fluid w-50 rounded-circle mb-4">
             <h2 class="text-black font-weight-light mb-4">Treatment</h2>
           </div>
         </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-6 col-md-6 col-lg-6 col-12">
           <h2>About</h2>
           <p><i>&ldquo;
             Beauty Clinic &ldquo;is conveniently located at No.216,First floor,Excel Taresure Hotel,<br>Yango Myanmar Yangon and another branch is located No.542, Strand Road, Corner of 11st, Lanmadaw Township.
@@ -91,7 +63,15 @@
             &ldquo;Beauty Clinic&ldquo; is a place where beauty and health related problems can be assessed and be treated by professional doctors using apparatuses of late technology.&ldquo;
           </i></p>
         </div>
+
+
+        <div class="col-xl-3 col-md-6 col-lg-3 col-12">
+          <img src="{{asset('frontend/images/abo.jpg')}}">
+        </div>
+        </div>
       </div>
+        
+        </div>
     </div>
 
     <div class="site-section">

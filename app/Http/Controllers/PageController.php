@@ -34,7 +34,6 @@ class PageController extends Controller
      {
         
      	return view('login');
-<<<<<<< HEAD
     }
 
     public function aboutfun($value='')
@@ -42,40 +41,8 @@ class PageController extends Controller
         
         return view('about');
     }
-
-    public function bookingfun($value='')
-     {
-        
-        return view('booking');
-    }
-=======
-    }      
-    //  public function footcarefun($value='')
-    //  {
-        
-    //     return view('footcare');
-    // }
-
-    //  public function handcarefun($value='')
-    //  {
-        
-    //     return view('handcare');
-    // }
-
-    // public function spafun($value='')
-    //  {
-        
-    //     return view('spa');
-    // }
-
-    // public function mainfun($value='')
-    // {
-    //     return view('main');
-    // }
-
-
-
->>>>>>> 32b55295049e428919f0aaad170aa6c87f7c330e
+  
+    
     public function registerfun($value='')
     {
         
@@ -174,8 +141,5 @@ class PageController extends Controller
         $services = Service::find($id);
         return view('skintherapydetail',compact('services'));
     }
-<<<<<<< HEAD
-=======
 
->>>>>>> 32b55295049e428919f0aaad170aa6c87f7c330e
 }
