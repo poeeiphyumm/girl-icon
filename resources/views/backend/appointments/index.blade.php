@@ -33,7 +33,7 @@
 		    			<td>{{ $i++ }}</td>
 		    			<td>{{ $appointment->date }}</td>
 		    			<td>{{ $appointment->time }}</td>
-			    		<td>{{ $appointment->status }}</td>
+			    		<td>{{ $appointment->appointment_status }}</td>
 			    		<td>{{ $appointment->customer_id }}</td>
 			    		<td>
 			    			{{-- <a href="#" class="btn btn-primary">Detail</a> --}}

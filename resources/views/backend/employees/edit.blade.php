@@ -28,7 +28,7 @@
 	<div class="form-group row">
 		<label class="col-sm-2 col-form-label">E_mail</label>
 		<div class="col-sm-6">
-			<input type="name" name="employee_name" class="form-control" id="inputname" value="{{ $employee->email}}" >
+			<input type="name" name="email" class="form-control" id="inputname" value="{{ $employee->email}}" >
 		</div>
 	</div>
 
@@ -51,13 +51,6 @@
 					</optgroup>
 				</select>
 		
-	</div>
-
-	<div class="form-group row">
-		<label class="col-sm-2 col-form-label">Email</label>
-		<div class="col-sm-6">
-			<input type="email" name="email" class="form-control" id="inputemail" >
-		</div>
 	</div>
 	
 	

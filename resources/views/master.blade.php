@@ -66,10 +66,8 @@
                         <li><a href="{{ asset('skincare') }}">Skin Care</a></li>
                         <li><a href="{{ asset('nailcare') }}">Nail Care</a></li>
                         <li><a href="{{ asset('facecare') }}">Face Care</a></li>
-                        <li><a href="{{ asset('handcare') }}">Hand Care</a></li>
                         <li><a href="{{ asset('footcare') }}">Foot Care</a></li>
                         <li><a href="{{ asset('skintherapy') }}">Skin Therapy</a></li>
-                        <li><a href="{{ asset('sparest') }}">Spa Rest</a></li>
 
                   </ul>
                 </li>

@@ -17,7 +17,7 @@
             
               <img src="{{asset($service->photo)}}" width="400px" height="300px">
             
-
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt architecto ab hic rem placeat eius commodi eum eligendi recusandae sed qui cumque quibusdam.</p>
 
               <a href="#" class="btn btn-info">Appointment</a>
             

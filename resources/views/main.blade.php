@@ -177,9 +177,7 @@
                     <option value="">Skin Care</option>
                     <option value="">Nail Care</option>
                     <option value="">Face Care</option>
-                    <option value="">Hand Care</option>
                     <option value="">Foot Care</option>
-                    <option value="">Spa Rest</option>
                   </select>
                 </div>
               </div>

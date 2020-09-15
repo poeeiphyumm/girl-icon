@@ -71,9 +71,9 @@
         <label class="col-sm-2 col-form-label">Service</label>
         <select class="form-control form-control-md" id="inputCategory" name="category">
           <optgroup label="Choose Category">
-            @foreach($categories as $category)
+            {{-- @foreach($categories as $category)
               <option value="{{ $category->id }}">{{ $category->category_name }}</option>
-            @endforeach
+            @endforeach --}}
           </optgroup>
         </select>
     </div>

@@ -31,15 +31,9 @@ class ServiceController extends Controller
     {
         $services=Service::all();
         $categories=Category::all();
-<<<<<<< HEAD
 
         return view('backend.services.create',compact('services','categories'));
-=======
-        return view("backend.services.create",compact('services','categories'));
-        
 
-        
->>>>>>> db3e7b8476ef096fd01afdfc4050d6b5adfc720c
     }
 
     /**
@@ -50,43 +44,7 @@ class ServiceController extends Controller
      */
     public function store(Request $request)
     {
-<<<<<<< HEAD
-=======
-       
 
-       
-       //dd($request);
-         //If include file,upload file
-       //dd($request);
-         $request->validate([
-            "service_name" => 'required',
-            "duration" => 'required',
-            "price" => 'required',
-            "category_id" => 'required',
-            "photo"=>'required',
-            
-        ]);
-
-        $imageName = time().'.'.$request->photo->extension();
-         //If include file,upload file
-
-    
-        //If include file,upload file
-
-       // dd($request);
-        //  $request->validate([
-        //     "service_name" => 'required',
-        //     "duration" => 'required',
-        //     "price" => 'required',
-        //     "category_id" => 'required',
-        //     "photo"=>'required'
-            
-        // ]);
-
-        
-        $imageName = time().'.'.$request->photo->extension();
-
->>>>>>> db3e7b8476ef096fd01afdfc4050d6b5adfc720c
        //dd($request);
          //If include file,upload file
        //dd($request);
@@ -109,19 +67,8 @@ class ServiceController extends Controller
         $service->duration = $request->duration;
         $service->price = $request->price;
         $service->photo=$path;
-
         $service->category_id=$request->category_id;
-        $service->category_id=$request->category;
-
-
         $service->photo=$path;
-        $service->category_id=$request->category_id;
-<<<<<<< HEAD
-=======
-
-
-        $service->photo=$path;
->>>>>>> db3e7b8476ef096fd01afdfc4050d6b5adfc720c
 
         $service->save();
 
@@ -137,25 +84,13 @@ class ServiceController extends Controller
      */
     public function show($id)
     {
-<<<<<<< HEAD
         // $services=Service::all();
-        $services=DB::table('employees')->join('services.id','employees.id')->where('services.id',$id)->get();
-=======
+        // $services=DB::table('employees')->join('services.id','employees.id')->where('services.id',$id)->get();
         $service=Service::all();
         // $service=Service::where('services.id',$id)->first();
         $employees=Employee::all();
         //dd($service);
         return view('backend.services.show',compact('service','employees'));
-
-
-        
-        $services = DB::table('employees')->join('service_details','service_details.employee_id','=','employees.id')->where('service_details.service_id',$id)->get();
-                
-       // dd($servicedetail);
-        $services = Service::where('services.id',$id)->first();
-        dd($services);
->>>>>>> db3e7b8476ef096fd01afdfc4050d6b5adfc720c
-        return view('backend.services.show',compact('services'));
     }
 
     /**
