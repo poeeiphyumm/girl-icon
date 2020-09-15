@@ -60,16 +60,6 @@
                   <a href="#">Category</a>
                   <ul class="dropdown">
 
-                    <li><a href="">Hair Care</a></li>
-                    <li><a href="{{asset('bodycare')}}">Body Care</a></li>
-                    <li><a href="">Skin Care</a></li>
-                    <li><a href="#">Nail Care</a></li>
-                    <li><a href="#">Face Care</a></li>
-                    <li><a href="#">Hand Care</a></li>
-                    <li><a href="#">Foot Care</a></li>
-                    <li><a href="#">Skin Therapy</a></li>
-                    <li><a href="#">Spa Rest</a></li>
- 
                     <li><a href="{{ asset('haircare') }}">Hair Care</a></li>
                     <li><a href="{{asset('bodycare')}}">Body Care</a></li>
                     <li><a href="{{ asset('skincare') }}">Skin Care</a></li>
@@ -82,67 +72,17 @@
 
                     
                   </ul>
-                </li>
-                
                
                 <li><a href="{{asset('about')}}">About</a></li>
-                               
-                    <li><a href="{{asset('haircare')}}">Hair Care</a></li>
-
-                    <li><a href="">Hair Care</a></li>
-
-                    <li><a href="{{asset('bodycare')}}">Body Care</a></li>
-                    <li><a href="{{asset('skincare')}}">Skin Care</a></li>
-                    <li><a href="{{asset('nailcare')}}">Nail Care</a></li>
-                    <li><a href="{{asset('face')}}">Face Care</a></li>
-                    <li><a href="{{asset('handcare')}}">Hand Care</a></li>
-                    <li><a href="{{asset('footcare')}}">Foot Care</a></li>
-                    {{-- <li><a href="#">Skin Therapy</a></li> --}}
-                    <li><a href="{{asset('spa')}}">Spa Rest</a></li>
-                  </ul>
-                </li>
-                <li class="has-children">
-                  <a href="">Services</a>
-                    <ul class="dropdown">
-                    <li><a href="{{route('ourservicepage')}}">Our Service</a></li>
-                    <li><a href="#">Service One</a></li>
-                    <li><a href="#">Service Two</a></li>
-                    <li><a href="#">Face Care</a></li>
-                    <li><a href="#">Hand Care</a></li>
-                    <li><a href="#">Foot Care</a></li>
-                    <li><a href="#">Skin Therapy</a></li>
-                    <li><a href="#">Spa Rest</a></li>
-                  </ul>
-                </li>
-<<<<<<< HEAD
-
-=======
-                
->>>>>>> 145807f5feac1a66dc1eae8a8bc512ebfed15550
-                {{-- <li><a href="{{asset('booking')}}">Book Online</a></li> --}}
-{{--                 <li><a href="">Services</a></li>
- --}}                <li><a href="{{asset('about')}}">About</a></li>
                 <li><a href="{{asset('booking')}}">Appointment</a></li>
                 <li><a href="{{asset('contact')}}">Contact</a></li>
-<<<<<<< HEAD
 
-=======
->>>>>>> 145807f5feac1a66dc1eae8a8bc512ebfed15550
-                <li><a href="{{route('aboutpage')}}">About</a></li>
-                <li><a href="{{route('bookingpage')}}">Appointment</a></li>
-                <li><a href="{{route('contactpage')}}">Contact</a></li>
-               
-                <li><a href="{{asset('about')}}">About</a></li>
-<<<<<<< HEAD
-
-=======
->>>>>>> 145807f5feac1a66dc1eae8a8bc512ebfed15550
               </ul>
             </nav>
           </div>
 
           <ul>
-              <li>
+              
                 @guest
                             {{-- <li class="nav-item"> --}}
                                 <a class="d-xl-block d-lg-block d-md-block d-none  text-decoration-none loginLink float-right text-uppercase" href="{{ route('loginpage') }}">{{ __('Login') }}</a>
@@ -178,16 +118,13 @@
       </div>
       
     </header>
-<<<<<<< HEAD
+
 
   
 @section('yield')
 
     <div class="site-section">
 
-=======
-
->>>>>>> 145807f5feac1a66dc1eae8a8bc512ebfed15550
 
 @yield('content')
      

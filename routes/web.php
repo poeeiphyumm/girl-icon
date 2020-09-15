@@ -90,10 +90,8 @@ Route::get('bodycaredetail/{id}', 'PageController@bodycaredetailfun')->name('bod
 
 Route::get('haircaredetail/{id}', 'PageController@haircaredetailfun')->name('haircaredetail');
 
-<<<<<<< HEAD
-=======
 
->>>>>>> 145807f5feac1a66dc1eae8a8bc512ebfed15550
+
 //end frontend by poeei
 // Route::get('index', 'BackendController@indexfun')->name('indexpage');
 
@@ -124,15 +122,12 @@ Route::get('about', 'PageController@aboutfun')->name('aboutpage');
 
 
 
-<<<<<<< HEAD
 
 
 Route::get('dashboard', 'backendController@dashboardfun') ->name('dashboardpage');
 
-=======
 
 Route::get('dashboard', 'backendController@dashboardfun') ->name('dashboardpage');
->>>>>>> 145807f5feac1a66dc1eae8a8bc512ebfed15550
 Route::resource('employees','EmployeeController');
 Route::resource('customers','CustomerController');
 
@@ -147,10 +142,7 @@ Route::resource('services','ServiceController');
 //Route::resource('customers','CustomerController');
 Route::resource('customers','CustomerController');
 
-<<<<<<< HEAD
- 
-=======
->>>>>>> 145807f5feac1a66dc1eae8a8bc512ebfed15550
+
 
 
 Route::middleware('role:Admin')->group(function(){

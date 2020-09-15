@@ -24,9 +24,6 @@
       <div class="container">
         <div class="row">
           <div class="col-md-7 mb-5">
-
-            
-
             <form action="#" class="p-5 bg-white">
               <h2 class="mb-4 site-section-heading">Book Now</h2>
 
@@ -77,21 +74,10 @@
 
               <div class="row form-group">
                 <div class="col-md-12">
-                  @if(Session::has('success'))
-                    <div class="alert alert-success">
-                      <button type="button" class="btn btn-primary py-2 px-4 text-white" data-dismiss="alert">Send</button>
-                      <strong>Make Appointment Success!{{Session::get('message','')}}</strong>
-                    </div>
-                    @endif
-                
+                    <button onclick="alert('Make Appointment Successful!')">Send</button>
                 </div>
               </div>
-
-  
             </form>
-
-          
-
           </div>
           <div class="col-md-5">
             
@@ -139,9 +125,7 @@
               <h3 class="footer-heading mb-4">About Hairsal</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe pariatur reprehenderit vero atque, consequatur id ratione, et non dignissimos culpa? Ut veritatis, quos illum totam quis blanditiis, minima minus odio!</p>
             </div>
-
-            
-            
+ 
           </div>
           <div class="col-lg-4 mb-5 mb-lg-0">
             <div class="row mb-5">
@@ -165,8 +149,6 @@
                 </ul>
               </div>
             </div>
-
-            
 
           </div>
 

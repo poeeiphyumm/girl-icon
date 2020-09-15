@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Appointment;
 use App\Customer;
-use App\Carbon\Carbon;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 
 class AppointmentController extends Controller
@@ -17,7 +17,7 @@ class AppointmentController extends Controller
     public function index(Request $request)
     {
         $date1=$request->start_date;
-        $date1=$request->end_date;
+        $date2=$request->end_date;
         if ($request->start_date && $request->end_date){
             $appointments=Appointment::whereBetween('date',[new Carbon($date1), new Carbon($date2)])->where('status',0)->get();
         }
@@ -61,7 +61,7 @@ class AppointmentController extends Controller
         $request->validate([
             "date"=>'required',
             "time"=>'required',
-            "status"=>'required',
+            //"status"=>'required',
             "appointment_status"=>'required',
             "customer_id"=>'required',
             "photo"=>'required',
@@ -72,7 +72,8 @@ class AppointmentController extends Controller
         $appointment=new Appointment;
         
         //$appointment->email=$request->email;
-        $appointment->date=$request->date;
+        //$appointment->date=$request->date;
+        $appointment->date = date('Y-m-d');
         $appointment->time=$request->time;
         $appointment->status=$request->status;
         $appointment->customer_id=$request->customer_id;

@@ -58,7 +58,7 @@
 			    		
 			    		<td>{{ $service->photo }}</td>
 			    		<td>
-			    			<a href="#" class="btn btn-primary">Detail</a>
+			    			<a href="{{route('services.show',$service->id)}}" class="btn btn-primary">Detail</a>
 			    			<a href="{{ route('services.edit',$service->id) }}" class="btn btn-secondary">Edit</a>
 
 			    			
