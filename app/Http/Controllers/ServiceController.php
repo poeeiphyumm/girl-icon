@@ -31,8 +31,8 @@ class ServiceController extends Controller
     {
         $services=Service::all();
         $categories=Category::all();
-        return view("backend.services.create",compact('services','categories'));
-        
+
+        return view('backend.services.create',compact('services','categories'));        
 
         
     }
@@ -44,8 +44,7 @@ class ServiceController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
-    {
-       
+    {       
 
        
        //dd($request);
@@ -78,7 +77,6 @@ class ServiceController extends Controller
 
         
         $imageName = time().'.'.$request->photo->extension();
-
        //dd($request);
          //If include file,upload file
        //dd($request);
@@ -104,14 +102,6 @@ class ServiceController extends Controller
 
         $service->category_id=$request->category_id;
         $service->category_id=$request->category;
-
-
-        // $service->photo=$path;
-        // $service->category_id=$request->category_id;
-
-
-        //$service->photo=$path;
-
         $service->save();
 
         //redirect
@@ -126,6 +116,8 @@ class ServiceController extends Controller
      */
     public function show($id)
     {
+        // $services=Service::all();
+        $services=DB::table('employees')->join('services.id','employees.id')->where('services.id',$id)->get();
         $service=Service::all();
         // $service=Service::where('services.id',$id)->first();
         $employees=Employee::all();

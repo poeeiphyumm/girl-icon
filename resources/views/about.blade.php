@@ -44,17 +44,7 @@
             <img src="{{asset('frontend/images/face2.jpeg')}}" alt="Image" class="img-fluid w-50 rounded-circle mb-4">
             <h2 class="text-black font-weight-light mb-4">Laser skin Care</h2>
           </div>
-          <div class="col-xl-4 col-md-3 col-lg-4 col-sm-12 col-12 text-center mb-5" data-aos="fade-up">
-          <div class="col-md-6 col-lg-4 text-center mb-5" data-aos="fade-up">
-            </div>
-          {{-- <div class="col-md-6 col-lg-4 text-center mb-5" data-aos="fade-up">
-            </div> --}}
-            
-          
-          <div class="col-xl-4 col-md-6 col-lg-4 col-12 text-center mb-5" data-aos="fade-up">
-            <img src="{{asset('frontend/images/face2.jpeg')}}" alt="Image" class="img-fluid w-50 rounded-circle mb-4">
-            <h2 class="text-black font-weight-light mb-4">Laser skin Care</h2>
-            </div>
+         
           <div class="col-xl-4 col-md-6 col-lg-4 col-12 text-center mb-5" data-aos="fade-up">
             <img src="{{asset('frontend/images/face3.jpeg')}}" alt="Image" class="img-fluid w-50 rounded-circle mb-4">
             <h2 class="text-black font-weight-light mb-4">Treatment</h2>

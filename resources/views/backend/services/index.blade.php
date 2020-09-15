@@ -21,6 +21,8 @@
 			    		<td>Price</td>
 			    		<td>Photo</td>
 			    		<td>Category_id</td>
+<<<<<<< HEAD
+=======
 			    		{{-- <td>Service_Image</td> --}}
 			    		<td>Photo</td>
 			    		<td>Service_Image</td>
@@ -28,6 +30,7 @@
 			    		<td>Photo</td>
 
 
+>>>>>>> db3e7b8476ef096fd01afdfc4050d6b5adfc720c
 			    		<td>Action</td>
 
 		    		</tr>

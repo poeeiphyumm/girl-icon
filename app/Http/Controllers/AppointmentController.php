@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Appointment;
 use App\Customer;
 use Carbon\Carbon;
+use App\Customer;
 use Illuminate\Http\Request;
 
 class AppointmentController extends Controller
@@ -70,10 +71,8 @@ class AppointmentController extends Controller
         $request->validate([
             "date"=>'required',
             "time"=>'required',
-            "status"=>'required',
             "appointment_status"=>'required',
             "customer_id"=>'required',
-            "photo"=>'required',
             ]);
 
         //Data insert
@@ -82,9 +81,8 @@ class AppointmentController extends Controller
         //$appointment->email=$request->email;
         $appointment->date=$request->date;
         $appointment->time=$request->time;
-        $appointment->status=$request->status;
+        $appointment->appointment_status=$request->appointment_status;
         $appointment->customer_id=$request->customer_id;
-        $appointment->photo=$request->photo;
         $appointment->save();
 
         //redirect

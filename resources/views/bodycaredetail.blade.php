@@ -30,6 +30,8 @@
 				<h3> 
 				
 				<a href="{{asset('booking')}}" class="btn btn-info">Appointment</a>
+
+				
 				
 			</div>
 		</div>

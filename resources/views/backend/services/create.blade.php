@@ -50,6 +50,8 @@
 				</select>
 		
 			</div>
+<<<<<<< HEAD
+=======
 	{{-- <div class="form-group row">
 	<div class="form-group row">
 		<label class="col-sm-2 col-form-label">Category</label>
@@ -65,6 +67,7 @@
 		<div class="col-sm-6">
 			<input type="file" name="photo" class="form-control" id="inputprice"> --}}
 
+>>>>>>> db3e7b8476ef096fd01afdfc4050d6b5adfc720c
 
 	
 	<div class="form-group row">

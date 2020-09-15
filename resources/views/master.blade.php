@@ -71,23 +71,15 @@
                         <li><a href="{{ asset('sparest') }}">Spa Rest</a></li>
 
                   </ul>
-                </li>
-                                         
-                     
+                </li>                   
+                 <li><a href="{{asset('about')}}">About</a></li>
                 <li><a href="{{asset('booking')}}">Appointment</a></li>
                 <li><a href="{{asset('contact')}}">Contact</a></li>
-       
-                <li><a href="{{asset('about')}}">About</a></li>
-                               
               
-              </ul>
-            </nav>
-          </div>
-        
-
-          <ul>
+            
               <li>
                 @guest
+                
                     <a class="d-xl-block d-lg-block d-md-block d-none  text-decoration-none loginLink float-right text-uppercase" href="{{ route('loginpage') }}">{{ __('Login') }}</a>
                             {{-- </li> --}}
                             @if (Route::has('register'))
@@ -112,17 +104,17 @@
                                         @csrf
                                     </form>
                                 </div>
-                            
+                           
                         @endguest
               </li>
             </ul>
-
-        </div>
-      
-    </header>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
   
-
-
+  
 @yield('content')
 
 <footer class="site-footer">

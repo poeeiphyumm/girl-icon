@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 @extends('backend.backendtemplate')
+=======
+@extends ('backend.backendtemplate')
+>>>>>>> 10de3259a9a6997cfac8affc02899511a3f7a34a
 @section('content')
   <div class="container-fluid">
     <!-- Page Heading -->
@@ -19,6 +23,7 @@
           </thead>
           <tbody>
             @php $i=1; @endphp
+<<<<<<< HEAD
             @foreach($services as $employee)
 
             @foreach($service->employees as $employee)
@@ -26,11 +31,15 @@
               $subtotal = $item->price * $item->pivot->qty;
               $total += $subtotal;
             @endphp --}}
+=======
+
+            @foreach($services->employees as $employee)
+>>>>>>> 10de3259a9a6997cfac8affc02899511a3f7a34a
             <tr>
               <td>{{$i++}}</td>
               <td>{{$employee->service_id}}</td>
               <td>{{$employee->employee_id}}</td>
-              <td>{{$employee->}}</td>
+              <td>{{$employee->service_name}}</td>
             </tr>
             @endforeach
           </tbody>
