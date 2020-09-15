@@ -1,3 +1,13 @@
+<<<<<<< HEAD
+=======
+
+<<<<<<< HEAD
+=======
+  
+   @extends('master')
+   @section('content')
+>>>>>>> ff5dd49a8f07707e2aa043c7dc9411b741c96114
+>>>>>>> 81011ab672b9183774899c38b26042145cf5e2a6
 @extends('master')
 @section('content')
 
@@ -31,7 +41,11 @@
         </div> 
     </div>
 
+<<<<<<< HEAD
    {{--  <div class="site-section bg-light"> --}}
+=======
+    
+>>>>>>> 81011ab672b9183774899c38b26042145cf5e2a6
       <div class="container">
         <div class="row">
           <div class="col-xl-4 col-md-3 col-lg-4 col-sm-12 col-12 text-center mb-5" data-aos="fade-up">
@@ -45,6 +59,14 @@
           {{-- <div class="col-md-6 col-lg-4 text-center mb-5" data-aos="fade-up">
             </div> --}}
             
+<<<<<<< HEAD
+=======
+          
+          <div class="col-xl-4 col-md-6 col-lg-4 col-12 text-center mb-5" data-aos="fade-up">
+            <img src="{{asset('frontend/images/face2.jpeg')}}" alt="Image" class="img-fluid w-50 rounded-circle mb-4">
+            <h2 class="text-black font-weight-light mb-4">Laser skin Care</h2>
+            </div>
+>>>>>>> 81011ab672b9183774899c38b26042145cf5e2a6
           <div class="col-xl-4 col-md-6 col-lg-4 col-12 text-center mb-5" data-aos="fade-up">
             <img src="{{asset('frontend/images/face3.jpeg')}}" alt="Image" class="img-fluid w-50 rounded-circle mb-4">
             <h2 class="text-black font-weight-light mb-4">Treatment</h2>

@@ -3,7 +3,11 @@
 namespace App\Http\Controllers;
 use App\Service;
 use App\Category;
+<<<<<<< HEAD
 use App\Employee;
+=======
+use DB;
+>>>>>>> 81011ab672b9183774899c38b26042145cf5e2a6
 use Illuminate\Http\Request;
 
 class ServiceController extends Controller
@@ -30,7 +34,12 @@ class ServiceController extends Controller
     {
         $services=Service::all();
         $categories=Category::all();
+<<<<<<< HEAD
+        return view("backend.services.create",compact('services'));
+
+=======
         return view('backend.services.create',compact('services','categories'));
+>>>>>>> ff5dd49a8f07707e2aa043c7dc9411b741c96114
     }
 
     /**
@@ -41,6 +50,25 @@ class ServiceController extends Controller
      */
     public function store(Request $request)
     {
+<<<<<<< HEAD
+
+    
+        //If include file,upload file
+
+       // dd($request);
+        //  $request->validate([
+        //     "service_name" => 'required',
+        //     "duration" => 'required',
+        //     "price" => 'required',
+        //     "category_id" => 'required',
+        //     "photo"=>'required'
+            
+        // ]);
+
+        
+        $imageName = time().'.'.$request->photo->extension();
+
+=======
        //dd($request);
          //If include file,upload file
        //dd($request);
@@ -54,6 +82,7 @@ class ServiceController extends Controller
         ]);
 
         $imageName = time().'-'.$request->photo->extension();
+>>>>>>> ff5dd49a8f07707e2aa043c7dc9411b741c96114
         $request->photo->move(public_path('backend/serviceimg'),$imageName);
         // ပုံပတ်လမ်းကြောင်းသိမ်း
         $path = 'backend/serviceimg/'.$imageName;
@@ -64,9 +93,12 @@ class ServiceController extends Controller
         $service->price = $request->price;
         $service->photo=$path;
         $service->category_id=$request->category_id;
+<<<<<<< HEAD
+=======
 
         $service->photo=$path;
 
+>>>>>>> ff5dd49a8f07707e2aa043c7dc9411b741c96114
         $service->save();
 
         //redirect
@@ -79,14 +111,25 @@ class ServiceController extends Controller
      * @param  \App\Service  $service
      * @return \Illuminate\Http\Response
      */
-    public function show(Service $service)
+    public function show($id)
     {
+<<<<<<< HEAD
         $service=Service::all();
         // $service=Service::where('services.id',$id)->first();
         $employees=Employee::all();
         //dd($service);
         return view('backend.services.show',compact('service','employees'));
 
+=======
+
+        
+        $services = DB::table('employees')->join('service_details','service_details.employee_id','=','employees.id')->where('service_details.service_id',$id)->get();
+                
+       // dd($servicedetail);
+        $services = Service::where('services.id',$id)->first();
+        dd($services);
+        return view('backend.services.show',compact('services'));
+>>>>>>> 81011ab672b9183774899c38b26042145cf5e2a6
     }
 
     /**

@@ -60,9 +60,15 @@
 		</div>
 	</div>			
 	</div>
+<<<<<<< HEAD
+		
+</div>
+	
+=======
 
 		
 	</div>
+>>>>>>> ff5dd49a8f07707e2aa043c7dc9411b741c96114
 	<input type="submit" value="Update" class="btn btn-danger">
 </form>
 @endsection

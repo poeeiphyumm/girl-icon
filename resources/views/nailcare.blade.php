@@ -25,6 +25,10 @@
 
         @endforeach
 
+<<<<<<< HEAD
+=======
     
+>>>>>>> ff5dd49a8f07707e2aa043c7dc9411b741c96114
     </div> 
+  </div>
 @endsection
