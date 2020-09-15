@@ -17,6 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('registerform', 'PageController@registerfun') ->name('registerpage');
 Route::get('loginform', 'PageController@loginfun')->name('loginpage');
 
+Route::get('/', 'PageController@mainfun')->name('mainpage');
 //backend by poeei
 
 
@@ -29,6 +30,15 @@ Route::get('loginform', 'PageController@loginfun')->name('loginpage');
 
 	Route::resource('appointments','AppointmentController');
 
+	Route::resource('employees','EmployeeController');
+
+	Route::resource('customers','CustomerController');
+
+
+Route::get('/', 'PageController@mainfun')->name('mainpage');
+
+
+Route::get('show','ServiceController@showfun')->name('showpage');
 Route::get('/', 'PageController@mainfun')->name('mainpage');
 
 
@@ -36,6 +46,9 @@ Route::get('/', 'PageController@mainfun')->name('mainpage');
 
 
 Route::get('booking', 'PageController@bookingfun') ->name('bookingpage');
+
+Route::get('contact', 'PageController@contactfun') ->name('contactpage');
+
 Route::get('servicepage', 'PageController@servicefun')->name('servicepage');
 
 Route::get('about', 'PageController@aboutfun')->name('aboutpage');
@@ -57,17 +70,21 @@ Route::get('handcare', 'PageController@handcarefun')->name('handcarepage');
 Route::get('footcare', 'PageController@footcarefun')->name('footcarepage');
 
 
+
+Route::get('ourservice', 'PageController@ourservicefun')->name('ourservicepage');
+
+
 Route::get('about', 'PageController@aboutfun')->name('aboutpage');
 Route::get('ourservice', 'PageController@ourservicefun')->name('ourservicepage');
 
 
 
-Route::get('ourservice', 'PageController@ourservicefun')->name('ourservicepage');
 
 
 Route::get('sparest', 'PageController@sparestfun')->name('sparestpage');
 
 Route::get('skintherapy', 'PageController@skintherapyfun')->name('skintherapypage');
+
 
 
 Route::get('face','PageController@facecarefun')->name('facecarepage');
@@ -82,6 +99,9 @@ Route::get('bodycaredetail/{id}', 'PageController@bodycaredetailfun')->name('bod
 
 Route::get('haircaredetail/{id}', 'PageController@haircaredetailfun')->name('haircaredetail');
 
+
+//end frontend by poeei
+
 //end frontend by poeei
 
 
@@ -93,11 +113,16 @@ Route::get('skincaredetail/{id}', 'PageController@skincaredetailfun')->name('ski
 
 Route::get('nailcaredetail/{id}', 'PageController@nailcaredetailfun')->name('nailcaredetail');
 
+
 Route::get('footcaredetail/{id}', 'PageController@footcaredetailfun')->name('footcaredetail');
 
 Route::get('facecaredetail/{id}', 'PageController@facecaredetailfun')->name('facecaredetail');
 
 Route::get('skintherapydetail/{id}', 'PageController@skintherapydetailfun')->name('skintherapydetail');
+
+
+
+//end frontend by poeei
 Route::get('ourservice', 'PageController@ourservicefun')->name('ourservicepage');
 
 //end frontend by poeei
@@ -107,6 +132,27 @@ Route::get('ourservice', 'PageController@ourservicefun')->name('ourservicepage')
 Route::get('contact', 'PageController@contactfun')->name('contactpage');
 Route::get('about', 'PageController@aboutfun')->name('aboutpage');
 
+
+
+
+//end frontend by poeei
+Route::get('dashboard', 'backendController@dashboardfun') ->name('dashboardpage');
+
+Route::resource('employees','EmployeeController');
+
+Route::resource('services','ServiceController');
+
+Route::resource('customers','CustomerController');
+
+// Route::get('services','PageController@bodycarefun')->name('bodycarepage');
+
+Route::resource('categories','CategoryController');
+
+Route::resource('appointments','AppointmentController');
+
+
+
+Route::resource('customers','CustomerController');
 //end frontend by poeei
 
 Route::resource('services','ServiceController');
@@ -120,10 +166,11 @@ Route::get('dashboard', 'backendController@dashboardfun') ->name('dashboardpage'
 });
 
 
-
 //auth
 
 Auth::routes();
+
+
 
 Route::get('/home', 'HomeController@index')->name('home');
  

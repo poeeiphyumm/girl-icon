@@ -14,9 +14,10 @@ class EmployeeController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {
+    {   
+        $service=Service::all();
         $employees=Employee::all();
-        return view('backend.employees.index',compact('employees'));
+        return view('backend.employees.index',compact('employees','service'));
     }
 
     /**
@@ -27,8 +28,8 @@ class EmployeeController extends Controller
     public function create()
     {
         $employee=Employee::all();
-        // $services=Service::all();
-        return view("backend.employees.create",compact('employee'));
+        $services=Service::all();
+        return view("backend.employees.create",compact('employee','services'));
 
     }
 
@@ -44,6 +45,7 @@ class EmployeeController extends Controller
          $request->validate([
             "employee_name" => 'required',
             "email" => 'required',
+             "service_id" => 'required',
             "availability_status" => 'required'
         ]);
 
@@ -53,6 +55,7 @@ class EmployeeController extends Controller
         
         $employee->employee_name = $request->employee_name;
         $employee->email = $request->email;
+        $employee->service_id = $request->service_id;
         $employee->availability_status = $request->availability_status;
 
         $employee->save();
@@ -80,8 +83,8 @@ class EmployeeController extends Controller
      */
     public function edit(Employee $employee)
     {
-        // $services=Service::all();
-        return view('backend.employees.edit',compact('employee'));
+         $services=Service::all();
+        return view('backend.employees.edit',compact('employee','services'));
     }
 
     /**
@@ -98,6 +101,7 @@ class EmployeeController extends Controller
          $request->validate([
             "employee_name" => 'required',
             "email" => 'required',
+            "service_id" => 'required',
             "availability_status" => 'required'
             
              ]);
@@ -107,6 +111,7 @@ class EmployeeController extends Controller
         //$employee = new Employee;
         $employee->employee_name = $request->employee_name;
         $employee->email = $request->email;
+         $employee->service_id= $request->service_id;
         $employee->availability_status=$request->availability_status;
         $employee->save();
 

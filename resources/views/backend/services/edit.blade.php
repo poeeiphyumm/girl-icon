@@ -64,10 +64,12 @@
 	</div>	
 	<input type="submit" value="Update" class="btn btn-danger">		
 	</div>
+		
+</div>
 
 		
-	</div>
-	
+	</div>	
 
+	<input type="submit" value="Update" class="btn btn-danger">
 </form>
 @endsection

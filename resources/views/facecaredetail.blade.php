@@ -37,6 +37,7 @@
 				Price:	{{$services->price}}
 				</h3>
 
+				
 				<a href="#" class="btn btn-info">Appointment</a>
 				
 			</div>

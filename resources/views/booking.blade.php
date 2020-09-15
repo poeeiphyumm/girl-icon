@@ -17,15 +17,6 @@
       </div>  
     </div>
 
-    <div class="container-fluid justify-content-center">
-           {{--  <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <div class="row ">
-              <div class="col">
-                <h1>Appointment Now</h1>
-              </div>
-            </div>
-           </div> --}}
-
 <div class="container my-5">
     <div class="row justify-content-center">
       <div class="col-8">

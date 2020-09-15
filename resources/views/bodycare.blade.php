@@ -8,7 +8,14 @@
       </div>
     </div>
 
+     <div class="container-fluid">
+      <div class="row">
+
+         @foreach($services as $service)
         <div class="container-fluid">
+      <div class="row">
+
+         @foreach($services as $service)
           <div class="row">
 
             @foreach($services as $service)
@@ -17,14 +24,17 @@
             
               <img src="{{asset($service->photo)}}" width="400px" height="300px">
             
-
-
             <a href="#" class="btn btn-info">Appointment</a>
             
           </div>
           </a>
 
         @endforeach
+
+    
+    </div> 
+  </div>
+
           </div>
        </div> 
 @endsection

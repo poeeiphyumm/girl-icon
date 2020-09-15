@@ -1,13 +1,10 @@
-@extends('backendtemplate')
+@extends ('backend.backendtemplate')
 
 @section('content')
   <div class="container-fluid">
     <!-- Page Heading -->
     <div class="row">
-     {{--  <div class="col-md-12 mb-3">
-        <h1 class="h3 mb-0 text-gray-800">Voucherno : {{$order->voucherno}}</h1>
-        <h1 class="h3 mb-0 text-gray-800">Orderdate : {{$order->orderdate}}</h1>
-      </div> --}}
+     
     </div>
     
     <div class="row">
@@ -23,6 +20,7 @@
           </thead>
           <tbody>
             @php $i=1; @endphp
+
             @foreach($service->employees as $employee)
             {{-- @php 
               $subtotal = $item->price * $item->pivot->qty;

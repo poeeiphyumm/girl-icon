@@ -25,6 +25,8 @@
           </a>
 
         @endforeach
+<<<<<<< HEAD
+=======
 
     <h1><center>Skin Care Services</center></h1><br><br>
     <div class="container-fluid">
@@ -46,5 +48,7 @@
         </div>
       </div>
     
+>>>>>>> ff5dd49a8f07707e2aa043c7dc9411b741c96114
     </div> 
+  </div>
 @endsection

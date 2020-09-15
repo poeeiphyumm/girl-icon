@@ -32,11 +32,6 @@
 
 				<p> Price:	{{$services->price}}</p>
 				<p>Duration:{{ $services->duration }}</p>
-				
-				
-				<h3> 
-				
-				Price:	{{$services->price}}
 				</h3>
 
 				<a href="#" class="btn btn-info">Appointment</a>

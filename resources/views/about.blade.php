@@ -1,7 +1,5 @@
 
-  
-   @extends('master')
-   @section('content')
+
 @extends('master')
 @section('content')
 
@@ -35,21 +33,7 @@
         </div> 
     </div>
 
-    {{-- <div class="container">
-      <div class="row">
-        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-            <img src="{{asset('front/images/feature.jpg')}}" class="img-fluid">
-            </div>
-        
-        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12"><br><br><br>
-          <h1>Our Vision</h1>
-            <P>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly.</P>
-            </div>
-        </div> 
-    </div>
- --}}
-
-   {{--  <div class="site-section bg-light"> --}}
+    
       <div class="container">
         <div class="row mt-5">
           <div class="col-xl-4 col-md-3 col-lg-4 col-sm-12 col-12 text-center mb-5" data-aos="fade-up">
@@ -61,6 +45,15 @@
             <h2 class="text-black font-weight-light mb-4">Laser skin Care</h2>
           </div>
           <div class="col-xl-4 col-md-3 col-lg-4 col-sm-12 col-12 text-center mb-5" data-aos="fade-up">
+          <div class="col-md-6 col-lg-4 text-center mb-5" data-aos="fade-up">
+            </div>
+            
+          
+          <div class="col-xl-4 col-md-6 col-lg-4 col-12 text-center mb-5" data-aos="fade-up">
+            <img src="{{asset('frontend/images/face2.jpeg')}}" alt="Image" class="img-fluid w-50 rounded-circle mb-4">
+            <h2 class="text-black font-weight-light mb-4">Laser skin Care</h2>
+            </div>
+          <div class="col-xl-4 col-md-6 col-lg-4 col-12 text-center mb-5" data-aos="fade-up">
             <img src="{{asset('frontend/images/face3.jpeg')}}" alt="Image" class="img-fluid w-50 rounded-circle mb-4">
             <h2 class="text-black font-weight-light mb-4">Treatment</h2>
           </div>

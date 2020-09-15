@@ -59,19 +59,21 @@
                 <li class="has-children">
                   <a href="#">Category</a>
                   <ul class="dropdown">
+ 
+                        <li><a href="{{asset('bodycare')}}">Body Care</a></li>
+     
+                        <li><a href="{{ asset('haircare') }}">Hair Care</a></li>
+                        <li><a href="{{ asset('skincare') }}">Skin Care</a></li>
+                        <li><a href="{{ asset('nailcare') }}">Nail Care</a></li>
+                        <li><a href="{{ asset('facecare') }}">Face Care</a></li>
+                        <li><a href="{{ asset('handcare') }}">Hand Care</a></li>
+                        <li><a href="{{ asset('footcare') }}">Foot Care</a></li>
+                        <li><a href="{{ asset('skintherapy') }}">Skin Therapy</a></li>
+                        <li><a href="{{ asset('sparest') }}">Spa Rest</a></li>
 
-                    <li><a href="{{asset('bodycare')}}">Body Care</a></li>
-                    <li><a href="{{ asset('haircare') }}">Hair Care</a></li>
-                    <li><a href="{{ asset('skincare') }}">Skin Care</a></li>
-                    <li><a href="{{ asset('nailcare') }}">Nail Care</a></li>
-                    <li><a href="{{ asset('facecare') }}">Face Care</a></li>
-                    <li><a href="{{ asset('handcare') }}">Hand Care</a></li>
-                    <li><a href="{{ asset('footcare') }}">Foot Care</a></li>
-                    <li><a href="{{ asset('skintherapy') }}">Skin Therapy</a></li>
-                    <li><a href="{{ asset('sparest') }}">Spa Rest</a></li>  
                   </ul>
                 </li>
-
+                                     
               <li class="has-children"><a href="">Services</a>
                 <ul class="dropdown">
                   <li><a href="{{route('ourservicepage')}}">Our Service</a></li>
@@ -95,45 +97,49 @@
               </ul>
             </nav>
           </div>
-        <ul>
-          <li>
-            @guest
-            {{-- <li class="nav-item"> --}}
-              <a class="d-xl-block d-lg-block d-md-block d-none  text-decoration-none loginLink float-right text-uppercase" href="{{ route('loginpage') }}">{{ __('Login') }}</a>
-            {{-- </li> --}}
-            @if (Route::has('register'))
-            {{-- <li class="nav-item"> --}}
-              <a class="d-xl-block d-lg-block d-md-block d-none  text-decoration-none loginLink float-right text-uppercase" href="{{ route('registerpage') }}">{{ __('Register') }}|</a>
-            {{-- </li> --}}
-            @endif
-            @else
-            {{-- <li class="nav-item dropdown"> --}}
-              <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                {{ Auth::user()->name }}
-              </a>
+        
 
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="{{ route('logout') }}"
-                onclick="event.preventDefault();
-                document.getElementById('logout-form').submit();">
-                {{ __('Logout') }}
-              </a>
+          <ul>
+              <li>
+                @guest
+                    <a class="d-xl-block d-lg-block d-md-block d-none  text-decoration-none loginLink float-right text-uppercase" href="{{ route('loginpage') }}">{{ __('Login') }}</a>
+                            {{-- </li> --}}
+                            @if (Route::has('register'))
+                                {{-- <li class="nav-item"> --}}
+                                    <a class="d-xl-block d-lg-block d-md-block d-none  text-decoration-none loginLink float-right text-uppercase" href="{{ route('registerpage') }}">{{ __('Register') }}|</a>
+                                {{-- </li> --}}
+                            @endif
+                        @else
+                            {{-- <li class="nav-item dropdown"> --}}
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    {{ Auth::user()->name }}
+                                </a>
 
-              <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                @csrf
-              </form>
-            </div>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                        {{ __('Logout') }}
+                                    </a>
 
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                        @csrf
+                                    </form>
+                                </div>
+                            
+                        @endguest
+              </li>
+            </ul>
+
+        </div>
             @endguest
           </li>
         </ul>
       </div>
-    </div>
-  </div>
-
-
-</header>
+      
+    </header>
   
+
 @yield('content')
 
 <footer class="site-footer">

@@ -40,9 +40,9 @@
 		</div>
 	</div>
 
-	{{-- <div class="form-group row">
+	<div class="form-group row">
 				<label class="col-sm-2 col-form-label">Service</label>
-				<select class="form-control form-control-md" id="inputBrand" name="service">
+				<select class="form-control form-control-md" id="inputBrand" name="service_id">
 					<optgroup label="Choose Service ">
 						@foreach($services as $service)
 							<option value="{{ $service->id }}">{{ $service->service_name }}</option>
@@ -51,7 +51,14 @@
 					</optgroup>
 				</select>
 		
-	</div> --}}
+	</div>
+
+	<div class="form-group row">
+		<label class="col-sm-2 col-form-label">Email</label>
+		<div class="col-sm-6">
+			<input type="email" name="email" class="form-control" id="inputemail" >
+		</div>
+	</div>
 	
 	
 

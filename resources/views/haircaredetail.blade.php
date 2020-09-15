@@ -32,6 +32,11 @@
 
 				<p> Price:	{{$services->price}}</p>
 				<p>Duration:{{ $services->duration }}</p>
+				<p> Price:	{{$services->price}}</p>
+				<p>Duration:{{ $services->duration }}</p>
+
+				<p> Price:	{{$services->price}}</p>
+				<p>Duration:{{ $services->duration }}</p>
 				<h3> 
 				
 				Price:	{{$services->price}}
@@ -41,6 +46,11 @@
 				
 			</div>
 		</div>
+
+	</div>
+	</div>
+</div>
+		
 </div>
 	</div>		
 		
