@@ -19,8 +19,19 @@
 		    		<tr>
 			    		<td>No</td>
 			    		<td>Name</td>
+<<<<<<< HEAD
 			    		<td>Email</td>
 			    		<td>Service </td>
+=======
+<<<<<<< HEAD
+			    		<td>Service ID</td>
+=======
+			    		<td>E-mail</td>
+			    		
+			    		<td>Service </td>
+			    		<td>Service Id</td>
+>>>>>>> c823a218b85d6629a8a81c4c5aa98b77f5310fb1
+>>>>>>> 697a619dc35e92c422ead583f187d4bcb701916a
 			    		<td>Availability Status</td>
 			    		
 			    		<td>Actions</td>

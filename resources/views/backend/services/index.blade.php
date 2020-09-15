@@ -21,6 +21,22 @@
 			    		<td>Price</td>
 			    		<td>Photo</td>
 			    		<td>Category_id</td>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+			    		{{-- <td>Service_Image</td> --}}
+			    		<td>Photo</td>
+			    		<td>Service_Image</td>
+
+			    		<td>Photo</td>
+
+
+>>>>>>> db3e7b8476ef096fd01afdfc4050d6b5adfc720c
+>>>>>>> c823a218b85d6629a8a81c4c5aa98b77f5310fb1
+>>>>>>> 697a619dc35e92c422ead583f187d4bcb701916a
 			    		<td>Action</td>
 
 		    		</tr>
@@ -36,10 +52,15 @@
 			    		<td>{{ $service->price }}</td>
 			    		<td>{{ $service->photo }}</td>
 			    		<td>{{ $service->category_id }}</td>
+<<<<<<< HEAD
+
+=======
+>>>>>>> c823a218b85d6629a8a81c4c5aa98b77f5310fb1
 			    		<td>
 			    			<a href="{{route('services.show',$service->id)}}" class="btn btn-primary">Detail</a>
 
-			    			<a href="{{ route('services.edit',$service->id) }}" class="btn btn-secondary">Edit</a>
+			    			<a href="{{ route('services.edit',$service->id) }}" class="btn btn-secondary">Edit
+			    			</a>
 
 			    			
 			    			<form method="post" action="{{ route('services.destroy',$service->id) }}">

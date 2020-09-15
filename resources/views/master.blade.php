@@ -61,23 +61,77 @@
                   <ul class="dropdown">
  
                         <li><a href="{{asset('bodycare')}}">Body Care</a></li>
-     
                         <li><a href="{{ asset('haircare') }}">Hair Care</a></li>
                         <li><a href="{{ asset('skincare') }}">Skin Care</a></li>
                         <li><a href="{{ asset('nailcare') }}">Nail Care</a></li>
                         <li><a href="{{ asset('facecare') }}">Face Care</a></li>
                         <li><a href="{{ asset('footcare') }}">Foot Care</a></li>
                         <li><a href="{{ asset('skintherapy') }}">Skin Therapy</a></li>
+<<<<<<< HEAD
+=======
+                        
+>>>>>>> 697a619dc35e92c422ead583f187d4bcb701916a
 
                   </ul>
-                </li>
-                                     
+                </li>                   
                  <li><a href="{{asset('about')}}">About</a></li>
                 <li><a href="{{asset('booking')}}">Appointment</a></li>
                 <li><a href="{{asset('contact')}}">Contact</a></li>
-          <ul>
+<<<<<<< HEAD
+
+              </ul>
+            </nav>
+          </div>
+        <ul>
+          <li>
+            @guest
+            {{-- <li class="nav-item"> --}}
+              <a class="d-xl-block d-lg-block d-md-block d-none  text-decoration-none loginLink float-right text-uppercase" href="{{ route('loginpage') }}">{{ __('Login') }}</a>
+            {{-- </li> --}}
+            @if (Route::has('register'))
+            {{-- <li class="nav-item"> --}}
+              <a class="d-xl-block d-lg-block d-md-block d-none  text-decoration-none loginLink float-right text-uppercase" href="{{ route('registerpage') }}">{{ __('Register') }}|</a>
+            {{-- </li> --}}
+            @endif
+            @else
+            {{-- <li class="nav-item dropdown"> --}}
+              <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                {{ Auth::user()->name }}
+              </a>
+
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="{{ route('logout') }}"
+                onclick="event.preventDefault();
+                document.getElementById('logout-form').submit();">
+                {{ __('Logout') }}
+              </a>
+
+              <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                @csrf
+              </form>
+            </div>
+
+            @endguest
+         
+              </li>
+            </ul>
+
+        </div>
+      </div>
+
+           
+      
+    </header>
+
+    </div>
+
+  @yield('content')
+=======
+              
+            
               <li>
                 @guest
+                
                     <a class="d-xl-block d-lg-block d-md-block d-none  text-decoration-none loginLink float-right text-uppercase" href="{{ route('loginpage') }}">{{ __('Login') }}</a>
                             {{-- </li> --}}
                             @if (Route::has('register'))
@@ -102,18 +156,19 @@
                                         @csrf
                                     </form>
                                 </div>
-                            
+                           
                         @endguest
               </li>
             </ul>
-
-        </div>
+        </nav>
       </div>
-      
-    </header>
+    </div>
   </div>
+</header>
+  
   
 @yield('content')
+>>>>>>> c823a218b85d6629a8a81c4c5aa98b77f5310fb1
 
 <footer class="site-footer">
 
@@ -132,9 +187,9 @@
           </div>
           <div class="row">
             <div class="col-md-6 col-lg-6 list-unstyled">
-              <a href="#">Home</a>|
-              <a href="#">Barbers</a>|
-              <a href="#">News</a>|
+              <a href="#">Home</a>
+              <a href="#">Barbers</a>
+              <a href="#">News</a>
               <a href="#">Team</a>
             </div>
           </div>
@@ -147,6 +202,7 @@
             <div class="input-group mb-3">
               <h3 class="footer-heading mb-2">Subscribe Newsletter</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit minima minus odio.</p><br>
+              
               <input type="text" class="form-control border-secondary text-white bg-transparent" placeholder="Enter Email" aria-label="Enter Email" aria-describedby="button-addon2">
               <div class="input-group-append">
                 <button class="btn btn-primary text-white" type="button" id="button-addon2">Send</button>
@@ -180,7 +236,7 @@
     </div>
   </div>
 
-</div>
+
 
 
 </footer>

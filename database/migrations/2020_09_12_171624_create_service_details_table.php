@@ -13,22 +13,22 @@ class CreateServiceDetailsTable extends Migration
      */
     public function up()
     {
-        Schema::create('service_details', function (Blueprint $table) {
-            $table->id();
-            $table->unsignedBigInteger('service_id');
-            $table->unsignedBigInteger('employee_id');
-            $table->string('service_name')
-            $table->timestamps();
+        // Schema::create('service_details', function (Blueprint $table) {
+        //     $table->id();
+        //     $table->unsignedBigInteger('service_id');
+        //     $table->unsignedBigInteger('employee_id');
+        //     $table->string('service_name')
+        //     $table->timestamps();
             
-            $table->foreign('service_id')
-                    ->references('id')
-                    ->on('services')
-                    ->onDelete('cascade');
+        //     $table->foreign('service_id')
+        //             ->references('id')
+        //             ->on('services')
+        //             ->onDelete('cascade');
 
-            $table->foreign('employee_id')
-                    ->references('id')
-                    ->on('employees')
-                    ->onDelete('cascade');
+        //     $table->foreign('employee_id')
+        //             ->references('id')
+        //             ->on('employees')
+        //             ->onDelete('cascade');
 
            
         });

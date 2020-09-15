@@ -42,7 +42,7 @@
 
 	<div class="form-group row">
 				<label class="col-sm-2 col-form-label">Service</label>
-				<select class="form-control form-control-md" id="inputBrand" name="service_id">
+				<select class="form-control form-control-md" id="inputservice" name="service_id">
 					<optgroup label="Choose Service ">
 						@foreach($services as $service)
 							<option value="{{ $service->id }}">{{ $service->service_name }}</option>
@@ -52,6 +52,11 @@
 				</select>
 		
 	</div>
+<<<<<<< HEAD
+=======
+
+	
+>>>>>>> 697a619dc35e92c422ead583f187d4bcb701916a
 	
 	
 

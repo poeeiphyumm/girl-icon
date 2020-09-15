@@ -21,7 +21,7 @@
 			    		<td>Date</td>
 			    		<td>Phone No</td>
 			    		<td>Gender</td>
-			    		<td>Service</td>
+			    		<td>Category</td>
 			    		<td>address</td>
 			    		<td>Action</td>
 		    		</tr>
@@ -37,7 +37,7 @@
 			    		<td>{{ $customer->date }}</td>			    		
 			    		<td>{{ $customer->phone_no }}</td>
 			    		<td>{{ $customer->gender }}</td>
-			    		<td>{{ $customer->service }}</td>			    		
+			    		<td>{{ $customer->category_name}}</td>			    		
 			    		<td>{{ $customer->address }}</td>
 			    		<td>
 			    		<form method="post" action="{{ route('customers.destroy',$customer->id) }}">

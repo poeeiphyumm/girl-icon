@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Appointment;
+use App\Customer;
 use Carbon\Carbon;
 use App\Customer;
 use Illuminate\Http\Request;

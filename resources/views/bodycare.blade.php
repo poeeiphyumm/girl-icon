@@ -17,15 +17,42 @@
             
               <img src="{{asset($service->photo)}}" width="400px" height="300px">
             
+<<<<<<< HEAD
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt architecto ab hic rem placeat eius commodi eum eligendi recusandae sed qui cumque quibusdam.</p>
 
+=======
+            <br><br>
+
+<<<<<<< HEAD
+              <p class=" text-info">{{ $service->service_name }}</p>
+              
+            <a href="{{ asset('booking') }}" class="btn btn-info">Appointment</a>
+=======
+>>>>>>> 697a619dc35e92c422ead583f187d4bcb701916a
               <a href="#" class="btn btn-info">Appointment</a>
             
+>>>>>>> c823a218b85d6629a8a81c4c5aa98b77f5310fb1
           </div>
+
           </a>
 
         @endforeach
 
     
     </div> 
+<<<<<<< HEAD
+=======
+
+  </div>
+  <div class="site-section">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-12">
+            <h2 class="mb-4 text-black">We want your hair to look fabulous</h2>
+            <p class="mb-0"><a href="{{asset('/')}}" class="btn btn-primary py-3 px-5 text-white">Visit Our Salon Now</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+>>>>>>> c823a218b85d6629a8a81c4c5aa98b77f5310fb1
 @endsection
