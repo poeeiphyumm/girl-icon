@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use App\Service;
 use App\Category;
+use App\Employee;
 use DB;
 use Illuminate\Http\Request;
 
@@ -125,6 +126,12 @@ class ServiceController extends Controller
      */
     public function show($id)
     {
+        $service=Service::all();
+        // $service=Service::where('services.id',$id)->first();
+        $employees=Employee::all();
+        //dd($service);
+        return view('backend.services.show',compact('service','employees'));
+
 
         
         $services = DB::table('employees')->join('service_details','service_details.employee_id','=','employees.id')->where('service_details.service_id',$id)->get();

@@ -1,5 +1,4 @@
 
-
 @extends('master')
 @section('content')
 
@@ -33,6 +32,7 @@
         </div> 
     </div>
 
+   {{--  <div class="site-section bg-light"> --}}
     
       <div class="container">
         <div class="row mt-5">
@@ -47,6 +47,8 @@
           <div class="col-xl-4 col-md-3 col-lg-4 col-sm-12 col-12 text-center mb-5" data-aos="fade-up">
           <div class="col-md-6 col-lg-4 text-center mb-5" data-aos="fade-up">
             </div>
+          {{-- <div class="col-md-6 col-lg-4 text-center mb-5" data-aos="fade-up">
+            </div> --}}
             
           
           <div class="col-xl-4 col-md-6 col-lg-4 col-12 text-center mb-5" data-aos="fade-up">
@@ -58,6 +60,10 @@
             <h2 class="text-black font-weight-light mb-4">Treatment</h2>
           </div>
         </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-6 col-md-6 col-lg-6 col-12">
           <h2>About</h2>
           <p><i>&ldquo;
             Beauty Clinic &ldquo;is conveniently located at No.216,First floor,Excel Taresure Hotel,<br>Yango Myanmar Yangon and another branch is located No.542, Strand Road, Corner of 11st, Lanmadaw Township.
@@ -68,7 +74,14 @@
           </i></p>
         </div>
 
+
+        <div class="col-xl-3 col-md-6 col-lg-3 col-12">
+          <img src="{{asset('frontend/images/abo.jpg')}}">
+        </div>
+        </div>
       </div>
+        
+        </div>
     </div>
 
     <div class="site-section">

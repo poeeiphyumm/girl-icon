@@ -38,11 +38,8 @@ class LoginController extends Controller
     {
         $this->middleware('guest')->except('logout');
     }
-<<<<<<< HEAD
-     protected function authenticated(Request $request, $user)
-=======
+     
     protected function authenticated(Request $request, $user)
->>>>>>> ff5dd49a8f07707e2aa043c7dc9411b741c96114
     {
         //role user
         $roles=$user->getRoleNames();
@@ -59,16 +56,7 @@ class LoginController extends Controller
             
             default: return redirect('/');
                 break;
-<<<<<<< HEAD
         }
     }
-=======
-<<<<<<< HEAD
-            }
-        }
-=======
-        }
-    }
->>>>>>> 32b55295049e428919f0aaad170aa6c87f7c330e
->>>>>>> ff5dd49a8f07707e2aa043c7dc9411b741c96114
+
 }

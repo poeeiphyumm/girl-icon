@@ -16,7 +16,7 @@ class PageController extends Controller
      {
         
      	return view('booking');
-        return redirect()->back()->with('message','Make Appointment Successfully!');
+        
     }
 
     public function contactfun($value='')
@@ -42,42 +42,6 @@ class PageController extends Controller
         
         return view('about');
     }
-
-    public function bookingfun($value='')
-     {
-        
-        return view('booking');
-    }
-    
-   
-        
-        return view('booking');
-    }
-    }      
-    //  public function footcarefun($value='')
-    //  {
-        
-    //     return view('footcare');
-    // }
-
-    //  public function handcarefun($value='')
-    //  {
-        
-    //     return view('handcare');
-    // }
-
-    // public function spafun($value='')
-    //  {
-        
-    //     return view('spa');
-    // }
-
-     public function aboutfun($value='')
-     {
-         return view('about');
-     }
-
-
 
     public function registerfun($value='')
     {
@@ -192,7 +156,5 @@ class PageController extends Controller
         $services = Service::find($id);
         return view('skintherapydetail',compact('services'));
     }
-
-
 
 }

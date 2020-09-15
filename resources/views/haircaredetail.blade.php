@@ -29,29 +29,13 @@
     				<li>Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley.</li>
     				<li>It has survived not only five centuries, but also the leap into electronic typesetting.</li>
 				</p>
-
-				<p> Price:	{{$services->price}}</p>
-				<p>Duration:{{ $services->duration }}</p>
-				<p> Price:	{{$services->price}}</p>
-				<p>Duration:{{ $services->duration }}</p>
-
-				<p> Price:	{{$services->price}}</p>
-				<p>Duration:{{ $services->duration }}</p>
-				<h3> 
-				
-				Price:	{{$services->price}}
+				<p>Duration:{{ $services->duration }}</p>				
+				    </p>Price:	{{$services->price}}</p>
 				</h3>
 
 				<a href="#" class="btn btn-info">Appointment</a>
 				
 			</div>
 		</div>
-
 	</div>
-	</div>
-</div>
-		
-</div>
-	</div>		
-		
 @endsection

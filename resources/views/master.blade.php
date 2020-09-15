@@ -52,7 +52,7 @@
             <nav class="site-navigation position-relative text-right text-lg-center" role="navigation">
 
               <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
-                <li class="has-children active">
+                <li>
                   <a href="{{route('mainpage')}}">Home</a>
                   
                 </li>
@@ -74,6 +74,7 @@
                   </ul>
                 </li>
                                      
+
               <li class="has-children"><a href="">Services</a>
                 <ul class="dropdown">
                   <li><a href="{{route('ourservicepage')}}">Our Service</a></li>
@@ -93,7 +94,7 @@
        
                 <li><a href="{{asset('about')}}">About</a></li>
                                
-                
+              
               </ul>
             </nav>
           </div>
@@ -132,13 +133,10 @@
             </ul>
 
         </div>
-            @endguest
-          </li>
-        </ul>
-      </div>
       
     </header>
   
+
 
 @yield('content')
 

@@ -23,6 +23,11 @@
 			    		<td>Category_id</td>
 			    		{{-- <td>Service_Image</td> --}}
 			    		<td>Photo</td>
+			    		<td>Service_Image</td>
+
+			    		<td>Photo</td>
+
+
 			    		<td>Action</td>
 
 		    		</tr>
@@ -38,15 +43,8 @@
 			    		<td>{{ $service->price }}</td>
 			    		<td>{{ $service->photo }}</td>
 			    		<td>{{ $service->category_id }}</td>
-			    		<td>{{ $service->photo }}</td>
-			    		<td>{{ $service->category_id }}</td>
-			    		{{-- <td><img src="{{asset('backend/serviceimg/$service->photo')}}" width="100" height="50"></td> --}}
-			    		<td>{{ $service->photo }}</td>
-			    		<td>{{ $service->category_id }}</td>
-			    		
-			    		<td>{{ $service->photo }}</td>
 			    		<td>
-			    			<a href="{{ route('services.show',$service->id) }}" class="btn btn-primary">Detail</a>
+			    			<a href="{{route('services.show',$service->id)}}" class="btn btn-primary">Detail</a>
 
 			    			<a href="{{ route('services.edit',$service->id) }}" class="btn btn-secondary">Edit</a>
 
