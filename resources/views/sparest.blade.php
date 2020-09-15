@@ -1,0 +1,38 @@
+@extends('master')
+@section('content')
+
+
+  <div class="jumbotron jumbotron-fluid subtitle">
+      <div class="container">
+        <h1><center>Spa Rest Services</center></h1>
+      </div>
+    </div>
+
+        <div class="container-fluid">
+          <div class="row">
+
+            @foreach($services as $service)
+
+               <div class="col-lg-4 col-md-4 col-sm-12">
+                 <img src="{{asset($service->photo)}}">
+                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                     <p>{{$service->name}}</p>
+                 </div>
+                  <a href="{{asset('booking')}}" class="btn btn-info">Appointment</a>
+
+            @endforeach
+
+          </div>
+       </div>
+       <div class="site-section">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-12">
+            <h2 class="mb-4 text-black">We want your hair to look fabulous</h2>
+            <p class="mb-0"><a href="{{asset('/')}}" class="btn btn-primary py-3 px-5 text-white">Visit Our Salon Now</a></p>
+          </div>
+        </div>
+      </div>
+    </div> 
+@endsection

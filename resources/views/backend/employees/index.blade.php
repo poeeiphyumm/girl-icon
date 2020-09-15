@@ -19,7 +19,14 @@
 		    		<tr>
 			    		<td>No</td>
 			    		<td>Name</td>
+<<<<<<< HEAD
 			    		<td>Service ID</td>
+=======
+			    		<td>E-mail</td>
+			    		
+			    		<td>Service </td>
+			    		<td>Service Id</td>
+>>>>>>> c823a218b85d6629a8a81c4c5aa98b77f5310fb1
 			    		<td>Availability Status</td>
 			    		<td>Email</td>
 			    		<td>Actions</td>
@@ -31,6 +38,9 @@
 		    		@foreach ($employees as $employee)
 		    		<tr>
 		    			<td>{{ $i++ }}</td>
+			    		<td>{{ $employee->employee_name}}</td>
+			    		<td>{{ $employee->email }}</td>
+			    		<td>{{ $employee->service }}</td>
 			    		<td>{{ $employee->employee_name }}</td>
 			    		<td>{{ $employee->service_id }}</td>
 			    		<td>{{ $employee->availability_status }}</td>

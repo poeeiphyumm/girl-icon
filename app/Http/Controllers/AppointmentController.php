@@ -4,16 +4,16 @@ namespace App\Http\Controllers;
 
 use App\Appointment;
 use App\Customer;
-//use App\Carbon\Carbon;
 use Carbon\Carbon;
+use App\Customer;
 use Illuminate\Http\Request;
 
 class AppointmentController extends Controller
 {
     public function __construct($value='')
     {
-        $this->middleware('role:Admin')->only('index','show',);
-        $this->middleware('role:Customer')->only('store');
+        // $this->middleware('role:Admin')->only('index','show',);
+        // $this->middleware('role:Customer')->only('store');
     }
     /**
      * Display a listing of the resource.
@@ -29,7 +29,7 @@ class AppointmentController extends Controller
                 [   
                     new Carbon($date1), 
                     new Carbon($date2)
-                ])->where('status',0)->get();
+                ])->where('appointment_status',0)->get();
         }
         else{
             $appointments=Appointment::all();
@@ -71,10 +71,8 @@ class AppointmentController extends Controller
         $request->validate([
             "date"=>'required',
             "time"=>'required',
-            "status"=>'required',
             "appointment_status"=>'required',
             "customer_id"=>'required',
-            "photo"=>'required',
             ]);
 
         //Data insert
@@ -83,7 +81,7 @@ class AppointmentController extends Controller
         //$appointment->email=$request->email;
         $appointment->date=$request->date;
         $appointment->time=$request->time;
-        $appointment->status=$request->status;
+        $appointment->appointment_status=$request->appointment_status;
         $appointment->customer_id=$request->customer_id;
         $appointment->save();
 
@@ -131,7 +129,7 @@ class AppointmentController extends Controller
         $request->validate([
             "date"=>'required',
             "time"=>'required',
-            "status"=>'required',
+            //"status"=>'required',
             "appointment_status"=>'required',
             "customer_id"=>'required',
             "photo"=>'required',
@@ -143,8 +141,9 @@ class AppointmentController extends Controller
         //$appointment->email=$request->email;
         $appointment->date=$request->date;
         $appointment->time=$request->time;
-        $appointment->status=$request->status;
+        $appointment->appointment_status=$request->appointment_status;
         $appointment->customer_id=$request->customer_id;
+
         $appointment->save();
 
         //redirect

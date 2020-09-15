@@ -4,18 +4,20 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Service;
+use App\Category;
 use DB;
 class PageController extends Controller
 {
     public function mainfun($value='')
     {
-        // $services=Service::all();
-        return view('main');
+        $categories=Category::all();
+        return view('main',compact('categories'));
     }
      public function bookingfun($value='')
      {
+        $categories=Category::all();
+     	return view('booking',compact('categories'));
         
-     	return view('booking');
     }
 
     public function contactfun($value='')
@@ -131,5 +133,8 @@ class PageController extends Controller
         $services = Service::find($id);
         return view('skintherapydetail',compact('services'));
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> c823a218b85d6629a8a81c4c5aa98b77f5310fb1
 }

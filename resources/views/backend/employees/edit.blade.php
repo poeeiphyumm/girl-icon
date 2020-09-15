@@ -25,6 +25,12 @@
 			<input type="name" name="employee_name" class="form-control" id="inputname" value="{{ $employee->employee_name}}" >
 		</div>
 	</div>
+	<div class="form-group row">
+		<label class="col-sm-2 col-form-label">E_mail</label>
+		<div class="col-sm-6">
+			<input type="name" name="employee_name" class="form-control" id="inputname" value="{{ $employee->email}}" >
+		</div>
+	</div>
 
 	<div class="form-group row">
 		<label class="col-sm-2 col-form-label">Availiability Status</label>

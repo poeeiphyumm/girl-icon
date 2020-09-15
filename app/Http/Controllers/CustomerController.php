@@ -18,7 +18,8 @@ class CustomerController extends Controller
     {
 
         $customers=Customer::all();
-        return view('backend.customers.index',compact('customers'));
+        $categories=Category::all();
+        return view('backend.customers.index',compact('customers','categories'));
 
     }
 
@@ -30,9 +31,9 @@ class CustomerController extends Controller
     public function create()
     {
         $customers=Customer::all();
-        // $categories=Category::all();
+        $categories=Category::all();
         // $appointments=Appointment::all();
-        return view("backend.customers.create",compact('customers'));
+        return view("backend.customers.create",compact('customers','categories'));
     }
 
     /**
@@ -47,9 +48,11 @@ class CustomerController extends Controller
          $request->validate([
             "customer_name" => 'required',
             "email" => 'required',
-            "address" => 'required',
+            "date" => 'required',        
             "phone_no" => 'required',
             "gender" => 'required',
+            "category_name" => 'required',
+            "address" => 'required',
 
         ]);
 
@@ -66,18 +69,21 @@ class CustomerController extends Controller
         
         $customer->customer_name = $request->customer_name;
         $customer->email = $request->email;
-        $customer->address = $request->address;
+        $customer->date= $request->date;
         $customer->phone_no = $request->phone_no;
         $customer->gender = $request->gender;
-
+        $customer->category_name=$request->category_name;
+        //customer->category_id=$request->category;
+        $customer->address = $request->address;
         $customer->save();
 
         //redirect
-        return redirect()->route('customers.index');
+        return redirect()->back();
+        //return redirect()->route('customers.index');
     }
 
     /**
-     * Display the specified resource.
+     * Display customerthe specified resource.
      *
      * @param  \App\Customer  $customer
      * @return \Illuminate\Http\Response
@@ -116,8 +122,10 @@ class CustomerController extends Controller
      * @param  \App\Customer  $customer
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Customer $customer)
+    public function destroy($id)
     {
-        //
+        $post=Customer::find($id);
+        $post->delete();
+        return redirect()->back();    
     }
 }

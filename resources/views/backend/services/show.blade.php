@@ -1,5 +1,8 @@
+<<<<<<< HEAD
+@extends('backend.backendtemplate')
+=======
 @extends ('backend.backendtemplate')
-
+>>>>>>> 10de3259a9a6997cfac8affc02899511a3f7a34a
 @section('content')
   <div class="container-fluid">
     <!-- Page Heading -->
@@ -12,25 +15,31 @@
         <table class="table table-bordered">
           <thead class="thead-dark">
             <tr>
-              <th>No</th>
-              <td>Name</td>
-              <td>Email</td>
-              <td>Service_name</td>
+              <td>No</td>
+              <td>Service_id</td>
+              <td>Employee_id</td>
+              <td>Service_Name</td>
             </tr>
           </thead>
           <tbody>
             @php $i=1; @endphp
+<<<<<<< HEAD
+            @foreach($services as $employee)
 
             @foreach($services->employees as $employee)
             {{-- @php 
               $subtotal = $item->price * $item->pivot->qty;
               $total += $subtotal;
             @endphp --}}
+=======
+
+            @foreach($services->employees as $employee)
+>>>>>>> 10de3259a9a6997cfac8affc02899511a3f7a34a
             <tr>
               <td>{{$i++}}</td>
-              <td>{{$employee->name}}</td>
-              <td>{{$employee->email}}</td>
-              <td>{{$employee->pivot->service_name}}</td>
+              <td>{{$employee->service_id}}</td>
+              <td>{{$employee->employee_id}}</td>
+              <td>{{$employee->service_name}}</td>
             </tr>
             @endforeach
           </tbody>
