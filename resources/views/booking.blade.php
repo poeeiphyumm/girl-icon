@@ -60,15 +60,15 @@
       <input type="radio" name="gender" value="female">Female
     </div>
   </div>
-   <div class="form-group row">
+   {{-- <div class="form-group row">
     <label class="col-sm-2 col-form-label">Services</label>
     <div class="col-md-6">
         
       <input type="text" name="service" class="form-control" id="inputservice" placeholder="eg.bodycare/nailcare.....">
     </div>
-  </div>
-  {{-- <div class="form-group row">
-        <label class="col-sm-2 col-form-label">Servicec</label>
+  </div> --}}
+   <div class="form-group row">
+        <label class="col-sm-2 col-form-label">Service</label>
         <select class="form-control form-control-md" id="inputCategory" name="category">
           <optgroup label="Choose Category">
             @foreach($categories as $category)
@@ -76,8 +76,8 @@
             @endforeach
           </optgroup>
         </select>
-    
-  </div>--}}
+    </div>
+
   <div class="form-group row">
     <label class="col-sm-2 col-form-label">address</label>
     <div class="col-md-6">
