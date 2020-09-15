@@ -53,11 +53,15 @@
 	<div class="form-group row">
 		<label class="col-sm-2 col-form-label">Photo</label>
 		<div class="col-sm-6">
-			<input type="file" name="photo" class="form-control" id="inputphoto" >
-			<img src="{{ asset($service->photo) }}" class="img-fluid w-25">
+			<input type="file" name="photo" >
+			@error('photo')
+				<div class="text-danger">{{($message)}}</div>
+				<img src="{{ asset($service->photo) }}" class="img-fluid w-25">
+			@enderror
 
 			<input type="hidden" name="oldphoto" value="{{ $service->photo }}">
 		</div>
+<<<<<<< HEAD
 	</div>			
 	</div>
 <<<<<<< HEAD
@@ -69,6 +73,17 @@
 		
 	</div>
 >>>>>>> ff5dd49a8f07707e2aa043c7dc9411b741c96114
+=======
+	</div>	
+	<input type="submit" value="Update" class="btn btn-danger">		
+	</div>
+		
+</div>
+
+		
+	</div>	
+
+>>>>>>> 10de3259a9a6997cfac8affc02899511a3f7a34a
 	<input type="submit" value="Update" class="btn btn-danger">
 </form>
 @endsection

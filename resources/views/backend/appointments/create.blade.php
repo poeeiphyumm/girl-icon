@@ -9,7 +9,7 @@
 					<form action="{{route('appointments.store')}}" method="post" enctype="multipart/form-data">
 						@csrf
 					<div class="form-group row">
-						<label>Name</label>
+						<label>Customer Name</label>
 						<input class="form-control" type="text" name="appointment_name">
 				    </div>
 				    <div class="form-group row">

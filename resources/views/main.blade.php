@@ -79,34 +79,183 @@
           </div>
         </div>
 
-        <div class="row">
-          <div class="col-md-6 col-lg-4 text-center mb-5 mb-lg-5">
-            <div class="h-100 p-4 p-lg-5 bg-light site-block-feature-7">
-              <span class="icon flaticon-razor display-3 text-primary mb-4 d-block"></span>
-              <h3 class="text-black h4">Barber Razor</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum exercitationem quae id dolorum debitis.</p>
-              <p><strong class="font-weight-bold text-primary">$29</strong></p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 text-center mb-5 mb-lg-5">
-            <div class="h-100 p-4 p-lg-5 bg-light site-block-feature-7">
-              <span class="icon flaticon-location-pin display-3 text-primary mb-4 d-block"></span>
-              <h3 class="text-black h4">Location Pin</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum exercitationem quae id dolorum debitis.</p>
-              <p><strong class="font-weight-bold text-primary">$46</strong></p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 text-center mb-5 mb-lg-5">
-            <div class="h-100 p-4 p-lg-5 bg-light site-block-feature-7">
-              <span class="icon flaticon-shave display-3 text-primary mb-4 d-block"></span>
-              <h3 class="text-black h4">Barber Shave</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum exercitationem quae id dolorum debitis.</p>
-              <p><strong class="font-weight-bold text-primary">$24</strong></p>
-            </div>
-          </div>
+        
 
+<div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-3 col-xl-3 col-12 text-center mb-5">
+            <a href="{{asset('facecare')}}"><img src="{{asset('frontend/images/face1.jpg')}}" alt="Image" class="rounded-circle mb-4" width="200px" height="200px"></a>
+            <h3 class="text-black font-weight-light mb-4">Face Care</h3>
+            <P>To reverse the ageing effect from the skin,try our face hydration treatment to get a youthful glow</P>
+          </div>
+          <div class="col-md-6 col-lg-3 col-xl-3 col-12 text-center mb-5">
+            <a href="{{asset('skincare')}}"><img src="{{asset('frontend/images/face2.jpeg')}}" alt="Image" class="rounded-circle mb-4" width="200px" height="200px"></a>
+            <h2 class="text-black font-weight-light mb-4">Skin Care</h2>
+            <p>you'll get therapies like panchakarma treatment which can help you far living a healthy life.</p>
+          </div>
+          <div class="col-md-6 col-lg-3 col-xl-3 col-12 text-center mb-5">
+            <a href="{{asset('haircare')}}"><img src="{{asset('frontend/images/spa1.jpeg')}}" alt="Image" class="rounded-circle mb-4" width="200px" height="200px"></a>
+            <h2 class="text-black font-weight-light mb-4">Hair Care</h2>
+            <p>We offer the professial hair care for all hair types discover the best hair treatments,for healthy.</p>
+          </div>
+          <div class="col-md-6 col-lg-3 col-xl-3 col-12 text-center mb-5">
+            <a href="{{asset('bodycare')}}"><img src="{{asset('frontend/images/bodycare3.jpg')}}" alt="Image" class="rounded-circle mb-4" width="200px" height="200px"></a>
+            <h2 class="text-black font-weight-light mb-4">Body Care</h2>
+            <p>you'll get therapies like panchakarma treatment which can help you far living a healthy life.</p>
+            
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+ 
+<div class="bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7 mb-5">
+
+            <form action="#" class="p-5 bg-white">
+              <h1 class="mb-4">Get Appointment Now</h1>
+
+              <div class="row form-group">
+                <div class="col-md-6 mb-3 mb-md-0">
+                  <label class="text-black" for="fname">Name</label>
+                  <input type="text" id="fname" class="form-control" placeholder="Name">
+                </div>
+              </div>
+
+                {{-- <div class="col-md-6">
+                  <label class="text-black" for="lname">Last Name</label>
+                  <input type="text" id="lname" class="form-control" placeholder="Last Name">
+                </div> --}}
+              {{-- </div> --}}
+              <div class="row form-group">
+
+               <div class="col-md-6">
+                  <label class="text-black" for="email">Email</label> 
+                  <input type="email" id="email" class="form-control" placeholder="Email">
+                </div>
+              </div>
+
+              <div class="row form-group">
+                <div class="col-md-6 mb-3 mb-md-0">
+                  <label class="text-black" for="date">Date</label> 
+                  <input type="date" id="date" class="form-control datepicker px-2" placeholder="Date of visit">
+                </div>
+               
+              </div>
+
+              <div class="row form-group">
+                <div class="col-md-12">
+                  <label class="text-black" for="treatment">Service You Want</label> 
+                  <select name="treatment" id="treatment" class="form-control">
+                    <option value="">Hair Care</option>
+                    <option value="">Body Care</option>
+                    <option value="">Skin Care</option>
+                    <option value="">Nail Care</option>
+                    <option value="">Face Care</option>
+                    <option value="">Hand Care</option>
+                    <option value="">Foot Care</option>
+                    <option value="">Spa Rest</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="row form-group">
+                <div class="col-md-12">
+                  <label class="text-black" for="note">Notes</label> 
+                  <textarea name="note" id="note" cols="30" rows="5" class="form-control" placeholder="Write your notes or questions here..."></textarea>
+                </div>
+              </div>
+
+
+              <div class="row form-group">
+                <div class="col-md-12">
+                  {{--  @if(Session::has('success'))  --}}
+                    <div class="alert alert-success">
+                      <input type="submit" value="Booking Now" class="btn btn-primary" onclick="alert('Make Appointment success')" >
+                      {{-- <strong>Make Appointment Success! --}}{{-- {{Session::get('message','')}}</strong> --}}
+                    </div>
+                  {{-- @endif --}} 
+                
+                </div>
+              </div>
+
+  
+            </form>
+
+          
+
+          </div>
+ <div class="col-md-5">
+      <div id="carousel-id" class="carousel slide" data-ride="carousel">
+
+    <div class="carousel-inner" role="listbox">
+      <div class="carousel-item active">
+        <img src="{{asset('frontend/images/spa-girl-1.jpg')}}" alt="First slide" width="500px" height="630px">
+      </div>
+      <div class="carousel-item">
+        <img src="{{asset('front/images/person_1.jpg')}}" alt="First slide" width="500px" height="630px">
+      </div>
+      <div class="carousel-item">
+        <img src="{{asset('frontend/images/bodycare3.jpg')}}" alt="First slide" width="500px" height="630px">
+      </div>
+    </div>
+
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel" data-slide-to="1"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    </ol>
+  </div>
+
+          </div>
         </div>
       </div>
+    </div>
+
+
+<div class="container-fluid">
+<div class="site-blocks-cover mb-5" style="background-image: url({{asset('frontend/images/spa-girl-1.jpg')}});" data-aos="fade">
+        
+          <div class="row">
+
+            <div class="co-xl-4 col-md-8 col-lg-4 col-12" data-aos="fade-up" data-aos-delay="400"><br><br>
+              <h5 class="text-black">Matt Effect</h5>
+             <p class="text-black">A range of different massage techniques reflexology, body scrubs and facial</p><br><br>
+             <h5 class="text-black font-weight-light">Sauna Ready</h5>
+             <p class="text-black font-weight-light">
+             A range of different massage techniques reflexology, body scrubs and facial.</p><br><br>
+             <h5 class="text-black font-weight-light">
+              Natural Mask</h5>
+             <p class="text-black font-weight-light">
+             A range of different massage techniques reflexology, body scrubs and facial.</p>
+            </div>
+
+            <div class="co-xl-4 col-md-8 col-lg-4 col-12" data-aos="fade-up" data-aos-delay="400">
+            
+            </div>
+            <div class="co-xl-4 col-md-8 col-lg-4 col-12" data-aos="fade-up" data-aos-delay="400"><br><br>
+            <h5 class="text-black">Relax Zones</h5>
+             <p class="text-black">A range of different massage techniques reflexology, body scrubs and facial</p><br><br>
+             <h5 class="text-black font-weight-light">Hair Diration</h5>
+             <p class="text-black font-weight-light">
+             A range of different massage techniques reflexology, body scrubs and facial.</p><br><br>
+             <h5 class="text-black font-weight-light">Aromo Therophy</h5>
+             <p class="text-black font-weight-light">
+             A range of different massage techniques reflexology, body scrubs and facial.</p>
+            </div>
+
+          </div>
+        </div>
+</div>  
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-x"></div>
+  </div>
 </div>
 
 <div class="container">
@@ -122,7 +271,7 @@
             <img src="{{asset('front/images/person_1.jpg')}}" alt="Image" class="img-md-fluid">
           </div>
           <div class="col-lg-6 bg-white p-md-5 align-self-center">
-            <h2 class="display-1 text-black line-height-1 site-section-heading mb-4 pb-3">New hairstyle!</h2>
+            <h2 class="display-1 text-black line-height-1 site-section-heading mb-4 pb-3">New Service!</h2>
             <p class="text-black lead"><em>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique dolorem quisquam laudantium, incidunt id laborum, tempora aliquid labore minus. Nemo maxime, veniam! Fugiat odio nam eveniet ipsam atque, corrupti porro&rdquo;</em></p>
             <p class="lead text-black">&mdash; <em>Stellla Martin</em></p>
           </div>

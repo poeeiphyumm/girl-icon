@@ -11,14 +11,11 @@
             </div>
     </div>
 
-
-
 <form action="{{ route('categories.update',$category->id) }}" method="post" enctype="multipart/form-data">
 	@csrf
 	{{-- //methos put က  update  လုပ်တာ --}}
 	@method('PUT')
 	{{-- // --}}
-	
 	<div class="form-group row">
 		<label class="col-sm-2 col-form-label">Name</label>
 		<div class="col-sm-6">

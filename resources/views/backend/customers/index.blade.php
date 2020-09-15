@@ -20,9 +20,12 @@
 			    		<td>No</td>
 			    		<td>Name</td>
 			    		<td>Email</td>
-			    		<td>Address</td>
+			    		<td>Date</td>
 			    		<td>Phone No</td>
 			    		<td>Gender</td>
+			    		<td>Service</td>
+			    		<td>address</td>
+			    		<td>Action</td>
 		    		</tr>
 		    	</thead>
 		    	
@@ -33,10 +36,18 @@
 		    			<td>{{ $i++ }}</td>
 			    		<td>{{ $customer->customer_name }}</td>
 			    		<td>{{ $customer->email }}</td>
-			    		<td>{{ $customer->address }}</td>
+			    		<td>{{ $customer->date }}</td>			    		
 			    		<td>{{ $customer->phone_no }}</td>
 			    		<td>{{ $customer->gender }}</td>
-			    		
+			    		<td>{{ $customer->service }}</td>			    		
+			    		<td>{{ $customer->address }}</td>
+			    		<td>
+			    		<form method="post" action="{{ route('customers.destroy',$customer->id) }}">
+			    				@csrf
+			    				@method('DELETE')
+			    			 	<input type="submit" class="btn btn-danger" value="Delete">
+			    			</form>
+			    		</td>
 		    		</tr>
 		    		@endforeach
     			</tbody>

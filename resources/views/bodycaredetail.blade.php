@@ -1,5 +1,4 @@
 @extends('master')
-
 @section('content')
 	<div class="jumbotron jumbotron-fluid subtitle">
   		<div class="container">
@@ -14,13 +13,14 @@
 			<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
 				<img src="{{ asset($services->photo) }}" width="350px" height="450px">
 			</div>	
-
-
 			<div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
-				
 				<h4> Service Name:{{$services->service_name }}</h4>
+<<<<<<< HEAD
 
 				<p>
+=======
+					<p>
+>>>>>>> 10de3259a9a6997cfac8affc02899511a3f7a34a
 					<h3>Duration: {{ $services->duration }}<br>$180<br></h3>
     				Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.</p>
     				<h3>Effects</h3>
@@ -33,6 +33,7 @@
 
 				<p> Price:	{{$services->price}}</p>
 				<p>Duration:{{ $services->duration }}</p>
+<<<<<<< HEAD
 				
 =======
 <<<<<<< HEAD
@@ -49,6 +50,8 @@
 				</h3>
 >>>>>>> 32b55295049e428919f0aaad170aa6c87f7c330e
 >>>>>>> ff5dd49a8f07707e2aa043c7dc9411b741c96114
+=======
+>>>>>>> 10de3259a9a6997cfac8affc02899511a3f7a34a
 
 				<a href="#" class="btn btn-info">Appointment</a>
 				

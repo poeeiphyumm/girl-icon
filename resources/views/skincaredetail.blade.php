@@ -32,9 +32,7 @@
 
 				<p> Price:	{{$services->price}}</p>
 				<p>Duration:{{ $services->duration }}</p>
-<<<<<<< HEAD
-	
-=======
+
 				
 				
 				<h3> 
@@ -42,7 +40,10 @@
 				Price:	{{$services->price}}
 				</h3>
 
->>>>>>> ff5dd49a8f07707e2aa043c7dc9411b741c96114
+
+				</h3>
+
+
 				<a href="#" class="btn btn-info">Appointment</a>
 				
 			</div>
