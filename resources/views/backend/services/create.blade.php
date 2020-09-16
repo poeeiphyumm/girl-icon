@@ -42,8 +42,29 @@
 			<div class="col-sm-6">
 				<input type="file" name="photo" class="form-control" id="inputphoto">
 			</div>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+
+
+	{{-- <div class="form-group row">
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+	{{-- <div class="form-group row">
+	<div class="form-group row">
+>>>>>>> 10de3259a9a6997cfac8affc02899511a3f7a34a
+		<label class="col-sm-2 col-form-label">Category</label>
+		<div class="col-sm-6">
+			<input type="text" name="category_id" class="form-control" id="inputprice">
+>>>>>>> 3e9317c6eb576e2e45b2d8fec2091fbe123b92e0
 		</div>
 
+<<<<<<< HEAD
 		<div class="form-group row">
 			<label class="col-sm-2 col-form-label">Category</label>
 			<select class="form-control form-control-md" id="inputBrand" name="category_id">
@@ -55,6 +76,22 @@
 				</optgroup>
 			</select>
 		
+=======
+	
+
+	{{-- <div class="form-group row">
+		<label class="col-sm-2 col-form-label">Servie Image</label>
+		<div class="col-sm-6">
+			<input type="file" name="photo" class="form-control" id="inputprice"> --}}
+
+=======
+>>>>>>> fd7a46f9de57e72dd6f4641ff58d977103baf601
+	
+	<div class="form-group row">
+		<label class="col-sm-2 col-form-label">Photo</label>
+		<div class="col-sm-6">
+			<input type="file" name="photo" class="form-control" id="inputphoto">
+>>>>>>> 3e9317c6eb576e2e45b2d8fec2091fbe123b92e0
 		</div>
 	
 		<input type="submit" value="Create" class="btn btn-danger" >

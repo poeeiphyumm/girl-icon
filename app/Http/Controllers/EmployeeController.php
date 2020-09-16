@@ -27,9 +27,9 @@ class EmployeeController extends Controller
      */
     public function create()
     {
-        $employee=Employee::all();
+        $employees=Employee::all();
         $services=Service::all();
-        return view("backend.employees.create",compact('employee','services'));
+        return view("backend.employees.create",compact('employees','services'));
 
     }
 
@@ -60,7 +60,7 @@ class EmployeeController extends Controller
         $employee->save();
 
         //redirect
-        return redirect()->route('employees.index');
+        return redirect()->route('backend.employees.index');
     }
 
     /**
@@ -71,7 +71,8 @@ class EmployeeController extends Controller
      */
     public function show(Employee $employee)
     {
-        //
+        // $employee=Employee::where('employees.id',$id)->first();
+        // return view('backend.services.show',compact('service','employees'));
     }
 
     /**
@@ -83,8 +84,13 @@ class EmployeeController extends Controller
     public function edit(Employee $employee)
     {
          $services=Service::all();
+<<<<<<< HEAD
          // $employees=Employee::all();
         return view('backend.employees.edit',compact('services','employee'));
+=======
+        $employees=Employee::all();
+        return view('backend.employees.edit',compact('services','employees'));
+>>>>>>> 3e9317c6eb576e2e45b2d8fec2091fbe123b92e0
     }
 
     /**
@@ -97,17 +103,23 @@ class EmployeeController extends Controller
     public function update(Request $request, Employee $employee)
     {
          //$request က edit form  ထဲက data ပါလာ
+<<<<<<< HEAD
       // dd($request);
          // $request->validate([
          //    "employee_name" => 'required',
          //    "email" => 'required',
          //    "service_id" => 'required',
          //    "availability_status" => 'required'
+=======
+       dd($request);
+         $request->validate([
+            "employee_name" => 'required',
+            "email" => 'required',
+            "service_id" => 'required',
+            "availability_status" => 'required'
+>>>>>>> 3e9317c6eb576e2e45b2d8fec2091fbe123b92e0
             
-         //     ]);
-
-        
-
+             ]);
         //$employee = new Employee;
         $employee->employee_name = $request->employee_name;
         $employee->service_id= $request->service_id;

@@ -28,7 +28,34 @@
     				<li>Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley.</li>
     				<li>It has survived not only five centuries, but also the leap into electronic typesetting.</li>
 				</p>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
 
+				<p> Price:	{{$services->price}}</p>
+				<p>Duration:{{ $services->duration }}</p>
+=======
+<<<<<<< HEAD
+				<p> Price:	{{$services->price}}</p>
+				<p>Duration:{{ $services->duration }}</p>
+=======
+>>>>>>> 3e9317c6eb576e2e45b2d8fec2091fbe123b92e0
+
+				<p> Price:	{{$services->price}}</p>
+				<p>Duration:{{ $services->duration }}</p>
+				<h3> 
+				
+				Price:	{{$services->price}}
+				</h3>
+>>>>>>> 32b55295049e428919f0aaad170aa6c87f7c330e
+>>>>>>> ff5dd49a8f07707e2aa043c7dc9411b741c96114
+=======
+
+=======
+>>>>>>> fd7a46f9de57e72dd6f4641ff58d977103baf601
 				<p> Price:	{{$services->price}}</p>
 				<p>Duration:{{ $services->duration }}</p>
 
@@ -38,8 +65,45 @@
 			</div>
 		</div>
 		
+<<<<<<< HEAD
 
 						
+=======
+<<<<<<< HEAD
+>>>>>>> 1eb3870294832960e6c3a85adbe3667af5fd9a8a
+=======
+				<p>Duration:{{ $services->duration }}</p>				
+				    </p>Price:	{{$services->price}}</p>
+				</h3>
+>>>>>>> 10de3259a9a6997cfac8affc02899511a3f7a34a
+
+				<a href="{{asset('booking')}}" class="btn btn-info">Appointment</a>
+				
+			</div>
+		</div>
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+	</div>
+=======
+<<<<<<< HEAD
+	</div>
+</div>
+>>>>>>> ff5dd49a8f07707e2aa043c7dc9411b741c96114
+		
+=======
+</div>
+	</div>		
+>>>>>>> 32b55295049e428919f0aaad170aa6c87f7c330e
+		
+=======
+	</div>
+<<<<<<< HEAD
+>>>>>>> 10de3259a9a6997cfac8affc02899511a3f7a34a
+=======
+=======
+>>>>>>> fd7a46f9de57e72dd6f4641ff58d977103baf601
+>>>>>>> 3e9317c6eb576e2e45b2d8fec2091fbe123b92e0
 	<div class="site-section">
       <div class="container">
         <div class="row text-center">
@@ -50,4 +114,12 @@
         </div>
       </div>
     </div>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> c823a218b85d6629a8a81c4c5aa98b77f5310fb1
+>>>>>>> 1eb3870294832960e6c3a85adbe3667af5fd9a8a
+=======
+>>>>>>> fd7a46f9de57e72dd6f4641ff58d977103baf601
+>>>>>>> 3e9317c6eb576e2e45b2d8fec2091fbe123b92e0
 @endsection
