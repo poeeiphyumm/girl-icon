@@ -14,7 +14,7 @@
 				    </div>
 				    <div class="form-group row">
 						<label>Email</label>
-						<input calss="form-control" type="text" name="email" class="form-control">
+						<input calss="form-control" type="email" name="email" class="form-control">
 					</div>
 					<div class="form-group row">
 						<label>Password</label>
@@ -23,7 +23,7 @@
 					</div>
 					<div class="form-group row">
 					<label>Phone Number</label>
-					<input class="form-control" type="text" name="ph_no">
+					<input class="form-control" type="text" name="phone_no">
 					</div>
 					<div class="form-group row">
 					<label>Date</label>
@@ -42,9 +42,9 @@
 					<div class="form-group">
 						<label>Appointment Status</label><br>
 
-						<input type="radio" name="status" value="pending">Pending<br>
-						<input type="radio" name="status" value="cancel">Cancel<br>
-						<input type="radio" name="status" value="cancel">Accept
+						<input type="radio" name="appointment_status" value="pending">Pending<br>
+						<input type="radio" name="appointment_status" value="cancel">Cancel<br>
+						<input type="radio" name="appointment_status" value="cancel">Accept
 
 
 					 

@@ -3,48 +3,19 @@
 @section('content')
 
 <div class="container">
-	<h1> Service_Details List</h1>
+	<h1> Service_Details List</h1><br>
   		
   	<div class="row">
-       <div class="col-lg-12">
-         <table class="table table-bordered" >
-           <thead>
-             <tr>
-               <th>NO</th>
-               <th>Service_id</th>
-               <th>Employee_id</th>
-               <th>Service_name</th>
-               <th>Actions</th>
-            </tr> 
-
-            </thead>
-           <tbody >
-
-           	@php $i=1; @endphp
-            @foreach ($service as $employee)
-            <tr>
-              <td>{{ $i++ }}</td>
-              <td>{{ $employee->service_id }}</td>
-              <td>{{ $employee->employee_id }}</td>
-              <td>{{ $employee->service_name }}</td>
-              <td>
-                <a href="" class="btn btn-primary">Detail</a>
-                
-              </td>
-            </tr>
-            @endforeach
-             
-           </tbody>
-         </table>
+       <div class="col-lg-12 ">
+         <form class="text-success rounded">
+          <h4>Service Name : {{ $services->service_name }}</h4><br>
+          <h4>Category Id : {{ $services->category_name }}</h4> <br> 
+          <h4>Duration : {{ $services->duration }}</h4> <br>   
+          {{-- <h4>Photo : </h4>   --}}
+          <img src="{{asset($services->photo)}} " height="150px" width="200px">
+           </form>
        </div>
      </div>
   </div>
 	
-
-
-
-
-
-
-
 @endsection

@@ -31,7 +31,7 @@
 				<a href="{{ asset('booking') }}">
                 <input type="submit" value="Appointment Now" class="btn btn-primary" onclick="" >
               </a>
-              
+
 			</div>
 		</div>
 	</div>
@@ -46,6 +46,4 @@
       </div>
     </div>
 	
-
-		
 @endsection

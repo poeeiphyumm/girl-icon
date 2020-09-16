@@ -22,20 +22,13 @@
 				<input type="name" name="employee_name" class="form-control" id="inputname" value="{{ $employee->employee_name}}" >
 			</div>
 		</div>
-<<<<<<< HEAD
 
 		<div class="form-group row">
 			<label class="col-sm-2 col-form-label">Email</label>
 			<div class="col-sm-6">
 				<input type="name" name="email" class="form-control" id="inputname" value="{{ $employee->email}}" >
 			</div>
-=======
-	</div>
-	<div class="form-group row">
-		<label class="col-sm-2 col-form-label">E_mail</label>
-		<div class="col-sm-6">
-			<input type="name" name="email" class="form-control" id="inputname" value="{{ $employee->email}}" >
->>>>>>> 3e9317c6eb576e2e45b2d8fec2091fbe123b92e0
+
 		</div>
 
 		<div class="form-group row">
@@ -54,7 +47,6 @@
 						<option value="{{ $service->id }}" @if($service->service_name == $employee->service_name) {{ 'selected'}} @endif>{{ $employee->service_id }}</option>
 					@endforeach
 
-<<<<<<< HEAD
 				</optgroup>
 			</select>
 		</div>
@@ -63,12 +55,5 @@
 	</form>
 </div>
 
-=======
-					</optgroup>
-				</select>
-		
-	</div>
-	<input type="submit" value="Update" class="btn btn-danger">
-</form>
->>>>>>> 3e9317c6eb576e2e45b2d8fec2091fbe123b92e0
+
 @endsection

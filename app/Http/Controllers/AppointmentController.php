@@ -65,15 +65,15 @@ class AppointmentController extends Controller
        //dd($request);
 
         //validation
-        $request->validate([
-            "date"=>'required',
-            "time"=>'required',
-            "status"=>'required',
-            //"appointment_status"=>'required',
-            "customer_id"=>'required',
+        // $request->validate([
+        //     "date"=>'required',
+        //     "time"=>'required',
+        //     "status"=>'required',
+        //     "appointment_status"=>'required',
+        //     "customer_id"=>'required',
 
 
-            ]);
+        //     ]);
 
         //Data insert
         $appointment=new Appointment;
@@ -82,8 +82,9 @@ class AppointmentController extends Controller
         $appointment->date=$request->date;
         //$appointment->date = date('Y-m-d');
         $appointment->time=$request->time;
-        $appointment->status=$request->status;
+        $appointment->appointment_status=$request->appointment_status;
         $appointment->customer_id=$request->customer_id;
+        $appointment->phone_no=$request->phone_no;
         $appointment->save();
 
         //redirect
@@ -169,10 +170,10 @@ class AppointmentController extends Controller
     //     $appointment->appointment_status=$request->appointment_status;
     //     $appointment->customer_id=$request->customer_id;
 
-    //     $appointment->save();
+        $appointment->save();
 
     //     //redirect
-    //     return redirect()->route('appointments.index'); 
+         return redirect()->route('appointments.index'); 
     }
     
 

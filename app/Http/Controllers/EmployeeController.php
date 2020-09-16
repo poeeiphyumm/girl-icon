@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Employee;
 use App\Service;
+use DB;
 use Illuminate\Http\Request;
 
 class EmployeeController extends Controller
@@ -15,9 +16,11 @@ class EmployeeController extends Controller
      */
     public function index()
     {   
-        $service=Service::all();
-        $employees=Employee::all();
-        return view('backend.employees.index',compact('employees','service'));
+        // $service=Service::all();
+
+        $employees=DB::table('services')->join('employees','employees.service_id','=','services.id')->select('employees.*','services.*','services.service_name as service')->get();
+
+        return view('backend.employees.index',compact('employees'));
     }
 
     /**
@@ -27,9 +30,10 @@ class EmployeeController extends Controller
      */
     public function create()
     {
-        $employees=Employee::all();
+        
+        // dd($employees);
         $services=Service::all();
-        return view("backend.employees.create",compact('employees','services'));
+        return view("backend.employees.create",compact('services'));
 
     }
 
@@ -60,7 +64,7 @@ class EmployeeController extends Controller
         $employee->save();
 
         //redirect
-        return redirect()->route('backend.employees.index');
+        return redirect()->route('employees.index');;
     }
 
     /**
@@ -71,8 +75,7 @@ class EmployeeController extends Controller
      */
     public function show(Employee $employee)
     {
-        // $employee=Employee::where('employees.id',$id)->first();
-        // return view('backend.services.show',compact('service','employees'));
+        
     }
 
     /**

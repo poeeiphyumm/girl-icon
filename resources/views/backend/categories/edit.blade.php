@@ -10,29 +10,20 @@
         </div>
     </div>
 
-<<<<<<< HEAD
 	<form action="{{ route('categories.update',$category->id) }}" method="post" enctype="multipart/form-data">
-=======
-<form action="{{ route('categories.update',$category->id) }}" method="post" enctype="multipart/form-data">
->>>>>>> 3e9317c6eb576e2e45b2d8fec2091fbe123b92e0
+
 	@csrf
 	
 	@method('PUT')
-<<<<<<< HEAD
 	
 		<div class="form-group row">
 			<label class="col-sm-2 col-form-label">Name</label>
 			<div class="col-sm-6">
 				<input type="name" name="category_name" class="form-control" id="inputname" value="{{ $category->category_name}}" >
 			</div>
-=======
-	{{-- // --}}
-	<div class="form-group row">
-		<label class="col-sm-2 col-form-label">Name</label>
-		<div class="col-sm-6">
-			<input type="name" name="category_name" class="form-control" id="inputname" value="{{ $category->category_name}}" >
->>>>>>> 3e9317c6eb576e2e45b2d8fec2091fbe123b92e0
 		</div>
+	{{-- // --}}
+	
 
 		<input type="submit" value="Update" class="btn btn-danger">
 	</form>

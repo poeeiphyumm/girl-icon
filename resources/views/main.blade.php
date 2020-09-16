@@ -176,7 +176,14 @@
     </div>
   </div>
   
-  <input type="submit" value="Booking Now" class="btn btn-primary" onclick="" >
+ @role('Customer')
+  
+   <a href="{{ route('loginpage') }}" class="btn btn-secondary btn-block mainfullbtncolor col-md-8">Login To Appointment</a>
+  @else
+ 
+  <input type="submit" value="Appointment Now" class="btn btn-primary" onclick="" >
+
+  @endrole
   
 </form>
     </div>  

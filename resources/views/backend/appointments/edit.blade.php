@@ -10,11 +10,11 @@
 						@method('PUT')
 					<div class="form-group row">
 						<label>Name</label>
-						<input class="form-control" type="text" name="name" value="{{$appointment->name}}" readonly="readonly">
+						<input class="form-control" type="text" name="appointment_name" value="{{$appointment->name}}" readonly="readonly">
 				    </div>
 				    <div class="form-group row">
 						<label>Email</label>
-						<input calss="form-control" type="text" name="email" value="{{$appointment->email}}" class="form-control" >
+						<input calss="form-control" type="email" name="email" value="{{$appointment->email}}" class="form-control" >
 					</div>
 					<div class="form-control">
 						<label>Password</label>
@@ -24,7 +24,7 @@
 					
 					<div class="form-group row">
 					<label>Phone Number</label>
-					<input class="form-control" type="text" name="ph_no" value="{{$appointment->ph_no}}">
+					<input class="form-control" type="text" name="phone_no" value="{{$appointment->phone_no}}">
 					</div>
 					<div class="form-group row">
 					<label>Date</label>

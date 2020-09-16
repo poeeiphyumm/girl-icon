@@ -31,7 +31,7 @@ Route::get('/', 'PageController@mainfun')->name('mainpage');
 
 Route::get('/', 'PageController@mainfun')->name('mainpage');
 
-Route::get('servicepage', 'PageController@servicefun')->name('servicepage');
+// Route::get('servicepage', 'PageController@servicefun')->name('servicepage');
 
 // end backend
 
@@ -123,10 +123,13 @@ Route::middleware('role:Admin')->group(function(){
 	Route::resource('employees','EmployeeController');
 
 	Route::resource('appointments','AppointmentController');
-
+	
 	Route::resource('customers','CustomerController');
 
+
 });
+
+
 
  
 //auth

@@ -28,7 +28,6 @@
 			</div>
 		</div>
 
-<<<<<<< HEAD
 		<div class="form-group row">
 			<label class="col-sm-2 col-form-label">Email</label>
 			<div class="col-sm-6">
@@ -36,14 +35,7 @@
 			</div>
 		</div>
 
-		<div class="form-group row">
-			<label class="col-sm-2 col-form-label">Service</label>
-			<select class="form-control form-control-md" id="inputservice" name="service_id">
-				<optgroup label="Choose Service ">
-					@foreach($services as $service)
-						<option value="{{ $service->id}}">{{ $service->service_name }}</option>
-					@endforeach
-=======
+
 	<div class="form-group row">
 				<label class="col-sm-2 col-form-label">Service</label>
 				<select class="form-control form-control-md" id="inputservice" name="service_id">
@@ -51,27 +43,15 @@
 						@foreach($services as $service)
 							<option value="{{ $service->id}}">{{ $service->service_name }}</option>
 						@endforeach
->>>>>>> 3e9317c6eb576e2e45b2d8fec2091fbe123b92e0
 
 				</optgroup>
 			</select>
 		
-<<<<<<< HEAD
 		</div>
 	
 	
 		<input type="submit" value="Create" class=" btn btn-danger" >
 	</form>
 </div>
-=======
-	</div>
-<<<<<<< HEAD
 
-	
-=======
-		
->>>>>>> fd7a46f9de57e72dd6f4641ff58d977103baf601
-	<input type="submit" value="Create" class=" btn btn-danger" >
-</form>
->>>>>>> 3e9317c6eb576e2e45b2d8fec2091fbe123b92e0
 @endsection

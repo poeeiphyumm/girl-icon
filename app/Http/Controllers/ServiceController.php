@@ -17,10 +17,9 @@ class ServiceController extends Controller
      */
     public function index()
     {
-         $services=Service::all();
-        $categories=Category::all();
+         $services=DB::table('categories')->join('services','services.category_id','=','categories.id')->select('services.*','categories.*','category_name as category')->get();
         
-        return view('backend.services.index',compact('services','categories'));
+        return view('backend.services.index',compact('services'));
 
     }
     
@@ -32,8 +31,13 @@ class ServiceController extends Controller
      */
     public function create()
     {
-        $services=Service::all();
+       
+
+        // $services=Category::select('categories.*','services.service_name as category')->leftJoin('services','services.category_id','=','categories.id');
+
         $categories=Category::all();
+        $services=Service::all();
+        //dd($services);
         return view("backend.services.create",compact('services','categories'));
     }
 
@@ -102,11 +106,13 @@ class ServiceController extends Controller
 
         // $services=Service::all();
         // $services=DB::table('employees')->join('services.id','=','employees.service_id')->where('services.id',$id)->get();
-        $service=Service::find($id);
-        // $service=Service::where('services.id',$id)->first();
+        //$service=Service::find($id);
+        $services=Service::find($id);
         $employees=Employee::all();
         //dd($service);
-        return view('backend.servicedetail.index',compact('service','employees')); 
+        return view('backend.servicedetail.index',compact('services','employees')); 
+
+
 
     }
 
@@ -118,8 +124,11 @@ class ServiceController extends Controller
      */
     public function edit(Service $service)
     {
+        // dd($service);
+        $service=Service::all();
         $categories=Category::all();
         return view('backend.services.edit',compact('service','categories'));
+
     }
 
     /**

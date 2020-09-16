@@ -56,11 +56,6 @@ class CustomerController extends Controller
            "date" => 'required',        
             "phone_no" => 'required',
             "gender" => 'required',
-
-
-           // "category"=>'required';
-
-
             "category_name" => 'required',
             "address" => 'required',
 

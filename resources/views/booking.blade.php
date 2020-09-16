@@ -57,6 +57,16 @@
               @enderror
     </div>
   </div>
+
+  <div class="form-group row">
+    
+    <div class="col-md-12">
+      <input type="time" name="time" class="form-control" id="inputtime" required="required">
+              @error('time')
+                <div class="text-danger">{{ ($message) }}</div>
+              @enderror
+    </div>
+  </div>
   <div class="form-group row">
     
     <div class="col-md-12">
@@ -98,9 +108,14 @@
       <input type="text" name="address" class="form-control" id="inputphoto" placeholder=" address" required="required" >
     </div>
   </div>
-  
+  @role('Customer')
+
+   <a href="{{ route('loginpage') }}" class="btn btn-secondary btn-block mainfullbtncolor col-md-8">Login To Appointment</a>
+  @else
+ 
   <input type="submit" value="Appointment Now" class="btn btn-primary" onclick="" >
-  
+
+  @endrole
 </form>
     </div>  
   </div>
