@@ -5,46 +5,44 @@
 	<div class="d-sm-flex align-items-center justify-content-between mb-4">
         <h1 class="h3 mb-0 text-gray-800 d-inline-block"> Category List</h1>
         <a href="{{ route('categories.create') }}" class="btn btn-info mr-3">Add new</a>
-  	
     </div>
-
 </div>
-    <div class="container">
+
+<div class="container">
     	<div class="row">
     		<div class="col-md-12">
-   			 <table class="table table-bordered ">
-    			<thead class="thead-dark bg-dark text-white" >
-		    		<tr>
-			    		<td>No</td>
-			    		<td>Name</td>
-			    		
-			    		<td colspan="3">Actions</td>
-		    		</tr>
-		    	</thead>
+   			 	<table class="table table-bordered ">
+    				<thead class="thead-dark bg-dark text-white" >
+		    			<tr>
+				    		<td>No</td>
+				    		<td>Name</td>
+				    		<td colspan="3">Actions</td>
+		    			</tr>
+		    		</thead>
 		    	
-		    	<tbody>
-		    		@php $i=1; @endphp
-		    		@foreach ($categories as $category)
-		    		<tr>
-		    			<td>{{ $i++ }}</td>
-			    		<td>{{ $category->category_name }}</td>
-			    		<td>
-			    			<a href="#" class="btn btn-primary">Detail</a>
-			    			<a href="{{ route('categories.edit',$category->id) }}" class="btn btn-secondary">Edit</a>	
-			    			<form method="post" action="{{ route('categories.destroy',$category->id) }}">
-			    				@csrf
-			    				@method('DELETE')
-			    			 	<input type="submit" class="btn btn-danger" value="Delete">
-			    			</form>
-			    			
-			    		</td>
-		    		</tr>
-		    		@endforeach
-    			</tbody>
+		    		<tbody>
+			    		@php $i=1; @endphp
+			    		@foreach ($categories as $category)
+			    		<tr>
+			    			<td>{{ $i++ }}</td>
+				    		<td>{{ $category->category_name }}</td>
+				    		<td>
+				    			<a href="#" class="btn btn-primary">Detail</a>
+				    			<a href="{{ route('categories.edit',$category->id) }}" class="btn btn-secondary">Edit</a>	
+				    			<form method="post" action="{{ route('categories.destroy',$category->id) }}">
+				    				@csrf
+				    				@method('DELETE')
+				    			 	<input type="submit" class="btn btn-danger" value="Delete">
+				    			</form>
+				    			
+				    		</td>
+		    			</tr>
+		    			@endforeach
+    				</tbody>
     			
-    		</table>
-    </div>
-</div>
+    			</table>
+    		</div>
+		</div>
 </div>
 
 @endsection

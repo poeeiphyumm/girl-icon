@@ -13,11 +13,16 @@ class PageController extends Controller
         $categories=Category::all();
         return view('main',compact('categories'));
     }
+ 
+
      public function bookingfun($value='')
      {
         $categories=Category::all();
-     	return view('booking',compact('categories'));
+
         
+         return view('booking',compact('categories'));
+
+
     }
 
     public function contactfun($value='')
@@ -37,6 +42,17 @@ class PageController extends Controller
         
         return view('about');
     }
+
+
+    
+    public function spafun($value='')
+     {
+        
+        return view('spa');
+    }
+
+    
+
 
     public function registerfun($value='')
     {
@@ -133,4 +149,12 @@ class PageController extends Controller
         $services = Service::find($id);
         return view('skintherapydetail',compact('services'));
     }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+
+
+=======
+>>>>>>> fd7a46f9de57e72dd6f4641ff58d977103baf601
+>>>>>>> 3e9317c6eb576e2e45b2d8fec2091fbe123b92e0
 }

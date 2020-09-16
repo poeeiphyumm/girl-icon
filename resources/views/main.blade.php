@@ -11,7 +11,7 @@
               <h5 class="text-white font-weight-light text-uppercase">Welcome to Hairsal</h5>
               <h2 class="text-white font-weight-light mb-2 display-1">Beauty Salon Expert</h2>
 
-              <p><a href="{{asset('booking')}}" class="btn btn-black py-3 px-5">Book Now!</a></p>
+              <p><a href="{{asset('booking')}}" class="btn btn-black py-3 px-5">Appointment Now!</a></p>
             </div>
           </div>
         </div>
@@ -79,35 +79,10 @@
           </div>
         </div>
 
-        {{-- <div class="row">
-          <div class="col-md-6 col-lg-4 text-center mb-5 mb-lg-5">
-            <div class="h-100 p-4 p-lg-5 bg-light site-block-feature-7">
-              <span class="icon flaticon-razor display-3 text-primary mb-4 d-block"></span>
-              <h3 class="text-black h4">Barber Razor</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum exercitationem quae id dolorum debitis.</p>
-              <p><strong class="font-weight-bold text-primary">$29</strong></p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 text-center mb-5 mb-lg-5">
-            <div class="h-100 p-4 p-lg-5 bg-light site-block-feature-7">
-              <span class="icon flaticon-location-pin display-3 text-primary mb-4 d-block"></span>
-              <h3 class="text-black h4">Location Pin</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum exercitationem quae id dolorum debitis.</p>
-              <p><strong class="font-weight-bold text-primary">$46</strong></p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 text-center mb-5 mb-lg-5">
-            <div class="h-100 p-4 p-lg-5 bg-light site-block-feature-7">
-              <span class="icon flaticon-shave display-3 text-primary mb-4 d-block"></span>
-              <h3 class="text-black h4">Barber Shave</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum exercitationem quae id dolorum debitis.</p>
-              <p><strong class="font-weight-bold text-primary">$24</strong></p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-</div> --}}
+<<<<<<< HEAD
+=======
+        
+>>>>>>> 3e9317c6eb576e2e45b2d8fec2091fbe123b92e0
 
 <div class="container">
         <div class="row">
@@ -141,20 +116,103 @@
 <div class="bg-light">
       <div class="container">
         <div class="row">
-          <div class="col-md-7 mb-5">
+        <div class="col-md-7 mb-5">
 
+<<<<<<< HEAD
+      <div class="container my-5">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+      <form action="{{ route('customers.store') }}" method="post" enctype="multipart/form-data">
+  @csrf
+  <div class="row">
+    <div class="col-md-12">
+      <h1>Get Appointment Now</h1>
+    </div>
+  </div>
+  
+  <div class="form-group row">
+    <label class="col-sm-2 col-form-label"></label>
+    <div class="col-md-12">
+      <input type="name" name="customer_name" class="form-control" id="inputname" placeholder="name" required="required">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="col-sm-2 col-form-label"></label>
+    <div class="col-md-12">
+      <input type="email" name="email" class="form-control" id="inputemail" placeholder="E-mail" required="required">
+    </div>
+  </div>
+  <div class="form-group row">
+    
+    <div class="col-md-12">
+      <input type="date" name="date" class="form-control" id="inputdate" required="required">
+    </div>
+  </div>
+  <div class="form-group row">
+    
+    <div class="col-md-12">
+      <input type="text" name="phone_no" class="form-control" id="inputphoto" placeholder="phone number" required="required">
+    </div>
+  </div>
+  
+  <div class="form-group row">
+    <label class="col-sm-2 col-form-label">Gender</label>
+    <div class="col-md-6">
+      <input type="radio" name="gender" value="male" checked="" required="required">Male
+      <input type="radio" name="gender" value="female" required="required">Female
+    </div>
+  </div>
+   
+   <div class="form-group row">
+        <label class="col-md-3 col-form-label">Category</label>
+        <select class="form-control form-control-md col-md-9" id="inputCategory" name="category_name">
+          <optgroup label="Choose Category">
+            @foreach($categories as $category)
+              <option value="{{ $category->id }}">{{ $category->category_name }}</option>
+            @endforeach
+          </optgroup>
+        </select>
+  </div>
+
+  <div class="form-group row">
+   
+    <div class="col-md-12">
+      <input type="text" name="address" class="form-control" id="inputphoto" placeholder=" address" required="required" >
+    </div>
+  </div>
+  
+  <input type="submit" value="Booking Now" class="btn btn-primary" onclick="" >
+  
+</form>
+    </div>  
+  </div>
+=======
+<<<<<<< HEAD
+
+            <form action="#" class="p-5 bg-white">
+=======
             <form action="{{ route('customers.store') }}" method="post" enctype="multipart/form-data">
             @csrf
+>>>>>>> fd7a46f9de57e72dd6f4641ff58d977103baf601
               <h1 class="mb-4">Get Appointment Now</h1>
 
               <div class="row form-group">
                 <div class="col-md-6 mb-3 mb-md-0">
-                  <label class="text-black" for="fname">First Name</label>
-                  <input type="text" id="fname" class="form-control" placeholder="First Name">
+                  <label class="text-black" for="fname">Name</label>
+                  <input type="text" id="fname" class="form-control" placeholder="Name">
                 </div>
-                <div class="col-md-6">
+              </div>
+
+                {{-- <div class="col-md-6">
                   <label class="text-black" for="lname">Last Name</label>
                   <input type="text" id="lname" class="form-control" placeholder="Last Name">
+                </div> --}}
+              {{-- </div> --}}
+              <div class="row form-group">
+
+               <div class="col-md-6">
+                  <label class="text-black" for="email">Email</label> 
+                  <input type="email" id="email" class="form-control" placeholder="Email">
                 </div>
               </div>
 
@@ -163,10 +221,7 @@
                   <label class="text-black" for="date">Date</label> 
                   <input type="date" id="date" class="form-control datepicker px-2" placeholder="Date of visit">
                 </div>
-                <div class="col-md-6">
-                  <label class="text-black" for="email">Email</label> 
-                  <input type="email" id="email" class="form-control" placeholder="Email">
-                </div>
+               
               </div>
 
           <div class="form-group row">
@@ -190,16 +245,23 @@
 
               <div class="row form-group">
                 <div class="col-md-12">
-                 {{--  @if(Session::has('success')) --}}
+                  {{--  @if(Session::has('success'))  --}}
                     <div class="alert alert-success">
-                      <button type="button" class="btn btn-primary py-2 px-4 text-white" data-dismiss="alert">Send</button>
-                      <strong>Make Appointment Success!{{Session::get('message','')}}</strong>
+                      <input type="submit" value="Booking Now" class="btn btn-primary" onclick="alert('Make Appointment success')" >
+                      {{-- <strong>Make Appointment Success! --}}{{-- {{Session::get('message','')}}</strong> --}}
                     </div>
-                  {{--   @endif --}}
+                  {{-- @endif --}} 
                 
                 </div>
               </div>
 
+<<<<<<< HEAD
+
+>>>>>>> 3e9317c6eb576e2e45b2d8fec2091fbe123b92e0
+</div>
+
+=======
+>>>>>>> fd7a46f9de57e72dd6f4641ff58d977103baf601
   </div>
 
  <div class="col-md-5">
@@ -230,7 +292,7 @@
     </div>
 
 
-<div class="container-fluid">
+{{-- <div class="container-fluid">
 <div class="site-blocks-cover mb-5" style="background-image: url({{asset('frontend/images/spa-girl-1.jpg')}});" data-aos="fade">
         
           <div class="row">
@@ -263,8 +325,14 @@
 
           </div>
         </div>
-</div>  
+</div>  --}} 
 
+
+<div class="container">
+  <div class="row">
+    <div class="col-x"></div>
+  </div>
+</div>
 
 <div class="container">
   <div class="row">

@@ -9,9 +9,9 @@
     </div>
 
         <div class="container-fluid">
-          <div class="row">
+      <div class="row">
 
-            @foreach($services as $service)
+         @foreach($services as $service)
         <a href="{{ route('footcaredetail',$service->id) }}">
           <div class="col-lg-4 col-md-4 col-sm-12">
             
@@ -19,20 +19,17 @@
             
               <p class=" text-info">{{ $service->service_name }}</p>
 
-<<<<<<< HEAD
-            <a href="{{ asset('booking') }}" class="btn btn-info">Appointment</a>
-=======
-
-            <a href="{{asset('booking')}}" class="btn btn-info">Appointment</a>
->>>>>>> c823a218b85d6629a8a81c4c5aa98b77f5310fb1
+              <a href="{{ asset('booking') }}">
+                <input type="submit" value="Appointment Now" class="btn btn-primary" onclick="" >
+              </a>
             
           </div>
           </a>
 
         @endforeach
-          </div>
-       </div> 
-       <div class="site-section">
+
+    </div> 
+    <div class="site-section">
       <div class="container">
         <div class="row text-center">
           <div class="col-md-12">

@@ -7,20 +7,35 @@
         <a href="{{ route('employees.create') }}" class="btn btn-info mr-3">Add new</a>
   	
     </div>
-
 </div>
-    <div class="container">
-    	<div class="row">
-    		<div class="col-md-12">
-   			 <table class="table table-bordered ">
+
+<div class="container">
+    <div class="row">
+    	<div class="col-md-12">
+   			<table class="table table-bordered ">
     			<thead class="thead-dark bg-dark text-white" >
 		    		<tr>
 			    		<td>No</td>
 			    		<td>Name</td>
+<<<<<<< HEAD
+			    		<td>Service ID</td>
+			    		<td>Email</td>
+			    		<td>Availability Status</td>
+=======
+<<<<<<< HEAD
+
+			    		<td>Email</td>
+			    		<td>Service </td>
+
+			    		<td>Service ID</td>
+
+=======
 			    		<td>Email</td>
 			    		<td>Service ID</td>
+>>>>>>> fd7a46f9de57e72dd6f4641ff58d977103baf601
 			    		<td>Availability Status</td>
 			    		
+>>>>>>> 3e9317c6eb576e2e45b2d8fec2091fbe123b92e0
 			    		<td>Actions</td>
 		    		</tr>
 		    	</thead>
@@ -31,8 +46,13 @@
 		    		<tr>
 		    			<td>{{ $i++ }}</td>
 			    		<td>{{ $employee->employee_name}}</td>
+<<<<<<< HEAD
+			    		<td>{{ $employee->service_id }}</td>
+			    		<td>{{ $employee->email }}</td>
+=======
 			    		<td>{{ $employee->email }}</td>
 			    		<td>{{ $employee->service_id }}</td>
+>>>>>>> 3e9317c6eb576e2e45b2d8fec2091fbe123b92e0
 			    		<td>{{ $employee->availability_status }}</td>
 			    		<td>
 			    			
@@ -43,17 +63,16 @@
 			    				@csrf
 			    				@method('DELETE')
 			    			
-			    			 	<input type="submit" class="btn btn-danger" value="Delete">
+			    			 		<input type="submit" class="btn btn-danger" value="Delete">
 			    			</form>
-			    			
 			    		</td>
 		    		</tr>
 		    		@endforeach
     			</tbody>
     			
     		</table>
-    </div>
-</div>
+    	</div>
+	</div>
 </div>
 
 @endsection

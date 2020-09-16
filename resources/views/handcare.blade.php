@@ -17,10 +17,9 @@
             
               <img src="{{asset($service->photo)}}" width="400px" height="300px">
             
-
-
-            <a href="{{asset('booking')}}" class="btn btn-info">Appointment</a>
-            
+            <a href="{{ asset('booking') }}">
+                <input type="submit" value="Appointment Now" class="btn btn-primary" onclick="" >
+            </a>
           </div>
           </a>
 

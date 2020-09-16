@@ -17,22 +17,20 @@
             
               <img src="{{asset($service->photo)}}" width="400px" height="300px">
             
-
-<<<<<<< HEAD
               <p class=" text-info">{{ $service->service_name }}</p>
-            <a href="{{ asset('booking') }}" class="btn btn-info">Appointment</a>
-=======
+           
+              <a href="{{ asset('booking') }}">
+                <input type="submit" value="Appointment Now" class="btn btn-primary" onclick="" >
+              </a>
 
-            <a href="{{asset('booking')}}" class="btn btn-info">Appointment</a>
->>>>>>> c823a218b85d6629a8a81c4c5aa98b77f5310fb1
-            
           </div>
-          </a>
+        </a>
 
         @endforeach
+</div>
+</div>
+
 <<<<<<< HEAD
-</div>
-</div>
 =======
 
     <h1><center>Skin Care Services</center></h1><br><br>
@@ -54,9 +52,10 @@
           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
         </div>
       </div>
-    
+
     </div> 
   </div>
+>>>>>>> 3e9317c6eb576e2e45b2d8fec2091fbe123b92e0
   <div class="site-section">
       <div class="container">
         <div class="row text-center">
@@ -66,6 +65,5 @@
           </div>
         </div>
       </div>
-    </div>
->>>>>>> c823a218b85d6629a8a81c4c5aa98b77f5310fb1
+  </div>
 @endsection

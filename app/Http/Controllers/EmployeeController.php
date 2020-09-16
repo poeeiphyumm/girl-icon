@@ -44,9 +44,9 @@ class EmployeeController extends Controller
        // dd($request);
          $request->validate([
             "employee_name" => 'required',
-            "email" => 'required',
              "service_id" => 'required',
-            "availability_status" => 'required'
+            "availability_status" => 'required',
+            "email" => 'required',
         ]);
 
         //
@@ -54,10 +54,9 @@ class EmployeeController extends Controller
         $employee = new Employee;
         
         $employee->employee_name = $request->employee_name;
-        $employee->email = $request->email;
         $employee->service_id = $request->service_id;
         $employee->availability_status = $request->availability_status;
-
+        $employee->email = $request->email;
         $employee->save();
 
         //redirect
@@ -85,8 +84,13 @@ class EmployeeController extends Controller
     public function edit(Employee $employee)
     {
          $services=Service::all();
+<<<<<<< HEAD
+         // $employees=Employee::all();
+        return view('backend.employees.edit',compact('services','employee'));
+=======
         $employees=Employee::all();
         return view('backend.employees.edit',compact('services','employees'));
+>>>>>>> 3e9317c6eb576e2e45b2d8fec2091fbe123b92e0
     }
 
     /**
@@ -99,19 +103,28 @@ class EmployeeController extends Controller
     public function update(Request $request, Employee $employee)
     {
          //$request က edit form  ထဲက data ပါလာ
+<<<<<<< HEAD
+      // dd($request);
+         // $request->validate([
+         //    "employee_name" => 'required',
+         //    "email" => 'required',
+         //    "service_id" => 'required',
+         //    "availability_status" => 'required'
+=======
        dd($request);
          $request->validate([
             "employee_name" => 'required',
             "email" => 'required',
             "service_id" => 'required',
             "availability_status" => 'required'
+>>>>>>> 3e9317c6eb576e2e45b2d8fec2091fbe123b92e0
             
              ]);
         //$employee = new Employee;
         $employee->employee_name = $request->employee_name;
-        $employee->email = $request->email;
         $employee->service_id= $request->service_id;
         $employee->availability_status=$request->availability_status;
+        $employee->email = $request->email;
         $employee->save();
 
         //redirect

@@ -15,14 +15,21 @@
                 </div>
               </div>
             </div>
+
               <div class="form-group">
                 <label class="small mb-1" for="inputEmailAddress">Email</label>
                 <input class="form-control py-4" id="inputEmailAddress" type="email" placeholder="Enter email address" name="email" />
+                @error('email')
+                <div class="text-danger">{{ ($message) }}</div>
+                @enderror
               </div>
               
               <div class="form-group">
                 <label class="small mb-1" for="inputPassword">Password</label>
                 <input class="form-control py-4" id="inputPassword" type="password" placeholder="Enter password" name="password" />
+                @error('password')
+                <div class="text-danger">{{ ($message) }}</div>
+                @enderror
               </div>
           
               <div class="form-group">

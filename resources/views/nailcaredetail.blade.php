@@ -32,20 +32,28 @@
 				<p> Price:	{{$services->price}}</p>
 				<p>Duration:{{ $services->duration }}</p>
 
-<<<<<<< HEAD
-				<a href="{{ asset('booking') }}" class="btn btn-info">Appointment</a>
-=======
-				<h3> 
+				<a href="{{ asset('booking') }}">
+                	<input type="submit" value="Appointment Now" class="btn btn-primary" onclick="" >
+              	</a>
 				
+<<<<<<< HEAD
+=======
 				Price:	{{$services->price}}
 				</h3>
 
+<<<<<<< HEAD
+
+				<a href="#" class="btn btn-info">Appointment</a>
+=======
 				<a href="{{asset('booking')}}" class="btn btn-info">Appointment</a>
 >>>>>>> c823a218b85d6629a8a81c4c5aa98b77f5310fb1
+>>>>>>> 1eb3870294832960e6c3a85adbe3667af5fd9a8a
+>>>>>>> 3e9317c6eb576e2e45b2d8fec2091fbe123b92e0
 				</div>
 			</div>
 		</div>
-		<div class="site-section">
+
+	<div class="site-section">
       <div class="container">
         <div class="row text-center">
           <div class="col-md-12">

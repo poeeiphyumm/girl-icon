@@ -4,24 +4,29 @@
 <div class="container-fluid">
 	<div class="d-sm-flex align-items-center justify-content-between mb-4">
         <h1 class="h3 mb-0 text-gray-800 d-inline-block"> Customer List</h1>
+<<<<<<< HEAD
+=======
         <a href="{{ route('customers.create') }}" class="btn btn-info mr-3">Add new</a>
-  	
-    </div>
 
+
+  	
+>>>>>>> 3e9317c6eb576e2e45b2d8fec2091fbe123b92e0
+    </div>
 </div>
-    <div class="container">
-    	<div class="row">
-    		<div class="col-md-12">
-   			 <table class="table table-bordered ">
+
+<div class="container">
+    <div class="row">
+    	<div class="col-md-12">
+   			<table class="table table-bordered ">
     			<thead class="thead-dark bg-dark text-white" >
 		    		<tr>
 			    		<td>No</td>
 			    		<td>Name</td>
 			    		<td>Email</td>
-			    		<td>Date</td>
+			    		{{-- <td>Date</td> --}}
 			    		<td>Phone No</td>
 			    		<td>Gender</td>
-			    		<td>Category</td>
+			    		 {{-- <td>Category</td> --}}
 			    		<td>address</td>
 			    		<td>Action</td>
 		    		</tr>
@@ -34,10 +39,10 @@
 		    			<td>{{ $i++ }}</td>
 			    		<td>{{ $customer->customer_name }}</td>
 			    		<td>{{ $customer->email }}</td>
-			    		<td>{{ $customer->date }}</td>			    		
+			    		{{-- <td>{{ $customer->date }}</td> --}}			    		
 			    		<td>{{ $customer->phone_no }}</td>
 			    		<td>{{ $customer->gender }}</td>
-			    		<td>{{ $customer->category_name}}</td>			    		
+			    		{{-- <td>{{ $customer->category_name}}</td> --}}			    		
 			    		<td>{{ $customer->address }}</td>
 			    		<td>
 			    		<form method="post" action="{{ route('customers.destroy',$customer->id) }}">
@@ -51,8 +56,8 @@
     			</tbody>
     			
     		</table>
-    </div>
-</div>
+    	</div>
+	</div>
 </div>
 
 @endsection

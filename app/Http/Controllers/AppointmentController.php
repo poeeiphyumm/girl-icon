@@ -5,6 +5,13 @@ namespace App\Http\Controllers;
 use App\Appointment;
 use App\Customer;
 use Carbon\Carbon;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+use App\Category;
+>>>>>>> 3e9317c6eb576e2e45b2d8fec2091fbe123b92e0
+>>>>>>> 234c5e15ebb6c791b726124a65468bc6e8741912
 use Illuminate\Http\Request;
 
 class AppointmentController extends Controller
@@ -28,7 +35,7 @@ class AppointmentController extends Controller
                 [   
                     new Carbon($date1), 
                     new Carbon($date2)
-                ])->where('appointment_status',0)->get();
+                ])->where('status',0)->get();
         }
         else{
             $appointments=Appointment::all();
@@ -36,9 +43,6 @@ class AppointmentController extends Controller
 
          //$appointments=Appointment::all();
          return view('backend.appointments.index',compact('appointments')); 
-
-       
-
 
      }
 
@@ -70,8 +74,17 @@ class AppointmentController extends Controller
         $request->validate([
             "date"=>'required',
             "time"=>'required',
+<<<<<<< HEAD
+            "phone_no"=>'required',
             "appointment_status"=>'required',
+=======
+
+            "status"=>'required',
+            //"appointment_status"=>'required',
+>>>>>>> 3e9317c6eb576e2e45b2d8fec2091fbe123b92e0
             "customer_id"=>'required',
+
+
             ]);
 
         //Data insert
@@ -79,8 +92,14 @@ class AppointmentController extends Controller
         
         //$appointment->email=$request->email;
         $appointment->date=$request->date;
+        //$appointment->date = date('Y-m-d');
         $appointment->time=$request->time;
+<<<<<<< HEAD
+        $appointment->phone_no=$request->phone_no;
         $appointment->appointment_status=$request->appointment_status;
+=======
+        $appointment->status=$request->status;
+>>>>>>> 3e9317c6eb576e2e45b2d8fec2091fbe123b92e0
         $appointment->customer_id=$request->customer_id;
         $appointment->save();
 
@@ -96,7 +115,12 @@ class AppointmentController extends Controller
      */
     public function show(Appointment $appointment)
     {
-        //
+        
+<<<<<<< HEAD
+=======
+        // $appointments=Appointment::all();
+        // return view('backend.appointments.show',compact('appointments'));
+>>>>>>> 3e9317c6eb576e2e45b2d8fec2091fbe123b92e0
     }
 
     /**
@@ -122,12 +146,14 @@ class AppointmentController extends Controller
      */
     public function update(Request $request, Appointment $appointment)
     {
+<<<<<<< HEAD
        //dd($request);
 
         //validation
         $request->validate([
             "date"=>'required',
             "time"=>'required',
+            "phone_no"=>'required',
             //"status"=>'required',
             "appointment_status"=>'required',
             "customer_id"=>'required',
@@ -140,13 +166,36 @@ class AppointmentController extends Controller
         //$appointment->email=$request->email;
         $appointment->date=$request->date;
         $appointment->time=$request->time;
+        $appointment->phone_no=$request->phone_no;
         $appointment->appointment_status=$request->appointment_status;
         $appointment->customer_id=$request->customer_id;
+=======
+    //    //dd($request);
 
-        $appointment->save();
+    //     //validation
+    //     $request->validate([
+    //         "date"=>'required',
+    //         "time"=>'required',
+    //         //"status"=>'required',
+    //         "appointment_status"=>'required',
+    //         "customer_id"=>'required',
+    //         "photo"=>'required',
+    //         ]);
 
-        //redirect
-        return redirect()->route('appointments.index'); 
+    //     //Data update
+    //     $appointment=new Appointment;
+        
+    //     //$appointment->email=$request->email;
+    //     $appointment->date=$request->date;
+    //     $appointment->time=$request->time;
+    //     $appointment->appointment_status=$request->appointment_status;
+    //     $appointment->customer_id=$request->customer_id;
+>>>>>>> 3e9317c6eb576e2e45b2d8fec2091fbe123b92e0
+
+    //     $appointment->save();
+
+    //     //redirect
+    //     return redirect()->route('appointments.index'); 
     }
     
 
