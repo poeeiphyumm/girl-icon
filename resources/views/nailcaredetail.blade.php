@@ -1,59 +1,36 @@
 @extends('master')
-
 @section('content')
-	<div class="jumbotron jumbotron-fluid subtitle">
-  		<div class="container">
-    		<h1 class="text-center text-black"> Service Name:{{ $services->service_name }} </h1>
-  		</div>
-	</div>
-	
-	<!-- Content -->
-	<div class="container">
 
-		<div class="row mt-5">
-			<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
-				<img src="{{ asset($services->photo) }}" width="350px" height="450px">
-			</div>	
+    <div class="jumbotron jumbotron-fluid subtitle">
+      <div class="container">
+        <h1><center>Nail Care Services</center></h1>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+
+         @foreach($services as $service)
+        <a href="{{ route('nailcaredetail',$service->id) }}">
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            
+              <img src="{{asset($service->photo)}}" width="400px" height="300px"><br><br>
+            
+              <p class=" text-info">{{ $service->service_name }}</p>
+
+              <a href="{{ asset('booking') }}">
+                <input type="submit" value="Appointment Now" class="btn btn-primary" onclick="" >
+              </a>
+            
+          </div>
+        </a>
+
+        @endforeach
+</div>
+</div>
 
 
-			<div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
-				
-				<h4> Service Name:{{$services->service_name }}</h4>
-
-				<p>
-    				Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.</p>
-    				<h3>Effects</h3>
-    				<li>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the.</li>
-    				<li>Scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</li>
-    				<li>Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley.</li>
-    				<li>It has survived not only five centuries, but also the leap into electronic typesetting.</li>
-				</p>
-
-				<p> Price:	{{$services->price}}</p>
-				<p>Duration:{{ $services->duration }}</p>
-
-				<a href="{{ asset('booking') }}">
-                	<input type="submit" value="Appointment Now" class="btn btn-primary" onclick="" >
-              	</a>
-				
-<<<<<<< HEAD
-=======
-				Price:	{{$services->price}}
-				</h3>
-
-<<<<<<< HEAD
-
-				<a href="#" class="btn btn-info">Appointment</a>
-=======
-				<a href="{{asset('booking')}}" class="btn btn-info">Appointment</a>
->>>>>>> c823a218b85d6629a8a81c4c5aa98b77f5310fb1
->>>>>>> 1eb3870294832960e6c3a85adbe3667af5fd9a8a
->>>>>>> 3e9317c6eb576e2e45b2d8fec2091fbe123b92e0
-				</div>
-			</div>
-		</div>
-
-	<div class="site-section">
+  <div class="site-section">
       <div class="container">
         <div class="row text-center">
           <div class="col-md-12">
@@ -63,6 +40,4 @@
         </div>
       </div>
     </div>
-			
-		
 @endsection
