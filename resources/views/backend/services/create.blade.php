@@ -50,21 +50,17 @@
 				</select>
 		
 			</div>
-<<<<<<< HEAD
+
 
 	{{-- <div class="form-group row">
 =======
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
 	{{-- <div class="form-group row">
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 3d37bb97577b4f0d768a41d52016ff82e6d0a886
 	<div class="form-group row">
 >>>>>>> 10de3259a9a6997cfac8affc02899511a3f7a34a
 		<label class="col-sm-2 col-form-label">Category</label>
@@ -79,11 +75,6 @@
 		<label class="col-sm-2 col-form-label">Servie Image</label>
 		<div class="col-sm-6">
 			<input type="file" name="photo" class="form-control" id="inputprice"> --}}
-
-<<<<<<< HEAD
-=======
->>>>>>> db3e7b8476ef096fd01afdfc4050d6b5adfc720c
->>>>>>> 10de3259a9a6997cfac8affc02899511a3f7a34a
 
 	
 	<div class="form-group row">

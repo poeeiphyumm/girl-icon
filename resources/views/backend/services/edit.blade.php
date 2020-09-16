@@ -39,10 +39,10 @@
 
 	<div class="form-group row">
 				<label class="col-sm-2 col-form-label">Category</label>
-				<select class="form-control form-control-md" id="inputBrand" name="category">
+				<select class="form-control form-control-md" id="inputBrand" name="category_id">
 					<optgroup label="Choose Category">
 						@foreach($categories as $category)
-							<option value="{{ $category->id }}">{{ $category->category_name }}</option>
+							<option value="{{ $category->id }}"@if($category->id == $category->id) {{ 'selected'}} @endif>{{ $category->category_name }}</option>
 						@endforeach
 
 					</optgroup>
@@ -77,13 +77,23 @@
 	</div>	
 	<input type="submit" value="Update" class="btn btn-danger">		
 	</div>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+	
+=======
 		
 </div>
 
 		
 	</div>	
 
+<<<<<<< HEAD
 >>>>>>> 10de3259a9a6997cfac8affc02899511a3f7a34a
+=======
+>>>>>>> c823a218b85d6629a8a81c4c5aa98b77f5310fb1
+>>>>>>> 1eb3870294832960e6c3a85adbe3667af5fd9a8a
 	<input type="submit" value="Update" class="btn btn-danger">
+>>>>>>> 697a619dc35e92c422ead583f187d4bcb701916a
 </form>
 @endsection

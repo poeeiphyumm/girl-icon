@@ -58,13 +58,12 @@ class RegisterController extends Controller
             'password' => ['required', 'string', 'min:8', 'confirmed'],
 
 
+
             // 'phone' => ['required', 'max:12'],
 
             'phone' => ['required', 'string', 'max:12'],
 
             'address' => ['required'],
-
-            'phone' => ['required', 'string', 'max:12'],
             
 
         ]);
@@ -78,7 +77,9 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        return User::create([
+
+        $user=User::create([
+
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
@@ -99,7 +100,7 @@ class RegisterController extends Controller
                     return 'dashboard';
                 break;
             case 'Customer':
-                    return '/';
+                    return 'booking';
                 break; 
             default:
                     return '/';  

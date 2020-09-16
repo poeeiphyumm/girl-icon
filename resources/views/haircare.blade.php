@@ -16,25 +16,14 @@
                 <a href="{{ route('haircaredetail',$service->id) }}">
                   <div class="col-lg-4 col-md-4 col-sm-12">
 
-        <div class="container-fluid">
-      <div class="row">
 
-
-
-
-            @foreach($services as $service)
-
-        <a href="{{ route('haircaredetail',$service->id) }}">
-          <div class="col-lg-4 col-md-4 col-sm-12">
             
               <img src="{{asset($service->photo)}}" width="400px" height="300px">
 
-            
-                      <img src="{{asset($service->photo)}}" width="400px" height="300px">
-                
 
-
-
+                      <p class=" text-info">{{ $service->service_name }}</p>
+                      
+                          <a href="{{ asset('booking') }}" class="btn btn-info">Appointment</a>
                       <a href="#" class="btn btn-info">Appointment</a>
             
                   </div>
@@ -47,10 +36,14 @@
        </div> 
   @endsection
 
-              <a href="#" class="btn btn-info">Appointment</a>
+             
             
-          </div>
-          </a>
+                  </div>
+                </a>
+
+              @endforeach
+
+
 
         @endforeach
 
@@ -84,6 +77,24 @@
 @endsection
 
           </div>
+
        </div> 
+
+@endsection
+
+  @endsection
+
+       </div>
+       <div class="site-section">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-12">
+            <h2 class="mb-4 text-black">We want your hair to look fabulous</h2>
+            <p class="mb-0"><a href="{{asset('/')}}" class="btn btn-primary py-3 px-5 text-white">Visit Our Salon Now</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
 @endsection
 

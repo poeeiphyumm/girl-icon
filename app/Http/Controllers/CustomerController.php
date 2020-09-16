@@ -53,13 +53,15 @@ class CustomerController extends Controller
          $request->validate([
             "customer_name" => 'required',
             "email" => 'required',
-            "date" => 'required',        
+           // "date" => 'required',        
             "phone_no" => 'required',
             "gender" => 'required',
 
+
            // "category"=>'required';
 
-            "category_name" => 'required',
+
+            //"category_name" => 'required',
             "address" => 'required',
 
 
@@ -78,13 +80,18 @@ class CustomerController extends Controller
         
         $customer->customer_name = $request->customer_name;
         $customer->email = $request->email;
-        $customer->date= $request->date;
+        // $customer->date= $request->date;
         $customer->phone_no = $request->phone_no;
         $customer->gender = $request->gender;
 
+
         //$customer->categories->category_id = $request->category_id;
 ;
-        $customer->category_name=$request->category_name;
+        // $customer->category_name=$request->category_name;
+
+        // $customer->category_name=$request->category_name;
+        //customer->category_id=$request->category;
+
         $customer->address = $request->address;
 
         $customer->save();

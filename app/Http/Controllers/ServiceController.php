@@ -3,10 +3,8 @@
 namespace App\Http\Controllers;
 use App\Service;
 use App\Category;
-<<<<<<< HEAD
-=======
+use App\ServiceDetail;
 use App\Employee;
->>>>>>> 10de3259a9a6997cfac8affc02899511a3f7a34a
 use DB;
 use Illuminate\Http\Request;
 
@@ -19,15 +17,17 @@ class ServiceController extends Controller
      */
     public function index()
     {
-        $services=Service::all();
-<<<<<<< HEAD
+
+         $services=Service::all();
+
         $categories=Category::all();
         
         return view('backend.services.index',compact('services','categories'));
-=======
+
         //$categories=Category::all();
+
         return view('backend.services.index',compact('services'));
->>>>>>> 10de3259a9a6997cfac8affc02899511a3f7a34a
+
     }
     
 
@@ -40,21 +40,13 @@ class ServiceController extends Controller
     {
         $services=Service::all();
         $categories=Category::all();
-<<<<<<< HEAD
+
         //return view("backend.services.create",compact('services'));
 
         return view('backend.services.create',compact('services','categories'));
-=======
-<<<<<<< HEAD
 
-        return view('backend.services.create',compact('services','categories'));
-=======
-        return view("backend.services.create",compact('services','categories'));
-        
 
-        
->>>>>>> db3e7b8476ef096fd01afdfc4050d6b5adfc720c
->>>>>>> 10de3259a9a6997cfac8affc02899511a3f7a34a
+
     }
 
     /**
@@ -64,33 +56,30 @@ class ServiceController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
+
     {
-<<<<<<< HEAD
+
 
 
     
         //If include file,upload file
-=======
-<<<<<<< HEAD
-=======
-       
 
        
        //dd($request);
          //If include file,upload file
        //dd($request);
-         $request->validate([
-            "service_name" => 'required',
-            "duration" => 'required',
-            "price" => 'required',
-            "category_id" => 'required',
-            "photo"=>'required',
+        //  $request->validate([
+        //     "service_name" => 'required',
+        //     "duration" => 'required',
+        //     "price" => 'required',
+        //     "category_id" => 'required',
+        //     "photo"=>'required',
             
-        ]);
+        // ]);
 
-        $imageName = time().'.'.$request->photo->extension();
+        // $imageName = time().'.'.$request->photo->extension();
          //If include file,upload file
->>>>>>> 10de3259a9a6997cfac8affc02899511a3f7a34a
+
 
     
         //If include file,upload file
@@ -108,10 +97,6 @@ class ServiceController extends Controller
         
         $imageName = time().'.'.$request->photo->extension();
 
-<<<<<<< HEAD
-=======
->>>>>>> db3e7b8476ef096fd01afdfc4050d6b5adfc720c
->>>>>>> 10de3259a9a6997cfac8affc02899511a3f7a34a
        //dd($request);
          //If include file,upload file
        //dd($request);
@@ -123,6 +108,7 @@ class ServiceController extends Controller
             "photo"=>'required',
             
         ]);
+
 
         $imageName = time().'-'.$request->photo->extension();
 
@@ -137,24 +123,7 @@ class ServiceController extends Controller
         $service->photo=$path;
 
         $service->category_id=$request->category_id;
-<<<<<<< HEAD
 
-
-        $service->photo=$path;
-
-=======
-        $service->category_id=$request->category;
-
-
-        $service->photo=$path;
-        $service->category_id=$request->category_id;
-<<<<<<< HEAD
-=======
-
-
-        $service->photo=$path;
->>>>>>> db3e7b8476ef096fd01afdfc4050d6b5adfc720c
->>>>>>> 10de3259a9a6997cfac8affc02899511a3f7a34a
 
         $service->save();
 
@@ -170,31 +139,37 @@ class ServiceController extends Controller
      */
     public function show($id)
     {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
+
         // $services=Service::all();
+
+        // $services=DB::table('employees')->join('services.id','employees.id')->where('services.id',$id)->get();
+
         $services=DB::table('employees')->join('services.id','employees.id')->where('services.id',$id)->get();
-=======
+
         $service=Service::all();
         // $service=Service::where('services.id',$id)->first();
         $employees=Employee::all();
         //dd($service);
         return view('backend.services.show',compact('service','employees'));
 
->>>>>>> 10de3259a9a6997cfac8affc02899511a3f7a34a
 
         
-        $services = DB::table('employees')->join('service_details','service_details.employee_id','=','employees.id')->where('service_details.service_id',$id)->get();
+        // $employees = DB::table('employees')->join('services.id','employees.id')->where('services.id',$id)->get();
                 
+
        // dd($servicedetail);
         $services = Service::where('services.id',$id)->first();
         dd($services);
-<<<<<<< HEAD
-=======
->>>>>>> db3e7b8476ef096fd01afdfc4050d6b5adfc720c
->>>>>>> 10de3259a9a6997cfac8affc02899511a3f7a34a
+
         return view('backend.services.show',compact('services'));
+
+       // // dd($servicedetail);
+        $services = Service::all();
+        // $employees=Employee::where('employees.employee_name',)->first();
+       //dd($employees);
+        return view('backend.servicedetail.index',compact('services'));
+          // ->with(['services'=>$services]); 
+
     }
 
     /**
@@ -225,7 +200,7 @@ class ServiceController extends Controller
             "duration" => 'required',
             "price" => 'required',
             "photo"=>'sometimes',
-            // "category_id"=>'required',
+            "category_id"=>'required',
             "oldphoto" => 'required'
         ]);
 
@@ -239,14 +214,11 @@ class ServiceController extends Controller
         }else{
             $path=$request->oldphoto;
         }
-
-        
-
         // $service = new Service;
         $service->service_name = $request->service_name;
         $service->duration = $request->duration;
         $service->price = $request->price;
-        $service->category_id=$request->category;
+        $service->category_id=$request->category_id;
         $service->photo=$path;
         $service->save();
 

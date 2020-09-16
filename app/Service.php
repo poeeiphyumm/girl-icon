@@ -13,6 +13,8 @@ class Service extends Model
     {
     	return $this->hasMany('App\Employee');
 
+    }    
+
     public function Category($value='')
     {
     	return $this->belongsTo('App\Category');

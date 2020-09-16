@@ -11,6 +11,7 @@ class Employee extends Model
 
 
     	'employee_name','availability_status','service_id','email'
+
      ];     
     // 	'employee_name','availability_status'
     // ];

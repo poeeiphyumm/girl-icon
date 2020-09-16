@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Appointment;
-use Carbon\Carbon;
 use App\Customer;
+use Carbon\Carbon;
 use App\Category;
 use Illuminate\Http\Request;
 
@@ -75,11 +75,7 @@ class AppointmentController extends Controller
             "status"=>'required',
             //"appointment_status"=>'required',
             "customer_id"=>'required',
-            // "photo"=>'required',
-            // "customer_id"=>'required'
 
-            //"appointment_status"=>'required',
-            "customer_id"=>'required',
 
             ]);
 

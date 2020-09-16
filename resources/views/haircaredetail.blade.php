@@ -21,7 +21,6 @@
 				<h4> Service Name:{{$services->service_name }}</h4>
 
 				<p>
-					<h3>Duration: 1-2hr<br>$180<br></h3>
     				Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.</p>
     				<h3>Effects</h3>
     				<li>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the.</li>
@@ -29,6 +28,7 @@
     				<li>Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley.</li>
     				<li>It has survived not only five centuries, but also the leap into electronic typesetting.</li>
 				</p>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -49,12 +49,24 @@
 >>>>>>> 32b55295049e428919f0aaad170aa6c87f7c330e
 >>>>>>> ff5dd49a8f07707e2aa043c7dc9411b741c96114
 =======
+
+				<p> Price:	{{$services->price}}</p>
+				<p>Duration:{{ $services->duration }}</p>
+
+				<a href="{{ asset('booking') }}" class="btn btn-info">Appointment</a>
+				
+			</div>
+		</div>
+	</div>		
+		
+>>>>>>> 1eb3870294832960e6c3a85adbe3667af5fd9a8a
+=======
 				<p>Duration:{{ $services->duration }}</p>				
 				    </p>Price:	{{$services->price}}</p>
 				</h3>
 >>>>>>> 10de3259a9a6997cfac8affc02899511a3f7a34a
 
-				<a href="#" class="btn btn-info">Appointment</a>
+				<a href="{{asset('booking')}}" class="btn btn-info">Appointment</a>
 				
 			</div>
 		</div>
@@ -75,5 +87,19 @@
 		
 =======
 	</div>
+<<<<<<< HEAD
 >>>>>>> 10de3259a9a6997cfac8affc02899511a3f7a34a
+=======
+	<div class="site-section">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-12">
+            <h2 class="mb-4 text-black">We want your hair to look fabulous</h2>
+            <p class="mb-0"><a href="{{asset('/')}}" class="btn btn-primary py-3 px-5 text-white">Visit Our Salon Now</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+>>>>>>> c823a218b85d6629a8a81c4c5aa98b77f5310fb1
+>>>>>>> 1eb3870294832960e6c3a85adbe3667af5fd9a8a
 @endsection
