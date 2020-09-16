@@ -9,7 +9,6 @@
 
             <div class="col-md-8" data-aos="fade-up" data-aos-delay="400">
               <h2 class="text-white font-weight-light mb-2 display-1">Appointment</h2>
-
               
             </div>
           </div>
@@ -28,12 +27,9 @@
     </div>
   </div>
   
-<<<<<<< HEAD
-            </form>
+  </form>
 
-          
-
-          </div>
+</div>
           <div class="col-md-5">
             
             <div class="p-4 mb-3 bg-white">
@@ -54,7 +50,6 @@
               
               <p><a href="#" class="btn btn-primary px-4 py-2 text-white">Get In Touch</a></p>
             </div>
-=======
   <div class="form-group row">
     <label class="col-sm-2 col-form-label">Name</label>
     <div class="col-md-6">
@@ -95,26 +90,19 @@
     </div>
   </div> --}}
    <div class="form-group row">
-<<<<<<< HEAD
         <label class="col-sm-2 col-form-label">Category</label>
         <select class="form-control form-control-md col-md-6" id="inputCategory" name="category_name">
-=======
         <label class="col-sm-2 col-form-label">Service</label>
         <select class="form-control form-control-md" id="inputCategory" name="category">
->>>>>>> 10de3259a9a6997cfac8affc02899511a3f7a34a
           <optgroup label="Choose Category">
             {{-- @foreach($categories as $category)
               <option value="{{ $category->id }}">{{ $category->category_name }}</option>
             @endforeach --}}
           </optgroup>
         </select>
-<<<<<<< HEAD
   </div>
-=======
     </div>
->>>>>>> c823a218b85d6629a8a81c4c5aa98b77f5310fb1
 
->>>>>>> 10de3259a9a6997cfac8affc02899511a3f7a34a
   <div class="form-group row">
     <label class="col-sm-2 col-form-label">address</label>
     <div class="col-md-6">

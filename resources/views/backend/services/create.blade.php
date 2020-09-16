@@ -50,31 +50,6 @@
 				</select>
 		
 			</div>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-	{{-- <div class="form-group row">
-	<div class="form-group row">
-		<label class="col-sm-2 col-form-label">Category</label>
-		<div class="col-sm-6">
-			<input type="text" name="category_id" class="form-control" id="inputprice">
-		</div>
-	</div> --}}
-
-	
-
-	{{-- <div class="form-group row">
-		<label class="col-sm-2 col-form-label">Servie Image</label>
-		<div class="col-sm-6">
-			<input type="file" name="photo" class="form-control" id="inputprice"> --}}
-
->>>>>>> db3e7b8476ef096fd01afdfc4050d6b5adfc720c
->>>>>>> c823a218b85d6629a8a81c4c5aa98b77f5310fb1
-
->>>>>>> 697a619dc35e92c422ead583f187d4bcb701916a
 	
 	<div class="form-group row">
 		<label class="col-sm-2 col-form-label">Photo</label>

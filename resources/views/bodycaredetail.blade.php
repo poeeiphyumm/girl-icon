@@ -15,13 +15,8 @@
 			</div>	
 			<div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
 				<h4> Service Name:{{$services->service_name }}</h4>
-<<<<<<< HEAD
-
-				<p>
-=======
 					<p>
 					<h3>Duration: {{ $services->duration }}<br>$180<br></h3>
->>>>>>> c823a218b85d6629a8a81c4c5aa98b77f5310fb1
     				Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.</p>
     				<h3>Effects</h3>
     				<li>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the.</li>
@@ -32,16 +27,6 @@
 
 				<p> Price:	{{$services->price}}</p>
 				<p>Duration:{{ $services->duration }}</p>
-<<<<<<< HEAD
-
-				<a href="{{ asset('booking') }}" class="btn btn-info">Appointment</a>
-=======
-				<h3> 
-				
-				<a href="{{asset('booking')}}" class="btn btn-info">Appointment</a>
-
-				
->>>>>>> c823a218b85d6629a8a81c4c5aa98b77f5310fb1
 				
 			</div>
 		</div>

@@ -38,13 +38,6 @@
 	</div>
 
 	<div class="form-group row">
-		<label class="col-sm-2 col-form-label">Email</label>
-		<div class="col-sm-6">
-			<input type="email" name="email" class="form-control" id="inputemail" >
-		</div>
-	</div>
-
-	<div class="form-group row">
 				<label class="col-sm-2 col-form-label">Service</label>
 				<select class="form-control form-control-md" id="inputservice" name="service_id">
 					<optgroup label="Choose Service ">
@@ -56,11 +49,7 @@
 				</select>
 		
 	</div>
-<<<<<<< HEAD
-=======
-	
->>>>>>> 697a619dc35e92c422ead583f187d4bcb701916a
-	
+		
 	<input type="submit" value="Create" class=" btn btn-danger" >
 </form>
 @endsection

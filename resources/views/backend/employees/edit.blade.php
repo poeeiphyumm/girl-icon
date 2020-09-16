@@ -52,14 +52,6 @@
 				</select>
 		
 	</div>
-<<<<<<< HEAD
-=======
-
-	
->>>>>>> 697a619dc35e92c422ead583f187d4bcb701916a
-	
-	
-
 	<input type="submit" value="Update" class="btn btn-danger">
 </form>
 @endsection

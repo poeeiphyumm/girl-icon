@@ -3,10 +3,7 @@
 namespace App\Http\Controllers;
 use App\Service;
 use App\Category;
-<<<<<<< HEAD
 use App\ServiceDetail;
-=======
->>>>>>> c823a218b85d6629a8a81c4c5aa98b77f5310fb1
 use App\Employee;
 use DB;
 use Illuminate\Http\Request;
@@ -20,12 +17,8 @@ class ServiceController extends Controller
      */
     public function index()
     {
-<<<<<<< HEAD
-         $services=Service::all();
-=======
         $services=Service::all();
         //$categories=Category::all();
->>>>>>> c823a218b85d6629a8a81c4c5aa98b77f5310fb1
         return view('backend.services.index',compact('services'));
 
     }
@@ -40,20 +33,8 @@ class ServiceController extends Controller
     {
         $services=Service::all();
         $categories=Category::all();
-<<<<<<< HEAD
 
         return view('backend.services.create',compact('services','categories'));
-
-=======
-<<<<<<< HEAD
-        return view("backend.services.create",compact('services','categories'));
-=======
-
-        return view('backend.services.create',compact('services','categories'));        
-
-        
->>>>>>> c823a218b85d6629a8a81c4c5aa98b77f5310fb1
->>>>>>> 697a619dc35e92c422ead583f187d4bcb701916a
     }
 
     /**
@@ -63,16 +44,7 @@ class ServiceController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
-<<<<<<< HEAD
     {
-
-=======
-<<<<<<< HEAD
-    {
-
-=======
-    {       
-
        
        //dd($request);
          //If include file,upload file
@@ -86,38 +58,6 @@ class ServiceController extends Controller
             
         ]);
 
-        $imageName = time().'.'.$request->photo->extension();
-         //If include file,upload file
-
-    
-        //If include file,upload file
-
-       // dd($request);
-        //  $request->validate([
-        //     "service_name" => 'required',
-        //     "duration" => 'required',
-        //     "price" => 'required',
-        //     "category_id" => 'required',
-        //     "photo"=>'required'
-            
-        // ]);
-
-        
-        $imageName = time().'.'.$request->photo->extension();
->>>>>>> 697a619dc35e92c422ead583f187d4bcb701916a
-       //dd($request);
-         //If include file,upload file
-       //dd($request);
-         $request->validate([
-            "service_name" => 'required',
-            "duration" => 'required',
-            "price" => 'required',
-            "category_id" => 'required',
-            "photo"=>'required',
-            
-        ]);
->>>>>>> c823a218b85d6629a8a81c4c5aa98b77f5310fb1
-
         $imageName = time().'-'.$request->photo->extension();
         $request->photo->move(public_path('backend/serviceimg'),$imageName);
         // ပုံပတ်လမ်းကြောင်းသိမ်း
@@ -128,19 +68,7 @@ class ServiceController extends Controller
         $service->duration = $request->duration;
         $service->price = $request->price;
         $service->photo=$path;
-<<<<<<< HEAD
-        $service->category_id=$request->category_id;
-        $service->photo=$path;
 
-=======
-<<<<<<< HEAD
-        $service->category_id=$request->category_id;
-=======
-
-        $service->category_id=$request->category_id;
-        $service->category_id=$request->category;
->>>>>>> c823a218b85d6629a8a81c4c5aa98b77f5310fb1
->>>>>>> 697a619dc35e92c422ead583f187d4bcb701916a
         $service->save();
 
         //redirect
@@ -155,31 +83,12 @@ class ServiceController extends Controller
      */
     public function show($id)
     {
-        // $services=Service::all();
-<<<<<<< HEAD
-        // $services=DB::table('employees')->join('services.id','employees.id')->where('services.id',$id)->get();
-=======
-        $services=DB::table('employees')->join('services.id','employees.id')->where('services.id',$id)->get();
->>>>>>> 697a619dc35e92c422ead583f187d4bcb701916a
-        $service=Service::all();
-        // $service=Service::where('services.id',$id)->first();
+    
+        $service=Service::where('services.id',$id)->first();
+        // $employee=Employee::where('employees.id',$id)->first();
         $employees=Employee::all();
         //dd($service);
         return view('backend.services.show',compact('service','employees'));
-<<<<<<< HEAD
-=======
-
-
-        
-        // $employees = DB::table('employees')->join('services.id','employees.id')->where('services.id',$id)->get();
-                
-       // // dd($servicedetail);
-        $services = Service::all();
-        // $employees=Employee::where('employees.employee_name',)->first();
-       //dd($employees);
-        return view('backend.servicedetail.index',compact('services'));
-          // ->with(['services'=>$services]); 
->>>>>>> 697a619dc35e92c422ead583f187d4bcb701916a
     }
 
     /**

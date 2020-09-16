@@ -16,8 +16,8 @@ class EmployeeController extends Controller
     public function index()
     {   
         $service=Service::all();
-        $employee=Employee::all();
-        return view('backend.employees.index',compact('employee','service'));
+        $employees=Employee::all();
+        return view('backend.employees.index',compact('employees','service'));
     }
 
     /**
@@ -27,9 +27,9 @@ class EmployeeController extends Controller
      */
     public function create()
     {
-        $employee=Employee::all();
+        $employees=Employee::all();
         $services=Service::all();
-        return view("backend.employees.create",compact('employee','services'));
+        return view("backend.employees.create",compact('employees','services'));
 
     }
 
@@ -61,7 +61,7 @@ class EmployeeController extends Controller
         $employee->save();
 
         //redirect
-        return redirect()->route('employees.index');
+        return redirect()->route('backend.employees.index');
     }
 
     /**
@@ -72,7 +72,8 @@ class EmployeeController extends Controller
      */
     public function show(Employee $employee)
     {
-        //
+        // $employee=Employee::where('employees.id',$id)->first();
+        // return view('backend.services.show',compact('service','employees'));
     }
 
     /**
@@ -84,8 +85,8 @@ class EmployeeController extends Controller
     public function edit(Employee $employee)
     {
          $services=Service::all();
-        // $employees=Employee::all();
-        return view('backend.employees.edit',compact('services'));
+        $employees=Employee::all();
+        return view('backend.employees.edit',compact('services','employees'));
     }
 
     /**
@@ -99,16 +100,13 @@ class EmployeeController extends Controller
     {
          //$request က edit form  ထဲက data ပါလာ
        dd($request);
-         // $request->validate([
-         //    "employee_name" => 'required',
-         //    "email" => 'required',
-         //    "service_id" => 'required',
-         //    "availability_status" => 'required'
+         $request->validate([
+            "employee_name" => 'required',
+            "email" => 'required',
+            "service_id" => 'required',
+            "availability_status" => 'required'
             
-         //     ]);
-
-        
-
+             ]);
         //$employee = new Employee;
         $employee->employee_name = $request->employee_name;
         $employee->email = $request->email;

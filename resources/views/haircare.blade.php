@@ -8,14 +8,6 @@
       </div>
     </div>
 
-<<<<<<< HEAD
-      <div class="container-fluid">
-            <div class="row">
-
-              @foreach($services as $service)
-                <a href="{{ route('haircaredetail',$service->id) }}">
-                  <div class="col-lg-4 col-md-4 col-sm-12">
-=======
         <div class="container-fluid">
           <div class="row">
 
@@ -25,30 +17,19 @@
             
               <img src="{{asset($service->photo)}}" width="400px" height="300px">
             
->>>>>>> c823a218b85d6629a8a81c4c5aa98b77f5310fb1
                       <img src="{{asset($service->photo)}}" width="400px" height="300px">
 
-<<<<<<< HEAD
                       <p class=" text-info">{{ $service->service_name }}</p>
                       
                           <a href="{{ asset('booking') }}" class="btn btn-info">Appointment</a>
-=======
 
                       <a href="{{asset('booking')}}" class="btn btn-info">Appointment</a>
->>>>>>> c823a218b85d6629a8a81c4c5aa98b77f5310fb1
             
                   </div>
                 </a>
 
               @endforeach
 
-
-          </div>
-<<<<<<< HEAD
-       </div> 
-  @endsection
-
-=======
        </div>
        <div class="site-section">
       <div class="container">
@@ -62,4 +43,3 @@
     </div>
 
 @endsection
->>>>>>> c823a218b85d6629a8a81c4c5aa98b77f5310fb1
