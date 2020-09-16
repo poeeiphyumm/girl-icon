@@ -79,11 +79,6 @@
           </div>
         </div>
 
-<<<<<<< HEAD
-=======
-        
->>>>>>> 3e9317c6eb576e2e45b2d8fec2091fbe123b92e0
-
 <div class="container">
         <div class="row">
           <div class="col-md-6 col-lg-3 col-xl-3 col-12 text-center mb-5">
@@ -118,7 +113,6 @@
         <div class="row">
         <div class="col-md-7 mb-5">
 
-<<<<<<< HEAD
       <div class="container my-5">
     <div class="row justify-content-center">
       <div class="col-md-8">
@@ -186,14 +180,10 @@
 </form>
     </div>  
   </div>
-=======
-<<<<<<< HEAD
 
             <form action="#" class="p-5 bg-white">
-=======
             <form action="{{ route('customers.store') }}" method="post" enctype="multipart/form-data">
             @csrf
->>>>>>> fd7a46f9de57e72dd6f4641ff58d977103baf601
               <h1 class="mb-4">Get Appointment Now</h1>
 
               <div class="row form-group">
@@ -254,14 +244,9 @@
                 
                 </div>
               </div>
-
-<<<<<<< HEAD
-
->>>>>>> 3e9317c6eb576e2e45b2d8fec2091fbe123b92e0
 </div>
 
-=======
->>>>>>> fd7a46f9de57e72dd6f4641ff58d977103baf601
+
   </div>
 
  <div class="col-md-5">

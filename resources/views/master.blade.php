@@ -59,8 +59,6 @@
                 <li class="has-children">
                   <a href="#">Category</a>
                   <ul class="dropdown">
-<<<<<<< HEAD
-=======
  
                         <li><a href="{{asset('bodycare')}}">Body Care</a></li>
                         <li><a href="{{ asset('haircare') }}">Hair Care</a></li>
@@ -69,32 +67,10 @@
                         <li><a href="{{ asset('facecare') }}">Face Care</a></li>
                         <li><a href="{{ asset('footcare') }}">Foot Care</a></li>
                         <li><a href="{{ asset('skintherapy') }}">Skin Therapy</a></li>
-                        
->>>>>>> fd7a46f9de57e72dd6f4641ff58d977103baf601
-
-                      
-
-
-                    <li><a href="{{ asset('haircare') }}">Hair Care</a></li>
-                    <li><a href="{{asset('bodycare')}}">Body Care</a></li>
-                    <li><a href="{{ asset('skincare') }}">Skin Care</a></li>
-                    <li><a href="{{ asset('nailcare') }}">Nail Care</a></li>
-                    <li><a href="{{ asset('facecare') }}">Face Care</a></li>
-                    <li><a href="{{ asset('handcare') }}">Hand Care</a></li>
-                    <li><a href="{{ asset('footcare') }}">Foot Care</a></li>
-                    <li><a href="{{ asset('skintherapy') }}">Skin Therapy</a></li>
-                    <li><a href="{{ asset('sparest') }}">Spa Rest</a></li>
-
-                    
-                  </ul>
-
-               
+                      </ul>
                 <li><a href="{{asset('about')}}">About</a></li>
                 <li><a href="{{asset('booking')}}">Appointment</a></li>
                 <li><a href="{{asset('contact')}}">Contact</a></li>
-
-=======
->>>>>>> fd7a46f9de57e72dd6f4641ff58d977103baf601
 
               </ul>
             </nav>
@@ -141,71 +117,15 @@
     </div>
 
   @yield('content')
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-
-              
-            
-              <li>
-
-                @guest
-                
-                    <a class="d-xl-block d-lg-block d-md-block d-none  text-decoration-none loginLink float-right text-uppercase" href="{{ route('loginpage') }}">{{ __('Login') }}</a>
-                            {{-- </li> --}}
-                            @if (Route::has('register'))
-                                {{-- <li class="nav-item"> --}}
-                                    <a class="d-xl-block d-lg-block d-md-block d-none  text-decoration-none loginLink float-right text-uppercase" href="{{ route('registerpage') }}">{{ __('Register') }}|</a>
-                                {{-- </li> --}}
-                            @endif
-                        @else
-                            {{-- <li class="nav-item dropdown"> --}}
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }}
-                                </a>
-
-                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
-                                    </a>
-
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                        @csrf
-                                    </form>
-                                </div>
-                           
-                        @endguest
-              </li>
-            </ul>
-        </nav>
-      </div>
-      
-    </header>
-
-
-
-  
 @section('yield')
 
     <div class="site-section">
-
-
-
 
     </div>
 
   </div>
 </header>
-  
-  
 
-@yield('content')
-
-=======
->>>>>>> fd7a46f9de57e72dd6f4641ff58d977103baf601
->>>>>>> 3e9317c6eb576e2e45b2d8fec2091fbe123b92e0
 
 <footer class="site-footer">
 

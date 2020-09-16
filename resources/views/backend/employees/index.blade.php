@@ -17,25 +17,9 @@
 		    		<tr>
 			    		<td>No</td>
 			    		<td>Name</td>
-<<<<<<< HEAD
 			    		<td>Service ID</td>
 			    		<td>Email</td>
 			    		<td>Availability Status</td>
-=======
-<<<<<<< HEAD
-
-			    		<td>Email</td>
-			    		<td>Service </td>
-
-			    		<td>Service ID</td>
-
-=======
-			    		<td>Email</td>
-			    		<td>Service ID</td>
->>>>>>> fd7a46f9de57e72dd6f4641ff58d977103baf601
-			    		<td>Availability Status</td>
-			    		
->>>>>>> 3e9317c6eb576e2e45b2d8fec2091fbe123b92e0
 			    		<td>Actions</td>
 		    		</tr>
 		    	</thead>
@@ -46,13 +30,8 @@
 		    		<tr>
 		    			<td>{{ $i++ }}</td>
 			    		<td>{{ $employee->employee_name}}</td>
-<<<<<<< HEAD
 			    		<td>{{ $employee->service_id }}</td>
 			    		<td>{{ $employee->email }}</td>
-=======
-			    		<td>{{ $employee->email }}</td>
-			    		<td>{{ $employee->service_id }}</td>
->>>>>>> 3e9317c6eb576e2e45b2d8fec2091fbe123b92e0
 			    		<td>{{ $employee->availability_status }}</td>
 			    		<td>
 			    			
