@@ -88,7 +88,11 @@ class EmployeeController extends Controller
     {
          $services=Service::all();
          // $employees=Employee::all();
+<<<<<<< HEAD
          $employees=Employee::all();
+=======
+        $employees=Employee::all();
+>>>>>>> 3414074898110b2dd544f6b07db8ccef7da54f9b
         return view('backend.employees.edit',compact('services','employees'));
     }
 
@@ -101,6 +105,7 @@ class EmployeeController extends Controller
      */
     public function update(Request $request, Employee $employee)
     {
+<<<<<<< HEAD
          //$request က edit form  ထဲက data ပါလာ
       // dd($request);
          // $request->validate([
@@ -109,6 +114,9 @@ class EmployeeController extends Controller
          //    "service_id" => 'required',
          //    "availability_status" => 'required'
        //dd($request);
+=======
+       dd($request);
+>>>>>>> 3414074898110b2dd544f6b07db8ccef7da54f9b
          $request->validate([
             "employee_name" => 'required',
             "email" => 'required',

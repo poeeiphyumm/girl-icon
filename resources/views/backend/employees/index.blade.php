@@ -17,7 +17,11 @@
 		    		<tr>
 			    		<td>No</td>
 			    		<td>Name</td>
+<<<<<<< HEAD
 			    		<td>Service Name</td>
+=======
+			    		<td>Service ID</td>
+>>>>>>> 3414074898110b2dd544f6b07db8ccef7da54f9b
 			    		<td>Email</td>
 			    		<td>Availability Status</td>
 			    		<td>Actions</td>
@@ -30,7 +34,11 @@
 		    		<tr>
 		    			<td>{{ $i++ }}</td>
 			    		<td>{{ $employee->employee_name}}</td>
+<<<<<<< HEAD
 			    		<td>{{ $employee->service }}</td>
+=======
+			    		<td>{{ $employee->service_id }}</td>
+>>>>>>> 3414074898110b2dd544f6b07db8ccef7da54f9b
 			    		<td>{{ $employee->email }}</td>
 			    		<td>{{ $employee->availability_status }}</td>
 			    		<td>

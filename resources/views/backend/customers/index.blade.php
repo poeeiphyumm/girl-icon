@@ -4,6 +4,11 @@
 <div class="container-fluid">
 	<div class="d-sm-flex align-items-center justify-content-between mb-4">
         <h1 class="h3 mb-0 text-gray-800 d-inline-block"> Customer List</h1>
+<<<<<<< HEAD
+=======
+        <a href="{{ route('customers.create') }}" class="btn btn-info mr-3">Add new</a>
+
+>>>>>>> 3414074898110b2dd544f6b07db8ccef7da54f9b
     </div>
 </div>
 

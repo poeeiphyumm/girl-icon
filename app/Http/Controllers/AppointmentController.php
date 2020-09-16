@@ -5,7 +5,17 @@ namespace App\Http\Controllers;
 use App\Appointment;
 use App\Customer;
 use Carbon\Carbon;
+<<<<<<< HEAD
 use App\Category;
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+use App\Category;
+>>>>>>> 3e9317c6eb576e2e45b2d8fec2091fbe123b92e0
+>>>>>>> 234c5e15ebb6c791b726124a65468bc6e8741912
+>>>>>>> 3414074898110b2dd544f6b07db8ccef7da54f9b
 use Illuminate\Http\Request;
 
 class AppointmentController extends Controller

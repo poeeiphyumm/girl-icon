@@ -19,7 +19,11 @@
 			    		<td>Duration</td>
 			    		<td>Price</td>
 			    		<td>Photo</td>
+<<<<<<< HEAD
 			    		<td>Category Name</td>
+=======
+			    		<td>Category_id</td>
+>>>>>>> 3414074898110b2dd544f6b07db8ccef7da54f9b
 			    		<td>Action</td>
 
 		    		</tr>
@@ -34,10 +38,13 @@
 			    		<td>{{ $service->duration }}</td>
 			    		<td>{{ $service->price }}</td>
 
+<<<<<<< HEAD
 			    		<td><img src="{{ asset($service->photo) }}" height="50px" width="50px"></td>
 
 			    		<td>{{ $service->category }}</td>
 
+=======
+>>>>>>> 3414074898110b2dd544f6b07db8ccef7da54f9b
 			    		<td>
 			    			<a href="{{route('services.show',$service->id)}}" class="btn btn-primary">Detail</a>
 

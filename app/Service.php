@@ -12,9 +12,14 @@ class Service extends Model
     public function Employees($value='')
     {
     	return $this->hasMany('App\Employee');
+<<<<<<< HEAD
     		    
     }
       
+=======
+
+    }    
+>>>>>>> 3414074898110b2dd544f6b07db8ccef7da54f9b
     public function Category($value='')
     {
     	return $this->belongsTo('App\Category');
