@@ -59,6 +59,18 @@
                 <li class="has-children">
                   <a href="#">Category</a>
                   <ul class="dropdown">
+<<<<<<< HEAD
+=======
+ 
+                        <li><a href="{{asset('bodycare')}}">Body Care</a></li>
+                        <li><a href="{{ asset('haircare') }}">Hair Care</a></li>
+                        <li><a href="{{ asset('skincare') }}">Skin Care</a></li>
+                        <li><a href="{{ asset('nailcare') }}">Nail Care</a></li>
+                        <li><a href="{{ asset('facecare') }}">Face Care</a></li>
+                        <li><a href="{{ asset('footcare') }}">Foot Care</a></li>
+                        <li><a href="{{ asset('skintherapy') }}">Skin Therapy</a></li>
+                        
+>>>>>>> fd7a46f9de57e72dd6f4641ff58d977103baf601
 
                       
 
@@ -80,7 +92,10 @@
                 <li><a href="{{asset('about')}}">About</a></li>
                 <li><a href="{{asset('booking')}}">Appointment</a></li>
                 <li><a href="{{asset('contact')}}">Contact</a></li>
+<<<<<<< HEAD
 
+=======
+>>>>>>> fd7a46f9de57e72dd6f4641ff58d977103baf601
 
               </ul>
             </nav>
@@ -130,6 +145,7 @@
     </div>
 
   @yield('content')
+<<<<<<< HEAD
 
               
             
@@ -189,6 +205,8 @@
 
 @yield('content')
 
+=======
+>>>>>>> fd7a46f9de57e72dd6f4641ff58d977103baf601
 
 <footer class="site-footer">
 

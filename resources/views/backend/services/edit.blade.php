@@ -77,13 +77,9 @@
 	</div>	
 	<input type="submit" value="Update" class="btn btn-danger">		
 	</div>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-	
-=======
 		
 </div>
+<<<<<<< HEAD
 
 		
 	</div>	
@@ -95,5 +91,7 @@
 >>>>>>> 1eb3870294832960e6c3a85adbe3667af5fd9a8a
 	<input type="submit" value="Update" class="btn btn-danger">
 >>>>>>> 697a619dc35e92c422ead583f187d4bcb701916a
+=======
+>>>>>>> fd7a46f9de57e72dd6f4641ff58d977103baf601
 </form>
 @endsection

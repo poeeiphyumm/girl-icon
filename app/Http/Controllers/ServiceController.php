@@ -17,6 +17,7 @@ class ServiceController extends Controller
      */
     public function index()
     {
+<<<<<<< HEAD
 
          $services=Service::all();
 
@@ -26,6 +27,10 @@ class ServiceController extends Controller
 
         //$categories=Category::all();
 
+=======
+        $services=Service::all();
+        //$categories=Category::all();
+>>>>>>> fd7a46f9de57e72dd6f4641ff58d977103baf601
         return view('backend.services.index',compact('services'));
 
     }
@@ -40,6 +45,7 @@ class ServiceController extends Controller
     {
         $services=Service::all();
         $categories=Category::all();
+<<<<<<< HEAD
 
         //return view("backend.services.create",compact('services'));
 
@@ -47,6 +53,10 @@ class ServiceController extends Controller
 
 
 
+=======
+
+        return view('backend.services.create',compact('services','categories'));
+>>>>>>> fd7a46f9de57e72dd6f4641ff58d977103baf601
     }
 
     /**
@@ -56,6 +66,7 @@ class ServiceController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
+<<<<<<< HEAD
 
     {
 
@@ -64,6 +75,9 @@ class ServiceController extends Controller
     
         //If include file,upload file
 
+=======
+    {
+>>>>>>> fd7a46f9de57e72dd6f4641ff58d977103baf601
        
        //dd($request);
          //If include file,upload file
@@ -77,6 +91,7 @@ class ServiceController extends Controller
             
         // ]);
 
+<<<<<<< HEAD
         // $imageName = time().'.'.$request->photo->extension();
          //If include file,upload file
 
@@ -110,6 +125,8 @@ class ServiceController extends Controller
         ]);
 
 
+=======
+>>>>>>> fd7a46f9de57e72dd6f4641ff58d977103baf601
         $imageName = time().'-'.$request->photo->extension();
 
         $request->photo->move(public_path('backend/serviceimg'),$imageName);
@@ -122,9 +139,12 @@ class ServiceController extends Controller
         $service->price = $request->price;
         $service->photo=$path;
 
+<<<<<<< HEAD
         $service->category_id=$request->category_id;
 
 
+=======
+>>>>>>> fd7a46f9de57e72dd6f4641ff58d977103baf601
         $service->save();
 
         //redirect
@@ -139,6 +159,7 @@ class ServiceController extends Controller
      */
     public function show($id)
     {
+<<<<<<< HEAD
 
         // $services=Service::all();
 
@@ -170,6 +191,14 @@ class ServiceController extends Controller
         return view('backend.servicedetail.index',compact('services'));
           // ->with(['services'=>$services]); 
 
+=======
+    
+        $service=Service::where('services.id',$id)->first();
+        // $employee=Employee::where('employees.id',$id)->first();
+        $employees=Employee::all();
+        //dd($service);
+        return view('backend.services.show',compact('service','employees'));
+>>>>>>> fd7a46f9de57e72dd6f4641ff58d977103baf601
     }
 
     /**

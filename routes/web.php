@@ -51,8 +51,11 @@ Route::get('/', 'PageController@mainfun')->name('mainpage');
 	Route::resource('employees','EmployeeController');
 
 	Route::resource('customers','CustomerController');
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> fd7a46f9de57e72dd6f4641ff58d977103baf601
 
 Route::resource('services','ServiceController');
 
@@ -60,9 +63,13 @@ Route::resource('services','ServiceController');
 
 
 Route::get('show','ServiceController@showfun')->name('showpage');
+<<<<<<< HEAD
 
 Route::get('/', 'PageController@mainfun')->name('mainpage');
 
+=======
+Route::get('/', 'PageController@mainfun')->name('mainpage');
+>>>>>>> fd7a46f9de57e72dd6f4641ff58d977103baf601
 
 Route::get('servicepage', 'PageController@servicefun')->name('servicepage');
 
@@ -70,7 +77,10 @@ Route::get('servicepage', 'PageController@servicefun')->name('servicepage');
 
 
 Route::get('booking', 'PageController@bookingfun') ->name('bookingpage');
+<<<<<<< HEAD
 
+=======
+>>>>>>> fd7a46f9de57e72dd6f4641ff58d977103baf601
 
 Route::get('contact', 'PageController@contactfun') ->name('contactpage');
 
@@ -94,36 +104,54 @@ Route::get('handcare', 'PageController@handcarefun')->name('handcarepage');
 
 Route::get('footcare', 'PageController@footcarefun')->name('footcarepage');
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> fd7a46f9de57e72dd6f4641ff58d977103baf601
 
 Route::get('ourservice', 'PageController@ourservicefun')->name('ourservicepage');
 
 
+<<<<<<< HEAD
 
 Route::get('about', 'PageController@aboutfun')->name('aboutpage');
 
 Route::get('ourservice', 'PageController@ourservicefun')->name('ourservicepage');
 
+=======
+Route::get('about', 'PageController@aboutfun')->name('aboutpage');
+
+Route::get('ourservice', 'PageController@ourservicefun')->name('ourservicepage');
+>>>>>>> fd7a46f9de57e72dd6f4641ff58d977103baf601
 
 Route::get('sparest', 'PageController@sparestfun')->name('sparestpage');
 
 Route::get('skintherapy', 'PageController@skintherapyfun')->name('skintherapypage');
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> fd7a46f9de57e72dd6f4641ff58d977103baf601
 Route::get('face','PageController@facecarefun')->name('facecarepage');
 
 Route::get('spa','PageController@spafun')->name('spapage');
 
 Route::get('bodycare','PageController@bodycarefun')->name('bodycarepage');
 
+<<<<<<< HEAD
 
 Route::get('sparest', 'PageController@sparestfun')->name('sparestpage');
 
 
+=======
+Route::get('sparest', 'PageController@sparestfun')->name('sparestpage');
+
+>>>>>>> fd7a46f9de57e72dd6f4641ff58d977103baf601
 Route::get('bodycaredetail/{id}', 'PageController@bodycaredetailfun')->name('bodycaredetail');
 
 Route::get('haircaredetail/{id}', 'PageController@haircaredetailfun')->name('haircaredetail');
 
+<<<<<<< HEAD
 
 //end frontend by poeei
 Route::resource('customers','CustomerController');
@@ -133,6 +161,14 @@ Route::resource('customers','CustomerController');
 
 //end frontend by poeei
 
+=======
+//end frontend by poeei
+Route::resource('customers','CustomerController');
+
+//end frontend by poeei
+
+//end frontend by poeei
+>>>>>>> fd7a46f9de57e72dd6f4641ff58d977103baf601
 
 Route::get('skincaredetail/{id}', 'PageController@skincaredetailfun')->name('skincaredetail');
 
@@ -140,13 +176,17 @@ Route::get('skincaredetail/{id}', 'PageController@skincaredetailfun')->name('ski
 Route::get('nailcaredetail/{id}', 'PageController@nailcaredetailfun')->name('nailcaredetail');
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> fd7a46f9de57e72dd6f4641ff58d977103baf601
 Route::get('footcaredetail/{id}', 'PageController@footcaredetailfun')->name('footcaredetail');
 
 Route::get('facecaredetail/{id}', 'PageController@facecaredetailfun')->name('facecaredetail');
 
 Route::get('skintherapydetail/{id}', 'PageController@skintherapydetailfun')->name('skintherapydetail');
 
+<<<<<<< HEAD
 
 
 Route::get('contact', 'PageController@contactfun')->name('contactpage');
@@ -166,10 +206,13 @@ Route::get('dashboard', 'backendController@dashboardfun') ->name('dashboardpage'
 
 Route::resource('employees','EmployeeController');
 
+=======
+>>>>>>> fd7a46f9de57e72dd6f4641ff58d977103baf601
 //end frontend by poeei
 Route::get('dashboard', 'backendController@dashboardfun') ->name('dashboardpage');
 
 
+<<<<<<< HEAD
 
 // Route::get('services','PageController@bodycarefun')->name('bodycarepage');
 
@@ -183,19 +226,34 @@ Route::resource('customers','CustomerController');
 
 
 Route::resource('categories','CategoryController');
+=======
 
-Route::resource('appointments','AppointmentController');
+Route::get('contact', 'PageController@contactfun')->name('contactpage');
+//end frontend by poeei
+>>>>>>> fd7a46f9de57e72dd6f4641ff58d977103baf601
+
 
 
 //end frontend by poeei
 // Route::get('bodycare','PageController@bodycarefun')->name('bodycarepage');
+<<<<<<< HEAD
 
+=======
+>>>>>>> fd7a46f9de57e72dd6f4641ff58d977103baf601
 //role
 
 Route::middleware('role:Admin')->group(function(){
 
 Route::get('dashboard', 'backendController@dashboardfun') ->name('dashboardpage');
+
+Route::resource('employees','EmployeeController');
+Route::resource('customers','CustomerController');
+
+Route::resource('categories','CategoryController');
+
+Route::resource('appointments','AppointmentController');
 });
+<<<<<<< HEAD
 
  
 //auth
@@ -211,3 +269,13 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 
+=======
+
+Auth::routes();
+
+//auth
+
+Auth::routes();
+Route::get('/home', 'HomeController@index')->name('home');
+
+>>>>>>> fd7a46f9de57e72dd6f4641ff58d977103baf601

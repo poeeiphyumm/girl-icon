@@ -21,6 +21,7 @@
 			    		<td>Price</td>
 			    		<td>Photo</td>
 			    		<td>Category_id</td>
+<<<<<<< HEAD
 
 			    		{{-- <td>Service_Image</td> --}}
 			    		<td>Photo</td>
@@ -30,6 +31,8 @@
 
 
 
+=======
+>>>>>>> fd7a46f9de57e72dd6f4641ff58d977103baf601
 			    		<td>Action</td>
 
 		    		</tr>
@@ -45,7 +48,10 @@
 			    		<td>{{ $service->price }}</td>
 			    		<td>{{ $service->photo }}</td>
 			    		<td>{{ $service->category_id }}</td>
+<<<<<<< HEAD
 
+=======
+>>>>>>> fd7a46f9de57e72dd6f4641ff58d977103baf601
 			    		<td>
 			    			<a href="{{route('services.show',$service->id)}}" class="btn btn-primary">Detail</a>
 

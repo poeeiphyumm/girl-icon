@@ -31,6 +31,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 				<p> Price:	{{$services->price}}</p>
 				<p>Duration:{{ $services->duration }}</p>
@@ -50,6 +51,8 @@
 >>>>>>> ff5dd49a8f07707e2aa043c7dc9411b741c96114
 =======
 
+=======
+>>>>>>> fd7a46f9de57e72dd6f4641ff58d977103baf601
 				<p> Price:	{{$services->price}}</p>
 				<p>Duration:{{ $services->duration }}</p>
 
@@ -59,6 +62,7 @@
 		</div>
 	</div>		
 		
+<<<<<<< HEAD
 >>>>>>> 1eb3870294832960e6c3a85adbe3667af5fd9a8a
 =======
 				<p>Duration:{{ $services->duration }}</p>				
@@ -90,6 +94,8 @@
 <<<<<<< HEAD
 >>>>>>> 10de3259a9a6997cfac8affc02899511a3f7a34a
 =======
+=======
+>>>>>>> fd7a46f9de57e72dd6f4641ff58d977103baf601
 	<div class="site-section">
       <div class="container">
         <div class="row text-center">
@@ -100,6 +106,9 @@
         </div>
       </div>
     </div>
+<<<<<<< HEAD
 >>>>>>> c823a218b85d6629a8a81c4c5aa98b77f5310fb1
 >>>>>>> 1eb3870294832960e6c3a85adbe3667af5fd9a8a
+=======
+>>>>>>> fd7a46f9de57e72dd6f4641ff58d977103baf601
 @endsection

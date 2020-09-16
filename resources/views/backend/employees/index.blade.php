@@ -1,8 +1,6 @@
 @extends('backend.backendtemplate')
 @section('content')
 
-
-
 <div class="container-fluid">
 	<div class="d-sm-flex align-items-center justify-content-between mb-4">
         <h1 class="h3 mb-0 text-gray-800 d-inline-block"> Employee List</h1>
@@ -19,12 +17,17 @@
 		    		<tr>
 			    		<td>No</td>
 			    		<td>Name</td>
+<<<<<<< HEAD
 
 			    		<td>Email</td>
 			    		<td>Service </td>
 
 			    		<td>Service ID</td>
 
+=======
+			    		<td>Email</td>
+			    		<td>Service ID</td>
+>>>>>>> fd7a46f9de57e72dd6f4641ff58d977103baf601
 			    		<td>Availability Status</td>
 			    		
 			    		<td>Actions</td>

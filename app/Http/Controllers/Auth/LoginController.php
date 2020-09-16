@@ -39,12 +39,15 @@ class LoginController extends Controller
         $this->middleware('guest')->except('logout');
     }
 
+<<<<<<< HEAD
 
     // public function FunctionName($value='')
     // {
     //     # code...
     // }
 
+=======
+>>>>>>> fd7a46f9de57e72dd6f4641ff58d977103baf601
     protected function authenticated(Request $request, $user)
     {
         //role user
