@@ -23,7 +23,7 @@
 			    		{{-- <td>Date</td> --}}
 			    		<td>Phone No</td>
 			    		<td>Gender</td>
-			    		{{-- <td>Category</td> --}}
+			    		 {{-- <td>Category</td> --}}
 			    		<td>address</td>
 			    		<td>Action</td>
 		    		</tr>

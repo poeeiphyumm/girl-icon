@@ -42,9 +42,9 @@
 					<div class="form-group">
 						<label>Appointment Status</label><br>
 
-						<input type="radio" name="appointment_status" value="pending">Pending<br>
-						<input type="radio" name="appointment_status" value="cancel">Cancel<br>
-						<input type="radio" name="appointment_status" value="cancel">Accept
+						<input type="radio" name="status" value="pending">Pending<br>
+						<input type="radio" name="status" value="cancel">Cancel<br>
+						<input type="radio" name="status" value="cancel">Accept
 
 
 					 
