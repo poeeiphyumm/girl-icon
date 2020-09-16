@@ -2,55 +2,36 @@
 @section('content')
 
 
-  <div class="jumbotron jumbotron-fluid subtitle">
+    <div class="jumbotron jumbotron-fluid subtitle">
       <div class="container">
         <h1><center>Hair Care Services</center></h1>
       </div>
     </div>
 
-<<<<<<< HEAD
       <div class="container-fluid">
-            <div class="row">
+      <div class="row">
 
-              @foreach($services as $service)
-                <a href="{{ route('haircaredetail',$service->id) }}">
-                  <div class="col-lg-4 col-md-4 col-sm-12">
-=======
-        <div class="container-fluid">
-          <div class="row">
-
-            @foreach($services as $service)
+         @foreach($services as $service)
         <a href="{{ route('haircaredetail',$service->id) }}">
           <div class="col-lg-4 col-md-4 col-sm-12">
             
               <img src="{{asset($service->photo)}}" width="400px" height="300px">
             
->>>>>>> c823a218b85d6629a8a81c4c5aa98b77f5310fb1
-                      <img src="{{asset($service->photo)}}" width="400px" height="300px">
+              <p class=" text-info">{{ $service->service_name }}</p>
 
-<<<<<<< HEAD
-                      <p class=" text-info">{{ $service->service_name }}</p>
-                      
-                          <a href="{{ asset('booking') }}" class="btn btn-info">Appointment</a>
-=======
-
-                      <a href="{{asset('booking')}}" class="btn btn-info">Appointment</a>
->>>>>>> c823a218b85d6629a8a81c4c5aa98b77f5310fb1
+             <a href="{{ asset('booking') }}">
+                <input type="submit" value="Appointment Now" class="btn btn-primary" onclick="" >
+              </a>
             
-                  </div>
-                </a>
-
-              @endforeach
-
-
           </div>
-<<<<<<< HEAD
-       </div> 
-  @endsection
+          </a>
 
-=======
-       </div>
-       <div class="site-section">
+        @endforeach
+
+    </div> 
+  </div>
+  
+    <div class="site-section">
       <div class="container">
         <div class="row text-center">
           <div class="col-md-12">
@@ -60,6 +41,4 @@
         </div>
       </div>
     </div>
-
 @endsection
->>>>>>> c823a218b85d6629a8a81c4c5aa98b77f5310fb1

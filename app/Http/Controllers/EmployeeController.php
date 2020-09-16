@@ -16,8 +16,8 @@ class EmployeeController extends Controller
     public function index()
     {   
         $service=Service::all();
-        $employee=Employee::all();
-        return view('backend.employees.index',compact('employee','service'));
+        $employees=Employee::all();
+        return view('backend.employees.index',compact('employees','service'));
     }
 
     /**
@@ -44,9 +44,9 @@ class EmployeeController extends Controller
        // dd($request);
          $request->validate([
             "employee_name" => 'required',
-            "email" => 'required',
              "service_id" => 'required',
-            "availability_status" => 'required'
+            "availability_status" => 'required',
+            "email" => 'required',
         ]);
 
         //
@@ -54,10 +54,9 @@ class EmployeeController extends Controller
         $employee = new Employee;
         
         $employee->employee_name = $request->employee_name;
-        $employee->email = $request->email;
         $employee->service_id = $request->service_id;
         $employee->availability_status = $request->availability_status;
-
+        $employee->email = $request->email;
         $employee->save();
 
         //redirect
@@ -84,8 +83,8 @@ class EmployeeController extends Controller
     public function edit(Employee $employee)
     {
          $services=Service::all();
-        // $employees=Employee::all();
-        return view('backend.employees.edit',compact('services'));
+         // $employees=Employee::all();
+        return view('backend.employees.edit',compact('services','employee'));
     }
 
     /**
@@ -98,7 +97,7 @@ class EmployeeController extends Controller
     public function update(Request $request, Employee $employee)
     {
          //$request က edit form  ထဲက data ပါလာ
-       dd($request);
+      // dd($request);
          // $request->validate([
          //    "employee_name" => 'required',
          //    "email" => 'required',
@@ -111,9 +110,9 @@ class EmployeeController extends Controller
 
         //$employee = new Employee;
         $employee->employee_name = $request->employee_name;
-        $employee->email = $request->email;
         $employee->service_id= $request->service_id;
         $employee->availability_status=$request->availability_status;
+        $employee->email = $request->email;
         $employee->save();
 
         //redirect

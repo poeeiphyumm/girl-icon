@@ -21,9 +21,9 @@
            <tbody >
 
            	@php $i=1; @endphp
-            @foreach ($services as $employee)
+            @foreach ($service as $employee)
             <tr>
-              <td>{{$i++ }}</td>
+              <td>{{ $i++ }}</td>
               <td>{{ $employee->service_id }}</td>
               <td>{{ $employee->employee_id }}</td>
               <td>{{ $employee->service_name }}</td>

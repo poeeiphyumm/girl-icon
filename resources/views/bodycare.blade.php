@@ -2,13 +2,13 @@
 @section('content')
 
 
-  <div class="jumbotron jumbotron-fluid subtitle">
+    <div class="jumbotron jumbotron-fluid subtitle">
       <div class="container">
-        <h1><center>Body care Services</center></h1>
+        <h1><center>Body Care Services</center></h1>
       </div>
     </div>
 
-        <div class="container-fluid">
+      <div class="container-fluid">
       <div class="row">
 
          @foreach($services as $service)
@@ -17,29 +17,22 @@
             
               <img src="{{asset($service->photo)}}" width="400px" height="300px">
             
-            <br><br>
-
-<<<<<<< HEAD
               <p class=" text-info">{{ $service->service_name }}</p>
-              
-            <a href="{{ asset('booking') }}" class="btn btn-info">Appointment</a>
-=======
-              <a href="#" class="btn btn-info">Appointment</a>
-            
->>>>>>> c823a218b85d6629a8a81c4c5aa98b77f5310fb1
-          </div>
 
+              <a href="{{ asset('booking') }}">
+                <input type="submit" value="Appointment Now" class="btn btn-primary" onclick="" >
+              </a>
+
+            
+          </div>
           </a>
 
         @endforeach
 
-    
     </div> 
-<<<<<<< HEAD
-=======
-
   </div>
-  <div class="site-section">
+  
+    <div class="site-section">
       <div class="container">
         <div class="row text-center">
           <div class="col-md-12">
@@ -49,5 +42,4 @@
         </div>
       </div>
     </div>
->>>>>>> c823a218b85d6629a8a81c4c5aa98b77f5310fb1
 @endsection

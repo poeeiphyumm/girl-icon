@@ -38,11 +38,8 @@ class LoginController extends Controller
     {
         $this->middleware('guest')->except('logout');
     }
-<<<<<<< HEAD
 
-=======
      
->>>>>>> c823a218b85d6629a8a81c4c5aa98b77f5310fb1
     protected function authenticated(Request $request, $user)
     {
         //role user
@@ -55,7 +52,7 @@ class LoginController extends Controller
                 break;
 
             case 'Customer':
-                  return redirect('booking');
+                  return redirect('/');
                 break;
             
             default: return redirect('/');

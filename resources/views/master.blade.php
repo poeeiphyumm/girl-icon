@@ -74,7 +74,6 @@
                  <li><a href="{{asset('about')}}">About</a></li>
                 <li><a href="{{asset('booking')}}">Appointment</a></li>
                 <li><a href="{{asset('contact')}}">Contact</a></li>
-<<<<<<< HEAD
 
               </ul>
             </nav>
@@ -112,60 +111,14 @@
          
               </li>
             </ul>
-
         </div>
-      </div>
-
-           
+      </div> 
       
     </header>
 
     </div>
 
   @yield('content')
-=======
-              
-            
-              <li>
-                @guest
-                
-                    <a class="d-xl-block d-lg-block d-md-block d-none  text-decoration-none loginLink float-right text-uppercase" href="{{ route('loginpage') }}">{{ __('Login') }}</a>
-                            {{-- </li> --}}
-                            @if (Route::has('register'))
-                                {{-- <li class="nav-item"> --}}
-                                    <a class="d-xl-block d-lg-block d-md-block d-none  text-decoration-none loginLink float-right text-uppercase" href="{{ route('registerpage') }}">{{ __('Register') }}|</a>
-                                {{-- </li> --}}
-                            @endif
-                        @else
-                            {{-- <li class="nav-item dropdown"> --}}
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }}
-                                </a>
-
-                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
-                                    </a>
-
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                        @csrf
-                                    </form>
-                                </div>
-                           
-                        @endguest
-              </li>
-            </ul>
-        </nav>
-      </div>
-    </div>
-  </div>
-</header>
-  
-  
-@yield('content')
->>>>>>> c823a218b85d6629a8a81c4c5aa98b77f5310fb1
 
 <footer class="site-footer">
 

@@ -11,7 +11,7 @@
               <h5 class="text-white font-weight-light text-uppercase">Welcome to Hairsal</h5>
               <h2 class="text-white font-weight-light mb-2 display-1">Beauty Salon Expert</h2>
 
-              <p><a href="{{asset('booking')}}" class="btn btn-black py-3 px-5">Book Now!</a></p>
+              <p><a href="{{asset('booking')}}" class="btn btn-black py-3 px-5">Appointment Now!</a></p>
             </div>
           </div>
         </div>
@@ -79,35 +79,6 @@
           </div>
         </div>
 
-        {{-- <div class="row">
-          <div class="col-md-6 col-lg-4 text-center mb-5 mb-lg-5">
-            <div class="h-100 p-4 p-lg-5 bg-light site-block-feature-7">
-              <span class="icon flaticon-razor display-3 text-primary mb-4 d-block"></span>
-              <h3 class="text-black h4">Barber Razor</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum exercitationem quae id dolorum debitis.</p>
-              <p><strong class="font-weight-bold text-primary">$29</strong></p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 text-center mb-5 mb-lg-5">
-            <div class="h-100 p-4 p-lg-5 bg-light site-block-feature-7">
-              <span class="icon flaticon-location-pin display-3 text-primary mb-4 d-block"></span>
-              <h3 class="text-black h4">Location Pin</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum exercitationem quae id dolorum debitis.</p>
-              <p><strong class="font-weight-bold text-primary">$46</strong></p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 text-center mb-5 mb-lg-5">
-            <div class="h-100 p-4 p-lg-5 bg-light site-block-feature-7">
-              <span class="icon flaticon-shave display-3 text-primary mb-4 d-block"></span>
-              <h3 class="text-black h4">Barber Shave</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum exercitationem quae id dolorum debitis.</p>
-              <p><strong class="font-weight-bold text-primary">$24</strong></p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-</div> --}}
 
 <div class="container">
         <div class="row">
@@ -141,7 +112,7 @@
 <div class="bg-light">
       <div class="container">
         <div class="row">
-          <div class="col-md-7 mb-5">
+        <div class="col-md-7 mb-5">
 
       <div class="container my-5">
     <div class="row justify-content-center">
@@ -186,13 +157,7 @@
       <input type="radio" name="gender" value="female" required="required">Female
     </div>
   </div>
-   {{-- <div class="form-group row">
-    <label class="col-sm-2 col-form-label">Services</label>
-    <div class="col-md-6">
-        
-      <input type="text" name="service" class="form-control" id="inputservice" placeholder="eg.bodycare/nailcare.....">
-    </div>
-  </div> --}}
+   
    <div class="form-group row">
         <label class="col-md-3 col-form-label">Category</label>
         <select class="form-control form-control-md col-md-9" id="inputCategory" name="category_name">
@@ -203,14 +168,15 @@
           </optgroup>
         </select>
   </div>
+
   <div class="form-group row">
    
     <div class="col-md-12">
-      <input type="text" name="address" class="form-control" id="inputphoto" placeholder=" your notes" required="required" >
+      <input type="text" name="address" class="form-control" id="inputphoto" placeholder=" address" required="required" >
     </div>
   </div>
   
-  <input type="submit" value="Booking Now" class="btn btn-primary" onclick="alert('Make Appointment success')" >
+  <input type="submit" value="Booking Now" class="btn btn-primary" onclick="" >
   
 </form>
     </div>  
@@ -247,7 +213,7 @@
     </div>
 
 
-<div class="container-fluid">
+{{-- <div class="container-fluid">
 <div class="site-blocks-cover mb-5" style="background-image: url({{asset('frontend/images/spa-girl-1.jpg')}});" data-aos="fade">
         
           <div class="row">
@@ -280,7 +246,7 @@
 
           </div>
         </div>
-</div>  
+</div>  --}} 
 
 
 <div class="container">

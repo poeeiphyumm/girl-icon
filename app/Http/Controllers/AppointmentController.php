@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use App\Appointment;
 use App\Customer;
 use Carbon\Carbon;
-use App\Customer;
 use Illuminate\Http\Request;
 
 class AppointmentController extends Controller
@@ -38,9 +37,6 @@ class AppointmentController extends Controller
          //$appointments=Appointment::all();
          return view('backend.appointments.index',compact('appointments')); 
 
-       
-
-
      }
 
     /**
@@ -71,6 +67,7 @@ class AppointmentController extends Controller
         $request->validate([
             "date"=>'required',
             "time"=>'required',
+            "phone_no"=>'required',
             "appointment_status"=>'required',
             "customer_id"=>'required',
             ]);
@@ -81,6 +78,7 @@ class AppointmentController extends Controller
         //$appointment->email=$request->email;
         $appointment->date=$request->date;
         $appointment->time=$request->time;
+        $appointment->phone_no=$request->phone_no;
         $appointment->appointment_status=$request->appointment_status;
         $appointment->customer_id=$request->customer_id;
         $appointment->save();
@@ -97,7 +95,7 @@ class AppointmentController extends Controller
      */
     public function show(Appointment $appointment)
     {
-        //
+        
     }
 
     /**
@@ -129,6 +127,7 @@ class AppointmentController extends Controller
         $request->validate([
             "date"=>'required',
             "time"=>'required',
+            "phone_no"=>'required',
             //"status"=>'required',
             "appointment_status"=>'required',
             "customer_id"=>'required',
@@ -141,6 +140,7 @@ class AppointmentController extends Controller
         //$appointment->email=$request->email;
         $appointment->date=$request->date;
         $appointment->time=$request->time;
+        $appointment->phone_no=$request->phone_no;
         $appointment->appointment_status=$request->appointment_status;
         $appointment->customer_id=$request->customer_id;
 

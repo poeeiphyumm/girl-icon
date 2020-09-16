@@ -133,8 +133,4 @@ class PageController extends Controller
         $services = Service::find($id);
         return view('skintherapydetail',compact('services'));
     }
-<<<<<<< HEAD
-
-=======
->>>>>>> c823a218b85d6629a8a81c4c5aa98b77f5310fb1
 }

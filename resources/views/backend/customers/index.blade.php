@@ -4,15 +4,13 @@
 <div class="container-fluid">
 	<div class="d-sm-flex align-items-center justify-content-between mb-4">
         <h1 class="h3 mb-0 text-gray-800 d-inline-block"> Customer List</h1>
-        <a href="{{ route('customers.create') }}" class="btn btn-info mr-3">Add new</a>
-  	
     </div>
-
 </div>
-    <div class="container">
-    	<div class="row">
-    		<div class="col-md-12">
-   			 <table class="table table-bordered ">
+
+<div class="container">
+    <div class="row">
+    	<div class="col-md-12">
+   			<table class="table table-bordered ">
     			<thead class="thead-dark bg-dark text-white" >
 		    		<tr>
 			    		<td>No</td>
@@ -51,8 +49,8 @@
     			</tbody>
     			
     		</table>
-    </div>
-</div>
+    	</div>
+	</div>
 </div>
 
 @endsection

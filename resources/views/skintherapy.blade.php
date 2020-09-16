@@ -19,12 +19,9 @@
             
               <p class=" text-info">{{ $service->service_name }}</p>
 
-<<<<<<< HEAD
-            <a href="{{ asset('booking') }}" class="btn btn-info">Appointment</a>
-=======
-
-            <a href="{{asset('booking')}}" class="btn btn-info">Appointment</a>
->>>>>>> c823a218b85d6629a8a81c4c5aa98b77f5310fb1
+               <a href="{{ asset('booking') }}">
+                <input type="submit" value="Appointment Now" class="btn btn-primary" onclick="" >
+              </a>
             
           </div>
           </a>

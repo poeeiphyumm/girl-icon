@@ -28,27 +28,18 @@
     				<li>Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley.</li>
     				<li>It has survived not only five centuries, but also the leap into electronic typesetting.</li>
 				</p>
-<<<<<<< HEAD
 
 				<p> Price:	{{$services->price}}</p>
 				<p>Duration:{{ $services->duration }}</p>
 
-				<a href="{{ asset('booking') }}" class="btn btn-info">Appointment</a>
-				
+				<a href="{{ asset('booking') }}">
+                <input type="submit" value="Appointment Now" class="btn btn-primary" onclick="" >
+              </a>
 			</div>
 		</div>
-	</div>		
 		
-=======
-				<p>Duration:{{ $services->duration }}</p>				
-				    </p>Price:	{{$services->price}}</p>
-				</h3>
 
-				<a href="{{asset('booking')}}" class="btn btn-info">Appointment</a>
-				
-			</div>
-		</div>
-	</div>
+						
 	<div class="site-section">
       <div class="container">
         <div class="row text-center">
@@ -59,5 +50,4 @@
         </div>
       </div>
     </div>
->>>>>>> c823a218b85d6629a8a81c4c5aa98b77f5310fb1
 @endsection
