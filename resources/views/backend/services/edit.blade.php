@@ -40,37 +40,19 @@
 			<label class="col-sm-2 col-form-label">Category</label>
 			<select class="form-control form-control-md" id="inputBrand" name="category_id">
 
-				@php echo $service->category_id; @endphp
+				{{-- @php echo $service->category_id; @endphp --}}
 				<optgroup label="Choose Category">
 					@foreach($categories as $category)
-<<<<<<< HEAD
 
 						<option value="{{ $category->id }}" @if($category->id == $service->category_id) {{ 'selected'}} @endif>{{ $category->category_name }}</option>
-=======
-						<option value="{{ $category->id }}"
-						 @if($category->id == $service->category_id) 
-						 {{ 'selected'}} @endif
-						 >{{ $category->category_name }}</option>
->>>>>>> b42146a0187ce37e06f8fd0ff2b6c9f7465cc3f9
+
 					@endforeach
 
 				</optgroup>
 			</select>
 			
 		</div>
-<<<<<<< HEAD
-	{{-- </div>			
-	</div> --}}
-		
-{{-- /div>
-	</div>
-	</div>	
-	<input type="submit" value="Update" class="btn btn-danger">		
-	</div>
-		
-</div> --}}
-=======
->>>>>>> b42146a0187ce37e06f8fd0ff2b6c9f7465cc3f9
+	
 
 		<div class="form-group row">
 			<label class="col-sm-2 col-form-label">Photo</label>
@@ -88,8 +70,4 @@
 		<input type="submit" value="Update" class="btn btn-danger">	
 	</form>
 </div>
-<<<<<<< HEAD
-
-=======
->>>>>>> b42146a0187ce37e06f8fd0ff2b6c9f7465cc3f9
 @endsection

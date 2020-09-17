@@ -27,10 +27,7 @@
 				<input type="radio" name="availability_status" class="" id="inputname" value="disable">Disable
 			</div>
 		</div>
-<<<<<<< HEAD
 
-=======
->>>>>>> 3414074898110b2dd544f6b07db8ccef7da54f9b
 		<div class="form-group row">
 			<label class="col-sm-2 col-form-label">Email</label>
 			<div class="col-sm-6">
@@ -38,7 +35,6 @@
 			</div>
 		</div>
 
-<<<<<<< HEAD
 
 	<div class="form-group row">
 				<label class="col-sm-2 col-form-label">Service</label>
@@ -51,29 +47,11 @@
 				</optgroup>
 			</select>
 		
-=======
-		<div class="form-group row">
-			<label class="col-sm-2 col-form-label">Service</label>
-			<select class="form-control form-control-md" id="inputservice" name="service_id">
-				<optgroup label="Choose Service ">
-					@foreach($services as $service)
-						<option value="{{ $service->id}}">{{ $service->service_name }}</option>
-					@endforeach
-
-				</optgroup>
-			</select>
->>>>>>> 3414074898110b2dd544f6b07db8ccef7da54f9b
 		</div>
 	
 	
 		<input type="submit" value="Create" class=" btn btn-danger" >
 	</form>
 </div>
-<<<<<<< HEAD
 
-=======
-	</div>
-	<input type="submit" value="Create" class=" btn btn-danger" >
-</form>
->>>>>>> 3414074898110b2dd544f6b07db8ccef7da54f9b
 @endsection

@@ -16,17 +16,9 @@ class EmployeeController extends Controller
      */
     public function index()
     {   
-<<<<<<< HEAD
         $service=Service::all();
-         $employees=DB::table('services')->join('employees','employees.service_id','=','services.id')->select('services.*','employees.*','service_name as service')->get();
+        $employees=DB::table('services')->join('employees','employees.service_id','=','services.id')->select('services.*','employees.*','services.service_name as service')->get();
         return view('backend.employees.index',compact('employees','service'));
-=======
-        // $service=Service::all();
-
-        $employees=DB::table('services')->join('employees','employees.service_id','=','services.id')->select('employees.*','services.*','services.service_name as service')->get();
-
-        return view('backend.employees.index',compact('employees'));
->>>>>>> b42146a0187ce37e06f8fd0ff2b6c9f7465cc3f9
     }
 
     /**
@@ -70,7 +62,7 @@ class EmployeeController extends Controller
         $employee->save();
 
         //redirect
-        return redirect()->route('employees.index');;
+        return redirect()->route('employees.index');
     }
 
     /**
@@ -92,14 +84,11 @@ class EmployeeController extends Controller
      */
     public function edit(Employee $employee)
     {
+        //dd($employee);
          $services=Service::all();
          // $employees=Employee::all();
-<<<<<<< HEAD
-         $employees=Employee::all();
-=======
-        $employees=Employee::all();
->>>>>>> 3414074898110b2dd544f6b07db8ccef7da54f9b
-        return view('backend.employees.edit',compact('services','employees'));
+         $employee=Employee::all();
+        return view('backend.employees.edit',compact('services','employee'));
     }
 
     /**
@@ -111,22 +100,8 @@ class EmployeeController extends Controller
      */
     public function update(Request $request, Employee $employee)
     {
-<<<<<<< HEAD
-      // dd($request);
-=======
-<<<<<<< HEAD
-         //$request က edit form  ထဲက data ပါလာ
-      // dd($request);
-         // $request->validate([
-         //    "employee_name" => 'required',
-         //    "email" => 'required',
-         //    "service_id" => 'required',
-         //    "availability_status" => 'required'
-       //dd($request);
-=======
-       dd($request);
->>>>>>> 3414074898110b2dd544f6b07db8ccef7da54f9b
->>>>>>> b42146a0187ce37e06f8fd0ff2b6c9f7465cc3f9
+      
+       //dd($employee);
          $request->validate([
             "employee_name" => 'required',
             "email" => 'required',

@@ -1,4 +1,3 @@
-
 @extends ('backend.backendtemplate')
 @section('content')
   <div class="container-fluid">
@@ -21,7 +20,7 @@
           <tbody>
             @php $i=1; @endphp
 
-            @foreach($service->employees as $employee)
+            @foreach($employees as $employee)
             <tr>
               <td>{{$i++}}</td>
               <td>{{$employee->service_id}}</td>

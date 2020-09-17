@@ -58,11 +58,11 @@
                     </div>
    
                     <div class="form-group row">
-                        <label class="col-sm-2 col-form-label">Category</label>
-                          <select class="form-control form-control-md" id="inputCategory" name="category_id">
-                              <optgroup label="Choose Category">
-                                @foreach($categories as $category)
-                                  <option value="{{ $category->id }}">{{ $category->category_name }}</option>
+                        <label class="col-sm-2 col-form-label">Service</label>
+                          <select class="form-control form-control-md" id="inputCategory" name="service_id">
+                              <optgroup label="Choose Service">
+                                @foreach($services as $service)
+                                  <option value="{{ $service->id }}">{{ $service->service_name }}</option>
                                 @endforeach
                               </optgroup>
                           </select>
