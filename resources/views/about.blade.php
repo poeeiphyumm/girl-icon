@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+
+=======
+>>>>>>> 3414074898110b2dd544f6b07db8ccef7da54f9b
 @extends('master')
 @section('content')
 
@@ -31,16 +35,10 @@
         </div> 
     </div>
 
-
-    
-      <div class="container">
-        <div class="row">
-
    {{--  <div class="site-section bg-light"> --}}
     
       <div class="container">
         <div class="row mt-5">
-
           <div class="col-xl-4 col-md-3 col-lg-4 col-sm-12 col-12 text-center mb-5" data-aos="fade-up">
             <img src="{{asset('frontend/images/face1.jpg')}}" alt="Image" class="img-fluid w-50 rounded-circle mb-4">
             <h2 class="text-black font-weight-light mb-4">Face Care</h2>
@@ -49,18 +47,20 @@
             <img src="{{asset('frontend/images/face2.jpeg')}}" alt="Image" class="img-fluid w-50 rounded-circle mb-4">
             <h2 class="text-black font-weight-light mb-4">Laser skin Care</h2>
           </div>
+<<<<<<< HEAD
+         
+=======
 
+>>>>>>> 3414074898110b2dd544f6b07db8ccef7da54f9b
           <div class="col-xl-4 col-md-6 col-lg-4 col-12 text-center mb-5" data-aos="fade-up">
             <img src="{{asset('frontend/images/face3.jpeg')}}" alt="Image" class="img-fluid w-50 rounded-circle mb-4">
             <h2 class="text-black font-weight-light mb-4">Treatment</h2>
           </div>
         </div>
-
       </div>
       <div class="container">
         <div class="row">
           <div class="col-xl-6 col-md-6 col-lg-6 col-12">
-
           <h2>About</h2>
           <p><i>&ldquo;
             Beauty Clinic &ldquo;is conveniently located at No.216,First floor,Excel Taresure Hotel,<br>Yango Myanmar Yangon and another branch is located No.542, Strand Road, Corner of 11st, Lanmadaw Township.

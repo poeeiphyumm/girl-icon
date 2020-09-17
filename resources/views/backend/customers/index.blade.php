@@ -4,8 +4,11 @@
 <div class="container-fluid">
 	<div class="d-sm-flex align-items-center justify-content-between mb-4">
         <h1 class="h3 mb-0 text-gray-800 d-inline-block"> Customer List</h1>
+<<<<<<< HEAD
+=======
         <a href="{{ route('customers.create') }}" class="btn btn-info mr-3">Add new</a>
 
+>>>>>>> 3414074898110b2dd544f6b07db8ccef7da54f9b
     </div>
 </div>
 
@@ -21,7 +24,7 @@
 			    		<td>Date</td>
 			    		<td>Phone No</td>
 			    		<td>Gender</td>
-			    		 {{-- <td>Category</td> --}}
+			    		<td>Category</td>
 			    		<td>address</td>
 			    		<td>Action</td>
 		    		</tr>
@@ -37,7 +40,7 @@
 			    		<td>{{ $customer->date }}</td>			    		
 			    		<td>{{ $customer->phone_no }}</td>
 			    		<td>{{ $customer->gender }}</td>
-			    		{{-- <td>{{ $customer->category_name}}</td> --}}			    		
+			    		<td>{{ $customer->category_name}}</td>			    		
 			    		<td>{{ $customer->address }}</td>
 			    		<td>
 			    		<form method="post" action="{{ route('customers.destroy',$customer->id) }}">

@@ -17,10 +17,20 @@ class ServiceController extends Controller
      */
     public function index()
     {
+<<<<<<< HEAD
          $services=DB::table('categories')->join('services','services.category_id','=','categories.id')->select('services.*','categories.*','category_name as category')->get();
+=======
+<<<<<<< HEAD
+         $services=DB::table('categories')->join('services','services.category_id','=','categories.id')->select('services.*','categories.*','category_name as category')->get();
+        
+        return view('backend.services.index',compact('services'));
+=======
+         $services=Service::all();
+>>>>>>> b42146a0187ce37e06f8fd0ff2b6c9f7465cc3f9
         $categories=Category::all();
         
         return view('backend.services.index',compact('services','categories'));
+>>>>>>> 3414074898110b2dd544f6b07db8ccef7da54f9b
 
     }
     
@@ -32,9 +42,30 @@ class ServiceController extends Controller
      */
     public function create()
     {
+<<<<<<< HEAD
        $services=Service::all();
         $categories=Category::all();
         return view("backend.services.create",compact('services','categories'));
+=======
+<<<<<<< HEAD
+       
+
+        // $services=Category::select('categories.*','services.service_name as category')->leftJoin('services','services.category_id','=','categories.id');
+
+        $categories=Category::all();
+        $services=Service::all();
+        //dd($services);
+        return view("backend.services.create",compact('services','categories'));
+=======
+        $services=Service::all();
+        $categories=Category::all();
+        return view("backend.services.create",compact('services','categories'));
+
+        //return view("backend.services.create",compact('services'));
+
+        return view('backend.services.create',compact('services','categories'));
+>>>>>>> 3414074898110b2dd544f6b07db8ccef7da54f9b
+>>>>>>> b42146a0187ce37e06f8fd0ff2b6c9f7465cc3f9
     }
 
     /**
@@ -44,8 +75,28 @@ class ServiceController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
+<<<<<<< HEAD
+
+
     {
 
+
+        //If include file,upload file
+
+       // dd($request);
+        //  $request->validate([
+        //     "service_name" => 'required',
+        //     "duration" => 'required',
+        //     "price" => 'required',
+        //     "category_id" => 'required',
+        //     "photo"=>'required'
+            
+        // ]);
+
+=======
+    {
+
+>>>>>>> 3414074898110b2dd544f6b07db8ccef7da54f9b
        //dd($request);
          //If include file,upload file
        //dd($request);
@@ -87,11 +138,22 @@ class ServiceController extends Controller
 
         // $services=Service::all();
         // $services=DB::table('employees')->join('services.id','=','employees.service_id')->where('services.id',$id)->get();
+<<<<<<< HEAD
+        //$service=Service::find($id);
+        $services=Service::find($id);
+        $employees=Employee::all();
+        //dd($service);
+        return view('backend.servicedetail.index',compact('services','employees')); 
+
+
+
+=======
         $service=Service::where('services.id',$id)->first();
         // $employee=Employee::where('employees.id',$id)->first();
         $employees=Employee::all();
         //dd($service);
         return view('backend.services.show',compact('service','employees'));
+>>>>>>> 3414074898110b2dd544f6b07db8ccef7da54f9b
     }
 
     /**
@@ -102,8 +164,11 @@ class ServiceController extends Controller
      */
     public function edit(Service $service)
     {
+        // dd($service);
+        $service=Service::all();
         $categories=Category::all();
         return view('backend.services.edit',compact('service','categories'));
+
     }
 
     /**

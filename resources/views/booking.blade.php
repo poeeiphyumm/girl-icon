@@ -1,5 +1,20 @@
 @extends('master')
 @section('content')  
+<<<<<<< HEAD
+
+  <div class="slide-one-item home-slider owl-carousel">
+   
+      <div class="site-blocks-cover inner-page-cover" style="background-image: url({{asset('front/images/hero_bg_2.jpg')}});" data-aos="fade" data-stellar-background-ratio="0.5">
+          <div class="container">
+              <div class="row align-items-center justify-content-center text-center">
+
+                <div class="col-md-8" data-aos="fade-up" data-aos-delay="400">
+                  <h2 class="text-white font-weight-light mb-2 display-1">Appointment</h2>
+
+              
+                </div>
+              </div>
+=======
     <div class="slide-one-item home-slider owl-carousel">
       <div class="site-blocks-cover inner-page-cover" style="background-image: url({{asset('front/images/hero_bg_2.jpg')}});" data-aos="fade" data-stellar-background-ratio="0.5">
         <div class="container">
@@ -10,12 +25,23 @@
                 </div>
               </div>
             </div>
+>>>>>>> 3414074898110b2dd544f6b07db8ccef7da54f9b
           </div>
       </div>  
   </div>
 
+<<<<<<< HEAD
  {{--  <div class="col-md-7 mb-5"> --}}
+=======
+  <div class="col-md-7 mb-5">
+
+      <div class="container my-5">
+<<<<<<< HEAD
+=======
+    </div>
+>>>>>>> b42146a0187ce37e06f8fd0ff2b6c9f7465cc3f9
 <div class="container my-5">
+>>>>>>> 3414074898110b2dd544f6b07db8ccef7da54f9b
     <div class="row justify-content-center">
       <div class="col-md-8">
       <form action="{{ route('customers.store') }}" method="post" enctype="multipart/form-data">
@@ -25,6 +51,9 @@
       <h1>Get Appointment Now</h1>
     </div>
   </div>
+<<<<<<< HEAD
+  
+=======
 
   </form>
 
@@ -50,6 +79,7 @@
               
               <p><a href="#" class="btn btn-primary px-4 py-2 text-white">Get In Touch</a></p>
             </div>
+>>>>>>> 3414074898110b2dd544f6b07db8ccef7da54f9b
   <div class="form-group row">
     <label class="col-sm-2 col-form-label"></label>
     <div class="col-md-12">
@@ -77,6 +107,16 @@
               @enderror
     </div>
   </div>
+
+  <div class="form-group row">
+    
+    <div class="col-md-12">
+      <input type="time" name="time" class="form-control" id="inputtime" required="required">
+              @error('time')
+                <div class="text-danger">{{ ($message) }}</div>
+              @enderror
+    </div>
+  </div>
   <div class="form-group row">
     
     <div class="col-md-12">
@@ -86,6 +126,7 @@
               @enderror
     </div>
   </div>
+  
   <div class="form-group row">
     <label class="col-sm-2 col-form-label">Gender</label>
     <div class="col-md-6">
@@ -99,14 +140,36 @@
    
   
    <div class="form-group row">
+<<<<<<< HEAD
+=======
+        <label class="col-md-3 col-form-label">Category</label>
+        <select class="form-control form-control-md col-md-9" id="inputCategory" name="category_name">
+<<<<<<< HEAD
+=======
+   {{-- <div class="form-group row">
+    <label class="col-sm-2 col-form-label">Services</label>
+    <div class="col-md-6">
+      <input type="text" name="service" class="form-control" id="inputservice" placeholder="eg.bodycare/nailcare.....">
+    </div>
+  </div> --}}
+   <div class="form-group row">
+
+        <label class="col-sm-2 col-form-label">Category</label>
+        <select class="form-control form-control-md col-md-6" id="inputCategory" name="category_name">
+
+
+        <label class="col-sm-2 col-form-label">Service</label>
+        <select class="form-control form-control-md" id="inputCategory" name="category">
+>>>>>>> b42146a0187ce37e06f8fd0ff2b6c9f7465cc3f9
 
         <label class="col-sm-2 col-form-label">Category</label>
         <select class="form-control form-control-md col-md-6" id="inputCategory" name="category_name">
         <label class="col-sm-2 col-form-label">Service</label>
         <select class="form-control form-control-md" id="inputCategory" name="category">
 
+>>>>>>> 3414074898110b2dd544f6b07db8ccef7da54f9b
           <optgroup label="Choose Category">
-              @foreach($categories as $category)
+            @foreach($categories as $category)
               <option value="{{ $category->id }}">{{ $category->category_name }}</option>
             @endforeach
           </optgroup>
@@ -115,16 +178,31 @@
                 <div class="text-danger">{{ ($message) }}</div>
               @enderror
   </div>
+<<<<<<< HEAD
+=======
 
   </div>
 
+<<<<<<< HEAD
+=======
+  </div>
+
+  </div>
+    </div>
+>>>>>>> 3414074898110b2dd544f6b07db8ccef7da54f9b
+
+>>>>>>> b42146a0187ce37e06f8fd0ff2b6c9f7465cc3f9
   <div class="form-group row">
    
     <div class="col-md-12">
       <input type="text" name="address" class="form-control" id="inputphoto" placeholder=" address" required="required" >
     </div>
   </div>
+<<<<<<< HEAD
+  @role('Customer')
+=======
   
+<<<<<<< HEAD
   @role('Customer')
    <a href="{{route('login')}}" class="btn btn-info float-right">Login To Appointment</a>
    @else
@@ -132,7 +210,21 @@
         
        
     @endrole
+=======
+  <input type="submit" value="Appointment Now" class="btn btn-primary" onclick="" >
+  
+>>>>>>> 3414074898110b2dd544f6b07db8ccef7da54f9b
 
+   <a href="{{ route('loginpage') }}" class="btn btn-secondary btn-block mainfullbtncolor col-md-8">Login To Appointment</a>
+  @else
+ 
+  <input type="submit" value="Appointment Now" class="btn btn-primary" onclick="" >
+>>>>>>> b42146a0187ce37e06f8fd0ff2b6c9f7465cc3f9
+
+<<<<<<< HEAD
+  @endrole
+=======
+>>>>>>> 3414074898110b2dd544f6b07db8ccef7da54f9b
 </form>
     </div>  
   </div>
@@ -151,4 +243,8 @@
         </div>
       </div>
   </div>
+<<<<<<< HEAD
  @endsection
+=======
+ @endsection
+>>>>>>> 3414074898110b2dd544f6b07db8ccef7da54f9b

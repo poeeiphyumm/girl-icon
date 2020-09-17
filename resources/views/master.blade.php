@@ -67,15 +67,22 @@
                         <li><a href="{{ asset('facecare') }}">Face Care</a></li>
                         <li><a href="{{ asset('footcare') }}">Foot Care</a></li>
                         <li><a href="{{ asset('skintherapy') }}">Skin Therapy</a></li>
+<<<<<<< HEAD
+                        
+
+                  </ul>
+                </li>                   
+                 <li><a href="{{asset('about')}}">About</a></li>
+=======
                       </ul>
                 <li><a href="{{asset('about')}}">About</a></li>
+>>>>>>> 3414074898110b2dd544f6b07db8ccef7da54f9b
                 <li><a href="{{asset('booking')}}">Appointment</a></li>
                 <li><a href="{{asset('contact')}}">Contact</a></li>
 
               </ul>
             </nav>
           </div>
-
         <ul>
           <li>
             @guest
@@ -117,6 +124,8 @@
     </div>
 
   @yield('content')
+<<<<<<< HEAD
+=======
 @section('yield')
 
     <div class="site-section">
@@ -126,6 +135,7 @@
   </div>
 </header>
 
+>>>>>>> 3414074898110b2dd544f6b07db8ccef7da54f9b
 
 <footer class="site-footer">
 

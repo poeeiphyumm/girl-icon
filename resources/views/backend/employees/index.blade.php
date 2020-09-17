@@ -17,7 +17,15 @@
 		    		<tr>
 			    		<td>No</td>
 			    		<td>Name</td>
+<<<<<<< HEAD
 			    		<td>Service Name</td>
+=======
+<<<<<<< HEAD
+			    		<td>Service Name</td>
+=======
+			    		<td>Service ID</td>
+>>>>>>> 3414074898110b2dd544f6b07db8ccef7da54f9b
+>>>>>>> b42146a0187ce37e06f8fd0ff2b6c9f7465cc3f9
 			    		<td>Email</td>
 			    		<td>Availability Status</td>
 			    		<td>Actions</td>
@@ -30,11 +38,19 @@
 		    		<tr>
 		    			<td>{{ $i++ }}</td>
 			    		<td>{{ $employee->employee_name}}</td>
+<<<<<<< HEAD
 			    		<td>{{ $employee->service }}</td>
+=======
+<<<<<<< HEAD
+			    		<td>{{ $employee->service }}</td>
+=======
+			    		<td>{{ $employee->service_id }}</td>
+>>>>>>> 3414074898110b2dd544f6b07db8ccef7da54f9b
+>>>>>>> b42146a0187ce37e06f8fd0ff2b6c9f7465cc3f9
 			    		<td>{{ $employee->email }}</td>
 			    		<td>{{ $employee->availability_status }}</td>
 			    		<td>
-			    			
+			 
 			    			<a href="{{ route('employees.edit',$employee->id) }}" class="btn btn-secondary">Edit</a>
 
 			    			
@@ -46,7 +62,9 @@
 			    			</form>
 			    		</td>
 		    		</tr>
+
 		    		@endforeach
+		    		{{-- print_r($employees); --}}
     			</tbody>
     			
     		</table>

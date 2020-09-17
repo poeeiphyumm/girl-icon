@@ -79,6 +79,10 @@
           </div>
         </div>
 
+<<<<<<< HEAD
+
+=======
+>>>>>>> 3414074898110b2dd544f6b07db8ccef7da54f9b
 <div class="container">
         <div class="row">
           <div class="col-md-6 col-lg-3 col-xl-3 col-12 text-center mb-5">
@@ -175,16 +179,28 @@
     </div>
   </div>
   
-  <input type="submit" value="Booking Now" class="btn btn-primary" onclick="" >
+ @role('Customer')
+  
+   <a href="{{ route('loginpage') }}" class="btn btn-secondary btn-block mainfullbtncolor col-md-8">Login To Appointment</a>
+  @else
+ 
+  <input type="submit" value="Appointment Now" class="btn btn-primary" onclick="" >
+
+  @endrole
   
 </form>
     </div>  
   </div>
+<<<<<<< HEAD
+</div>
+
+=======
 
 
 </div>
 
 
+>>>>>>> 3414074898110b2dd544f6b07db8ccef7da54f9b
   </div>
 
  <div class="col-md-5">
@@ -192,13 +208,13 @@
 
     <div class="carousel-inner" role="listbox">
       <div class="carousel-item active">
-        <img src="{{asset('frontend/images/n1.jpeg')}}" alt="First slide" width="500px" height="600px">
+        <img src="{{asset('frontend/images/spa-girl-1.jpg')}}" alt="First slide" width="500px" height="630px">
       </div>
       <div class="carousel-item">
-        <img src="{{asset('front/images/img_1.jpg')}}" alt="First slide" width="500px" height="600px">
+        <img src="{{asset('front/images/person_1.jpg')}}" alt="First slide" width="500px" height="630px">
       </div>
       <div class="carousel-item">
-        <img src="{{asset('frontend/images/bodycare3.jpg')}}" alt="First slide" width="500px" height="600px">
+        <img src="{{asset('frontend/images/bodycare3.jpg')}}" alt="First slide" width="500px" height="630px">
       </div>
     </div>
 
@@ -250,12 +266,6 @@
         </div>
 </div>  --}} 
 
-
-<div class="container">
-  <div class="row">
-    <div class="col-x"></div>
-  </div>
-</div>
 
 <div class="container">
   <div class="row">

@@ -28,8 +28,14 @@
 			<div class="col-sm-6">
 				<input type="name" name="email" class="form-control" id="inputname" value="{{ $employee->email}}" >
 			</div>
+<<<<<<< HEAD
 	</div>
 	
+=======
+
+		</div>
+
+>>>>>>> b42146a0187ce37e06f8fd0ff2b6c9f7465cc3f9
 		<div class="form-group row">
 			<label class="col-sm-2 col-form-label">Availiability Status</label>
 			<div class="col-sm-6">
@@ -54,4 +60,8 @@
 	</form>
 </div>
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> b42146a0187ce37e06f8fd0ff2b6c9f7465cc3f9
 @endsection

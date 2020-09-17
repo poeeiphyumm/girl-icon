@@ -56,11 +56,14 @@ class CustomerController extends Controller
            "date" => 'required',        
             "phone_no" => 'required',
             "gender" => 'required',
+<<<<<<< HEAD
 
 
            // "category"=>'required';
 
 
+=======
+>>>>>>> b42146a0187ce37e06f8fd0ff2b6c9f7465cc3f9
             "category_name" => 'required',
             "address" => 'required',
 
@@ -80,7 +83,11 @@ class CustomerController extends Controller
         
         $customer->customer_name = $request->customer_name;
         $customer->email = $request->email;
+<<<<<<< HEAD
         $customer->date= $request->date;
+=======
+         $customer->date= $request->date;
+>>>>>>> b42146a0187ce37e06f8fd0ff2b6c9f7465cc3f9
         $customer->phone_no = $request->phone_no;
         $customer->gender = $request->gender;
 
@@ -89,7 +96,7 @@ class CustomerController extends Controller
 ;
         $customer->category_name=$request->category_name;
 
-        // $customer->category_name=$request->category_name;
+        $customer->category_name=$request->category_name;
         //customer->category_id=$request->category;
 
         $customer->address = $request->address;

@@ -15,8 +15,13 @@
 			</div>	
 			<div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
 				<h4> Service Name:{{$services->service_name }}</h4>
+<<<<<<< HEAD
 					<h3>Duration: {{ $services->duration }}<br>$180<br></h3>
 					<p>
+=======
+				<p>
+					
+>>>>>>> b42146a0187ce37e06f8fd0ff2b6c9f7465cc3f9
     				Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.</p>
     				<h3>Effects</h3>
     				<li>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the.</li>
@@ -24,6 +29,7 @@
     				<li>Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley.</li>
     				<li>It has survived not only five centuries, but also the leap into electronic typesetting.</li>
 				</p>
+<<<<<<< HEAD
 								
 
 				<p> Price:	{{$services->price}}</p>
@@ -31,6 +37,16 @@
 
 				<a href="{{ asset('booking') }}" class="btn btn-info">Appointment</a>
 
+=======
+
+				<p> Price:	{{$services->price}}</p>
+				<p>Duration:{{ $services->duration }}</p>
+
+				<a href="{{ asset('booking') }}">
+                <input type="submit" value="Appointment Now" class="btn btn-primary" onclick="" >
+              </a>
+
+>>>>>>> b42146a0187ce37e06f8fd0ff2b6c9f7465cc3f9
 			</div>
 		</div>
 	</div>
@@ -45,6 +61,4 @@
       </div>
     </div>
 	
-
-		
 @endsection

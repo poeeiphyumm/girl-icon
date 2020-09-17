@@ -14,7 +14,7 @@
 				    </div>
 				    <div class="form-group row">
 						<label>Email</label>
-						<input calss="form-control" type="text" name="email" class="form-control">
+						<input calss="form-control" type="email" name="email" class="form-control">
 					</div>
 					<div class="form-group row">
 						<label>Password</label>
