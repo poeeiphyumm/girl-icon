@@ -19,7 +19,7 @@
 			    		<td>Duration</td>
 			    		<td>Price</td>
 			    		<td>Photo</td>
-			    		<td>Category_id</td>
+			    		<td>Category Name</td>
 			    		<td>Action</td>
 
 		    		</tr>
@@ -33,8 +33,8 @@
 			    		<td>{{ $service->service_name }}</td>
 			    		<td>{{ $service->duration }}</td>
 			    		<td>{{ $service->price }}</td>
-			    		<td>{{ $service->photo }}</td>
-			    		<td>{{ $service->category_id }}</td>
+			    		<td><img src="{{asset($service->photo)}}" width="50px" height="50px"></td>
+			    		<td>{{ $service->category }}</td>
 
 			    		<td>
 			    			<a href="{{route('services.show',$service->id)}}" class="btn btn-primary">Detail</a>

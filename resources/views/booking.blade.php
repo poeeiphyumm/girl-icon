@@ -14,10 +14,7 @@
       </div>  
   </div>
 
-  <div class="col-md-7 mb-5">
-
-      <div class="container my-5">
-    </div>
+ {{--  <div class="col-md-7 mb-5"> --}}
 <div class="container my-5">
     <div class="row justify-content-center">
       <div class="col-md-8">
@@ -32,6 +29,7 @@
   </form>
 
 </div>
+<div class="row">
           <div class="col-md-5">
             
             <div class="p-4 mb-3 bg-white">
@@ -99,23 +97,8 @@
               @enderror
   </div>
    
+  
    <div class="form-group row">
-        <label class="col-md-3 col-form-label">Category</label>
-        <select class="form-control form-control-md col-md-9" id="inputCategory" name="category_name">
-   {{-- <div class="form-group row">
-    <label class="col-sm-2 col-form-label">Services</label>
-    <div class="col-md-6">
-      <input type="text" name="service" class="form-control" id="inputservice" placeholder="eg.bodycare/nailcare.....">
-    </div>
-  </div> --}}
-   <div class="form-group row">
-
-        <label class="col-sm-2 col-form-label">Category</label>
-        <select class="form-control form-control-md col-md-6" id="inputCategory" name="category_name">
-
-
-        <label class="col-sm-2 col-form-label">Service</label>
-        <select class="form-control form-control-md" id="inputCategory" name="category">
 
         <label class="col-sm-2 col-form-label">Category</label>
         <select class="form-control form-control-md col-md-6" id="inputCategory" name="category_name">
@@ -135,11 +118,6 @@
 
   </div>
 
-  </div>
-
-  </div>
-    </div>
-
   <div class="form-group row">
    
     <div class="col-md-12">
@@ -147,10 +125,13 @@
     </div>
   </div>
   
-  <input type="submit" value="Appointment Now" class="btn btn-primary" onclick="" >
-  
-
-  <input type="submit" value="Booking Now" class="btn btn-primary" onclick="alert('Make Appointment success')" >
+  @role('Customer')
+   <a href="{{route('login')}}" class="btn btn-info float-right">Login To Appointment</a>
+   @else
+        <button class="btn btn-info float-right buy_now">Get Appointment</button>
+        
+       
+    @endrole
 
 </form>
     </div>  

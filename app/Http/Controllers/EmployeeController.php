@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Employee;
 use App\Service;
+use DB;
 use Illuminate\Http\Request;
 
 class EmployeeController extends Controller
@@ -16,7 +17,7 @@ class EmployeeController extends Controller
     public function index()
     {   
         $service=Service::all();
-        $employees=Employee::all();
+         $employees=DB::table('services')->join('employees','employees.service_id','=','services.id')->select('services.*','employees.*','service_name as service')->get();
         return view('backend.employees.index',compact('employees','service'));
     }
 
@@ -98,7 +99,7 @@ class EmployeeController extends Controller
      */
     public function update(Request $request, Employee $employee)
     {
-       dd($request);
+      // dd($request);
          $request->validate([
             "employee_name" => 'required',
             "email" => 'required',
@@ -106,7 +107,7 @@ class EmployeeController extends Controller
             "availability_status" => 'required'
             
              ]);
-        //$employee = new Employee;
+        $employee = new Employee;
         $employee->employee_name = $request->employee_name;
         $employee->service_id= $request->service_id;
         $employee->availability_status=$request->availability_status;
@@ -114,7 +115,7 @@ class EmployeeController extends Controller
         $employee->save();
 
         //redirect
-        return redirect()->route('employees.index');
+        return redirect()->route('backend.employees.index');
     }
 
     /**

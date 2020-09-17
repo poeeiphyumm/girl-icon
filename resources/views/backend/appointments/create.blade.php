@@ -8,7 +8,7 @@
 				<div class="col-md-6">
 					<form action="{{route('appointments.store')}}" method="post" enctype="multipart/form-data">
 						@csrf
-					<div class="form-group row">
+					{{-- <div class="form-group row">
 						<label>Customer Name</label>
 						<input class="form-control" type="text" name="appointment_name">
 				    </div>
@@ -20,10 +20,10 @@
 						<label>Password</label>
 					<input calss="form-control-lg" type="password" name="password">
 					
-					</div>
+					</div> --}}
 					<div class="form-group row">
 					<label>Phone Number</label>
-					<input class="form-control" type="text" name="ph_no">
+					<input class="form-control" type="text" name="phone_no">
 					</div>
 					<div class="form-group row">
 					<label>Date</label>
@@ -42,9 +42,9 @@
 					<div class="form-group">
 						<label>Appointment Status</label><br>
 
-						<input type="radio" name="status" value="pending">Pending<br>
-						<input type="radio" name="status" value="cancel">Cancel<br>
-						<input type="radio" name="status" value="cancel">Accept
+						<input type="radio" name="appointment_status" value="pending">Pending<br>
+						<input type="radio" name="appointment_status" value="cancel">Cancel<br>
+						<input type="radio" name="appointment_status" value="cancel">Accept
 
 
 					 

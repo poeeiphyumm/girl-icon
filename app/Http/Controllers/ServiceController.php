@@ -17,7 +17,7 @@ class ServiceController extends Controller
      */
     public function index()
     {
-         $services=Service::all();
+         $services=DB::table('categories')->join('services','services.category_id','=','categories.id')->select('services.*','categories.*','category_name as category')->get();
         $categories=Category::all();
         
         return view('backend.services.index',compact('services','categories'));
@@ -32,13 +32,9 @@ class ServiceController extends Controller
      */
     public function create()
     {
-        $services=Service::all();
+       $services=Service::all();
         $categories=Category::all();
         return view("backend.services.create",compact('services','categories'));
-
-        //return view("backend.services.create",compact('services'));
-
-        return view('backend.services.create',compact('services','categories'));
     }
 
     /**
