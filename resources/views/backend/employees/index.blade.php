@@ -17,13 +17,10 @@
 		    		<tr>
 			    		<td>No</td>
 			    		<td>Name</td>
-<<<<<<< HEAD
-			    		<td>Service Name</td>
-=======
-			    		<td>Service ID</td>
->>>>>>> 3414074898110b2dd544f6b07db8ccef7da54f9b
 			    		<td>Email</td>
+			    		<td>Photo</td>
 			    		<td>Availability Status</td>
+			    		<td>Service Name</td>
 			    		<td>Actions</td>
 		    		</tr>
 		    	</thead>
@@ -34,15 +31,15 @@
 		    		<tr>
 		    			<td>{{ $i++ }}</td>
 			    		<td>{{ $employee->employee_name}}</td>
-<<<<<<< HEAD
-			    		<td>{{ $employee->service }}</td>
-=======
-			    		<td>{{ $employee->service_id }}</td>
->>>>>>> 3414074898110b2dd544f6b07db8ccef7da54f9b
 			    		<td>{{ $employee->email }}</td>
+			    		<td><img src="{{ asset($employee->photo)}}" width="70px" height="60px"></td>
+
 			    		<td>{{ $employee->availability_status }}</td>
+			    		<td>{{ $employee->cname}}</td>
 			    		<td>
-			 
+
+			    			{{-- <a href="{{ route('employees.show',$service->id) }}" class="btn btn-primary">Detail</a> --}}
+			    			
 			    			<a href="{{ route('employees.edit',$employee->id) }}" class="btn btn-secondary">Edit</a>
 
 			    			
@@ -54,9 +51,7 @@
 			    			</form>
 			    		</td>
 		    		</tr>
-
 		    		@endforeach
-		    		{{-- print_r($employees); --}}
     			</tbody>
     			
     		</table>

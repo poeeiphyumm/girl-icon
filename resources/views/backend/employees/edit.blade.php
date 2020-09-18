@@ -31,6 +31,8 @@
 
 		</div>
 
+		
+
 		<div class="form-group row">
 			<label class="col-sm-2 col-form-label">Availiability Status</label>
 			<div class="col-sm-6">
@@ -44,7 +46,7 @@
 			<select class="form-control form-control-md" id="inputservice" name="service_id">
 				<optgroup label="Choose Service ">
 					@foreach($services as $service)
-						<option value="{{ $service->id }}" @if($service->service_name == $employee->service_name) {{ 'selected'}} @endif>{{ $employee->service_id }}</option>
+						<option value="{{ $service->id }}" @if($service->id == $employee->service_id) {{ 'selected'}} @endif>{{ $service->service_name }}</option>
 					@endforeach
 
 				</optgroup>

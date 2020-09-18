@@ -18,6 +18,8 @@ class Appointment extends Model
         return $this->belongsTo('App\Customer');
     }
 
+     
+
      // protected $fillable =[
     	// 'customer_name','employee_name,date,time,status'];
 }

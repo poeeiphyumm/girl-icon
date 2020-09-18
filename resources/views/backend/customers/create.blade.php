@@ -1,14 +1,7 @@
 @extends ('backend.backendtemplate')
 @section('content')
 
-<div class="container-fluid">
-	 <div class="d-sm-flex align-items-center justify-content-between mb-4">
-        <div class="row">
-            <div class="col">
-            		<h1 class="h3 mb-0 text-gray-800">Customer Create Form</h1>
-            </div>
-        </div>
-    </div>
+
 
     <div class="container my-5">
         <div class="row justify-content-center">
@@ -58,11 +51,11 @@
                     </div>
    
                     <div class="form-group row">
-                        <label class="col-sm-2 col-form-label">Category</label>
-                          <select class="form-control form-control-md" id="inputCategory" name="category_name">
+                        <label class="col-sm-2 col-form-label">Service</label>
+                          <select class="form-control form-control-md" id="inputCategory" name="service_id">
                               <optgroup label="Choose Category">
-                                @foreach($categories as $category)
-                                  <option value="{{ $category->id }}">{{ $category->category_name }}</option>
+                                @foreach($services as $service)
+                                  <option value="{{ $service->id }}">{{ $service->service_name}}</option>
                                 @endforeach
                               </optgroup>
                           </select>
@@ -75,7 +68,7 @@
                         </div>
                     </div>
   
-                    <input type="submit" value="Booking Now" class="btn btn-primary" onclick="alert('Make Appointment success')" >
+                    <input type="submit" value="Booking Now" class="btn btn-primary" onclick="" >
   
                 </form>
             </div>  

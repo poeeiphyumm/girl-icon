@@ -7,14 +7,14 @@ use Illuminate\Database\Eloquent\Model;
 class Customer extends Model
 {
     protected $fillable=[
-        'customer_name','email','date','phone_no','gender','service','address'
+        'customer_name','email','date','phone_no','gender','service_id','address'
     ];
-    public function appointments($value='')
+    // public function employee($value='')
+    // {
+    //     return $this->belongsTo('App\Employee');
+    // }
+    public function services($value='')
     {
-        return $this->hasMany('App\Appointment');
-    }
-    public function categories($value='')
-    {
-        return $this->hasMany('App\Category');
+        return $this->hasMany('App\Service');
     }
 }

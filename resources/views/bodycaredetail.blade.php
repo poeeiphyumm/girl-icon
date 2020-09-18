@@ -29,7 +29,7 @@
 				<p>Duration:{{ $services->duration }}</p>
 
 				<a href="{{ asset('booking') }}">
-                <input type="submit" value="Appointment Now" class="btn btn-primary" onclick="" >
+                <input type="submit" value="Appointment Now" class="btn btn-primary" >
               </a>
 
 			</div>

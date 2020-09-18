@@ -79,10 +79,7 @@
           </div>
         </div>
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 3414074898110b2dd544f6b07db8ccef7da54f9b
 <div class="container">
         <div class="row">
           <div class="col-md-6 col-lg-3 col-xl-3 col-12 text-center mb-5">
@@ -140,6 +137,9 @@
       <input type="email" name="email" class="form-control" id="inputemail" placeholder="E-mail" required="required">
     </div>
   </div>
+
+
+
   <div class="form-group row">
     
     <div class="col-md-12">
@@ -162,11 +162,11 @@
   </div>
    
    <div class="form-group row">
-        <label class="col-md-3 col-form-label">Category</label>
-        <select class="form-control form-control-md col-md-9" id="inputCategory" name="category_name">
-          <optgroup label="Choose Category">
-            @foreach($categories as $category)
-              <option value="{{ $category->id }}">{{ $category->category_name }}</option>
+        <label class="col-md-3 col-form-label">Service</label>
+        <select class="form-control form-control-md col-md-9" id="inputCategory" name="service_id">
+          <optgroup label="Choose service">
+            @foreach($services as $service)
+              <option value="{{ $service->id }}">{{ $service->service_name}}</option>
             @endforeach
           </optgroup>
         </select>
@@ -180,89 +180,21 @@
   </div>
   
  @role('Customer')
-  
-   <a href="{{ route('loginpage') }}" class="btn btn-secondary btn-block mainfullbtncolor col-md-8">Login To Appointment</a>
+
+    <input type="submit" value="Appointment Now" class="btn btn-primary" onclick="" >
+   
   @else
  
-  <input type="submit" value="Appointment Now" class="btn btn-primary" onclick="" >
+  
+  <a href="{{ route('loginpage') }}" class="btn btn-secondary btn-block mainfullbtncolor col-md-8">Login To Appointment</a>
 
   @endrole
   
 </form>
     </div>  
   </div>
-<<<<<<< HEAD
 </div>
 
-=======
-
-            <form action="#" class="p-5 bg-white">
-            <form action="{{ route('customers.store') }}" method="post" enctype="multipart/form-data">
-            @csrf
-              <h1 class="mb-4">Get Appointment Now</h1>
-
-              <div class="row form-group">
-                <div class="col-md-6 mb-3 mb-md-0">
-                  <label class="text-black" for="fname">Name</label>
-                  <input type="text" id="fname" class="form-control" placeholder="Name">
-                </div>
-              </div>
-
-                {{-- <div class="col-md-6">
-                  <label class="text-black" for="lname">Last Name</label>
-                  <input type="text" id="lname" class="form-control" placeholder="Last Name">
-                </div> --}}
-              {{-- </div> --}}
-              <div class="row form-group">
-
-               <div class="col-md-6">
-                  <label class="text-black" for="email">Email</label> 
-                  <input type="email" id="email" class="form-control" placeholder="Email">
-                </div>
-              </div>
-
-              <div class="row form-group">
-                <div class="col-md-6 mb-3 mb-md-0">
-                  <label class="text-black" for="date">Date</label> 
-                  <input type="date" id="date" class="form-control datepicker px-2" placeholder="Date of visit">
-                </div>
-               
-              </div>
-
-          <div class="form-group row">
-            <label class="col-md-3 col-form-label">Category</label>
-              <select class="form-control" id="inputCategory" name="category_name">
-                <optgroup label="Choose Category">
-                @foreach($categories as $category)
-                <option value="{{ $category->id }}">{{ $category->category_name }}</option>
-                @endforeach
-                </optgroup>
-              </select>
-          </div>
-
-              <div class="row form-group">
-                <div class="col-md-12">
-                  <label class="text-black" for="note">Notes</label> 
-                  <textarea name="note" id="note" cols="30" rows="5" class="form-control" placeholder="Write your notes or questions here..."></textarea>
-                </div>
-              </div>
-
-
-              <div class="row form-group">
-                <div class="col-md-12">
-                  {{--  @if(Session::has('success'))  --}}
-                    <div class="alert alert-success">
-                      <input type="submit" value="Booking Now" class="btn btn-primary" onclick="alert('Make Appointment success')" >
-                      {{-- <strong>Make Appointment Success! --}}{{-- {{Session::get('message','')}}</strong> --}}
-                    </div>
-                  {{-- @endif --}} 
-                
-                </div>
-              </div>
-</div>
-
-
->>>>>>> 3414074898110b2dd544f6b07db8ccef7da54f9b
   </div>
 
  <div class="col-md-5">

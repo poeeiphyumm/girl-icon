@@ -42,11 +42,7 @@
 			<div class="col-sm-6">
 				<input type="file" name="photo" class="form-control" id="inputphoto">
 			</div>
-<<<<<<< HEAD
 		</div>
-=======
-
->>>>>>> 3414074898110b2dd544f6b07db8ccef7da54f9b
 
 		<div class="form-group row">
 			<label class="col-sm-2 col-form-label">Category</label>
@@ -59,10 +55,7 @@
 				</optgroup>
 			</select>
 		
-<<<<<<< HEAD
 		</div>
-=======
->>>>>>> 3414074898110b2dd544f6b07db8ccef7da54f9b
 	
 		<input type="submit" value="Create" class="btn btn-danger" >
 	</form>

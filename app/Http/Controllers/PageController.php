@@ -5,22 +5,23 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Service;
 use App\Category;
+use App\Employee;
 use DB;
 class PageController extends Controller
 {
     public function mainfun($value='')
     {
-        $categories=Category::all();
-        return view('main',compact('categories'));
+        $services=Service::all();
+        return view('main',compact('services'));
     }
  
 
      public function bookingfun($value='')
      {
-        $categories=Category::all();
+        $services=Service::all();
 
         
-         return view('booking',compact('categories'));
+         return view('booking',compact('services'));
 
 
     }
@@ -39,8 +40,8 @@ class PageController extends Controller
 
     public function aboutfun($value='')
      {
-        
-        return view('about');
+        $employees=Employee::all();
+        return view('about',compact('employees'));
     }
 
 

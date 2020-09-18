@@ -16,10 +16,18 @@ class CreateEmployeesTable extends Migration
         Schema::create('employees', function (Blueprint $table) {
             $table->id();
             $table->string('employee_name');
-            $table->string('service_id');
             $table->string('email');
-            $table->strigg('availability_status');
+            // $table->text('photo');
+            $table->string('availability_status');
+            $table->unsignedBigInteger('service_id');
+
+
             $table->timestamps();
+
+            $table->foreign('service_id')
+                    ->references('id')
+                    ->on('services')
+                    ->onDelete('cascade');
         });
     }
 
