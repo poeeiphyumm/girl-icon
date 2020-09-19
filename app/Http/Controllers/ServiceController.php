@@ -15,11 +15,23 @@ class ServiceController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
+<<<<<<< HEAD
+    {   
+
+        
+
+         // $services=DB::table('categories')->join('services','services.category_id','=','categories.id')->select('services.*','categories.*','categories.category_name as cname')->get();
+
+
+        $services=Service::all();
+        return view('backend.services.index',compact('services'));
+=======
     {
          $services=DB::table('categories')->join('services','services.category_id','=','categories.id')->select('services.*','categories.*','category_name as category')->get();
         $categories=Category::all();
         
         return view('backend.services.index',compact('services','categories'));
+>>>>>>> cb1e6f28d3024a8d525ecff6397a50b072efd72a
 
     }
     
@@ -31,9 +43,16 @@ class ServiceController extends Controller
      */
     public function create()
     {
+<<<<<<< HEAD
+        $services=Service::all();
+        $categories=Category::all();
+        return view("backend.services.create",compact('services','categories'));
+
+=======
        $services=Service::all();
         $categories=Category::all();
         return view("backend.services.create",compact('services','categories'));
+>>>>>>> cb1e6f28d3024a8d525ecff6397a50b072efd72a
     }
 
     /**
@@ -43,7 +62,26 @@ class ServiceController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
+<<<<<<< HEAD
+    {     
+  
+        //If include file,upload file
+
+       // dd($request);
+        //  $request->validate([
+        //     "service_name" => 'required',
+        //     "duration" => 'required',
+        //     "price" => 'required',
+        //     "category_id" => 'required',
+        //     "photo"=>'required'
+            
+        // ]);
+
+        
+        $imageName = time().'.'.$request->photo->extension();
+=======
     {
+>>>>>>> cb1e6f28d3024a8d525ecff6397a50b072efd72a
        //dd($request);
          //If include file,upload file
        //dd($request);
@@ -57,7 +95,6 @@ class ServiceController extends Controller
         ]);
 
         $imageName = time().'-'.$request->photo->extension();
-
         $request->photo->move(public_path('backend/serviceimg'),$imageName);
         // ပုံပတ်လမ်းကြောင်းသိမ်း
         $path = 'backend/serviceimg/'.$imageName;
@@ -82,13 +119,25 @@ class ServiceController extends Controller
      */
     public function show($id)
     {
+<<<<<<< HEAD
         //$services=Service::find($id);
         $services=DB::table('employees')->join('services','services.id','=','employees.service_id')->select('services.*','employees.*','service_name as service')->get();
          //$employees=Employee::find($id);
+=======
+<<<<<<< HEAD
+        // $services=Service::all();
+       
+        $categories=DB::table('services')->join('categories','categories.id','=','services.category_id')->select('services.*','categories.*','categories.category_name as caname')->first();
+
+        return view('backend.services.show',compact('categories')); 
+=======
+        $services=Service::find($id);
+>>>>>>> 1b4d201405a93444aa7ecffbdb516baaf27cda70
         $employees=Employee::all();
         
         //dd($service);
         return view('backend.services.show',compact('services','employees')); 
+>>>>>>> cb1e6f28d3024a8d525ecff6397a50b072efd72a
     }
 
     /**
@@ -99,11 +148,13 @@ class ServiceController extends Controller
      */
     public function edit($id)
     {
+<<<<<<< HEAD
         // dd($service);
         $service=Service::find($id);
+=======
+>>>>>>> 1b4d201405a93444aa7ecffbdb516baaf27cda70
         $categories=Category::all();
         return view('backend.services.edit',compact('service','categories'));
-
     }
 
     /**

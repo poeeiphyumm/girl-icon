@@ -75,4 +75,5 @@
           <img src="{{asset('frontend/images/about.jpeg')}}">
         </div>
       </div>
+      
  @endsection

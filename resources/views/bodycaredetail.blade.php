@@ -30,7 +30,13 @@
 				<p> Price:	{{$services->price}}</p>
 				<p>Duration:{{ $services->duration }}</p>
 
+<<<<<<< HEAD
+				<a href="{{ asset('booking') }}">
+                <input type="submit" value="Appointment Now" class="btn btn-primary" >
+              </a>
+=======
 				<a href="{{ asset('booking') }}" class="btn btn-info">Appointment</a>
+>>>>>>> cb1e6f28d3024a8d525ecff6397a50b072efd72a
 
 			</div>
 		</div>

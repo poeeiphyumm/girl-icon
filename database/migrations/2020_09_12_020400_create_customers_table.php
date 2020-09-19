@@ -20,10 +20,24 @@ class CreateCustomersTable extends Migration
             $table->string('email')->unique();
             $table->string('date');
             $table->integer('phone');
-            $table->string('service');
+            // $table->string('service');
             $table->string('gender');
             $table->string('note');
             $table->timestamps();
+
+            $table->unsignedBigInteger('service_id');
+
+            $table->unsignedBigInteger('employee_id');
+
+            $table->foreign('service_id')
+                    ->references('id')
+                    ->on('services')
+                    ->onDelete('cascade');
+
+            $table->foreign('employee_id')
+                    ->references('id')
+                    ->on('employees')
+                    ->onDelete('cascade');
         });
     }
 

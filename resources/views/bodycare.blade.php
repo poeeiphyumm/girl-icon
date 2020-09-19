@@ -20,7 +20,7 @@
               <p class=" text-info">{{ $service->service_name }}</p>
 
               <a href="{{ asset('booking') }}">
-                <input type="submit" value="Appointment Now" class="btn btn-primary" onclick="" >
+                <input type="submit" value="Appointment Now" class="btn btn-primary"  >
               </a>
             
           </div>

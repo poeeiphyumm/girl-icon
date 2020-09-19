@@ -5,23 +5,58 @@ namespace App\Http\Controllers;
 use App\Customer;
 use App\Service;
 use App\Appointment;
+use Carbon\Carbon;
+use App\Employee;
+use DB;
 use Illuminate\Http\Request;
 
 class CustomerController extends Controller
 {
 
-    
+     public function __construct($value='')
+    {
+         //$this->middleware('role:Admin')->only('index','show',);
+         //$this->middleware('role:Customer')->only('store');
+    }
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
 
+<<<<<<< HEAD
+       $date1=$request->start_date;
+        $date2=$request->end_date;
+        if ($request->start_date && $request->end_date){
+            $customers=Customer::whereBetween('date',
+                [   
+                    new Carbon($date1), 
+                    new Carbon($date2)
+                ])->where('address',0)->get();
+        }
+        else{
+            $customers=Customer::all();
+        }
+
+
+
+         $services=DB::table('services')->join('customers','customers.service_id','=','services.id')->select('customers.*','services.*','services.service_name as cname')->get();
+
+        // $customers=DB::table('services')->join('customers','services.id','=','customers.service_id')->select('services.*','customers.*','services.service_name as cname')->get();
+         // //
+         //$services=Service::all();
+
+         //dd($customers);
+        // $customers=Customer::all();
+         //dd($services);
+         return view('backend.customers.index',compact('services')); 
+=======
         $customers=Customer::all();
         $services=Service::all();
         return view('backend.customers.index',compact('customers','services'));
+>>>>>>> cb1e6f28d3024a8d525ecff6397a50b072efd72a
 
     }
 
@@ -56,11 +91,16 @@ class CustomerController extends Controller
            "date" => 'required',        
             "phone_no" => 'required',
             "gender" => 'required',
+<<<<<<< HEAD
+            "service_id" => 'required',
+            "address" => 'required'
+=======
 
 
            // "category"=>'required';
             "service_name" => 'required',
             "address" => 'required',
+>>>>>>> cb1e6f28d3024a8d525ecff6397a50b072efd72a
 
 
         ]);
@@ -72,14 +112,17 @@ class CustomerController extends Controller
         $customer->date= $request->date;
         $customer->phone_no = $request->phone_no;
         $customer->gender = $request->gender;
+<<<<<<< HEAD
+        $customer->service_id =$request->service_id;
+=======
 
 
         //$customer->categories->category_id = $request->category_id;
 ;
         $customer->service_name=$request->service_name;
 
+>>>>>>> cb1e6f28d3024a8d525ecff6397a50b072efd72a
         $customer->address = $request->address;
-
         $customer->save();
 
         //redirect
@@ -93,9 +136,13 @@ class CustomerController extends Controller
      * @param  \App\Customer  $customer
      * @return \Illuminate\Http\Response
      */
-    public function show(Customer $customer)
+    public function show($id)
     {
-        //
+        $employees=DB::table('customers')->join('employees','employees.service_id','=','customers.service_id')->join('services','services.id','=','employees.service_id')->select('employees.*','customers.*','services.*','employees.employee_name as aa')->get();
+        // $employees=Employee::find($id);
+        // dd($employees);
+        //$customers=Customer::all();
+        return view('backend.customers.detail',compact('employees'));
     }
 
     /**
@@ -129,7 +176,7 @@ class CustomerController extends Controller
      */
     public function destroy($id)
     {
-        $post=Customer::find($id);
+        $post=Service::find($id);
         $post->delete();
         return redirect()->back();    
     }

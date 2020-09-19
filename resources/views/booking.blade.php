@@ -13,6 +13,8 @@
               
                 </div>
               </div>
+<<<<<<< HEAD
+=======
     <div class="slide-one-item home-slider owl-carousel">
       <div class="site-blocks-cover inner-page-cover" style="background-image: url({{asset('front/images/hero_bg_2.jpg')}});" data-aos="fade" data-stellar-background-ratio="0.5">
         <div class="container">
@@ -24,6 +26,7 @@
               </div>
             </div>
 >>>>>>> 3414074898110b2dd544f6b07db8ccef7da54f9b
+>>>>>>> cb1e6f28d3024a8d525ecff6397a50b072efd72a
           </div>
       </div>  
   </div>
@@ -36,10 +39,13 @@
       <div class="container my-5">
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
     </div>
 >>>>>>> b42146a0187ce37e06f8fd0ff2b6c9f7465cc3f9
 <div class="container my-5">
 >>>>>>> 3414074898110b2dd544f6b07db8ccef7da54f9b
+>>>>>>> cb1e6f28d3024a8d525ecff6397a50b072efd72a
     <div class="row justify-content-center">
       <div class="col-md-8">
       <form action="{{ route('customers.store') }}" method="post" enctype="multipart/form-data">
@@ -49,8 +55,9 @@
       <h1>Get Appointment Now</h1>
     </div>
   </div>
-<<<<<<< HEAD
   
+<<<<<<< HEAD
+=======
 =======
 
   </form>
@@ -78,6 +85,7 @@
               <p><a href="#" class="btn btn-primary px-4 py-2 text-white">Get In Touch</a></p>
             </div>
 >>>>>>> 3414074898110b2dd544f6b07db8ccef7da54f9b
+>>>>>>> cb1e6f28d3024a8d525ecff6397a50b072efd72a
   <div class="form-group row">
     <label class="col-sm-2 col-form-label"></label>
     <div class="col-md-12">
@@ -139,6 +147,16 @@
   
    <div class="form-group row">
 <<<<<<< HEAD
+        <label class="col-md-3 col-form-label">Service</label>
+        <select class="form-control form-control-md col-md-9" id="inputService" name="service_id">
+          <optgroup label="Choose service">
+            @foreach($services as $service)
+              <option value="{{ $service->id }}">{{ $service->service_name}}</option>
+            @endforeach
+          </optgroup>
+        </select>
+=======
+<<<<<<< HEAD
 =======
         <label class="col-md-3 col-form-label">Category</label>
         <select class="form-control form-control-md col-md-9" id="inputCategory" name="category_name">
@@ -183,11 +201,22 @@
 
 <<<<<<< HEAD
 =======
+>>>>>>> cb1e6f28d3024a8d525ecff6397a50b072efd72a
   </div>
 
+  {{--  
+   <div class="form-group row">
+        <label class="col-md-3 col-form-label">Service</label>
+        <select class="form-control form-control-md col-md-9" id="inputService" name="service_id">
+          <optgroup label="Choose Service ">
+          @foreach($services as $service)
+            <option value="{{ $service->id }}" @if($service->service_id) {{ 'selected'}} @endif>{{ $service->service_name }}</option>
+          @endforeach
+
+        </optgroup>
+        </select>
   </div>
-    </div>
->>>>>>> 3414074898110b2dd544f6b07db8ccef7da54f9b
+ --}}
 
 >>>>>>> b42146a0187ce37e06f8fd0ff2b6c9f7465cc3f9
   <div class="form-group row">
@@ -196,8 +225,10 @@
       <input type="text" name="address" class="form-control" id="inputphoto" placeholder=" address" required="required" >
     </div>
   </div>
-<<<<<<< HEAD
+
   @role('Customer')
+<<<<<<< HEAD
+=======
 =======
   
 <<<<<<< HEAD
@@ -212,17 +243,21 @@
   <input type="submit" value="Appointment Now" class="btn btn-primary" onclick="" >
   
 >>>>>>> 3414074898110b2dd544f6b07db8ccef7da54f9b
+>>>>>>> cb1e6f28d3024a8d525ecff6397a50b072efd72a
 
-   <a href="{{ route('loginpage') }}" class="btn btn-secondary btn-block mainfullbtncolor col-md-8">Login To Appointment</a>
+    <input type="submit" value="Appointment Now" class="btn btn-primary" onclick="" >
+   
   @else
  
+<<<<<<< HEAD
+  
+  <a href="{{ route('loginpage') }}" class="btn btn-secondary btn-block mainfullbtncolor col-md-8">Login To Appointment</a>
+=======
   <input type="submit" value="Appointment Now" class="btn btn-primary" onclick="" >
 >>>>>>> b42146a0187ce37e06f8fd0ff2b6c9f7465cc3f9
+>>>>>>> cb1e6f28d3024a8d525ecff6397a50b072efd72a
 
-<<<<<<< HEAD
   @endrole
-=======
->>>>>>> 3414074898110b2dd544f6b07db8ccef7da54f9b
 </form>
     </div>  
   </div>
@@ -241,8 +276,4 @@
         </div>
       </div>
   </div>
-<<<<<<< HEAD
  @endsection
-=======
- @endsection
->>>>>>> 3414074898110b2dd544f6b07db8ccef7da54f9b

@@ -10,7 +10,7 @@
         </div>
     </div>
 
-	<form action="{{ route('employees.update',$employee->id) }}" method="post" enctype="multipart/form-data">
+	<form action="{{ route('employees.update',$employees->id) }}" method="post" enctype="multipart/form-data">
 	@csrf
 	{{-- //methos put က  update  လုပ်တာ --}}
 	@method('PUT')
@@ -19,17 +19,19 @@
 		<div class="form-group row">
 			<label class="col-sm-2 col-form-label">Name</label>
 			<div class="col-sm-6">
-				<input type="name" name="employee_name" class="form-control" id="inputname" value="{{ $employee->employee_name}}" >
+				<input type="name" name="employee_name" class="form-control" id="inputname" value="{{ $employees->employee_name}}" >
 			</div>
 		</div>
 
 		<div class="form-group row">
 			<label class="col-sm-2 col-form-label">Email</label>
 			<div class="col-sm-6">
-				<input type="name" name="email" class="form-control" id="inputname" value="{{ $employee->email}}" >
+				<input type="name" name="email" class="form-control" id="inputname" value="{{ $employees->email}}" >
 			</div>
 		</div>
 	
+
+		
 
 		<div class="form-group row">
 			<label class="col-sm-2 col-form-label">Availiability Status</label>
@@ -39,12 +41,17 @@
 			</div>
 		</div>
 
+
 		<div class="form-group row">
 			<label class="col-sm-2 col-form-label">Service</label>
 			<select class="form-control form-control-md" id="inputservice" name="service_id">
 				<optgroup label="Choose Service ">
 					@foreach($services as $service)
+<<<<<<< HEAD
+						<option value="{{ $service->id }}" @if($employees->service_id == $service->id) {{ 'selected'}} @endif>{{ $service->service_name }}</option>
+=======
 						<option value="{{ $service->id }}" @if($service->id == $employee->service_id) {{ 'selected'}} @endif>{{ $employee->service_name }}</option>
+>>>>>>> cb1e6f28d3024a8d525ecff6397a50b072efd72a
 					@endforeach
 
 				</optgroup>

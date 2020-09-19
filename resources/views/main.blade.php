@@ -79,6 +79,10 @@
           </div>
         </div>
 
+<<<<<<< HEAD
+
+=======
+>>>>>>> cb1e6f28d3024a8d525ecff6397a50b072efd72a
 <div class="container">
         <div class="row">
           <div class="col-md-6 col-lg-3 col-xl-3 col-12 text-center mb-5">
@@ -136,6 +140,9 @@
       <input type="email" name="email" class="form-control" id="inputemail" placeholder="E-mail" required="required">
     </div>
   </div>
+
+
+
   <div class="form-group row">
     
     <div class="col-md-12">
@@ -158,11 +165,11 @@
   </div>
    
    <div class="form-group row">
-        <label class="col-md-3 col-form-label">Category</label>
-        <select class="form-control form-control-md col-md-9" id="inputCategory" name="category_name">
-          <optgroup label="Choose Category">
-            @foreach($categories as $category)
-              <option value="{{ $category->id }}">{{ $category->category_name }}</option>
+        <label class="col-md-3 col-form-label">Service</label>
+        <select class="form-control form-control-md col-md-9" id="inputCategory" name="service_id">
+          <optgroup label="Choose service">
+            @foreach($services as $service)
+              <option value="{{ $service->id }}">{{ $service->service_name}}</option>
             @endforeach
           </optgroup>
         </select>
@@ -176,20 +183,27 @@
   </div>
   
  @role('Customer')
-  
-   <a href="{{ route('loginpage') }}" class="btn btn-secondary btn-block mainfullbtncolor col-md-8">Login To Appointment</a>
+
+    <input type="submit" value="Appointment Now" class="btn btn-primary" onclick="" >
+   
   @else
  
-  <input type="submit" value="Appointment Now" class="btn btn-primary" onclick="" >
+  
+  <a href="{{ route('loginpage') }}" class="btn btn-secondary btn-block mainfullbtncolor col-md-8">Login To Appointment</a>
 
   @endrole
   
 </form>
     </div>  
   </div>
+<<<<<<< HEAD
+</div>
+
+=======
 
 
 </div>
+>>>>>>> cb1e6f28d3024a8d525ecff6397a50b072efd72a
   </div>
 
  <div class="col-md-5">

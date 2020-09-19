@@ -1,4 +1,7 @@
+<<<<<<< HEAD
+=======
 
+>>>>>>> cb1e6f28d3024a8d525ecff6397a50b072efd72a
 @extends('master')
 @section('content')
 
@@ -72,7 +75,8 @@
       </div>
         
         </div>
-    </div>
+    </div><br>
+
 
     <div class="site-section">
       <div class="container">

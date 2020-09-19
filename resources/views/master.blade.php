@@ -66,7 +66,12 @@
                         <li><a href="{{ asset('nailcare') }}">Nail Care</a></li>
                         <li><a href="{{ asset('facecare') }}">Face Care</a></li>
                         <li><a href="{{ asset('footcare') }}">Foot Care</a></li>
+<<<<<<< HEAD
+                        <li><a href="{{ asset('skintherapy') }}">Skin Therapy</a></li>
+                        
+=======
                         <li><a href="{{ asset('skintherapy') }}">Skin Therapy</a></li>                       
+>>>>>>> cb1e6f28d3024a8d525ecff6397a50b072efd72a
 
                   </ul>
                 </li>                   
@@ -118,6 +123,9 @@
     </div>
 
   @yield('content')
+<<<<<<< HEAD
+
+=======
 @section('yield')
 
     <div class="site-section">
@@ -126,6 +134,7 @@
 
   </div>
 </header>
+>>>>>>> cb1e6f28d3024a8d525ecff6397a50b072efd72a
 <footer class="site-footer">
 
   <div class="container">
