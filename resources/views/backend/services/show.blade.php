@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 @extends('backend.backendtemplate')
+=======
+@extends ('backend.backendtemplate')
+>>>>>>> cb1e6f28d3024a8d525ecff6397a50b072efd72a
 @section('content')
 
 <div class="container-fluid">
@@ -33,6 +37,7 @@
                 <img src="{{asset( $categories->photo) }}" width="70px" height="60px"></td>
               <td>
 
+<<<<<<< HEAD
 
               <form method="post" action="{{ route('services.destroy',$categories->id) }}">
                   @csrf
@@ -40,6 +45,14 @@
                   <input type="submit" class="btn btn-danger" value="Delete">
                 </form>
               </td>
+=======
+            @foreach($employees as $employee)
+            <tr>
+              <td>{{$i++}}</td>
+              <td>{{$employee->service_id}}</td>
+              <td>{{$employee->employee_id}}</td>
+              <td>{{$employee->service_name}}</td>
+>>>>>>> cb1e6f28d3024a8d525ecff6397a50b072efd72a
             </tr>
 {{--             @endforeach
  --}}          </tbody>

@@ -35,19 +35,28 @@
 				<input type="text" name="price" class="form-control" id="inputname" value="{{ $service->price}}" >
 			</div>
 		</div>
-
+		{{-- @php dd($service); @endphp --}}
 		<div class="form-group row">
 			<label class="col-sm-2 col-form-label">Category</label>
 			<select class="form-control form-control-md" id="inputBrand" name="category_id">
+
+				{{-- @php echo $service->category_id; @endphp --}}
 				<optgroup label="Choose Category">
 					@foreach($categories as $category)
+<<<<<<< HEAD
 						<option value="{{ $category->id }}" @if($category->id == $service->category_id) {{ 'selected'}} @endif>{{ $category->category_name }}</option>
+=======
+
+						<option value="{{ $category->id }}" @if($category->id == $service->category_id) {{ 'selected'}} @endif>{{ $category->category_name }}</option>
+
+>>>>>>> cb1e6f28d3024a8d525ecff6397a50b072efd72a
 					@endforeach
 
 				</optgroup>
 			</select>
 			
 		</div>
+	
 
 		<div class="form-group row">
 			<label class="col-sm-2 col-form-label">Photo</label>

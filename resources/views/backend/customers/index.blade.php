@@ -3,7 +3,11 @@
 
 <div class="container-fluid">
 	<div class="d-sm-flex align-items-center justify-content-between mb-4">
+<<<<<<< HEAD
         <h1 class="h3 mb-0 text-gray-800 d-inline-block"> Appointment List</h1>
+=======
+        <h1 class="h3 mb-0 text-gray-800 d-inline-block"> Customer List</h1>
+>>>>>>> cb1e6f28d3024a8d525ecff6397a50b072efd72a
         <a href="{{ route('customers.create') }}" class="btn btn-info mr-3">Add new</a>
 
     </div>
@@ -30,7 +34,11 @@
 			    		<td>Date</td>
 			    		<td>Phone No</td>
 			    		<td>Gender</td>
+<<<<<<< HEAD
 			    		<td>Service Name</td>
+=======
+			    		<td>Service</td>
+>>>>>>> cb1e6f28d3024a8d525ecff6397a50b072efd72a
 			    		<td>address</td>
 			    		<td>Action</td>
 		    		</tr>
@@ -43,6 +51,7 @@
 		    		{{-- @endphp; --}}
 		    		<tr>
 		    			<td>{{ $i++ }}</td>
+<<<<<<< HEAD
 			    		<td>{{ $service->customer_name }}</td>
 			    		<td>{{ $service->email }}</td>
 			    		<td>{{ $service->date }}</td>			    		
@@ -50,6 +59,15 @@
 			    		<td>{{ $service->gender }}</td>
 			    		<td>{{ $service->cname}}</td>	
 			    		<td>{{ $service->address }}</td>
+=======
+			    		<td>{{ $customer->customer_name }}</td>
+			    		<td>{{ $customer->email }}</td>
+			    		<td>{{ $customer->date }}</td>			    		
+			    		<td>{{ $customer->phone_no }}</td>
+			    		<td>{{ $customer->gender }}</td>
+			    		<td>{{ $customer->service_name}}</td>			    		
+			    		<td>{{ $customer->address }}</td>
+>>>>>>> cb1e6f28d3024a8d525ecff6397a50b072efd72a
 			    		<td>
 
 			    			

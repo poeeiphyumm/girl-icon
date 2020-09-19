@@ -26,6 +26,7 @@ class CustomerController extends Controller
     public function index(Request $request)
     {
 
+<<<<<<< HEAD
        $date1=$request->start_date;
         $date2=$request->end_date;
         if ($request->start_date && $request->end_date){
@@ -51,6 +52,11 @@ class CustomerController extends Controller
         // $customers=Customer::all();
          //dd($services);
          return view('backend.customers.index',compact('services')); 
+=======
+        $customers=Customer::all();
+        $services=Service::all();
+        return view('backend.customers.index',compact('customers','services'));
+>>>>>>> cb1e6f28d3024a8d525ecff6397a50b072efd72a
 
     }
 
@@ -85,21 +91,20 @@ class CustomerController extends Controller
            "date" => 'required',        
             "phone_no" => 'required',
             "gender" => 'required',
+<<<<<<< HEAD
             "service_id" => 'required',
             "address" => 'required'
+=======
+
+
+           // "category"=>'required';
+            "service_name" => 'required',
+            "address" => 'required',
+>>>>>>> cb1e6f28d3024a8d525ecff6397a50b072efd72a
 
 
         ]);
 
-        //
-
-        // //If include file,upload file
-        // $imageName = time().'-'.$request->photo->extension();
-        // $request->photo->move(public_path('backend/categoryimg'),$imageName);
-        // // ပုံပတ်လမ်းကြောင်းသိမ်း
-        // $path = 'backend/categoryimg/'.$imageName;
-        //
-        //Data insert
         $customer = new Customer;
         
         $customer->customer_name = $request->customer_name;
@@ -107,7 +112,16 @@ class CustomerController extends Controller
         $customer->date= $request->date;
         $customer->phone_no = $request->phone_no;
         $customer->gender = $request->gender;
+<<<<<<< HEAD
         $customer->service_id =$request->service_id;
+=======
+
+
+        //$customer->categories->category_id = $request->category_id;
+;
+        $customer->service_name=$request->service_name;
+
+>>>>>>> cb1e6f28d3024a8d525ecff6397a50b072efd72a
         $customer->address = $request->address;
         $customer->save();
 

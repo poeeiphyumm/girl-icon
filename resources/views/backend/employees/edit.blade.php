@@ -28,8 +28,8 @@
 			<div class="col-sm-6">
 				<input type="name" name="email" class="form-control" id="inputname" value="{{ $employees->email}}" >
 			</div>
-
 		</div>
+	
 
 		
 
@@ -47,7 +47,11 @@
 			<select class="form-control form-control-md" id="inputservice" name="service_id">
 				<optgroup label="Choose Service ">
 					@foreach($services as $service)
+<<<<<<< HEAD
 						<option value="{{ $service->id }}" @if($employees->service_id == $service->id) {{ 'selected'}} @endif>{{ $service->service_name }}</option>
+=======
+						<option value="{{ $service->id }}" @if($service->id == $employee->service_id) {{ 'selected'}} @endif>{{ $employee->service_name }}</option>
+>>>>>>> cb1e6f28d3024a8d525ecff6397a50b072efd72a
 					@endforeach
 
 				</optgroup>
@@ -57,6 +61,5 @@
 		<input type="submit" value="Update" class="btn btn-danger">
 	</form>
 </div>
-
 
 @endsection
