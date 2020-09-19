@@ -82,12 +82,12 @@ class EmployeeController extends Controller
      * @param  \App\Employee  $employee
      * @return \Illuminate\Http\Response
      */
-    public function edit(Employee $employee)
+    public function edit($id)
     {
         //dd($employee);
          $services=Service::all();
          // $employees=Employee::all();
-         $employee=Employee::all();
+         $employee=Employee::find($id);
         return view('backend.employees.edit',compact('services','employee'));
     }
 

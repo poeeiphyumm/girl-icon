@@ -12,9 +12,8 @@
           <thead class="thead-dark">
             <tr>
               <td>No</td>
-              <td>Service_id</td>
-              <td>Employee_id</td>
-              <td>Service_Name</td>
+              <td>Employee Name</td>
+              <td>Service Name</td>
             </tr>
           </thead>
           <tbody>
@@ -23,9 +22,8 @@
             @foreach($employees as $employee)
             <tr>
               <td>{{$i++}}</td>
-              <td>{{$employee->service_id}}</td>
-              <td>{{$employee->employee_id}}</td>
-              <td>{{$employee->service_name}}</td>
+              <td>{{$employee->employee_name}}</td>
+              <td>{{$employee->service->service_name}}</td>
             </tr>
             @endforeach
           </tbody>

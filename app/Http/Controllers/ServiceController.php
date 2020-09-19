@@ -82,8 +82,11 @@ class ServiceController extends Controller
      */
     public function show($id)
     {
-        $services=Service::find($id);
+        //$services=Service::find($id);
+        $services=DB::table('employees')->join('services','services.id','=','employees.service_id')->select('services.*','employees.*','service_name as service')->get();
+         //$employees=Employee::find($id);
         $employees=Employee::all();
+        
         //dd($service);
         return view('backend.services.show',compact('services','employees')); 
     }
@@ -94,10 +97,10 @@ class ServiceController extends Controller
      * @param  \App\Service  $service
      * @return \Illuminate\Http\Response
      */
-    public function edit(Service $service)
+    public function edit($id)
     {
         // dd($service);
-        $service=Service::all();
+        $service=Service::find($id);
         $categories=Category::all();
         return view('backend.services.edit',compact('service','categories'));
 
