@@ -17,10 +17,6 @@
 		    		<tr>
 			    		<td>No</td>
 			    		<td>Name</td>
-<<<<<<< HEAD
-=======
-			    		<td>Service Name</td>
->>>>>>> cb1e6f28d3024a8d525ecff6397a50b072efd72a
 			    		<td>Email</td>
 			    		<td>Photo</td>
 			    		<td>Availability Status</td>
@@ -35,15 +31,11 @@
 		    		<tr>
 		    			<td>{{ $i++ }}</td>
 			    		<td>{{ $employee->employee_name}}</td>
-<<<<<<< HEAD
-=======
-			    		<td>{{ $employee->service }}</td>
->>>>>>> cb1e6f28d3024a8d525ecff6397a50b072efd72a
 			    		<td>{{ $employee->email }}</td>
 			    		<td><img src="{{ asset($employee->photo)}}" width="70px" height="60px"></td>
 
 			    		<td>{{ $employee->availability_status }}</td>
-			    		<td>{{ $employee->cname}}</td>
+			    		<td>{{ $employee->service}}</td>
 			    		<td>
 
 			    						    			

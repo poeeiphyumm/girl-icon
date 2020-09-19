@@ -11,10 +11,7 @@ class Employee extends Model
 
 
     	'employee_name','availability_status','service_id','email'
-<<<<<<< HEAD
 
-=======
->>>>>>> cb1e6f28d3024a8d525ecff6397a50b072efd72a
     ];     
     	
    	public function service($value='') 

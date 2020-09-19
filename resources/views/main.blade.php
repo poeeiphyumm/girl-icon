@@ -79,10 +79,7 @@
           </div>
         </div>
 
-<<<<<<< HEAD
 
-=======
->>>>>>> cb1e6f28d3024a8d525ecff6397a50b072efd72a
 <div class="container">
         <div class="row">
           <div class="col-md-6 col-lg-3 col-xl-3 col-12 text-center mb-5">
@@ -196,14 +193,11 @@
 </form>
     </div>  
   </div>
-<<<<<<< HEAD
 </div>
 
-=======
 
 
 </div>
->>>>>>> cb1e6f28d3024a8d525ecff6397a50b072efd72a
   </div>
 
  <div class="col-md-5">
