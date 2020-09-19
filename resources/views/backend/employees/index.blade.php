@@ -38,8 +38,7 @@
 			    		<td>{{ $employee->cname}}</td>
 			    		<td>
 
-			    			{{-- <a href="{{ route('employees.show',$service->id) }}" class="btn btn-primary">Detail</a> --}}
-			    			
+			    						    			
 			    			<a href="{{ route('employees.edit',$employee->id) }}" class="btn btn-secondary">Edit</a>
 
 			    			

@@ -23,30 +23,49 @@
           
           <tbody>
             @php $i=1; @endphp
-            @foreach ($categories as $category)
-            <tr>
+{{--             @foreach ($categories as $category)
+ --}}            <tr>
               <td>{{ $i++ }}</td>
               
-              <td>{{ $category->service_name}}</td> 
-              <td>{{ $category->caname}}</td>
+              <td>{{ $categories->service_name}}</td> 
+              <td>{{ $categories->caname}}</td>
               <td>
-                <img src="{{asset( $category->photo) }}" width="70px" height="60px"></td>
+                <img src="{{asset( $categories->photo) }}" width="70px" height="60px"></td>
               <td>
 
 
-              <form method="post" action="{{ route('services.destroy',$category->id) }}">
+              <form method="post" action="{{ route('services.destroy',$categories->id) }}">
                   @csrf
                   @method('DELETE')
                   <input type="submit" class="btn btn-danger" value="Delete">
                 </form>
               </td>
             </tr>
-            @endforeach
-          </tbody>
+{{--             @endforeach
+ --}}          </tbody>
           
         </table>
       </div>
   </div>
 </div>
+
+
+{{-- <div class="container">
+  <h1> Service_Details List</h1><br>
+      
+    <div class="row">
+       <div class="col-lg-12 ">
+         <form class="text-success rounded">
+          {{ @foreach($categories as $category) --}}
+          {{-- <h4>Service Name : {{ $services->service_name}}</h4><br>
+          <h4>Category Id : {{ 'category_name '}}</h4> <br> 
+{{          <h4>Duration : {{ $->duration }}</h4> <br>   
+ --}}          {{-- <h4>Photo : </h4>   --}}
+        {{--   <img src="{{asset("photo")}} " height="150px" width="200px">
+          @endforeach
+           </form>
+       </div>
+     </div>
+  </div>  --}}
 
 @endsection

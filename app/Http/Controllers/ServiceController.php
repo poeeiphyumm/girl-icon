@@ -17,6 +17,9 @@ class ServiceController extends Controller
      */
     public function index()
     {   
+
+        
+
          // $services=DB::table('categories')->join('services','services.category_id','=','categories.id')->select('services.*','categories.*','categories.category_name as cname')->get();
 
 
@@ -101,7 +104,7 @@ class ServiceController extends Controller
     {
         // $services=Service::all();
        
-        $categories=DB::table('services')->join('categories','categories.id','=','services.category_id')->select('services.*','categories.*','categories.category_name as caname')->get();
+        $categories=DB::table('services')->join('categories','categories.id','=','services.category_id')->select('services.*','categories.*','categories.category_name as caname')->first();
 
         return view('backend.services.show',compact('categories')); 
     }

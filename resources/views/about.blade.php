@@ -74,22 +74,6 @@
     </div><br>
 
 
-
-      <h2 class="text-center">We are awsome employee</h2>
-     <div class="container-fluid">
-      <div class="row">
-
-         @foreach($employees as $employee)
-          <div class="col-lg-4 col-md-4 col-sm-12">
-            
-              <img src="{{asset($employee->photo)}}" width="400px" height="400px">
-      
-          </div>
-        @endforeach
-
-    </div> 
-  </div>
-
     <div class="site-section">
       <div class="container">
         <div class="row">

@@ -39,6 +39,8 @@ class CustomerController extends Controller
             $customers=Customer::all();
         }
 
+
+
          $services=DB::table('services')->join('customers','customers.service_id','=','services.id')->select('customers.*','services.*','services.service_name as cname')->get();
 
         // $customers=DB::table('services')->join('customers','services.id','=','customers.service_id')->select('services.*','customers.*','services.service_name as cname')->get();
@@ -46,9 +48,9 @@ class CustomerController extends Controller
          //$services=Service::all();
 
          //dd($customers);
-         $customers=Customer::all();
+        // $customers=Customer::all();
          //dd($services);
-         return view('backend.customers.index',compact('customers','services')); 
+         return view('backend.customers.index',compact('services')); 
 
     }
 

@@ -21,10 +21,11 @@ class EmployeeController extends Controller
 
          // $employees=Employee::all();
 
-        $services=Service::all();
+
+        //$services=Service::all();
         $employees=DB::table('services')->join('employees','services.id','=','employees.service_id')->select('employees.*','services.*','services.service_name as cname')->get();
         
-        return view('backend.employees.index',compact('services','employees'));
+        return view('backend.employees.index',compact('employees'));
     }
 
     /**
@@ -57,11 +58,7 @@ class EmployeeController extends Controller
            
         ]);
 
-        //  $imageName = time().'-'.$request->photo->extension();
-        // $request->photo->move(public_path('backend/employeeimg'),$imageName);
-        // // ပုံပတ်လမ်းကြောင်းသိမ်း
-        // $path = 'backend/employeeimg/'.$imageName;
-        //
+        
         //Data insert
         $employee = new Employee;
         
@@ -69,7 +66,6 @@ class EmployeeController extends Controller
         $employee->service_id = $request->service_id;
         $employee->availability_status = $request->availability_status;
         $employee->email = $request->email;
-        // $employee->photo=$path;
         $employee->save();
 
         //redirect
@@ -95,10 +91,15 @@ class EmployeeController extends Controller
     */
       public function edit($id)
     {
-         $services=Service::all();
-         // $employees=Employee::all();
-         $employee=Employee::find($id);
-        return view('backend.employees.edit',compact('services','employee'));
+         
+        $services=Service::all();
+        //$employees=Employee::all();
+
+        $employees=DB::table('services')->join('employees','employees.service_id','=','services.id')->where('employees.service_id',$id)->select('employees.*','services.*','services.service_name as cname')->first();
+
+        // dd($employees);
+        return view('backend.employees.edit',compact('services','employees'));
+
     }
 
 
@@ -123,24 +124,13 @@ class EmployeeController extends Controller
          $request->validate([
             "employee_name" => 'required',
             "email" => 'required',
-            "photo"=>'required',
             "service_id" => 'required',
             "availability_status" => 'required',
-             // "oldphoto" => 'required'
             
              ]);
        
-        //  if($request->hasFile('photo')){
-        //     $imageName = time().'.'.$request->photo->extension();
-
-        //             $request->photo->move(public_path('backend/employeeimg'),$imageName);
-
-        //                     $path = 'backend/employeeimg/'.$imageName;
-
-        // }else{
-        //     $path=$request->oldphoto;
-        // }
-        $employee = new Employee;
+         
+        //$employee = new Employee;
         $employee->employee_name = $request->employee_name;
          $employee->email = $request->email;
          // $employee->photo=$path;

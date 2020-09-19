@@ -62,9 +62,9 @@
         </li> --}}
 
         <li class="nav-item" id="appointments_history">
-            <a class="nav-link" href="{{'appointments'}}">
+            <a class="nav-link" href="{{'customers/'}}">
                 <i class="fas fa-fw fa-history"></i>
-                <span>Appointments History</span>
+                <span>Customers</span>
             </a>
         </li>
 
@@ -101,12 +101,12 @@
             </div>
         </li>
 
-        <li class="nav-item" id="customers">
+        {{-- <li class="nav-item" id="customers">
             <a class="nav-link" href="{{ 'customers' }}">
                 <i class="fas fa-fw fa-users"></i>
                 <span>Customers</span>
             </a>
-        </li>
+        </li> --}}
 
     </ul>
 

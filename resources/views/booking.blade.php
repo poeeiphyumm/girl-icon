@@ -88,7 +88,7 @@
               @enderror
   </div>
    
- {{--   <div class="form-group row">
+   <div class="form-group row">
         <label class="col-md-3 col-form-label">Service</label>
         <select class="form-control form-control-md col-md-9" id="inputService" name="service_id">
           <optgroup label="Choose service">
@@ -97,13 +97,21 @@
             @endforeach
           </optgroup>
         </select>
-  </div> --}}
-
-  <div class="form-group row">
-    <label>Service</label>
-    <input type="text" name="service_id">
   </div>
 
+  {{--  
+   <div class="form-group row">
+        <label class="col-md-3 col-form-label">Service</label>
+        <select class="form-control form-control-md col-md-9" id="inputService" name="service_id">
+          <optgroup label="Choose Service ">
+          @foreach($services as $service)
+            <option value="{{ $service->id }}" @if($service->service_id) {{ 'selected'}} @endif>{{ $service->service_name }}</option>
+          @endforeach
+
+        </optgroup>
+        </select>
+  </div>
+ --}}
 
   <div class="form-group row">
    

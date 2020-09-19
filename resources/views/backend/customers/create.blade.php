@@ -67,9 +67,11 @@
                           <input type="text" name="address" class="form-control" id="inputphoto" >
                         </div>
                     </div>
-  
-                    <input type="submit" value="Booking Now" class="btn btn-primary" onclick="" >
-  
+                    
+                    <a href="customers/index">
+                        <input type="submit" value="Booking Now" class="btn btn-primary" onclick="">
+                    </a>
+
                 </form>
             </div>  
         </div>

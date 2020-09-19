@@ -24,8 +24,6 @@ Route::get('loginform', 'PageController@loginfun')->name('loginpage');
 Route::get('/', 'PageController@mainfun')->name('mainpage');
 //backend by poeei
 
-//backend by poeei
-
 
 // Route::get('servicepage', 'PageController@servicefun')->name('servicepage');
 Route::get('servicepage', 'PageController@servicefun')->name('servicepage');
@@ -92,9 +90,6 @@ Route::get('haircaredetail/{id}', 'PageController@haircaredetailfun')->name('hai
 //end frontend by poeei
 
 
-Route::get('sparest', 'PageController@sparestfun')->name('sparestpage');
-//end frontend by poeei
-
 Route::get('skincaredetail/{id}', 'PageController@skincaredetailfun')->name('skincaredetail');
 
 
@@ -125,7 +120,7 @@ Route::middleware('role:Admin')->group(function(){
 
 
 });
-			Route::resource('customers','CustomerController');
+	Route::resource('customers','CustomerController');
 
  
 //auth

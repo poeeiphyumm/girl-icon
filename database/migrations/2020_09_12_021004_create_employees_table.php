@@ -17,7 +17,6 @@ class CreateEmployeesTable extends Migration
             $table->id();
             $table->string('employee_name');
             $table->string('email');
-            // $table->text('photo');
             $table->string('availability_status');
             $table->unsignedBigInteger('service_id');
 

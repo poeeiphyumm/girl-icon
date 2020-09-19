@@ -35,7 +35,6 @@
 				<input type="email" name="email" class="form-control" id="inputemail" >
 			</div>
 		</div>
-
 		
 
 		<div class="form-group row">

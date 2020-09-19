@@ -55,8 +55,9 @@
 				<input type="file" name="photo" >
 				@error('photo')
 					<div class="text-danger">{{($message)}}</div>
-					<img src="{{ asset($service->photo) }}" class="img-fluid w-25">
 				@enderror
+				<img src="{{ asset($service->photo) }}" class="img-fluid w-25">
+
 
 				<input type="hidden" name="oldphoto" value="{{ $service->photo }}">
 			</div>
