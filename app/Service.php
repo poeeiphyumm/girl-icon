@@ -12,6 +12,7 @@ class Service extends Model
     public function employees($value='')
     {
     	return $this->hasMany('App\Employee');
+<<<<<<< HEAD
     		    
     }   
     public function Customer($value='')
@@ -20,6 +21,9 @@ class Service extends Model
                 
     }   
       
+=======
+    }   
+>>>>>>> bd94691d4693e1bf90fcaac5cfc2e21d06e72905
     public function Category($value='')
     {
     	return $this->belongsTo('App\Category');

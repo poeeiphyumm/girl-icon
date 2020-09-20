@@ -35,7 +35,11 @@
 {{-- 			    		<td><img src="{{ asset($employee->photo)}}" width="70px" height="60px"></td>
  --}}
 			    		<td>{{ $employee->availability_status }}</td>
+<<<<<<< HEAD
 			    		<td>@if($employee->service){{ $employee->service->service_name}}@endif</td>
+=======
+			    		<td>{{ $employee->service}}</td>
+>>>>>>> bd94691d4693e1bf90fcaac5cfc2e21d06e72905
 			    		<td>
 			    			
 			    			<a href="{{ route('employees.edit',$employee->id) }}" class="btn btn-secondary">Edit</a>
