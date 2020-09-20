@@ -32,29 +32,14 @@
 				<p> Price:	{{$services->price}}</p>
 				<p>Duration:{{ $services->duration }}</p>
 
-				<a href="{{ asset('booking') }}">
+				<a href="{{ route('bookbyservice',$services->id) }}">
                 <input type="submit" value="Appointment Now" class="btn btn-primary" onclick="" >
               </a>
 			</div>
 		</div>
-<<<<<<< HEAD
-
-
-	</div>
-
-	</div>
-</div>
-		
-</div>
-	</div>		
-
-	</div>
-
-=======
 		
 
 						
->>>>>>> b42146a0187ce37e06f8fd0ff2b6c9f7465cc3f9
 	<div class="site-section">
       <div class="container">
         <div class="row text-center">
@@ -65,8 +50,4 @@
         </div>
       </div>
     </div>
-<<<<<<< HEAD
-
-=======
->>>>>>> b42146a0187ce37e06f8fd0ff2b6c9f7465cc3f9
 @endsection

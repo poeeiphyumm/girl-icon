@@ -32,7 +32,7 @@
 				<p> Price:	{{$services->price}}</p>
 				<p>Duration:{{ $services->duration }}</p>
 
-				<a href="{{ asset('booking') }}">
+				<a href="{{ route('bookbyservice',$services->id) }}">
                	 	<input type="submit" value="Appointment Now" class="btn btn-primary" onclick="" >
               	</a>
 				

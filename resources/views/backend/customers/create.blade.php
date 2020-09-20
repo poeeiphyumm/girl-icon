@@ -53,15 +53,9 @@
                     <div class="form-group row">
                         <label class="col-sm-2 col-form-label">Service</label>
                           <select class="form-control form-control-md" id="inputCategory" name="service_id">
-<<<<<<< HEAD
                               <optgroup label="Choose Category">
                                 @foreach($services as $service)
                                   <option value="{{ $service->id }}">{{ $service->service_name}}</option>
-=======
-                              <optgroup label="Choose Service">
-                                @foreach($services as $service)
-                                  <option value="{{ $service->id }}">{{ $service->service_name }}</option>
->>>>>>> cb1e6f28d3024a8d525ecff6397a50b072efd72a
                                 @endforeach
                               </optgroup>
                           </select>
@@ -73,11 +67,9 @@
                           <input type="text" name="address" class="form-control" id="inputphoto" >
                         </div>
                     </div>
-                    
-                    <a href="customers/index">
-                        <input type="submit" value="Booking Now" class="btn btn-primary" onclick="">
-                    </a>
-
+  
+                    <input type="submit" value="Booking Now" class="btn btn-primary" onclick="" >
+  
                 </form>
             </div>  
         </div>

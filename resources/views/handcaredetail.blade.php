@@ -35,7 +35,7 @@
 
 				<h3> 
 				
-			<a href="{{ asset('booking') }}">
+			<a href="{{ route('bookbyservice',$services->id) }}">
                 <input type="submit" value="Appointment Now" class="btn btn-primary" onclick="" >
 
 

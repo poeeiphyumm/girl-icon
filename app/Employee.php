@@ -7,25 +7,16 @@ use Illuminate\Database\Eloquent\Model;
 class Employee extends Model
 {
   
-	protected $fillable=[
+  protected $fillable=[
 
 
-    	'employee_name','availability_status','service_id','email'
-<<<<<<< HEAD
+      'employee_name','availability_status','service_id','email'
 
-=======
->>>>>>> cb1e6f28d3024a8d525ecff6397a50b072efd72a
     ];     
-    	
-   	public function service($value='') 
-   	{
-   		return $this->belongsTo('App\Service');
-   	}    
-
-   	// public function appointment($value='') 
-   	// {
-   	// 	return $this->belongsTo('App\Appointment');
-   	// }    
-
+      
+    public function service($value='') 
+    {
+      return $this->belongsTo('App\Service');
+    }    
 
 }

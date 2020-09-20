@@ -79,10 +79,7 @@
           </div>
         </div>
 
-<<<<<<< HEAD
 
-=======
->>>>>>> cb1e6f28d3024a8d525ecff6397a50b072efd72a
 <div class="container">
         <div class="row">
           <div class="col-md-6 col-lg-3 col-xl-3 col-12 text-center mb-5">
@@ -149,6 +146,14 @@
       <input type="date" name="date" class="form-control" id="inputdate" required="required">
     </div>
   </div>
+
+     <div class="form-group row">
+    
+    <div class="col-md-12">
+      <input type="time" name="time" class="form-control" id="inputtime" required="required">
+    </div>
+
+  </div>
   <div class="form-group row">
     
     <div class="col-md-12">
@@ -196,14 +201,8 @@
 </form>
     </div>  
   </div>
-<<<<<<< HEAD
 </div>
 
-=======
-
-
-</div>
->>>>>>> cb1e6f28d3024a8d525ecff6397a50b072efd72a
   </div>
 
  <div class="col-md-5">

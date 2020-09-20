@@ -17,13 +17,9 @@
 		    		<tr>
 			    		<td>No</td>
 			    		<td>Name</td>
-<<<<<<< HEAD
-=======
-			    		<td>Service Name</td>
->>>>>>> cb1e6f28d3024a8d525ecff6397a50b072efd72a
 			    		<td>Email</td>
-			    		<td>Photo</td>
-			    		<td>Availability Status</td>
+{{-- 			    		<td>Photo</td>
+ --}}			    		<td>Availability Status</td>
 			    		<td>Service Name</td>
 			    		<td>Actions</td>
 		    		</tr>
@@ -35,18 +31,13 @@
 		    		<tr>
 		    			<td>{{ $i++ }}</td>
 			    		<td>{{ $employee->employee_name}}</td>
-<<<<<<< HEAD
-=======
-			    		<td>{{ $employee->service }}</td>
->>>>>>> cb1e6f28d3024a8d525ecff6397a50b072efd72a
 			    		<td>{{ $employee->email }}</td>
-			    		<td><img src="{{ asset($employee->photo)}}" width="70px" height="60px"></td>
-
+{{-- 			    		<td><img src="{{ asset($employee->photo)}}" width="70px" height="60px"></td>
+ --}}
 			    		<td>{{ $employee->availability_status }}</td>
-			    		<td>{{ $employee->cname}}</td>
+			    		<td>@if($employee->service){{ $employee->service->service_name}}@endif</td>
 			    		<td>
-
-			    						    			
+			    			
 			    			<a href="{{ route('employees.edit',$employee->id) }}" class="btn btn-secondary">Edit</a>
 
 			    			

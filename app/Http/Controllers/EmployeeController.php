@@ -16,22 +16,16 @@ class EmployeeController extends Controller
      */
     public function index()
     {   
-<<<<<<< HEAD
        
-         // $services=DB::table('employees')->join('services','services.id','=','employees.service_id')->select('employees.*','services.*','services.service_name as cname')->get();
+         // $employees=DB::table('employees')->join('services','services.id','=','employees.service_id')->select('employees.*','services.*','services.service_name as cname')->get();
 
-         // $employees=Employee::all();
-
+         $employees=Employee::all();
+         $services = Service::all();
 
         //$services=Service::all();
-        $employees=DB::table('services')->join('employees','services.id','=','employees.service_id')->select('employees.*','services.*','services.service_name as cname')->get();
+        // $employees=DB::table('services')->join('employees','services.id','=','employees.service_id')->select('employees.*','services.*','services.service_name as cname')->get();
         
-        return view('backend.employees.index',compact('employees'));
-=======
-        $service=Service::all();
-        $employees=DB::table('services')->join('employees','employees.service_id','=','services.id')->select('services.*','employees.*','services.service_name as service')->get();
-        return view('backend.employees.index',compact('employees','service'));
->>>>>>> cb1e6f28d3024a8d525ecff6397a50b072efd72a
+        return view('backend.employees.index',compact('employees','services'));
     }
 
     /**
@@ -64,7 +58,11 @@ class EmployeeController extends Controller
            
         ]);
 
-        
+        //  $imageName = time().'-'.$request->photo->extension();
+        // $request->photo->move(public_path('backend/employeeimg'),$imageName);
+        // // ပုံပတ်လမ်းကြောင်းသိမ်း
+        // $path = 'backend/employeeimg/'.$imageName;
+        //
         //Data insert
         $employee = new Employee;
         
@@ -72,6 +70,7 @@ class EmployeeController extends Controller
         $employee->service_id = $request->service_id;
         $employee->availability_status = $request->availability_status;
         $employee->email = $request->email;
+        // $employee->photo=$path;
         $employee->save();
 
         //redirect
@@ -97,23 +96,15 @@ class EmployeeController extends Controller
     */
       public function edit($id)
     {
-<<<<<<< HEAD
-         
-        $services=Service::all();
-        //$employees=Employee::all();
-
-        $employees=DB::table('services')->join('employees','employees.service_id','=','services.id')->where('employees.service_id',$id)->select('employees.*','services.*','services.service_name as cname')->first();
+         // dd($id);
+       // $services=Service::find($id);
+         // $employees=DB::table('employees')->join('services','employees.service_id','=','services.id')->where('employees.id',$id)->select('employees.*','services.*','services.service_name as cname')->first();
+         $employees=Employee::find($id);
+         $services=Service::all();
 
         // dd($employees);
-        return view('backend.employees.edit',compact('services','employees'));
+        return view('backend.employees.edit',compact('employees','services'));
 
-=======
-        //dd($employee);
-         $services=Service::all();
-         // $employees=Employee::all();
-         $employee=Employee::all();
-        return view('backend.employees.edit',compact('services','employee'));
->>>>>>> cb1e6f28d3024a8d525ecff6397a50b072efd72a
     }
 
 
@@ -127,7 +118,6 @@ class EmployeeController extends Controller
     //  */
     public function update(Request $request, Employee $employee)
     {
-<<<<<<< HEAD
          //$request က edit form  ထဲက data ပါလာ
       // dd($request);
          // $request->validate([
@@ -135,11 +125,7 @@ class EmployeeController extends Controller
          //    "email" => 'required',
          //    "service_id" => 'required',
          //    "availability_status" => 'required'
-       //dd($request);
-=======
-      
-       //dd($employee);
->>>>>>> cb1e6f28d3024a8d525ecff6397a50b072efd72a
+       // dd($request);
          $request->validate([
             "employee_name" => 'required',
             "email" => 'required',
@@ -147,23 +133,18 @@ class EmployeeController extends Controller
             "availability_status" => 'required',
             
              ]);
-<<<<<<< HEAD
        
-         
+       
         //$employee = new Employee;
-=======
-        $employee = new Employee;
->>>>>>> cb1e6f28d3024a8d525ecff6397a50b072efd72a
         $employee->employee_name = $request->employee_name;
-         $employee->email = $request->email;
-         // $employee->photo=$path;
+        $employee->email = $request->email;
         $employee->service_id= $request->service_id;
         $employee->availability_status=$request->availability_status;
        
         $employee->save();
 
         //redirect
-        return redirect()->route('backend.employees.index');
+        return redirect()->route('employees.index');
     }
     /**
      * Remove the specified resource from storage.
@@ -173,7 +154,7 @@ class EmployeeController extends Controller
      */
     public function destroy($id)
     {
-        $post=Service::find($id);
+        $post=Employee::find($id);
         $post->delete();
         return redirect()->back();      
     }

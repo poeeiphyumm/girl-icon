@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 @extends('backend.backendtemplate')
-=======
-@extends ('backend.backendtemplate')
->>>>>>> cb1e6f28d3024a8d525ecff6397a50b072efd72a
 @section('content')
 
 <div class="container-fluid">
@@ -27,35 +23,24 @@
           
           <tbody>
             @php $i=1; @endphp
-{{--             @foreach ($categories as $category)
- --}}            <tr>
+           <tr>
               <td>{{ $i++ }}</td>
               
-              <td>{{ $categories->service_name}}</td> 
-              <td>{{ $categories->caname}}</td>
+              <td>{{ $services->service_name}}</td> 
+              <td>{{ $services->category->category_name}}</td>
               <td>
-                <img src="{{asset( $categories->photo) }}" width="70px" height="60px"></td>
+                <img src="{{asset( $services->photo) }}" width="70px" height="60px"></td>
               <td>
 
-<<<<<<< HEAD
 
-              <form method="post" action="{{ route('services.destroy',$categories->id) }}">
+              <form method="post" action="{{ route('services.destroy',$services->id) }}">
                   @csrf
                   @method('DELETE')
                   <input type="submit" class="btn btn-danger" value="Delete">
                 </form>
               </td>
-=======
-            @foreach($employees as $employee)
-            <tr>
-              <td>{{$i++}}</td>
-              <td>{{$employee->service_id}}</td>
-              <td>{{$employee->employee_id}}</td>
-              <td>{{$employee->service_name}}</td>
->>>>>>> cb1e6f28d3024a8d525ecff6397a50b072efd72a
             </tr>
-{{--             @endforeach
- --}}          </tbody>
+         </tbody>
           
         </table>
       </div>

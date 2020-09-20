@@ -26,37 +26,31 @@ class CustomerController extends Controller
     public function index(Request $request)
     {
 
-<<<<<<< HEAD
        $date1=$request->start_date;
         $date2=$request->end_date;
         if ($request->start_date && $request->end_date){
             $customers=Customer::whereBetween('date',
                 [   
                     new Carbon($date1), 
-                    new Carbon($date2)
+                    new Carbon($date2),
+                    
                 ])->where('address',0)->get();
         }
         else{
+
+
             $customers=Customer::all();
+            // $customers=DB::table('services')->join('customers','services.id','=','customers.service_id')->select('services.*','customers.*','services.service_name as cname')->get();
+
+
+             // $services=DB::table('services')->join('customers','customers.service_id','=','services.id')->select('customers.*','services.*','services.service_name as cname')->get();
         }
-
-
-
-         $services=DB::table('services')->join('customers','customers.service_id','=','services.id')->select('customers.*','services.*','services.service_name as cname')->get();
-
-        // $customers=DB::table('services')->join('customers','services.id','=','customers.service_id')->select('services.*','customers.*','services.service_name as cname')->get();
-         // //
-         //$services=Service::all();
+         $services=Service::all();
 
          //dd($customers);
-        // $customers=Customer::all();
+         //$customers=Customer::all();
          //dd($services);
-         return view('backend.customers.index',compact('services')); 
-=======
-        $customers=Customer::all();
-        $services=Service::all();
-        return view('backend.customers.index',compact('customers','services'));
->>>>>>> cb1e6f28d3024a8d525ecff6397a50b072efd72a
+         return view('backend.customers.index',compact('customers','services')); 
 
     }
 
@@ -69,8 +63,7 @@ class CustomerController extends Controller
     {
         $customers=Customer::all();
 
-         $services=Service::all();
-         //$appointments=Appointment::all();
+        $services=Service::all();
         return view("backend.customers.create",compact('customers','services'));
 
        
@@ -91,20 +84,13 @@ class CustomerController extends Controller
            "date" => 'required',        
             "phone_no" => 'required',
             "gender" => 'required',
-<<<<<<< HEAD
             "service_id" => 'required',
             "address" => 'required'
-=======
-
-
-           // "category"=>'required';
-            "service_name" => 'required',
-            "address" => 'required',
->>>>>>> cb1e6f28d3024a8d525ecff6397a50b072efd72a
 
 
         ]);
 
+        //Data insert
         $customer = new Customer;
         
         $customer->customer_name = $request->customer_name;
@@ -112,20 +98,10 @@ class CustomerController extends Controller
         $customer->date= $request->date;
         $customer->phone_no = $request->phone_no;
         $customer->gender = $request->gender;
-<<<<<<< HEAD
         $customer->service_id =$request->service_id;
-=======
-
-
-        //$customer->categories->category_id = $request->category_id;
-;
-        $customer->service_name=$request->service_name;
-
->>>>>>> cb1e6f28d3024a8d525ecff6397a50b072efd72a
         $customer->address = $request->address;
         $customer->save();
 
-        //redirect
         return redirect()->back();
         //return redirect()->route('customers.index');
     }
@@ -176,7 +152,7 @@ class CustomerController extends Controller
      */
     public function destroy($id)
     {
-        $post=Service::find($id);
+        $post=Customer::find($id);
         $post->delete();
         return redirect()->back();    
     }

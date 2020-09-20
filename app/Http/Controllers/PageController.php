@@ -14,14 +14,27 @@ class PageController extends Controller
         $services=Service::all();
         return view('main',compact('services'));
     }
- 
 
-     public function bookingfun($value='')
+    public function bookingfun()
      {
         $services=Service::all();
+        $id=0;
+        
 
         
-         return view('booking',compact('services'));
+         return view('booking',compact('services','id'));
+
+
+    }
+ 
+
+     public function bookbyservice($id)
+     {
+        $services=Service::all();
+        
+
+        
+         return view('booking',compact('services','id'));
 
 
     }

@@ -13,39 +13,13 @@
               
                 </div>
               </div>
-<<<<<<< HEAD
-=======
-    <div class="slide-one-item home-slider owl-carousel">
-      <div class="site-blocks-cover inner-page-cover" style="background-image: url({{asset('front/images/hero_bg_2.jpg')}});" data-aos="fade" data-stellar-background-ratio="0.5">
-        <div class="container">
-          <div class="row align-items-center justify-content-center text-center">
-            <div class="col-md-8" data-aos="fade-up" data-aos-delay="400">
-              <h2 class="text-white font-weight-light mb-2 display-1">Appointment</h2>
-
-                </div>
-              </div>
-            </div>
->>>>>>> 3414074898110b2dd544f6b07db8ccef7da54f9b
->>>>>>> cb1e6f28d3024a8d525ecff6397a50b072efd72a
           </div>
       </div>  
   </div>
 
-<<<<<<< HEAD
- {{--  <div class="col-md-7 mb-5"> --}}
-=======
   <div class="col-md-7 mb-5">
 
       <div class="container my-5">
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-    </div>
->>>>>>> b42146a0187ce37e06f8fd0ff2b6c9f7465cc3f9
-<div class="container my-5">
->>>>>>> 3414074898110b2dd544f6b07db8ccef7da54f9b
->>>>>>> cb1e6f28d3024a8d525ecff6397a50b072efd72a
     <div class="row justify-content-center">
       <div class="col-md-8">
       <form action="{{ route('customers.store') }}" method="post" enctype="multipart/form-data">
@@ -56,36 +30,6 @@
     </div>
   </div>
   
-<<<<<<< HEAD
-=======
-=======
-
-  </form>
-
-</div>
-<div class="row">
-          <div class="col-md-5">
-            
-            <div class="p-4 mb-3 bg-white">
-              <p class="mb-0 font-weight-bold">Address</p>
-              <p class="mb-4">203 Fake St. Mountain View, San Francisco, California, USA</p>
-
-              <p class="mb-0 font-weight-bold">Phone</p>
-              <p class="mb-4"><a href="#">+1 232 3235 324</a></p>
-
-              <p class="mb-0 font-weight-bold">Email Address</p>
-              <p class="mb-0"><a href="#">youremail@domain.com</a></p>
-
-            </div>
-            
-            <div class="p-4 mb-3 bg-white">
-              <h3 class="h5 text-black mb-3">More Info</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ad iure porro mollitia architecto hic consequuntur. Distinctio nisi perferendis dolore, ipsa consectetur? Fugiat quaerat eos qui, libero neque sed nulla.</p>
-              
-              <p><a href="#" class="btn btn-primary px-4 py-2 text-white">Get In Touch</a></p>
-            </div>
->>>>>>> 3414074898110b2dd544f6b07db8ccef7da54f9b
->>>>>>> cb1e6f28d3024a8d525ecff6397a50b072efd72a
   <div class="form-group row">
     <label class="col-sm-2 col-form-label"></label>
     <div class="col-md-12">
@@ -144,81 +88,17 @@
               @enderror
   </div>
    
-  
    <div class="form-group row">
-<<<<<<< HEAD
         <label class="col-md-3 col-form-label">Service</label>
         <select class="form-control form-control-md col-md-9" id="inputService" name="service_id">
           <optgroup label="Choose service">
             @foreach($services as $service)
-              <option value="{{ $service->id }}">{{ $service->service_name}}</option>
+              <option value="{{ $service->id }}" @if($id==$service->id){{ "Selected"}} @endif>{{ $service->service_name}}</option>
             @endforeach
           </optgroup>
         </select>
-=======
-<<<<<<< HEAD
-=======
-        <label class="col-md-3 col-form-label">Category</label>
-        <select class="form-control form-control-md col-md-9" id="inputCategory" name="category_name">
-<<<<<<< HEAD
-=======
-   {{-- <div class="form-group row">
-    <label class="col-sm-2 col-form-label">Services</label>
-    <div class="col-md-6">
-      <input type="text" name="service" class="form-control" id="inputservice" placeholder="eg.bodycare/nailcare.....">
-    </div>
-  </div> --}}
-   <div class="form-group row">
-
-        <label class="col-sm-2 col-form-label">Category</label>
-        <select class="form-control form-control-md col-md-6" id="inputCategory" name="category_name">
-
-
-        <label class="col-sm-2 col-form-label">Service</label>
-        <select class="form-control form-control-md" id="inputCategory" name="category">
->>>>>>> b42146a0187ce37e06f8fd0ff2b6c9f7465cc3f9
-
-        <label class="col-sm-2 col-form-label">Category</label>
-        <select class="form-control form-control-md col-md-6" id="inputCategory" name="category_name">
-        <label class="col-sm-2 col-form-label">Service</label>
-        <select class="form-control form-control-md" id="inputCategory" name="category">
-
->>>>>>> 3414074898110b2dd544f6b07db8ccef7da54f9b
-          <optgroup label="Choose Category">
-            @foreach($categories as $category)
-              <option value="{{ $category->id }}">{{ $category->category_name }}</option>
-            @endforeach
-          </optgroup>
-        </select>
-              @error('category_name')
-                <div class="text-danger">{{ ($message) }}</div>
-              @enderror
-  </div>
-<<<<<<< HEAD
-=======
-
   </div>
 
-<<<<<<< HEAD
-=======
->>>>>>> cb1e6f28d3024a8d525ecff6397a50b072efd72a
-  </div>
-
-  {{--  
-   <div class="form-group row">
-        <label class="col-md-3 col-form-label">Service</label>
-        <select class="form-control form-control-md col-md-9" id="inputService" name="service_id">
-          <optgroup label="Choose Service ">
-          @foreach($services as $service)
-            <option value="{{ $service->id }}" @if($service->service_id) {{ 'selected'}} @endif>{{ $service->service_name }}</option>
-          @endforeach
-
-        </optgroup>
-        </select>
-  </div>
- --}}
-
->>>>>>> b42146a0187ce37e06f8fd0ff2b6c9f7465cc3f9
   <div class="form-group row">
    
     <div class="col-md-12">
@@ -227,43 +107,20 @@
   </div>
 
   @role('Customer')
-<<<<<<< HEAD
-=======
-=======
-  
-<<<<<<< HEAD
-  @role('Customer')
-   <a href="{{route('login')}}" class="btn btn-info float-right">Login To Appointment</a>
-   @else
-        <button class="btn btn-info float-right buy_now">Get Appointment</button>
-        
-       
-    @endrole
-=======
-  <input type="submit" value="Appointment Now" class="btn btn-primary" onclick="" >
-  
->>>>>>> 3414074898110b2dd544f6b07db8ccef7da54f9b
->>>>>>> cb1e6f28d3024a8d525ecff6397a50b072efd72a
 
     <input type="submit" value="Appointment Now" class="btn btn-primary" onclick="" >
    
   @else
  
-<<<<<<< HEAD
   
   <a href="{{ route('loginpage') }}" class="btn btn-secondary btn-block mainfullbtncolor col-md-8">Login To Appointment</a>
-=======
-  <input type="submit" value="Appointment Now" class="btn btn-primary" onclick="" >
->>>>>>> b42146a0187ce37e06f8fd0ff2b6c9f7465cc3f9
->>>>>>> cb1e6f28d3024a8d525ecff6397a50b072efd72a
 
   @endrole
 </form>
     </div>  
   </div>
 </div>
-
-  </div>
+s</div>
 
 
   <div class="site-section">
