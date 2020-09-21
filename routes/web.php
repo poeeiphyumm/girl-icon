@@ -20,21 +20,10 @@ Route::get('loginform', 'PageController@loginfun')->name('loginpage');
 
 //backend by poeei
 
-<<<<<<< HEAD
 
 Route::get('/', 'PageController@mainfun')->name('mainpage');
 //backend by poeei
 
-=======
-Route::get('/', 'PageController@mainfun')->name('mainpage');
-//backend by poeei
-
-Route::resource('services','ServiceController');
-
-//backend by poeei
-
-Route::get('show','ServiceController@showfun')->name('showpage');
->>>>>>> bd94691d4693e1bf90fcaac5cfc2e21d06e72905
 
 // Route::get('servicepage', 'PageController@servicefun')->name('servicepage');
 Route::get('servicepage', 'PageController@servicefun')->name('servicepage');
@@ -44,11 +33,9 @@ Route::get('servicepage', 'PageController@servicefun')->name('servicepage');
 
 Route::get('booking', 'PageController@bookingfun') ->name('bookingpage');
 
-<<<<<<< HEAD
+
 Route::get('bookbyservice/{id}', 'PageController@bookbyservice') ->name('bookbyservice');
 
-=======
->>>>>>> bd94691d4693e1bf90fcaac5cfc2e21d06e72905
 Route::get('contact', 'PageController@contactfun') ->name('contactpage');
 
 
@@ -69,10 +56,6 @@ Route::get('handcare', 'PageController@handcarefun')->name('handcarepage');
 
 Route::get('footcare', 'PageController@footcarefun')->name('footcarepage');
 
-<<<<<<< HEAD
-=======
-Route::get('about', 'PageController@aboutfun')->name('aboutpage');
->>>>>>> bd94691d4693e1bf90fcaac5cfc2e21d06e72905
 
 Route::get('ourservice', 'PageController@ourservicefun')->name('ourservicepage');
 
@@ -85,10 +68,7 @@ Route::get('face','PageController@facecarefun')->name('facecarepage');
 
 Route::get('spa','PageController@spafun')->name('spapage');
 
-<<<<<<< HEAD
 
-=======
->>>>>>> bd94691d4693e1bf90fcaac5cfc2e21d06e72905
 Route::get('bodycare','PageController@bodycarefun')->name('bodycarepage');
 
 Route::get('sparest', 'PageController@sparestfun')->name('sparestpage');
@@ -98,7 +78,6 @@ Route::get('bodycaredetail/{id}', 'PageController@bodycaredetailfun')->name('bod
 
 Route::get('haircaredetail/{id}', 'PageController@haircaredetailfun')->name('haircaredetail');
 //end frontend by poeei
-<<<<<<< HEAD
 
 
 Route::get('sparest', 'PageController@sparestfun')->name('sparestpage');
@@ -112,32 +91,21 @@ Route::get('haircaredetail/{id}', 'PageController@haircaredetailfun')->name('hai
 
 //end frontend by poeei
 
-=======
-
-Route::resource('customers','CustomerController');
->>>>>>> bd94691d4693e1bf90fcaac5cfc2e21d06e72905
 
 Route::get('skincaredetail/{id}', 'PageController@skincaredetailfun')->name('skincaredetail');
 
 
 Route::get('nailcaredetail/{id}', 'PageController@nailcaredetailfun')->name('nailcaredetail');
 
-<<<<<<< HEAD
 
-=======
->>>>>>> bd94691d4693e1bf90fcaac5cfc2e21d06e72905
 Route::get('footcaredetail/{id}', 'PageController@footcaredetailfun')->name('footcaredetail');
 
 Route::get('facecaredetail/{id}', 'PageController@facecaredetailfun')->name('facecaredetail');
 
 Route::get('skintherapydetail/{id}', 'PageController@skintherapydetailfun')->name('skintherapydetail');
 
-<<<<<<< HEAD
 
 
-=======
-//end frontend by poeei
->>>>>>> bd94691d4693e1bf90fcaac5cfc2e21d06e72905
 
 Route::middleware('role:Admin')->group(function(){
 
@@ -149,12 +117,6 @@ Route::middleware('role:Admin')->group(function(){
 
 	Route::resource('employees','EmployeeController');
 
-<<<<<<< HEAD
-=======
-	// Route::resource('appointments','AppointmentController');
-
-
->>>>>>> bd94691d4693e1bf90fcaac5cfc2e21d06e72905
 
 });
 	Route::resource('customers','CustomerController');
@@ -168,21 +130,5 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-<<<<<<< HEAD
 
 
-
-=======
-Route::resource('customers','CustomerController');
-
-Route::get('contact', 'PageController@contactfun')->name('contactpage');
-
-Route::get('about', 'PageController@aboutfun')->name('aboutpage');
-
-Route::get('dashboard', 'backendController@dashboardfun') ->name('dashboardpage');
-//auth
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
->>>>>>> bd94691d4693e1bf90fcaac5cfc2e21d06e72905

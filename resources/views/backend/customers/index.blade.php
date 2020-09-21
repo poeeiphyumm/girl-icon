@@ -53,7 +53,7 @@
 			    		<td>{{ $customer->date }}</td>			    		
 			    		<td>{{ $customer->phone_no }}</td>
 			    		<td>{{ $customer->gender }}</td>
-			    		<td>{{ $customer->service->service_name}}</td>	
+			    		<td>@if($customer->service){{ $customer->service->service_name}} @endif</td>	
 			    		<td>{{ $customer->address }}</td>
 			    		<td>
 

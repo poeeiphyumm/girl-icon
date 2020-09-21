@@ -16,7 +16,6 @@ class EmployeeController extends Controller
      */
     public function index()
     {   
-<<<<<<< HEAD
        
          // $employees=DB::table('employees')->join('services','services.id','=','employees.service_id')->select('employees.*','services.*','services.service_name as cname')->get();
 
@@ -27,11 +26,6 @@ class EmployeeController extends Controller
         // $employees=DB::table('services')->join('employees','services.id','=','employees.service_id')->select('employees.*','services.*','services.service_name as cname')->get();
         
         return view('backend.employees.index',compact('employees','services'));
-=======
-        $service=Service::all();
-        $employees=DB::table('services')->join('employees','employees.service_id','=','services.id')->select('services.*','employees.*','services.service_name as service')->get();
-        return view('backend.employees.index',compact('employees','service'));
->>>>>>> bd94691d4693e1bf90fcaac5cfc2e21d06e72905
     }
 
     /**
@@ -99,10 +93,9 @@ class EmployeeController extends Controller
      *
      * @param  \App\Employee  $employee
      * @return \Illuminate\Http\Response
-     */
+    */
       public function edit($id)
     {
-<<<<<<< HEAD
          // dd($id);
        // $services=Service::find($id);
          // $employees=DB::table('employees')->join('services','employees.service_id','=','services.id')->where('employees.id',$id)->select('employees.*','services.*','services.service_name as cname')->first();
@@ -112,15 +105,6 @@ class EmployeeController extends Controller
         // dd($employees);
         return view('backend.employees.edit',compact('employees','services'));
 
-=======
-         
-    
-        //dd($employee);
-         $services=Service::all();
-         // $employees=Employee::all();
-         $employee=Employee::find($id);
-        return view('backend.employees.edit',compact('services','employee'));
->>>>>>> bd94691d4693e1bf90fcaac5cfc2e21d06e72905
     }
 
 
@@ -134,7 +118,6 @@ class EmployeeController extends Controller
     //  */
     public function update(Request $request, Employee $employee)
     {
-<<<<<<< HEAD
          //$request က edit form  ထဲက data ပါလာ
       // dd($request);
          // $request->validate([
@@ -143,25 +126,16 @@ class EmployeeController extends Controller
          //    "service_id" => 'required',
          //    "availability_status" => 'required'
        // dd($request);
-=======
->>>>>>> bd94691d4693e1bf90fcaac5cfc2e21d06e72905
          $request->validate([
             "employee_name" => 'required',
             "email" => 'required',
             "service_id" => 'required',
             "availability_status" => 'required',
             
-<<<<<<< HEAD
              ]);
        
        
         //$employee = new Employee;
-=======
-             ]);       
-         
-        //$employee = new Employee;
-        $employee = new Employee;
->>>>>>> bd94691d4693e1bf90fcaac5cfc2e21d06e72905
         $employee->employee_name = $request->employee_name;
         $employee->email = $request->email;
         $employee->service_id= $request->service_id;

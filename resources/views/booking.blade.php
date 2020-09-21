@@ -120,7 +120,7 @@
     </div>  
   </div>
 </div>
-s</div>
+</div>
 
 
   <div class="site-section">

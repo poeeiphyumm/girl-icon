@@ -12,10 +12,12 @@
       <div class="row">
 
          @foreach($services as $service)
-        <a href="{{ route('bodycaredetail',$service->id) }}">
-          <div class="col-lg-4 col-md-4 col-sm-12">
+
+          <a href="{{ route('bodycaredetail',$service->id) }}">
+          
+            <div class="col-lg-4 col-md-4 col-sm-12">
             
-              <img src="{{asset($service->photo)}}" width="400px" height="300px">
+              <img src="{{asset($service->photo)}}" width="400px" height="300px" class="img-fluid">
             
 {{--               <p class=" text-info">{{ $service->service_name }}</p>
  --}}

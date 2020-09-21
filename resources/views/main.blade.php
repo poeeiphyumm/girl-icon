@@ -203,12 +203,6 @@
   </div>
 </div>
 
-<<<<<<< HEAD
-=======
-
-
-</div>
->>>>>>> bd94691d4693e1bf90fcaac5cfc2e21d06e72905
   </div>
 
  <div class="col-md-5">
@@ -237,42 +231,6 @@
         </div>
       </div>
     </div>
-
-
-{{-- <div class="container-fluid">
-<div class="site-blocks-cover mb-5" style="background-image: url({{asset('frontend/images/spa-girl-1.jpg')}});" data-aos="fade">
-        
-          <div class="row">
-
-            <div class="co-xl-4 col-md-8 col-lg-4 col-12" data-aos="fade-up" data-aos-delay="400"><br><br>
-              <h5 class="text-black">Matt Effect</h5>
-             <p class="text-black">A range of different massage techniques reflexology, body scrubs and facial</p><br><br>
-             <h5 class="text-black font-weight-light">Sauna Ready</h5>
-             <p class="text-black font-weight-light">
-             A range of different massage techniques reflexology, body scrubs and facial.</p><br><br>
-             <h5 class="text-black font-weight-light">
-              Natural Mask</h5>
-             <p class="text-black font-weight-light">
-             A range of different massage techniques reflexology, body scrubs and facial.</p>
-            </div>
-
-            <div class="co-xl-4 col-md-8 col-lg-4 col-12" data-aos="fade-up" data-aos-delay="400">
-            
-            </div>
-            <div class="co-xl-4 col-md-8 col-lg-4 col-12" data-aos="fade-up" data-aos-delay="400"><br><br>
-            <h5 class="text-black">Relax Zones</h5>
-             <p class="text-black">A range of different massage techniques reflexology, body scrubs and facial</p><br><br>
-             <h5 class="text-black font-weight-light">Hair Diration</h5>
-             <p class="text-black font-weight-light">
-             A range of different massage techniques reflexology, body scrubs and facial.</p><br><br>
-             <h5 class="text-black font-weight-light">Aromo Therophy</h5>
-             <p class="text-black font-weight-light">
-             A range of different massage techniques reflexology, body scrubs and facial.</p>
-            </div>
-
-          </div>
-        </div>
-</div>  --}} 
 
 
 <div class="container">

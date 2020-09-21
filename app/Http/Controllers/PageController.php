@@ -23,11 +23,9 @@ class PageController extends Controller
 
         
          return view('booking',compact('services','id'));
-
-
     }
  
-
+     
      public function bookbyservice($id)
      {
         $services=Service::all();
@@ -39,6 +37,7 @@ class PageController extends Controller
 
     }
 
+    
     public function contactfun($value='')
      {
         
