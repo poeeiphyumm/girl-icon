@@ -17,7 +17,10 @@
       </div>  
   </div>
 
-  <div class="col-md-7 mb-5">
+  <div class="bg-light">
+      <div class="container">
+        <div class="row">
+        <div class="col-md-7 mb-5">
 
       <div class="container my-5">
     <div class="row justify-content-center">
@@ -34,46 +37,35 @@
     <label class="col-sm-2 col-form-label"></label>
     <div class="col-md-12">
       <input type="name" name="customer_name" class="form-control" id="inputname" placeholder="name" required="required">
-              @error('name')
-                <div class="text-danger">{{ ($message) }}</div>
-              @enderror
     </div>
   </div>
   <div class="form-group row">
     <label class="col-sm-2 col-form-label"></label>
     <div class="col-md-12">
       <input type="email" name="email" class="form-control" id="inputemail" placeholder="E-mail" required="required">
-              @error('email')
-                <div class="text-danger">{{ ($message) }}</div>
-              @enderror
     </div>
   </div>
-  <div class="form-group row">
-    
-    <div class="col-md-12">
-      <input type="date" name="date" class="form-control" id="inputdate" required="required">
-              @error('date')
-                <div class="text-danger">{{ ($message) }}</div>
-              @enderror
-    </div>
-  </div>
+
+
 
   <div class="form-group row">
     
     <div class="col-md-12">
-      <input type="time" name="time" class="form-control" id="inputtime" required="required">
-              @error('time')
-                <div class="text-danger">{{ ($message) }}</div>
-              @enderror
+      <input type="date" name="date" class="form-control" id="inputdate" required="required">
     </div>
+  </div>
+
+     <div class="form-group row">
+    
+    <div class="col-md-12">
+      <input type="time" name="time" class="form-control" id="inputtime" required="required">
+    </div>
+
   </div>
   <div class="form-group row">
     
     <div class="col-md-12">
       <input type="text" name="phone_no" class="form-control" id="inputphoto" placeholder="phone number" required="required">
-              @error('phone_no')
-                <div class="text-danger">{{ ($message) }}</div>
-              @enderror
     </div>
   </div>
   
@@ -83,12 +75,9 @@
       <input type="radio" name="gender" value="male" checked="" required="required">Male
       <input type="radio" name="gender" value="female" required="required">Female
     </div>
-              @error('gender')
-                <div class="text-danger">{{ ($message) }}</div>
-              @enderror
   </div>
    
-   <div class="form-group row">
+  <div class="form-group row">
         <label class="col-md-3 col-form-label">Service</label>
         <select class="form-control form-control-md col-md-9" id="inputService" name="service_id">
           <optgroup label="Choose service">
@@ -105,8 +94,8 @@
       <input type="text" name="address" class="form-control" id="inputphoto" placeholder=" address" required="required" >
     </div>
   </div>
-
-  @role('Customer')
+  
+ @role('Customer')
 
     <input type="submit" value="Appointment Now" class="btn btn-primary" onclick="" >
    
@@ -116,11 +105,40 @@
   <a href="{{ route('loginpage') }}" class="btn btn-secondary btn-block mainfullbtncolor col-md-8">Login To Appointment</a>
 
   @endrole
+  
 </form>
     </div>  
   </div>
 </div>
-</div>
+
+  </div>
+
+ <div class="col-md-5">
+      <div id="carousel-id" class="carousel slide" data-ride="carousel">
+
+    <div class="carousel-inner" role="listbox">
+      <div class="carousel-item active">
+        <img src="{{asset('frontend/images/spa-girl-1.jpg')}}" alt="First slide" width="500px" height="630px">
+      </div>
+      <div class="carousel-item">
+        <img src="{{asset('front/images/person_1.jpg')}}" alt="First slide" width="500px" height="630px">
+      </div>
+      <div class="carousel-item">
+        <img src="{{asset('frontend/images/bodycare3.jpg')}}" alt="First slide" width="500px" height="630px">
+      </div>
+    </div>
+
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel" data-slide-to="1"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    </ol>
+  </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
 
 
   <div class="site-section">
